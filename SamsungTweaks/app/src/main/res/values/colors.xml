@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_default_colors">#AEFFFFFF</color>
+    <color name="color_powersave">@color/cyanPrimary</color>
+    <color name="color_balance">@color/tealPrimary</color>
+    <color name="color_perf">@color/greenPrimary</color>
+    <color name="color_fast">@color/tealAccent</color>
+</resources>

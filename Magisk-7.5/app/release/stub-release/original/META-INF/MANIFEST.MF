@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.1
+
+Name: AndroidManifest.xml
+SHA1-Digest: F1cPhqXti48CZoAKVn3tX1r+klU=
+
+Name: classes.dex
+SHA1-Digest: FcHBujoJUYXJrcWDf1LYtEZcEw4=
+
+Name: res/drawable-anydpi-v23/ic_splash_activity.xml
+SHA1-Digest: WoMGiEokQ6Pud0SglH892QEiWIQ=
+
+Name: res/drawable-anydpi-v26/ic_launcher.xml
+SHA1-Digest: RuAgNTcQzx8wFaYOFmzb2E7X6Sc=
+
+Name: res/drawable/ic_logo.xml
+SHA1-Digest: /OlNLRjN4kgEqkznzOe5GXrsuRw=
+
+Name: res/drawable/ic_magisk.xml
+SHA1-Digest: lD55dfkctvhfrpmzQbihWm/1pio=
+
+Name: res/drawable/ic_magisk_padded.xml
+SHA1-Digest: LcusJmdhMEAZ1wnI9JeqLl/FQ7g=
+
+Name: res/xml/file_paths.xml
+SHA1-Digest: NyHkuOOsddtbzf+JIYpjTugEVyg=
+
+Name: resources.arsc
+SHA1-Digest: 27FxYqGzkFvwNBoobHttG5SM3JQ=
+

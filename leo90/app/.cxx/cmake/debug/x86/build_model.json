@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\AndroidTools\\code\\leo90",
+      "sdkFolder": "D:\\AndroidTools\\SD",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "D:\\AndroidTools\\code\\leo90\\app",
+      "makeFile": "D:\\AndroidTools\\code\\leo90\\app\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\AndroidTools\\code\\leo90\\.cxx",
+      "cxxFolder": "D:\\AndroidTools\\code\\leo90\\app\\.cxx",
+      "ndkFolder": "D:\\AndroidTools\\SD\\ndk-bundle",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "debug",
+    "soFolder": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 19,
+  "cxxBuildFolder": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86",
+  "jsonFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86",
+  "objFolder": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\obj\\x86",
+  "buildCommandFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\build_command.txt",
+  "buildOutputFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\build_output.txt",
+  "modelOutputFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\build_generation_state.json",
+    "cacheKeyFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cxx\\debug\\x86\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\x86\\compile_commands.json"
+}

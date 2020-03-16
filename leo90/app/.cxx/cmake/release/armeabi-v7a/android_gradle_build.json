@@ -1,0 +1,76 @@
+{
+  "stringTable": {
+    "0": "D:/AndroidTools/code/leo90/app/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsalt6_6_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC",
+    "2": "--target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DAmber9_4_520_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC",
+    "3": "--target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsec_9_0_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "D:\\AndroidTools\\SD\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "D:\\AndroidTools\\code\\leo90\\app\\CMakeLists.txt",
+    "D:\\AndroidTools\\SD\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "salt6.6-Release-armeabi-v7a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\release\\armeabi-v7a\" salt6.6",
+      "buildType": "release",
+      "toolchain": "1979919870",
+      "abi": "armeabi-v7a",
+      "artifactName": "salt6.6",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\salt6.6.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libsalt6.6.so"
+    },
+    "Amber9.4.520-Release-armeabi-v7a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\release\\armeabi-v7a\" Amber9.4.520",
+      "buildType": "release",
+      "toolchain": "1979919870",
+      "abi": "armeabi-v7a",
+      "artifactName": "Amber9.4.520",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\Amber9.4.520.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libAmber9.4.520.so"
+    },
+    "sec_9.0-Release-armeabi-v7a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\release\\armeabi-v7a\" sec_9.0",
+      "buildType": "release",
+      "toolchain": "1979919870",
+      "abi": "armeabi-v7a",
+      "artifactName": "sec_9.0",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\sec_9.0.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libsec_9.0.so"
+    }
+  },
+  "toolchains": {
+    "1979919870": {
+      "cppCompilerExecutable": "D:\\AndroidTools\\SD\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

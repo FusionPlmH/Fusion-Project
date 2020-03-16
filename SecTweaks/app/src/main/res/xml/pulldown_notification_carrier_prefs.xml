@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/carrier" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/notification_carrier" android:key="leo_tweaks_notification_carrier_toggle"  android:defaultValue="false"  android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_notification_carrier_label_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/notification_carrier_label_size" android:key="leo_tweaks_notification_carrier_label_size"  android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/notification_carrier_color_enabled" android:key="leo_tweaks_notification_carrier_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_notification_carrier_random_color"    android:dependency="leo_tweaks_notification_carrier_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/notification_carrier_label_color" android:key="leo_tweaks_notification_carrier_label_color" app:reverseDependency="leo_tweaks_notification_carrier_random_color"    android:summary="@string/white_color"  leo:defaultColor="/#ffffffff" />
+    <com.leo.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_notification_carrier_toggle"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_notification_carrier_string"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/status_bar_carrier_string_single" />
+    <com.leo.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_notification_carrier_toggle"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_notification_carrier_string_a"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/status_bar_carrier_string_multi" />
+</PreferenceScreen>

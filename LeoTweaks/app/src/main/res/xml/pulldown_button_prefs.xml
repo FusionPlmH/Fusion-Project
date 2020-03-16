@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="设置按钮" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="禁用设置按钮" android:key="leo_tweaks_pulldown_setting_button" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="自定义设置按钮颜色" android:key="leo_tweaks_pulldown_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_pulldown_button_random_color"  android:dependency="leo_tweaks_pulldown_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="设置按钮颜色" android:key="leo_tweaks_pulldown_button_color"  app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_pulldown_button_color_enabled" android:summary="默认颜色:#ff252525" leo:defaultColor="\#ff252525" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="多用户按钮" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="禁用多用户按钮" android:key="leo_tweaks_pulldown_multiuser_button" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="QS按钮数量" android:key="leo_tweaks_qs_max" android:summary="@string/seksbar_sumarry" android:defaultValue="6" app:minValue="3" app:maxValue="10" app:unitsValue=" 个" />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="QS按钮" />
+
+    <com.tweaks.salt.preference.MySwitchPreference android:title="自定义QS按钮" android:key="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+
+    <com.tweaks.salt.preference.MySwitchPreference android:title="按钮图标随机颜色" android:key="leo_tweaks_qs_icon_random_color"  android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="*按钮图标启用颜色" android:key="leo_tweaks_qs_icon_on_color" app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="（默认值:#ff00aeff)" leo:defaultColor="\#ff00aeff"  />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="*按钮图标禁用颜色" android:key="leo_tweaks_qs_icon_off_color" app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="（默认值:#4d252525)" leo:defaultColor="\#4d252525"  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="按钮文本随机颜色" android:key="leo_tweaks_qs_icon_label_random_color"  android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="按钮文本颜色" android:key="leo_tweaks_qs_icon_label_color" app:reverseDependency="leo_tweaks_qs_icon_label_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="（默认值:#ff252525)" leo:defaultColor="\#ff252525" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style"  android:dependency="leo_tweaks_qs_button_color_enabled" android:key="leo_tweaks_qs_icon_label_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="QS按钮分割线" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="分割线" android:key="leo_tweaks_qs_label_divider_visible" android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="分割线颜色" android:key="leo_tweaks_qs_label_divider_color" android:dependency="leo_tweaks_qs_label_divider_visible" android:summary="（默认值:#33252525)" leo:defaultColor="\#33252525" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+</PreferenceScreen>

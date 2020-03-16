@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Salt.MainTheme.Light" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:colorBackground">?colorPrimary</item>
+        <item name="android:listDivider">?colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="checkboxStyle">?radioButtonStyle</item>
+        <item name="switchStyle">@style/SaltSwitchLight</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="cardBgColor">@color/cardview_light_background</item>
+        <item name="roundedCornerColor">?colorPrimary</item>
+        <item name="saltTitleColor">?colorPrimary</item>
+        <item name="transparency">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.Light.PopupMenu</item>
+        <item name="spinnerStyle">@android:style/Widget.DeviceDefault.Light.Spinner</item>
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+        <item name="stroke_view_color">#5f000000</item>
+        <item name="alertDialogTheme">@style/DialogDeviceDefault.AppCompatDialog</item>
+        <item name="android:dialogTheme">@style/DialogDeviceDefaultLight</item>
+        <item name="android:alertDialogTheme">@style/DialogDeviceDefaultLight</item>
+    </style>
+    <style name="AppBarLight" parent="ThemeOverlay.AppCompat.ActionBar" />
+    <style name="anim_fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_fade_out</item>
+    </style>
+    <style name="PermissionAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_fade_out</item>
+    </style>
+
+    <style name="Salt.MainTheme.Light.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Salt.MainTheme.Light.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SaltSwitchLight" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/switch_salt_thumb</item>
+        <item name="track">@drawable/switch_salt_track_selector</item>
+    </style>
+    <style name="DialogDeviceDefault.AppCompatDialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="dialogCornerRadius">@dimen/card_view_radius</item>
+        <item name="android:buttonCornerRadius">@dimen/card_view_radius</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">95.0%</item>
+        <item name="windowMinWidthMajor">95.0%</item>
+        <item name="windowMinWidthMinor">95.0%</item>
+
+    </style>
+    <style name="Base.Animation.AppCompat.Dialog" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="DialogDeviceDefaultLight" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">95.0%</item>
+    </style>
+
+    <style name="Light.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+    </style>
+</resources>

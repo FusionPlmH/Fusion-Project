@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">LeoFramework</string>
+    <string name="leo_app_name">LeoTweaks</string>
+    <string name="leo_name">Leo ROM</string>
+    <string name="global_url">.leorom.cc/leo/</string>
+    <string name="chinese_URL">:27524/api/public/dl/</string>
+    <string name="ota_code">ro.leo.ota.code</string>
+    <string name="prefe_name">leo_salt_</string>
+    <string-array name="font_style">
+        <item>/LeoTweaks/.fonts/leoshouxie.ttf</item>
+        <item>/LeoTweaks/.fonts/leozlyjt.ttf</item>
+        <item>/LeoTweaks/.fonts/leolove.ttf</item>
+        <item>/LeoTweaks/.fonts/leohz.ttf</item>
+        <item>/LeoTweaks/.fonts/leoguzhuan.ttf</item>
+        <item>/LeoTweaks/.fonts/leody.ttf</item>
+        <item>/LeoTweaks/.fonts/leokongxin.ttf</item>
+        <item>/LeoTweaks/.fonts/leomudan.ttf</item>
+        <item>/LeoTweaks/.fonts/leofzkt.ttf</item>
+        <item>/LeoTweaks/.fonts/leofzybkt.ttf</item>
+        <item>/LeoTweaks/.fonts/leohypinyin.ttf</item>
+        <item>/LeoTweaks/.fonts/LeoHitomi.ttf</item>
+        <item>/LeoTweaks/.fonts/Alibaba-PuHuiTi-Medium.ttf</item>
+        </string-array>
+    <string-array name="LeoSuperDeviceInfo">
+        <item>/sys/devices/system/cpu/</item>
+        <item>/proc/cpuinfo</item>
+        <item>/sys/class/kgsl/kgsl-3d0/gpu_model</item>
+        <item>/sys/kernel/gpu/gpu_model</item>
+        <item>/sys/class/kgsl/kgsl-3d0/max_clock_mhz</item>
+        <item>/sys/kernel/gpu/gpu_max_clock</item>
+        <item>/sys/class/kgsl/kgsl-3d0/min_clock_mhz</item>
+        <item>/sys/kernel/gpu/gpu_min_clock</item>
+        <item>/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage</item>
+        <item>/sys/kernel/gpu/gpu_busy</item>
+        <item>/sys/class/power_supply/battery/current_now</item>
+        <item>/sys/class/power_supply/battery/voltage_now</item>
+        <item>/sys/devices/system/cpu/cpu</item>
+        <item>/cpufreq/scaling_cur_freq</item>
+    </string-array>
+    <dimen name="net_traffic_single_text_size">12.0dip</dimen>
+    <dimen name="net_traffic_multi_text_size">9.0dip</dimen>
+</resources>

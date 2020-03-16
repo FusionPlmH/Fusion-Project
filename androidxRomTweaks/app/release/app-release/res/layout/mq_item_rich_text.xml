@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/mq_shape_bg_rich_text" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meiqia.meiqiasdk.widget.MQImageView android:id="@id/content_pic_iv" android:focusable="true" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_alignParentLeft="true" app:mq_iv_cornerRadius="3.0dip" />
+    <TextView android:textSize="@dimen/mq_textSize_rich_text" android:textColor="@color/mq_chat_left_textColor" android:ellipsize="end" android:gravity="center|left" android:id="@id/content_summary_tv" android:paddingLeft="16.0dip" android:paddingTop="9.0dip" android:paddingRight="34.0dip" android:paddingBottom="9.0dip" android:maxLines="4" android:layout_toRightOf="@id/content_pic_iv" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" style="@style/MQMatchMatch" />
+    <ImageView android:background="@drawable/mq_arrow_right" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

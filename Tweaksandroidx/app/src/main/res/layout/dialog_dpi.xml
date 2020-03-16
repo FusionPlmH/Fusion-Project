@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="3dip"
+    android:paddingBottom="8dip">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_dpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DPI"
+        android:padding="5dp"
+        />
+    <EditText
+        android:layout_below="@id/dialog_dpi"
+        android:layout_alignStart="@id/dialog_dpi"
+        android:id="@+id/dialog_addin_dpi_dpiinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="min:96"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <TextView
+        android:id="@+id/dialog_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_addin_dpi_dpiinput"
+        android:layout_alignStart="@id/dialog_addin_dpi_dpiinput"
+        android:text="分辨率"
+        android:padding="5dp"
+        />
+    <GridLayout
+        android:id="@+id/dialog_Edit_dpi"
+        android:layout_below="@id/dialog_display"
+        android:layout_alignStart="@id/dialog_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dialog_addin_dpi_height"
+            android:layout_width="60dp"
+            android:layout_row="0"
+            android:hint="min:480"
+            android:inputType="number"
+            android:maxLength="4" />
+        <TextView android:text="×" />
+        <EditText
+            android:id="@+id/dialog_addin_dpi_width"
+            android:layout_width="60dp"
+            android:layout_row="0"
+            android:hint="min:320"
+            android:inputType="number"
+            android:maxLength="4" />
+    </GridLayout>
+    <CheckBox
+      style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:layout_below="@id/dialog_Edit_dpi"
+        android:layout_alignStart="@id/dialog_Edit_dpi"
+        android:id="@+id/dialog_addin_dpi_quickchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="快速修改" />
+
+    <TextView
+        android:layout_below="@id/dialog_addin_dpi_quickchange"
+        android:layout_alignStart="@id/dialog_addin_dpi_quickchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="预设"
+        />
+    </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="?colorAccent"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height"
+        card_view:cardUseCompatPadding="false"
+       >
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/dialog_dpi_720"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HD+"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:textSize="18dp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <TextView
+                android:id="@+id/dialog_dpi_1080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="FHD+"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/dialog_dpi_2k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WQHD+"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentEnd="true"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

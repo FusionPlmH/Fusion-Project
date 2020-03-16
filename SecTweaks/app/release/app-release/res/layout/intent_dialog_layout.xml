@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/searchApp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:hint="@string/find_app" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:backgroundTint="?colorAccent" android:backgroundTintMode="src_in" />
+    <ListView android:id="@id/appsList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/searchApp" android:layout_alignParentStart="true" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:indeterminate="true" android:layout_below="@id/searchApp" android:layout_centerHorizontal="true" android:progressTint="?colorAccent" android:indeterminateTint="?colorAccent" android:indeterminateTintMode="src_in" />
+</RelativeLayout>

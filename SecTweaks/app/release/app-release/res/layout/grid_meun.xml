@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/sv_index" android:background="?MainwindowBG" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/grid_mode" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/ui_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/grid_statusbar" android:paddingBottom="10.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:id="@id/notificationbar_bar" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/pulldown_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/grid_pulldown" android:paddingBottom="10.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/lock_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/grid_keyguard" android:paddingBottom="10.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/keys_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/grid_keys" android:paddingBottom="10.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/list_mode" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/ui_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/list_grid_statusbar" android:paddingBottom="15.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="wrap_content" android:layout_height="fill_parent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="1" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/pulldown_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/list_grid_pulldown" android:paddingBottom="15.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="1" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/lock_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/list_grid_keyguard" android:paddingBottom="15.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="1" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/grid_title_size" android:textColor="?cardtitle" android:background="?cardBackgroundheadColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/keys_title" android:paddingStart="16.0dip" />
+                    <com.leo.salt.ui.LineGridView android:gravity="center" android:id="@id/list_grid_keys" android:paddingBottom="15.0dip" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="1" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

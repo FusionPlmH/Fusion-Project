@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/theme" />
+    <com.leo.salt.preference.MyPreference android:title="@string/app_theme" android:key="leo_tweaks_app_theme" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/subtitle" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/switch_subtitle" android:key="leo_tweaks_switch_subtitle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyEditTextPreference android:persistent="true" android:hint="@string/subtitle_label_hint" android:title="@string/subtitle_label" android:key="leo_tweaks_subtitle_label" android:dependency="leo_tweaks_switch_subtitle" android:defaultValue="Fusion Leo" android:dialogTitle="@string/custom_text_title" android:dialogMessage="@string/custom_text_essage" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_other" />
+    <com.leo.salt.preference.MyPreference android:title="@string/app_clear" android:key="leo_tweaks_app_clear" />
+    <com.leo.salt.preference.MySwitchPreference android:persistent="false" android:title="@string/app_launcher_enabled" android:key="leo_tweaks_app_launcher_enabled" android:summaryOn="@string/app_launcher_enabled_yes" android:summaryOff="@string/app_launcher_enabled_no" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/switch_donate" android:key="leo_tweaks_switch_donate" android:defaultValue="false" android:summaryOn="@string/switch_donate_summary" android:summaryOff="@string/switch_donate_summary2" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/fab_style" android:key="leo_tweaks_fab_style" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+</PreferenceScreen>

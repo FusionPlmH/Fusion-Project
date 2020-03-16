@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PermissionBackround" format="reference"></attr>
+    <attr name="PermissionTitleColor" format="color"></attr>
+    <attr name="PermissionMsgColor" format="color"></attr>
+    <attr name="PermissionItemTextColor" format="color"></attr>
+    <attr name="PermissionButtonTextColor" format="color"></attr>
+    <attr name="PermissionButtonBackground" format="reference"></attr>
+    <attr name="PermissionBgFilterColor" format="color"></attr>
+    <attr name="PermissionIconFilterColor" format="color"></attr>
+    <declare-styleable name="ShapeTextView">
+        <!--是否使用Selector选择器-->
+        <attr name="openSelector" format="boolean" />
+        <!--填充色-->
+        <attr name="solidColor" format="color" />
+        <!--边框色-->
+        <attr name="strokeColor" format="color" />
+        <!--按下填充色-->
+        <attr name="solidTouchColor" format="color" />
+        <!--按下边框色-->
+        <attr name="strokeTouchColor" format="color" />
+        <attr name="textTouchColor" format="color" />
+        <!--边框宽度-->
+        <attr name="strokeWidth" format="dimension" />
+        <!--圆角弧度-->
+        <attr name="radius" format="dimension" />
+        <!--四个角的圆角弧度-->
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+        <!--虚线边框宽度-->
+        <attr name="dashWidth" format="dimension" />
+        <!--虚线边框间隙-->
+        <attr name="dashGap" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FotaProgressBar">
+        <attr name="FotaReachedBarColor" format="color" />
+        <attr name="FotaUnreachedBarColor" format="color" />
+        <attr name="FotaTextColor" format="color" />
+        <attr name="FotaBarHeight" format="dimension"/>
+        <attr name="FotaMax" format="integer" />
+        <attr name="FotaProgress" format="integer" />
+        <attr name="FotaSuffix" format="string" />
+        <attr name="FotaPrefix" format="string" />
+        <attr name="FotaTextVisibility" format="boolean"/>
+    </declare-styleable>
+    <dimen name="apks_space">8dp</dimen>
+    <dimen name="apks_space_padding">15dp</dimen>
+    <dimen name="apks_icon_right">15dp</dimen>
+    <dimen name="apks_icon_size">25dp</dimen>
+</resources>

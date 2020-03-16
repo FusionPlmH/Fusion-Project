@@ -1,0 +1,167 @@
+<resources>
+    <string name="update_ak">下载安装</string>
+
+
+    <string name="grid_floatball">悬浮球</string>
+    <string name="app_name" >Leo设定</string>
+    <string name="nav_tab_home" >主页</string>
+    <string name="nav_tab_display" >显示</string>
+    <string name="nav_tab_action" >手势动作</string>
+    <string name="nav_tab_tools">用户中心</string>
+    <string name="nav_tab_more">更多</string>
+    <string name="nav_tab_custom">自定义</string>
+    <string name="ip_dsp" >输入ip地址</string>
+    <string name="ip_lastfive">最近的5条ip</string>
+    <string name="show_dsp" >ping测试</string>
+    <string name="apps_search_box">搜索 应用名或包名(PackageName)</string>
+    <string name="execute_wait">正在执行,请稍等.....</string>
+    <string name="determine_title">清理日志数据</string>
+    <string name="cleaning_wait" >清理[上次抓取留下]的日志文件</string>
+    <string name="determine_cleaning">确定清理</string>
+    <string name="cleaning_ok" >清理成功</string>
+    <string name="cleaning_info" >上次抓取的数据已经成功清理</string>
+    <string name="see_share" >查看并分享日志</string>
+    <string name="no_log_title" >木有数据</string>
+    <string name="no_log" >当前木有日志数据</string>
+    <string name="no_list" >日志查看列表</string>
+    <string name="select_all_label" >全部选择</string>
+    <string name="multiple_choice_preference_button_done">完成</string>
+    <string name="deselect_all">全部取消</string>
+    <string name="select_all">全部选择</string>
+    <string name="life_index_s_temp">体感温度</string>
+
+    <string name="index_state_chn__moderate">良</string>
+    <string name="index_state_chn_dust_good">优</string>
+    <string name="index_state_chn_hazardous">严重污染</string>
+    <string name="index_state_chn_unhealthy">中度污染</string>
+    <string name="index_state_chn_unhealthy_for_sensitive_groups">轻度污染</string>
+    <string name="index_state_chn_very_unhealthy">重度污染</string>
+    <string name="weather_state_01">多云</string>
+    <string name="weather_state_02">阴</string>
+    <string name="weather_state_03">阵雨</string>
+    <string name="weather_state_04">雷阵雨</string>
+    <string name="weather_state_05">雷阵雨伴有冰雹</string>
+    <string name="weather_state_06">雨夹雪</string>
+    <string name="weather_state_07">小雨</string>
+    <string name="weather_state_08">中雨</string>
+    <string name="weather_state_09">大雨</string>
+    <string name="weather_state_10">暴雨</string>
+    <string name="weather_state_11">大暴雨</string>
+    <string name="weather_state_12">特大暴雨</string>
+    <string name="weather_state_13">阵雪</string>
+    <string name="weather_state_14">小雪</string>
+    <string name="weather_state_15">中雪</string>
+    <string name="weather_state_16">大雪</string>
+    <string name="weather_state_17">暴雪</string>
+    <string name="weather_state_18">雾</string>
+    <string name="weather_state_19">冻雨</string>
+    <string name="weather_state_20">沙尘暴</string>
+    <string name="weather_state_21">小到中雨</string>
+    <string name="weather_state_22">中到大雨</string>
+    <string name="weather_state_23">大到暴雨</string>
+    <string name="weather_state_24">暴雨到大暴雨</string>
+    <string name="weather_state_25">大暴雨到特大暴雨</string>
+    <string name="weather_state_26">小到中雪</string>
+    <string name="weather_state_27">中到大雪</string>
+    <string name="weather_state_28">大到暴雪</string>
+    <string name="weather_state_29">浮尘</string>
+    <string name="weather_state_30">扬沙</string>
+    <string name="weather_state_301">雨</string>
+    <string name="weather_state_302">雪</string>
+    <string name="weather_state_31">强沙尘暴</string>
+    <string name="weather_state_32">浓雾</string>
+    <string name="weather_state_33">雪</string>
+    <string name="weather_state_49">强浓雾</string>
+    <string name="weather_state_53">霾</string>
+    <string name="weather_state_54">中度霾</string>
+    <string name="weather_state_55">重度霾</string>
+    <string name="weather_state_56">严重霾</string>
+    <string name="weather_state_57">大雾</string>
+    <string name="weather_state_58">特强浓雾</string>
+    <string name="weather_state_99">无</string>
+
+    <string name="notificationpanel_button">通知按钮</string>
+    <string name="head_button">通知栏顶栏按钮</string>
+
+
+    <string name="shortcut_celer">一键加速</string>
+    <string name="shortcut_lock">一键锁屏</string>
+    <string name="bases_versions">普通版</string>
+    <string name="donate_versions">捐赠版</string>
+
+    <string name="alert_error_title">版本不平匹配</string>
+    <string name="alert_error_number">检测到</string>
+    <string name="alert_error_number_summary">版本过高或者过低,导致无法使用自定义功能</string>
+    <string name="alert_error_action">版本还原</string>
+    <string name="alert_error_action_pk">已还原至默认版本,重启设备生效</string>
+    <string name="alert_error_action_restart">重启设备</string>
+
+    <string name="root_title">获取ROO权限失败!</string>
+    <string name="root_summary">无法正常获取ROOT权限,建议你打开Magisk手动赋予ROOT权限</string>
+    <string name="root_ok">手动赋予ROOT权</string>
+    <string name="root_no">重试</string>
+
+    <string name="function_limit">功能限制</string>
+    <string name="function_limit_summary">你并非捐赠版用户,或者尚未解锁.部分功能将受到限制!</string>
+    <string name="later">以后再说</string>
+    <string name="once">捐赠/解锁</string>
+    <string name="function_limit_Home">当前你使用的是普通版\n或者你尚未解锁捐赠版\n部分功能将受到限制!\n\n点击[确定]进行捐赠或者解锁捐赠版!</string>
+    <string name="keyguard_statusbar">隐藏锁屏状态栏</string>
+    <string name="keyguard_Biometrics">重启后直接生物解锁</string>
+    <string name="keyguard_statusbar_name">锁屏</string>
+    <string name="google_name">谷歌服务</string>
+    <string name="google_name_remove">删除谷歌服务</string>
+    <string name="google_name_remove_summary">删除谷歌服务可为系统分区换来更多的剩余空间</string>
+
+    <string name="action_lock">一键锁屏</string>
+    <string name="action_ram">一键清理</string>
+    <string name="action_outdoors">户外模式</string>
+    <string name="action_reboot">重启菜单</string>
+    <string name="action_fall">悬浮球</string>
+    <string name="action_pop">屏幕助手</string>
+    <string name="action_all">全屏模式</string>
+    <string name="action_reminder">同时按住电源键和音量减小键7秒可重启手机.</string>
+    <string name="permission_no">尚未解锁!点击解锁按钮进行解锁</string>
+        <string name="permission_data">解锁数据下载</string>
+
+        <string name="permission_data_finish">下载完成,开始写入数据</string>
+        <string name="permission_data_error">由于网络波动问题下载失败,切换线路重新下载</string>
+        <string name="permission_data_proceed">正在写入权限数据,手机将重新启动</string>
+
+        <string name="permissions_version">权限版本</string>
+        <string name="permissions_donate">捐赠</string>
+        <string name="permissions_donate_state">捐赠状态</string>
+        <string name="permissions_unlock_state">解锁状态</string>
+        <string name="permissions_unlock">解锁</string>
+        <string name="permissions_number">序列号</string>
+      <string name="edge_name_select">LEO曲面按钮选择</string>
+        <string name="edge_name_select_summey">选择你需要显示在Leo曲面侧屏上的按钮</string>
+        <string name="edge_name_color">设置Leo曲面文本颜色</string>
+        <string name="edge_name_size">设置Leo曲面文本大小</string>
+        <string name="edge_name_info">更新Leo曲面设置</string>
+    <string name="update_ak_update">有新的版本</string>
+    <string name="update_ak_update_sunerry">有新版可用</string>
+    <string name="security_reminder">重要提示</string>
+    <string name="ota_resume">继续</string>
+    <string name="ota_cancel">取消下载</string>
+    <string name="ota_resume_state">继续下载更新包</string>
+    <string name="donation_instructions">捐赠须知</string>
+    <string name="donation_instructions_info">
+      1.捐赠属于自愿行为,没有任何强制性.捐赠之后概不以各种理由退款
+      \n2.捐赠版属于我们对捐赠者的感谢所提供的更多福利
+      \n3.如需体验请使用普通版
+      \n4.如果你无法接受可无需捐赠
+      \n\n注\n为保障你的权益请仔细阅读以条款捐赠代表你接受以上条款</string>
+    <string name="app_down">正在下载</string>
+    <string name="backup_complete_toast">备份完成,备份数据存储在\n%1$s</string>
+    <string name="restore_complete_toast">数据恢复完成</string>
+    <string name="restore_confirm_dialog_title">确认数据恢复</string>
+    <string name="restore_confirm_message">你已选择恢复以前的LeoTweaks数据.\n\n<b>这将更改你现有的设置.\n\n</b>\n\n LeoTweaks数据恢复完成将关闭,并且重新打开LeoTweaks,具体恢复时间将根据你的设置数量决定.\n\n点击『确定』继续恢复数据\n点击『取消』终止此次数据恢复</string>
+    <string name="choose_backup_dialog_title">选择你需要恢复的数据</string>
+    <string name="no_backup_dialog_title">没有在你的设备上找到LeoTweaks的备份数据</string>
+    <string name="no_backup_dialog_message">现在创建一个新的备份如何?</string>
+    <string name="backup_restore_dialog_title">数据备份</string>
+    <string name="exitApp_title">关闭程序?</string>
+    <string name="exitApp_off">关闭</string>
+    <string name="exitApp_home">回到桌面</string>
+</resources>

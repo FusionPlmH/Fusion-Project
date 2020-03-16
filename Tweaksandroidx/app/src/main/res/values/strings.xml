@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name_summary">ROM个性化设置，在线更新，程序管理</string>
+    <string name="leo_light_theme">Salt.MainTheme.Light</string>
+    <string name="leo_dark_theme">Salt.MainTheme.Dark</string>
+    <string name="status_unavailable">无法获取</string>
+    <string name="get_error">@string/status_unavailable</string>
+    <string name="index_state_chn__moderate">良</string>
+    <string name="index_state_chn_dust_good">优</string>
+    <string name="index_state_chn_hazardous">严重污染</string>
+    <string name="index_state_chn_unhealthy">中度污染</string>
+    <string name="index_state_chn_unhealthy_for_sensitive_groups">轻度污染</string>
+    <string name="index_state_chn_very_unhealthy">重度污染</string>
+    <string name="weather_state_01">多云</string>
+    <string name="weather_state_02">阴</string>
+    <string name="weather_state_03">阵雨</string>
+    <string name="weather_state_04">雷阵雨</string>
+    <string name="weather_state_05">雷阵雨伴有冰雹</string>
+    <string name="weather_state_06">雨夹雪</string>
+    <string name="weather_state_07">小雨</string>
+    <string name="weather_state_08">中雨</string>
+    <string name="weather_state_09">大雨</string>
+    <string name="weather_state_10">暴雨</string>
+    <string name="weather_state_11">大暴雨</string>
+    <string name="weather_state_12">特大暴雨</string>
+    <string name="weather_state_13">阵雪</string>
+    <string name="weather_state_14">小雪</string>
+    <string name="weather_state_15">中雪</string>
+    <string name="weather_state_16">大雪</string>
+    <string name="weather_state_17">暴雪</string>
+    <string name="weather_state_18">雾</string>
+    <string name="weather_state_19">冻雨</string>
+    <string name="weather_state_20">沙尘暴</string>
+    <string name="weather_state_21">小到中雨</string>
+    <string name="weather_state_22">中到大雨</string>
+    <string name="weather_state_23">大到暴雨</string>
+    <string name="weather_state_24">暴雨到大暴雨</string>
+    <string name="weather_state_25">大暴雨到特大暴雨</string>
+    <string name="weather_state_26">小到中雪</string>
+    <string name="weather_state_27">中到大雪</string>
+    <string name="weather_state_28">大到暴雪</string>
+    <string name="weather_state_29">浮尘</string>
+    <string name="weather_state_30">扬沙</string>
+    <string name="weather_state_301">雨</string>
+    <string name="weather_state_302">雪</string>
+    <string name="weather_state_31">强沙尘暴</string>
+    <string name="weather_state_32">浓雾</string>
+    <string name="weather_state_33">雪</string>
+    <string name="weather_state_49">强浓雾</string>
+    <string name="weather_state_53">霾</string>
+    <string name="weather_state_54">中度霾</string>
+    <string name="weather_state_55">重度霾</string>
+    <string name="weather_state_56">严重霾</string>
+    <string name="weather_state_57">大雾</string>
+    <string name="weather_state_58">特强浓雾</string>
+    <string name="weather_state_99">无</string>
+    <string name="life_index_s_temp">体感温度</string>
+    <string name="stock_log">官网固件更新日志</string>
+    <string name="stock_log_sumarry">查看三星官方更新日志,仅供参考</string>
+    <string name="SecurityPatch_summary">Android安全补丁级别</string>
+    <string name="nav_tab_tools">用户中心</string>
+    <string name="userName_inform">通知、在线升级、工具设置、解锁等</string>
+    <string name="skip_tracks_category">锁屏音乐切换</string>
+    <string name="fota_bulking">增量版本</string>
+    <string name="donate_state">捐赠状态</string>
+    <string name="unlock_state">解锁状态</string>
+    <string name="sn_number">序列号</string>
+    <string name="ota_name">系统升级</string>
+    <string name="ota_name_summary">LeoROM在线更新服务</string>
+    <string name="money_donate">大于或者等于&#160;[50 RMB]&#160;</string>
+    <string name="money_donate88">大于或者等于&#160;[88 RMB]&#160;</string>
+    <string name="donate_info_regulation">
+\n\n即可升级到捐赠VIP版本,届时你将获得OTA更新以及更多个性化功能
+\n\n1.捐赠后将捐赠记录截图发送至我们提供两个QQ中的任意一个
+\n\n2.如果两个QQ没有及时回复请加入QQ群寻问群内管理员我们将会在看到信息后联系你
+\n\n3.如果没有立即回复请耐心等待(大家都有工作,在忙)
+
+        \n\n👏感谢你的的慷慨解囊以及对我们的支持
+\n\n\n捐赠完成点击[复制]按钮将基本信息复制并且发送给我们,以便我们为你添加捐赠数据</string>
+    <string name="pay_info">请输入以下信息</string>
+    <string name="qq_info">QQ</string>
+    <string name="qq_name">QQ昵称</string>
+    <string name="pay_way">微信或者支付宝</string>
+    <string name="pay_input">请输入</string>
+    <string name="pay_error">不能为空</string>
+    <string name="pay_name">捐赠成功</string>
+    <string name="copy_info">请输入完信息之后点击复制并连同将你的[捐赠截图]一起发送给我们,以便我们为你做捐赠数据,数据做好就可以直接解锁且不用重新刷机哦</string>
+    <string name="donation_equities">捐赠权益</string>
+    <string name="donation_instructions">捐赠须知</string>
+    <string name="donation_instructions_info">"1.捐赠属于自愿行为,没有任何强制性.捐赠之后概不以各种理由退款
+      \n2.捐赠版属于我们对捐赠者的感谢所提供的更多福利
+      \n3.如需体验请使用普通版
+      \n4.如果你无法接受可无需捐赠
+      \n\n注\n为保障你的权益请仔细阅读以条款捐赠代表你接受以上条款"</string>
+    <string name="alert_info_tltie">温馨提醒!</string>
+    <string name="link_count">硬件连接次数</string>
+    <string name="update_ak_update_sunerry">有新版可用</string>
+    <string name="fota_url">下载线路优选</string>
+    <string name="execute_wait">正在执行,请稍等.....</string>
+    <string name="boot_animation_backups">开机动画已备份到</string>
+    <string name="fota_load">正在加载Fota安装包.....</string>
+    <string name="twrp_s10_info">"需要手动进入TWRP才能成功安装\n在手机重启的同时按住\n[音量+键-Bixby键-电源键]三键同时按住\n直至进入TWRP界面松开即可\n\n如果你已经明白点击[确定]开始执行"</string>
+    <string name="twrp_info">进入TWRP方法</string>
+    <string name="settings">设置</string>
+    <string name="zip_fileexists">文件已存在</string>
+    <string name="zip_fileexists_ok">重新下载</string>
+    <string name="zip_fileexists_no">直接安装</string>
+    <string name="zip_fileexists_info">文件已存在是否重新下载以便覆盖安装,若需更新请重新下载</string>
+    <string name="update_ak">下载安装</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/mq_photo_activity_bg" style="@style/MQMatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_rl" android:background="@color/mq_photo_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height">
+        <ImageView android:id="@id/back_iv" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" android:src="@drawable/mq_ic_back_white" style="@style/MQWrapMatch" />
+        <LinearLayout android:id="@id/folder_ll" android:layout_toRightOf="@id/back_iv" style="@style/MQWrapMatch.Horizontal">
+            <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_tv" android:layout_marginLeft="@dimen/mq_size_level3" android:layout_marginRight="@dimen/mq_size_level1" android:maxEms="7" android:singleLine="true" style="@style/MQWrapMatch" />
+            <ImageView android:id="@id/arrow_iv" android:src="@drawable/mq_ic_gallery_arrow_down" style="@style/MQWrapMatch" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit_tv" android:background="@drawable/mq_selector_btn_photo_send" android:paddingLeft="@dimen/mq_size_level2" android:paddingRight="@dimen/mq_size_level2" android:clickable="true" android:layout_margin="@dimen/mq_size_level2" android:minWidth="80.0dip" android:text="@string/mq_confirm" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+    <GridView android:id="@id/content_gv" android:padding="@dimen/mq_size_level1" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/mq_size_level1" android:verticalSpacing="@dimen/mq_size_level1" android:numColumns="3" android:overScrollMode="never" style="@style/MQMatchMatch" />
+</LinearLayout>

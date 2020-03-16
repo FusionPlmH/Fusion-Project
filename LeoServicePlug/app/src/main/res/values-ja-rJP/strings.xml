@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeoServicePlug</string>
+    <string name = "action_lock">ロック画面をワンクリック</string>
+         <string name = "action_ram">ワンクリックによるクリーンアップ</string>
+         <string name = "action_outdoors">屋外モード</string>
+         <string name = "action_reboot">メニューを再起動します。</string>
+         <string name = "action_fall">サスペンションボール</string>
+         <string name = "action_pop">画面アシスタント</string>
+         <string name = "action_all">全画面モード</string>
+    <string name="action_reminder">電源ボタンと音量ダウンボタンを7秒間押し続けて、電話機を再起動します。</string>
+</resources>

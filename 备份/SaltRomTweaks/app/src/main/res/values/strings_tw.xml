@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="nav_tab_more">More</string>
+	<string name ="nav_tab_custom">Custom</string>
+	<string name="ota_name">Online update</string>
+	<string name="ota_name_summary">LeoROM online update service</string>
+	<string name="default_date_formatA">MMMMdd day</string>
+	<string name="default_date_formatB">dd day</string>
+	<string name="default_date_format">MMMd</string>
+	<string name="java_date_format">Customize JAVA Date Format</string>
+	<string name="grid_floatball">Suspended ball</string>
+	<string name="select_all_label">All Selection</string>
+	<string name="multiple_choice_preference_button_done">carry out</string>
+	<string name="deselect_all">cancel all of them</string>
+	<string name="select_all">All Selection</string>
+	<string name="life_index_s_temp">Temperature</string>
+	<string name="index_state_chn__moderate">good</string>
+	<string name="index_state_chn_dust_good">excellent</string>
+	<string name="index_state_chn_hazardous">Severe pollution</string>
+	<string name="index_state_chn_unhealthy">Moderately polluted</string>
+	<string name="index_state_chn_unhealthy_for_sensitive_groups">Mild pollution</string>
+	<string name="index_state_chn_very_unhealthy">Severe pollution</string>
+	<string name="weather_state_01">partly cloudy</string>
+	<string name="weather_state_02">Yin</string>
+	<string name="weather_state_03">shower</string>
+	<string name="weather_state_04">Thunder shower</string>
+	<string name="weather_state_05">Thunder shower with hail</string>
+	<string name="weather_state_06">Sleet</string>
+	<string name="weather_state_07">Light rain</string>
+	<string name="weather_state_08">Rain</string>
+	<string name="weather_state_09">heavy rain</string>
+	<string name="weather_state_10">rainstorm</string>
+	<string name="weather_state_11">Heavy rain</string>
+	<string name="weather_state_12">Extraordinary heavy rain</string>
+	<string name="weather_state_13">Snow shower</string>
+	<string name="weather_state_14">Light snow</string>
+	<string name="weather_state_15">Medium snow</string>
+	<string name="weather_state_16">Heavy snow</string>
+	<string name="weather_state_17">Blizzard</string>
+	<string name="weather_state_18">fog</string>
+	<string name="weather_state_19">Frozen rain</string>
+	<string name="weather_state_20">Sandstorm</string>
+	<string name="weather_state_21">Small to moderate rain</string>
+	<string name="weather_state_22">Medium to heavy rain</string>
+	<string name="weather_state_23">Heavy rain</string>
+	<string name="weather_state_24">Heavy rain to heavy rain</string>
+	<string name="weather_state_25">Heavy rain to heavy rain</string>
+	<string name="weather_state_26">Small to medium snow</string>
+	<string name="weather_state_27">Medium to heavy snow</string>
+	<string name="weather_state_28">Big to blizzard</string>
+	<string name="weather_state_29">Floating dust</string>
+	<string name="weather_state_30">Yangsha</string>
+	<string name="weather_state_301">rain</string>
+	<string name="weather_state_302">snow</string>
+	<string name="weather_state_31">Strong sandstorm</string>
+	<string name="weather_state_32">Thick fog</string>
+	<string name="weather_state_33">snow</string>
+	<string name="weather_state_49">Strong fog</string>
+	<string name="weather_state_53">haze</string>
+	<string name="weather_state_54">Moderate</string>
+	<string name="weather_state_55">Severe haze</string>
+	<string name="weather_state_56">Seriously</string>
+	<string name="weather_state_57">Heavy fog</string>
+	<string name="weather_state_58">Extra strong fog</string>
+	<string name="weather_state_99">no</string>
+	<string name="notificationpanel_button">Notification button</string>
+	<string name="head_button">Notification bar top bar button</string>
+	<string name="shortcut_celer">One-button acceleration</string>
+	<string name="shortcut_lock">One button lock screen</string>
+	<string name="bases_versions">regular version</string>
+	<string name="donate_versions">Donation version</string>
+    <string name="permission_no"> not yet unlocked! Click the unlock button to unlock </string>
+  <string name="permission_data"> unlock data download </string>
+  <string name="permission_data_finish">download completed, start writing data </string>
+  <string name="permission_data_error">download failed due to network fluctuations, switch line re-download </string>
+  <string name="permission_data_proceed">is writing permission data, the phone will restart</string>
+  <string name="permissions_version"> permission version</string>
+  <string name="permissions_donate">donation</string>
+  <string name="permissions_donate_state">donation status</string>
+  <string name="permissions_unlock_state"> unlock status</string>
+  <string name="permissions_unlock">Unlock</string>
+  <string name="permissions_number">Serial number</string>
+
+	<string name="alert_error_title">Version uneven match</string>
+	<string name="alert_error_number">detected</string>
+	<string name="alert_error_number_summary">Version is too high or too low, making it impossible to use custom features</string>
+	<string name="alert_error_action">Version restore</string>
+	<string name="alert_error_action_pk">Restored to default version, restarting device takes effect</string>
+	<string name="alert_error_action_restart">Reboot the device</string>
+	<string name="root_title">Failed to get ROO permission!</string>
+	<string name="root_summary">Unable to get ROOT permission normally, it is recommended that you open Magisk to manually grant ROOT permission.</string>
+	<string name="root_ok">Manually grant ROOT rights</string>
+	<string name="root_no">Retry</string>
+	<string name="function_limit">Functional limit</string>
+	<string name="function_limit_summary">You are not a donation user or have not yet unlocked. Some features will be limited!</string>
+	<string name="later">talk about it later</string>
+	<string name="once">Donate/unlock</string>
+	<string name="function_limit_Home">Currently you are using the normal version\n or you have not yet unlocked the donation version\n some features will be restricted!\n\nClick [OK] to donate or unlock the donation version!</string>
+	<string name="edge_name_select">LEO surface button selection </string>
+	<string name="edge_name_select_summey">Select the button you want to display on the side screen of the Leo surface </string>
+	<string name="edge_name_color">Set Leo surface text color</string>
+	<string name="edge_name_size">Set the Leo surface text size</string>
+	<string name="edge_name_info">Update Leo Surface Settings</string>
+	<string name="update_ak_update">There is a new version</string>
+	<string name="update_ak_update_sunerry">new version available</string>
+	<string name="security_reminder"> important tips </string>
+	<string name="ota_resume">continue </string>
+	<string name="ota_cancel"> cancel download </string>
+	<string name="ota_resume_state">Continue to download the update package</string>
+	<string name="donation_instructions">donation instructions </string>
+	<string name="donation_instructions_info">"
+1. Donations are voluntary and there is no compulsory. No refund is given for various reasons after donation.
+\n2. The donation version belongs to the more benefits we provide to the donors.
+\n3. For the experience, please use the normal version.
+\n4. If you can't accept it, don't need to donate
+\n\nNote\n To protect your rights, please read carefully the terms and conditions donated on your behalf to accept the above terms"</string>
+	<string name="app_down">Downloading </string>
+
+	<string name="backup_complete_toast"> backup is complete, backup data is stored in\n%1$s</string>
+	<string name="restore_complete_toast"> data recovery is completed </string>
+	<string name="restore_confirm_dialog_title"> confirm data recovery </string>
+	<string name="restore_confirm_message">You have chosen to restore the previous LeoTweaks data.\n\n<b>This will change your existing settings.\n\n</b>\n\n LeoTweaks data recovery will be completed Close and re-open LeoTweaks. The specific recovery time will be determined according to the number of settings you have made.\n\nClick "OK" to continue to restore data\nClick "Cancel" to terminate this data recovery</string>
+	<string name="choose_backup_dialog_title">Select the data you need to recover</string>
+	<string name="no_backup_dialog_title">There is no backup data for LeoTweaks found on your device</string>
+	<string name="no_backup_dialog_message">How about creating a new backup now?</string>
+	<string name="backup_restore_dialog_title">data backup </string>
+	<string name="exitApp_title">Close the program?</string>
+	<string name="exitApp_off">Close</string>
+	<string name="exitApp_home">Back Desktop</string>
+	<string name="backup_file_prefix_date_format" translatable="false">yy-dd-MM_HH:mm</string>
+	<string name="backup_file_suffix" translatable="false">_LeoBackup</string>
+</resources>

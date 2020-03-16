@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2018 Android Ice Cold Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+
+<resources>
+
+
+    <array name="logo_style_drawables">
+        <item>@drawable/ic_leo</item>
+        <item>@drawable/ic_alibaba</item>
+        <item>@drawable/ic_apple_logo</item>
+        <item>@drawable/ic_baidu</item>
+        <item>@drawable/ic_cmcc</item>
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_ios</item>
+        <item>@drawable/ic_linux</item>
+        <item>@drawable/ic_tencent</item>
+        <item>@drawable/ic_telecom</item>
+        <item>@drawable/ic_unicom</item>
+        <item>@drawable/ic_windows</item>
+        <item>@drawable/ic_ubuntu</item>
+        <item>@drawable/ic_ctc_go</item>
+    </array>
+    <string-array name="logo_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>Alibaba</item>
+        <item>Apple</item>
+        <item>Baidu</item>
+        <item>China Mobile</item>
+        <item>Google</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>QQ</item>
+        <item>China Telecom</item>
+        <item>China Unicom</item>
+        <item>Microsoft</item>
+        <item>Ubuntu</item>
+        <item>China Telecom 2</item>
+    </string-array>
+    <string-array name="statusbar_icon_hide_options">
+                <item>rotation</item>
+                <item>HD1</item>
+                <item>HD2</item>
+                <item>alarm</item>
+                <item>mobile data</item>
+                <item>power saving mode</item>
+                <item>airplane mode </item>
+                <item>headset</item>
+                <item>Sound/vibration</item>
+                <item>WIFI</item>
+                <item>bluetooth</item>
+                <item>NFC</item>
+                <item>Battery (official only)</item>
+                <item>cast</item>
+            </string-array> 
+    <string-array name="statusbar_icon_hide_values">
+        <item>rotate</item>
+        <item>ims_volte</item>
+        <item>ims_volte2</item>
+        <item>alarm_clock</item>
+        <item>mobile</item>
+        <item>power_saver</item>
+        <item>airplane</item>
+        <item>headset</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>bluetooth</item>
+        <item>nfc</item>
+        <item>battery</item>
+        <item>cast</item>
+    </string-array> 
+</resources>

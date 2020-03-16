@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/global_gesture" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/three_finger_gesture" android:key="leo_tweaks_three_finger_gesture" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_three_finger_gesture_vibrator_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_three_finger_gesture_vibrator_level" android:summary="@string/vibrator_level_summary" android:dependency="leo_tweaks_three_finger_gesture_vibrator_enable" android:defaultValue="70" app:maxValue="100" app:minValue="30" app:unitsValue="" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/three_finger_gesture_action" android:key="leo_tweaks_three_finger_gesture_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/three_finger_gesture_app" android:key="leo_tweaks_three_finger_gesture_actiona_app" includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

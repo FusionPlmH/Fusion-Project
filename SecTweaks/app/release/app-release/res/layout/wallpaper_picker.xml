@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/wallpaper_view" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" />
+            <EditText android:id="@id/width_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="壁纸宽度" android:inputType="number" />
+            <EditText android:id="@id/height_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="壁纸高度" android:layout_below="@id/width_edit" android:inputType="number" />
+            <Button android:textSize="18.0dip" android:layout_gravity="center" android:id="@id/select_wallpaper" android:minWidth="296.0dip" android:text="选择壁纸" android:layout_below="@id/height_edit" style="@style/MyButton" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

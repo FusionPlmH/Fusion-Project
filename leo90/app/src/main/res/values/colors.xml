@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- Recents Memory bar -->
+    <color name="recents_memory_progress_overall">@color/colorAccent</color>
+    <color name="recents_memory_progress_free">@color/colorPrimary</color>
+    <color name="analog_clock_border_color">#212121</color>
+    <color name="analog_clock_face_color">#FFFFFF</color>
+    <color name="analog_clock_hand_hour_color">#FFFFFF</color>
+    <color name="analog_clock_hand_minute_color">#212121</color>
+    <color name="dark_mode_battery_icon_color_dual_tone_background">#66555555</color>
+    <color name="dark_mode_icon_color_dual_tone_background">#3d000000</color>
+    <color name="dark_mode_icon_color_dual_tone_fill">#79000000</color>
+    <color name="dark_mode_icon_color_single_tone">#99000000</color>
+</resources>

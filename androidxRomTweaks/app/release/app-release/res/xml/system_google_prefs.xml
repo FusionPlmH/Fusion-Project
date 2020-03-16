@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/google_name" android:key="leo_Google_Category">
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/google_service" android:key="leo_install_google_service" android:summary="@string/google_other_download_sumarry" />
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/google_name_remove" android:key="leo_google_remove" android:summary="@string/google_name_remove_summary" />
+        <SwitchPreference android:title="@string/freeze_goole_service" android:key="leo_freeze_google_service" android:defaultValue="true" />
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/google_optimize" android:key="leo_optimize_google_service" android:summary="@string/google_optimize_sumarry" />
+        <com.leo.salt.preference.SaltSettingCardPreference />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="软件" android:key="leo_fluid_Category">
+        <com.leo.salt.preference.SaltSettingPreference android:title="流体手势安装卸载" android:key="leo_fluid_service" />
+        <com.leo.salt.preference.SaltSettingPreference android:title="字体组合包安装卸载" android:key="leo_fonts_service" android:summary="几十种字体可选" />
+        <com.leo.salt.preference.SaltSettingCardPreference />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/model_mode" android:key="leo_model_Category">
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/model_mod" android:key="leo_model_service" />
+        <com.leo.salt.preference.SaltSettingCardPreference />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="EdXposed" android:key="leo_EdXposed_Category">
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/edx_1" android:key="leo_EdXposed_service_install" android:summary="@string/edx_2" />
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/edx_3" android:key="leo_EdXposed_service_patch" android:summary="@string/edx_4" />
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/edx_5" android:key="leo_EdXposed_service_Uninstaller" />
+        <com.leo.salt.preference.SaltSettingCardPreference />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/fingerprint_mod" android:key="leo_fingerprint_Category">
+        <com.leo.salt.preference.SaltSettingPreference android:title="@string/fingerprint_mod" android:key="leo_fingerprint" android:summary="@string/fingerprint_mod_sumarry" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

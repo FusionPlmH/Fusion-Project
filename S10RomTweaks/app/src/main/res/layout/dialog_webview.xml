@@ -1,0 +1,36 @@
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:indeterminateTint="?colorAccent"
+        android:indeterminateTintMode="src_in"
+        android:progressTint="?colorAccent"/>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:scrollbars="none"/>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

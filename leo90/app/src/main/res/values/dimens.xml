@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="battery_level_padding_start">3.0dip</dimen>
+</resources>

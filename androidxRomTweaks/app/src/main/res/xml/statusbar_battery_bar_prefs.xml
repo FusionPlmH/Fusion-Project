@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:key="statusbar_battery_bar_location"
+        android:title="@string/statusbar_battery_bar_location"
+        android:defaultValue="0"
+        android:entryValues="@array/battery_bar_values"
+        android:entries="@array/battery_bar_entries" />
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:key="statusbar_battery_bar_style"
+        android:title="@string/statusbar_battery_bar_style"
+        android:defaultValue="0"
+        android:entryValues="@array/battery_bar_style_values"
+        android:entries="@array/battery_bar_style_entries" />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+
+        android:key="battery_bar_thickness"
+
+        android:title="@string/battery_bar_thickness"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/thickness_title"
+        android:summary="@string/seekbar_text_sumarry"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_battery_bar_animate"
+        android:title="@string/statusbar_battery_bar_animate"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_battery_bar_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xFFFFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_battery_bar_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_battery_bar_charging_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xFF00FF00"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_battery_bar_charging_color"/>
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_battery_bar_lowwarning_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xFFFF6600"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_battery_bar_lowwarning_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_battery_bar_gradient_color_enabled"
+        android:title="@string/statusbar_battery_bar_gradient_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+    android:title="@string/statusbar_battery_bar_low_color"
+    salt:lightnessSlider="true"
+    android:defaultValue="0xFFFF4444"
+    salt:density="12"
+    salt:alphaSlider="true"
+    android:key="statusbar_battery_bar_low_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_battery_bar_high_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xFF99CC00"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_battery_bar_high_color"/>
+</PreferenceScreen>

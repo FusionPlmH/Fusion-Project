@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="电池图标" android:selectable="false" />
+
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/battery_model_entries" android:title="电量图标切换" android:key="main_battery" android:defaultValue="0" android:entryValues="@array/battery_model_values"  />
+    <com.tweaks.leo.preference.CustomBatteryPreference android:title="自定义电池组" android:key="custombattery_preference" android:summary="选择更多的电池组同样你也可以下载更多的电池组.若是你对我们提供电池组不满意,你还可以自己动手自行自制喜爱的电量图标" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="电量百分比" android:key="display_battery_percentage"  android:defaultValue="true" android:summaryOn="启用" android:summaryOff="禁用" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="隐藏官方电池图标" android:key="leo_tweaks_disable_stock_battery_icon"  android:defaultValue="false" android:summaryOn="启用" android:summaryOff="禁用" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="电量颜色设置" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="自定义颜色" android:key="leo_tweaks_battery_allow_standby_charge"  android:defaultValue="false" android:summaryOn="电量图标/百分比可自定义颜色" android:summaryOff="默认颜色" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_battery_random_color"  android:dependency="leo_tweaks_battery_allow_standby_charge" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="图标颜色" android:key="leo_tweaks_battery_standby_color"  app:reverseDependency="leo_tweaks_battery_random_color" android:dependency="leo_tweaks_battery_allow_standby_charge" android:summary="默认颜色:#00000000"   leo:defaultColor="#00000000" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="百分比颜色" android:key="leo_tweaks_battery_text_standby_color"   app:reverseDependency="leo_tweaks_battery_random_color" android:dependency="leo_tweaks_battery_allow_standby_charge" android:summary="默认颜色:#F5FFFFFF"   leo:defaultColor="#F5FFFFFF" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="大小设置" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="百分比文本大小" android:key="leo_tweaks_battery_text_size"  android:summary="左右滑动调节大小" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="电量图标大小" android:key="leo_tweaks_battery_icon_size"  android:summary="左右滑动调节大小" android:defaultValue="60" app:minValue="20" app:maxValue="85" app:unitsValue="sp" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_battery_text_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+</PreferenceScreen>

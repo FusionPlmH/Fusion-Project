@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/global_gestures"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="EnabledFingerGesture"
+        android:title="@string/global_gestures_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="leo_salt_global_finger_count_gestures"
+        android:title="@string/global_gestures_number_fingers"
+        android:defaultValue="3"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/direct_title"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="global_finger_gestures_enable_vibrator_enable"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="global_finger_gestures_enable_vibrator_enable"
+        android:key="leo_salt_global_finger_gestures_enable_vibrator_level"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/global_gestures_screen"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="finger_top_gestures"
+        android:title="@string/global_gestures_up"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="finger_bottom_gestures"
+        android:title="@string/global_gestures_down"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="finger_left_gestures"
+        android:title="@string/global_gestures_left"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+
+    <org.salt.preference.SaltListPreference
+        android:dependency="EnabledFingerGesture"
+        android:key="finger_right_gestures"
+        android:title="@string/global_gestures_right"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+</androidx.preference.PreferenceScreen>

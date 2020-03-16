@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/weather_date" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="@string/clock_date_style" android:key="leo_launcher_weather_date_format" android:defaultValue="MMMd日,EEE" android:entryValues="@array/clock_date_format_entries_values" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/clock_week" android:key="leo_launcher_weather_date_week_display" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.sec.android.daemonapp"/>
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/clock_date_week_entries" android:title="@string/clock_week_style" android:key="leo_launcher_weather_date_week_style" android:defaultValue="0" android:entryValues="@array/clock_date_week_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/date_style_entries" android:title="@string/statusbar_clock_week_orientation" android:key="leo_launcher_weather_date_week_orientation"  android:defaultValue="0" android:entryValues="@array/date_style_values" />
+
+        <com.fusionleo.salt.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="@string/pulldown_lunar_symbol" android:key="leo_launcher_weather_lunar_symbol"  android:defaultValue="1" android:entryValues="@array/symbol_style_values" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/single_off" android:key="leo_launcher_weather_date_br_display" android:defaultValue="true" android:summaryOn="@string/constellation_yes" android:summaryOff="@string/constellation_no" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/weather_lunar" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_weather_lunar" android:key="leo_launcher_weather_lunar" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.sec.android.daemonapp"/>
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/lunar_style_entries" android:title="@string/lunar_style" android:key="leo_launcher_weather_lunar_style" android:dependency="leo_launcher_weather_lunar" android:defaultValue="0" android:entryValues="@array/lunar_style_values" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/constellation" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pulldown_lunar_constellation" android:key="leo_launcher_weather_lunar_constellation" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pulldown_lunar_orientation" android:key="leo_launcher_weather_lunar_constellation_orientation" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+
+
+</PreferenceScreen>

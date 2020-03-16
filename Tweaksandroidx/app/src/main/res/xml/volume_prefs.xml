@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="@string/skip_tracks_category" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="MusicSwitch"
+        android:title="@string/enable_skip_tracks"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="MusicSwitch"
+        android:key="MusicDoubleSwitch"
+        android:title="@string/double_tap_skip_tracks"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="MusicSwitch"
+        android:key="MusicSeek"
+        android:title="@string/time_skip_tracks"
+        android:defaultValue="500"
+        android:min="350"
+        android:max="2000"
+        salt:interval="50"
+        salt:unitsLeft=""
+        salt:unitsRight="ms"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="MusicDoubleSwitch"
+        android:key="MusicDoubleSeek"
+        android:title="@string/time_dc_skip_tracks"
+        android:defaultValue="500"
+        android:min="100"
+        android:max="1000"
+        salt:interval="50"
+        salt:unitsRight="ms"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="MusicSwitch"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="MusicVibrationSwitch"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="MusicVibrationSwitch"
+        android:key="MusicVibrationSeek"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <org.salt.preference.SaltInfoPreference salt:infoTitle="使用帮助" salt:infoMessage="@string/info_skip_tracks" salt:imageBoolean="false"  android:dependency="MusicSwitch"/>
+</androidx.preference.PreferenceScreen>

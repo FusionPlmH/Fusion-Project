@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_carrier" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_carrier" android:key="leo_tweaks_keyguard_carrier" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_carrier_style" android:key="leo_tweaks_keyguard_carrier_style" app:reverseDependency="leo_tweaks_keyguard_carrier" android:defaultValue="false"   android:summaryOn="@string/status_bar_carrier_style_yes" android:summaryOff="@string/status_bar_carrier_style_no" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/show_text_set"/>
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/single_off" android:key="leo_tweaks_keyguard_carrier_single" android:defaultValue="false" app:reverseDependency="leo_tweaks_keyguard_carrier" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/single_size" android:key="leo_tweaks_keyguard_carrier_single_size" android:dependency="leo_tweaks_keyguard_carrier_single" android:summary="@string/seksbar_sumarry" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/multi_size" android:key="leo_tweaks_keyguard_carrier_multi_size" app:reverseDependency="leo_tweaks_keyguard_carrier_single" android:summary="@string/seksbar_sumarry" android:defaultValue="9" app:minValue="5" app:maxValue="10" app:unitsValue="sp" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/text_set" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_keyguard_carrier_font" app:reverseDependency="leo_tweaks_keyguard_carrier" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MyEditTextPreference
+        app:reverseDependency="leo_tweaks_keyguard_carrier"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_keyguard_carrier_string_single"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/status_bar_carrier_string_single" />
+    <com.fusionleo.salt.preference.MyEditTextPreference
+
+        app:reverseDependency="leo_tweaks_keyguard_carrier_single"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_keyguard_carrier_string_multi"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/status_bar_carrier_string_multi" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/status_bar_carrier_color_enabled" android:key="leo_tweaks_keyguard_carrier_color_enabled" app:reverseDependency="leo_tweaks_keyguard_carrier"  android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_keyguard_carrier_random_color" android:dependency="leo_tweaks_keyguard_carrier_color_enabled"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_carrier_color" android:key="leo_tweaks_keyguard_carrier_color" android:summary="@string/white_color" android:dependency="leo_tweaks_keyguard_carrier_color_enabled" app:reverseDependency="leo_tweaks_keyguard_carrier_random_color" leo:defaultColor="#ffffffff" />
+</PreferenceScreen>

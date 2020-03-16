@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/keyguard_action_doubleTap_enabled" android:key="keyguard_action_doubleTap_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/keyguard_action_enabled" android:key="keyguard_action_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_keyguard2_entries" android:title="@string/keyguard_action_style" android:key="keyguard_action_style" android:defaultValue="0" android:entryValues="@array/global_action_keyguard2_values" />
+</PreferenceScreen>

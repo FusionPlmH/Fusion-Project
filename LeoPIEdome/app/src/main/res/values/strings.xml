@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">LeoPIEdome</string>
+    <string name="action_settings">Settings</string>
+    <array name="leo_colors">
+        <item>#DC143C</item>
+        <item>#009900</item>
+        <item>#FF3399</item>
+        <item>#660099</item>
+        <item>#660099</item>
+        <item>#0099FF</item>
+        <item>#CC3333</item>
+        <item>#FF9966</item>
+        <item>#333366</item>
+        <item>#FF0066</item>
+        <item>#9966FF</item>
+        <item>#339999</item>
+        <item>#33FFFF</item>
+        <item>#336600</item>
+        <item>#009966</item>
+        <item>#6600CC</item>
+        <item>#0000FF</item>
+        <item>#FFFF33</item>
+        <item>#3366CC</item>
+    </array>
+    <array name="leo_power_name">
+        <item>@string/hitomi_power_menu_shutdown</item>
+        <item>@string/hitomi_power_menu_restart</item>
+        <item>@string/hitomi_power_menu_quick_reboot</item>
+        <item>@string/hitomi_power_menu_download</item>
+        <item>@string/hitomi_power_menu_recovery</item>
+        <item>@string/hitomi_power_menu_outdoors</item>
+        <item>@string/hitomi_power_menu_flashlight</item>
+        <item>@string/hitomi_power_menu_screenrecord</item>
+        <item>@string/hitomi_power_menu_screenshot</item>
+        <item>@string/hitomi_power_menu_sound</item>
+        <item>@string/hitomi_power_menu_mobiledata</item>
+        <item>@string/hitomi_power_menu_mipop</item>
+        <item>@string/hitomi_power_menu_floating</item>
+        <item>@string/hitomi_power_menu_airplane</item>
+    </array>
+    <array name="leo_reboot_name">
+        <item>@string/hitomi_power_menu_restart</item>
+        <item>@string/hitomi_power_menu_quick_reboot</item>
+        <item>@string/hitomi_power_menu_recovery</item>
+        <item>@string/hitomi_power_menu_download</item>
+    </array>
+
+    <string name="quick_settings_compass_N">北</string>
+        <string name="quick_settings_compass_NE">東北</string>
+        <string name="quick_settings_compass_E">東</string>
+        <string name="quick_settings_compass_SE">東南</string>
+        <string name="quick_settings_compass_S">南</string>
+        <string name="quick_settings_compass_SW">西南</string>
+        <string name="quick_settings_compass_W">西</string>
+        <string name="quick_settings_compass_NW">西北</string>
+        <string name="quick_settings_compass_label">指南針</string>
+        <string name="quick_settings_compass_value">%1$.0f° %2$s</string>
+        <string name="quick_settings_compass_init">正在初始化…</string>
+        <string name="accessibility_quick_settings_compass_off">指南針關閉</string>
+        <string name="accessibility_quick_settings_compass_on">指南針開啟</string>
+        <string name="accessibility_quick_settings_compass_changed_off">指南針已關閉</string>
+        <string name="accessibility_quick_settings_compass_changed_on">指南針已開啟</string>
+        <string name="hitomi_power_menu_shutdown">關閉電源</string>
+        <string name="hitomi_power_menu_restart">重新啟動</string>
+        <string name="hitomi_power_menu_download">線刷模式</string>
+            <string name="hitomi_power_menu_download_sumarry">再次点击可重启到线刷模式</string>
+        <string name="hitomi_power_menu_recovery">卡刷模式</string>
+            <string name="hitomi_power_menu_recovery_sumarry">再次点击可重启到卡刷模式</string>
+        <string name="hitomi_power_menu_outdoors">戶外模式</string>
+        <string name="hitomi_power_menu_flashlight">輔助燈光</string>
+        <string name="hitomi_power_menu_screenrecord">屏幕錄製</string>
+        <string name="hitomi_power_menu_screenshot">屏幕截圖</string>
+        <string name="hitomi_power_menu_sound">​​聲音模式</string>
+        <string name="hitomi_power_menu_mobiledata">移動數據</string>
+        <string name="hitomi_power_menu_floating">懸浮球</string>
+        <string name="hitomi_power_menu_mipop">屏幕助手</string>
+        <string name="hitomi_power_menu_airplane">飛行模式</string>
+        <string name="hitomi_power_menu_quick_reboot">快速重啟</string>
+            <string name="hitomi_power_menu_quick_reboot_sumarry">再次点击可快速重启手机</string>
+            <string name="hitomi_power_menu_wifi">WIFI切换</string>
+        <string name="hitomi_power_menu_name">Hitomi 電源菜單</string>
+        <string name="hitomi_power_menu_leo">Leo 電源菜單</string>
+        <string name="leo_battery_status_charge">充電中</string>
+        <string name="leo_battery_status_discharge">放電</string>
+        <string name="leo_battery_status_charge_no">未充電</string>
+        <string name="leo_battery_status_full">充滿電</string>
+        <string name="leo_battery_status_unknown">未知狀態</string>
+        <string name="leo_battery_health_unknown">未知錯誤</string>
+        <string name="leo_battery_health_good">狀態良好</string>
+        <string name="leo_battery_health_no">電池沒有電</string>
+        <string name="leo_battery_health_risk">電池電壓過高</string>
+        <string name="leo_battery_health_veryrisk">電池過熱</string>
+        <string name="leo_device_info_current">電流:</string>
+        <string name="leo_device_info_voltage">電壓:</string>
+        <string name="leo_device_info_capacity">額定容量:</string>
+        <string name="leo_device_info_idle">空閒</string>
+        <string name="leo_device_info_quantity">電量:</string>
+        <string name="leo_device_info_leodate">MM月dd日,EEE, HH:mm</string>
+        <string name="leo_device_info_wifi_no">WIFI未連接</string>
+        <string name="leo_device_info_wifi_signal">信號:</string>
+        <string name="leo_device_info_alarm_no">鬧鐘未設置</string>
+        <string name="leo_device_info_storage">內置 </string>
+        <string name="leo_network_info_up">上载</string>
+            <string name="leo_network_info_down">下载</string>
+    <string name="leo_battery_info">电池:</string>
+
+    <string name="leo_recents_memory_ram">运行内存</string>
+    <string name="leo_recents_memory_swap">交换存储</string>
+
+</resources>

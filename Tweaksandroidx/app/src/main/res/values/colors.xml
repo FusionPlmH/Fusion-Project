@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/leo_appbg_color</color>
+    <color name="colorAccent">@color/success_stroke_color</color>
+
+    <color name="colorPrimarydark">@color/leo_appbg_color_dark</color>
+    <color name="colorAccentdark">@color/material_red_A300</color>
+    <color name="dark_cardview_bg">#ff292929</color>
+    <color name="leo_appbg_color">#fff2f2f2</color>
+    <color name="pretty">#e2259a</color>
+    <color name="violet">#7800c2</color>
+    <color name="material_deep_teal_500">#008577</color>
+    <color name="settings_default_bg_color">@color/leo_appbg_color</color>
+    <color name="leo_appbg_color_dark">#ff080808</color>
+    <color name="material_red_A300">#ffff5722</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">@color/button_text_color</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">?android:colorAccent</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">@color/material_red_A300</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#d81e06</color>
+    <color name="success_stroke_color">#00c029</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">@color/violet</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="sesl_list_divider_color_light">#ffe6e6e6</color>
+    <color name="list_divider_color">@color/sesl_list_divider_color_light</color>
+    <color name="qsbar_color">#ff252525</color>
+
+</resources>

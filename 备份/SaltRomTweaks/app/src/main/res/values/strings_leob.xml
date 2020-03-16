@@ -1,0 +1,101 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <string name="global_action_splitscreen">split screen</string>
+   <string name="global_action_powermeun">Power menu</string>
+   <string name="global_action_s">SSearch</string>
+   <string name="global_action_screenrecord">screen recording</string>
+   <string name="global_action_screenshot">screenshot</string>
+   <string name="global_action_part_screenshot">partial screenshot</string>
+   <string name="global_action_wifi_code">Connected WLAN password</string>
+   <string name="global_action_leo">@string/app_name</string>
+   <string name="global_action_notification">notification bar</string>
+   <string name="global_action_quick_panel">Quick Settings Panel</string>
+   <string name="global_action_flashlight">Flashlight</string>
+   <string name="global_action_wifi">WLAN switch</string>
+   <string name="global_action_airplane">flight mode</string>
+   <string name="global_action_floating">suspension ball</string>
+   <string name="global_action_outdoors">Outdoor mode</string>
+   <string name="global_action_pop">Screen Assistant</string>
+   <string name="global_action_camera">Start camera</string>
+   <string name="global_action_fullscreen">global screen immersion</string>
+   <string name="global_action_next">next song</string>
+   <string name="global_action_previous">previous song</string>
+   <string name="global_action_play_pause">play pause</string>
+   <string name="global_action_volume">sound mode</string>
+   <string name="global_action_silence">silent mode switching sound mode</string>
+   <string name="global_action_vibrator">Vibrate mode to switch sound mode</string>
+   <string name="global_action_bb_home">Bixby Homepage</string>
+   <string name="global_action_bb_volume">Bixby voice</string>
+   <string name="global_action_last_apps">Switch to the last open program</string>
+   <string name="global_action_kill_progress">Process cleanup</string>
+   <string name="global_action_kill">end the current program</string>
+   <string name="global_action_mobile_data">Mobile Data</string>
+   <string name="global_action_volume_panel">Volume adjustment panel</string>
+   <string name="global_action_clear_notice">Clear all notifications</string>
+   <string name="global_action_apps_manage">Application Management</string>
+   <string name="global_action_wifi_hotspot">WLAN hotspot</string>
+   <string name="global_action_scan">Quick Payment</string>
+
+   <string name="global_action_awaken">wake up screen</string>
+
+   <string name="bg_style_a">single color</string>
+   <string name="bg_style_b">gradient color</string>
+   <string name="bg_style_c">Background Wallpaper</string>
+   <string name="width_wallpaper_size">wallpaper width 0 or not will be the wallpaper default width</string>
+   <string name="height_wallpaper_size">wallpaper height 0 or not will be the wallpaper default height</string>
+   <string name="wallpaper_use">Apply wallpaper</string>
+   <string name="wallpaper_delete">Delete wallpaper</string>
+
+   <string name="wallpaper_power">Power menu background</string>
+   <string name="system_animation">system animation</string>
+   <string name="window_animation">window animation</string>
+   <string name="transition_animation">over animation</string>
+   <string name="animator_duration">animated image expansion time effect</string>
+
+   <string name="battery_bar_hide">Hide</string>
+   <string name="battery_bar_statusbar">Status Bar</string>
+   <string name="battery_bar_topnav">on the navigation bar</string>
+   <string name="battery_bar_bottomnav">under the navigation bar</string>
+   <string name="battery_bar_reg">regular</string>
+   <string name="battery_bar_center">centered</string>
+   <string name="battery_bar_reversed">is right</string>
+   <string name="enabled_check_ota">Are you sure to enable OTA check?\nEnable OTA update check, will restart [LeoTweaks], be sure to do this?</string>
+   <string name="kill_process_title">End process whitelist</string>
+   <string name="kill_process_title_summary">Select the program you need to set as whitelist, click the program to remove from the whitelist</string>
+
+   <string name="bixby_title">Bixby action</string>
+   <string name="bixby_category_title">Bright Bixby Action</string>
+   <string name="bixby_lock_category_title">Lock screen Bixby action</string>
+   <string name="bixby_custom">Custom Bixby Actions</string>
+   <string name="bixby_press">Bixby short press action</string>
+   <string name="bixby_longpress">Bixby long press action</string>
+   <string name="bixby_lock_press">Lock screen Bixby short press action</string>
+   <string name="bixby_lock_longpress">lock screen Bixby long press action</string>
+
+
+   <string name="fingerprint_title">fingerprint slide</string>
+   <string name="fingerprint_gesture">fingerprint swipe gesture</string>
+   <string name="fingerprint_custom">Custom fingerprint swipe gesture</string>
+   <string name="fingerprint_upglide">fingerprint key up gesture</string>
+   <string name="fingerprint_glide">fingerprint key down gesture</string>
+
+   <string name="floatball_name">suspension ball</string>
+   <string name="floatball_start">suspension ball enabled</string>
+   <string name="floatball_icon_style">suspension ball icon selection</string>
+   <string name="floatball_size">suspension ball size</string>
+   <string name="floatball_hide">slide 3 seconds to hide the floating ball</string>
+   <string name="floatball_action">suspension ball action</string>
+   <string name="floatball_click">click on the suspension ball action</string>
+   <string name="floatball_up">Upper floating ball action</string>
+   <string name="floatball_down">slide floating ball action</string>
+   <string name="floatball_left">Left slide ball action</string>
+   <string name="floatball_right">right slide suspension ball action</string>
+
+   <string name="global_gestures">global gestures</string>
+   <string name="global_gestures_custom">Custom global gestures</string>
+   <string name="global_gestures_number_fingers">Set the number of gesture fingers</string>
+   <string name="global_gestures_screen">screen gestures</string>
+   <string name="global_gestures_up">Swipe down from the screen</string>
+   <string name="global_gestures_down">Swipe up from the bottom of the screen</string>
+   <string name="global_gestures_left">Swipe the right from the left side of the screen</string>
+   <string name="update_ak">Update</string>
+</resources>

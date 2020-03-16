@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/vibrator_title" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_status_bar_gestures_vibrator_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_status_bar_gestures_vibrator_level" android:summary="@string/vibrator_level_summary" android:dependency="leo_tweaks_status_bar_gestures_vibrator_enable" android:defaultValue="20" app:maxValue="50" app:minValue="5" app:unitsValue="" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_left_enable_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/status_bar_left_enable" android:key="leo_tweaks_status_bar_left_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/statusbar_click_tilte" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_click_action" android:key="leo_tweaks_status_bar_left_click_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/statusbar_click_action" android:key="leo_tweaks_status_bar_left_click_app" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/statusbar_longclick_tilte" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_longclick_action" android:key="leo_tweaks_status_bar_left_longclick_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/statusbar_longclick_app" android:key="leo_tweaks_status_bar_left_longclick_app" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_right_enable_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/status_bar_right_enable" android:key="leo_tweaks_status_bar_right_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/statusbar_click_tilte" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_click_action" android:key="leo_tweaks_status_bar_right_click_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/statusbar_click_action" android:key="leo_tweaks_status_bar_right_click_app" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/statusbar_longclick_tilte" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_longclick_action" android:key="leo_tweaks_status_bar_right_longclick_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/statusbar_longclick_app" android:key="leo_tweaks_status_bar_right_longclick_app" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_doubletap_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/status_bar_doubletap_tilte" android:key="leo_tweaks_status_bar_doubletap_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/status_bar_doubletap_action" android:key="leo_tweaks_status_bar_doubletap_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/status_bar_doubletap_app" android:key="leo_tweaks_status_bar_doubletap_app" includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

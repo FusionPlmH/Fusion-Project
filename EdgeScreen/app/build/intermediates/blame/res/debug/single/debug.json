@@ -1,0 +1,262 @@
+[
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_wifi.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_wifi.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout_cocktail_salt_panel.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\layout\\cocktail_salt_panel.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_leo.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\ic_leo.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_leo.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_leo.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_mi_pop.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mi_pop.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\xml_edge_single_plus.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\xml\\edge_single_plus.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_autostarts.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_autostarts.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_bowling.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_bowling.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_apps_edge_bg.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\apps_edge_bg.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_apps.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_apps.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_img.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_img.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_money.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_money.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_clear.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\src\\main\\res\\drawable-xxhdpi\\ic_clear.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_img.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_img.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_wifi.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_wifi.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_bowling.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_bowling.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_autostarts.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_autostarts.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_mi_pop.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_mi_pop.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings.png.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_apps.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_apps.xml"
+    },
+    {
+        "merged": "D:\\code\\EdgeScreen\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_money.xml.flat",
+        "source": "D:\\code\\EdgeScreen\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_money.xml"
+    }
+]

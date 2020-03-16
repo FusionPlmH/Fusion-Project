@@ -1,0 +1,548 @@
+<resources>
+<string-array name="full_screen_options">
+        <item>@string/full_screen_0</item>
+        <item>@string/full_screen_1</item>
+        <item>@string/full_screen_2</item>
+        <item>@string/full_screen_3</item>
+        <item>@string/full_screen_4</item>
+        <item>@string/full_screen_5</item>
+    </string-array>
+
+    <string-array name="google_services_options">
+        <item>@string/google_services_0</item>
+        <item>@string/google_services_1</item>
+    </string-array>
+
+    <string-array name="GoodLock_entries">
+        <item>Edge Lighting</item>
+        <item>Multitask Menu</item>
+        <item>OneHand Mode</item>
+    </string-array>
+    <string-array name="qq_items">
+        <item>LeoEOM_QQ1群</item>
+        <item>LeoROM_QQ2群</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Desactivar animación</item>
+        <item>Animación 0.2x</item>
+        <item>Animación 0.25x</item>
+        <item>Animación 0.3x</item>
+        <item>Animación 0.4x</item>
+        <item>Animación 0.5x</item>
+        <item>Animación 0.6x</item>
+        <item>Animación 0.7x</item>
+        <item>Animación 0.8x</item>
+        <item>Animación 0.9x</item>
+        <item>Animación 1x</item>
+        <item>Animación 1.5x</item>
+        <item>Animación 2x</item>
+        <item>Animación 3x</item>
+        <item>Animación 5x</item>
+        <item>Animación 10x</item>
+    </string-array>
+
+    <string-array name="wipe_entries">
+        <item>Limpiar Datos</item>
+        <item>Limpiar Cache</item>
+        <item>Limpiar Dalvik</item>
+        <item>Limpiar configuración de Sistema y Datos</item>
+    </string-array>
+    <string-array name="network_items">     
+        <item>Menú de RED</item> 
+        <item>@string/show_dsp_sumarry</item>
+        <item>Menú de red oculta de Samsung</item>   
+    </string-array>
+
+
+    <string-array name="device_info_entries">
+        <item>Dispositivo</item>
+        <item>Android</item>
+        <item>ROM</item>
+        <item>Wifi</item>
+        <item>Alarma</item>
+        <item>Temperatura</item>
+        <item>Almacenamiento</item>
+        <item>Batería</item>
+        <item>Cpu uso</item>
+        <item>Cpu modelo</item>
+        <item>Cpu frequencia</item>
+        <item>Capacidad de Batería</item>
+        <item>Voltaje actual</item>
+    </string-array>
+
+    <string-array name="device_orientation_entries">
+        <item>Alineación central</item>
+         <item>Alineación derecha</item>
+        <item>Alineación izquierda</item>
+    </string-array>
+
+    <string-array name="location_service">
+        <item>AMAP</item>
+        <item>Baidu（Por Defecto）</item>
+    </string-array>
+
+    <string-array name="clock_date_format_entries_values">
+        <item>EEE</item>
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMMM dd</item>
+        <item>MMMM dd- yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>dd</item>
+        <item>dd/MM</item>
+        <item>MM/dd</item>
+        <item>dd-MMM</item>
+        <item>yyyy MM/dd</item>
+        <item>customize</item>
+    </string-array>
+    <string-array name="date_style_entries">
+        <item>Fecha a la derecha</item>
+        <item>Fecha a la izquierda</item>
+    </string-array>
+
+    <string-array name="symbol_style_entries">
+        <item>None</item>
+        <item>,</item>
+        <item>/</item>
+        <item>‖</item>
+        <item>✤</item>
+        <item>*</item>
+        <item>ღ</item>
+        <item>｜</item>
+        <item>∫</item>
+        <item>♪</item>
+        <item>┆</item>
+    </string-array>
+
+    <array name="logo_style_drawables">
+        <item>@drawable/ic_leo</item>
+        <item>@drawable/ic_alibaba</item>
+        <item>@drawable/ic_apple_logo</item>
+        <item>@drawable/ic_baidu</item>
+        <item>@drawable/ic_cmcc</item>
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_ios</item>
+        <item>@drawable/ic_linux</item>
+        <item>@drawable/ic_tencent</item>
+        <item>@drawable/ic_telecom</item>
+        <item>@drawable/ic_unicom</item>
+        <item>@drawable/ic_windows</item>
+        <item>@drawable/ic_ubuntu</item>
+        <item>@drawable/ic_ctc_go</item>
+    </array>
+
+
+    <string-array name="dpi_dialog_items">
+        <item>480 dpi</item>
+        <item>450 dpi</item>
+        <item>420 dpi</item>
+        <item>390 dpi</item>
+        <item>360 dpi</item>
+        <item>330 dpi</item>
+        <item>Personalizar</item>
+    </string-array>
+
+
+    <string-array name="network_traffic_frequency_entries">
+        <item>500 ms</item>
+        <item>1000 ms</item>
+        <item>1500 ms</item>
+        <item>2000 ms</item>
+    </string-array>
+
+    <string-array name="notification_ls_entries">
+        <item>Ninguna acción</item>
+        <item>Luz auxiliar</item>
+        <item>Menú Power</item>
+    </string-array>
+
+    <string-array name="notification_qb_entries">
+        <item>No action</item>
+        <item>Camera</item>
+        <item>Auxiliary Light</item>
+    </string-array>
+
+    <array name="signal_style_drawables">
+        <item>@drawable/stat_sys_signal</item>
+        <item>@drawable/stat_sys_signal_a_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_b_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_c_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_d_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_e_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_f_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_g_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_h_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_i_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_j_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_k_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_l_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_m_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_n_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_o_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_p_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_q_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_r_5_auto_rotate</item>
+    </array>
+
+    <array name="wifi_style_drawables">
+        <item>@drawable/stat_sys_wifi</item>
+        <item>@drawable/stat_sys_wifi_signal_a_4</item>
+        <item>@drawable/stat_sys_wifi_signal_b_4</item>
+        <item>@drawable/stat_sys_wifi_signal_c_4</item>
+        <item>@drawable/stat_sys_wifi_signal_d_4</item>
+        <item>@drawable/stat_sys_wifi_signal_e_4</item>
+        <item>@drawable/stat_sys_wifi_signal_f_4</item>
+        <item>@drawable/stat_sys_wifi_signal_g_4</item>
+        <item>@drawable/stat_sys_wifi_signal_h_4</item>
+        <item>@drawable/stat_sys_wifi_signal_i_4</item>
+        <item>@drawable/stat_sys_wifi_signal_j_4</item>
+        <item>@drawable/stat_sys_wifi_signal_k_4</item>
+        <item>@drawable/stat_sys_wifi_signal_l_4</item>
+        <item>@drawable/stat_sys_wifi_signal_m_4</item>
+        <item>@drawable/stat_sys_wifi_signal_n_4</item>
+        <item>@drawable/stat_sys_wifi_signal_o_4</item>
+    </array>
+
+    <string-array name="battery_bar_entries">
+        <item>Oculta</item>
+        <item>Barra de estado en la parte superior</item>
+        <item>Barra de estado pantalla de bloqueo en la parte superior</item>
+
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Normal</item>
+        <item>Centrada</item>
+    </string-array>
+
+    <string-array name="battery_model_entries">
+        <item>Por defecto</item>
+        <item>Leo Battery </item>
+    </string-array>
+
+    <string-array name="bg_gradient_type_entries">
+        <item>De arriba hacia abajo</item>
+        <item>Gradiente de abajo hacia arriba</item>
+        <item>De izquierda a derecha gradiente</item>
+        <item>De derecha a izquierda gradiente</item>
+        <item>De abajo a la derecha a la parte superior del gradiente izquierdo</item>
+        <item>De abajo a la derecha al gradiente superior derecho</item>
+        <item>De arriba a la izquierda a la parte inferior derecha del gradiente</item>
+        <item>De la parte superior derecha a la parte inferior izquierda del gradiente</item>
+    </string-array>
+
+    <string-array name="bg_three_gradient_model_type_entries">
+        <item>Gradiente lineal</item>
+        <item>Gradiente de radiación</item>
+        <item>Gradiente de pantalla</item>
+    </string-array>
+
+    <string-array name="bg_type_entries">
+        <item>Personalizar color</item>
+        <item>Fondo del fondo de pantalla</item>
+    </string-array>
+
+    <string-array name="clock_date_display_entries">
+        <item>Oculto</item>
+        <item>Pequeño</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="clock_date_style_entries">
+        <item>Normal</item>
+        <item>Minúscula</item>
+        <item>Mayúscula</item>
+    </string-array>
+
+    <string-array name="clock_date_week_entries">
+        <item>Lunes</item>
+        <item>Lunes</item>
+        <item>Uno</item>
+        <item>Semana Japón</item>
+    </string-array>
+
+    <string-array name="clock_details_entries">
+        <item>12 horas</item>
+        <item>12 periodos</item>
+        <item>Constelación</item>
+        <item>Calendario lunar</item>
+        <item>Temporada</item>
+    </string-array>
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>Alibaba</item>
+        <item>Apple</item>
+        <item>Baidu</item>
+        <item>China Mobile</item>
+        <item>Google</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>QQ</item>
+        <item>China Telecom</item>
+        <item>China Unicom</item>
+        <item>Microsoft</item>
+        <item>Ubuntu</item>
+        <item>China Telecom 2</item>
+    </string-array>
+
+    <string-array name="votage_style_entries">
+        <item>Voltaje</item>
+        <item>Corriente</item>
+        <item>Corriente+Voltaje</item>
+    </string-array>
+
+
+    <string-array name="signal_style">
+        <item>Defecto</item>
+        <item>Señal 1</item>
+        <item>Señal 2</item>
+        <item>Señal 3</item>
+        <item>Señal 4</item>
+        <item>Señal 5</item>
+        <item>Señal 6</item>
+        <item>Señal 7</item>
+        <item>Señal 8</item>
+        <item>Señal 9</item>
+        <item>Señal 10</item>
+        <item>Señal 11</item>
+        <item>Señal 12</item>
+        <item>Señal 13</item>
+        <item>Señal 14</item>
+        <item>Señal 15</item>
+        <item>Señal 16</item>
+        <item>Señal 17</item>
+        <item>Señal 18</item>
+    </string-array>
+
+
+
+
+    <string-array name="status_bar_ampm_entries">
+        <item>Deshabilitado</item>
+        <item>pequeño</item>
+        <item>Normal</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="traffic_state_entries">
+        <item>Ocultar estado del tráfico</item>
+        <item>Mostrar velocidad de subida</item>
+        <item>Mostrar velocidad de descarga</item>
+        <item>Mostrar tanto la velocidad de Subida / Descarga</item>
+    </string-array>
+
+    <string-array name="wifi_style">
+        <item>Defecto</item>
+        <item>Wifi 1</item>
+        <item>Wifi 2</item>
+        <item>Wifi 3</item>
+        <item>Wifi 4</item>
+        <item>Wifi 5</item>
+        <item>Wifi 6</item>
+        <item>Wifi 7</item>
+        <item>Wifi 8</item>
+        <item>Wifi 9</item>
+        <item>Wifi 10</item>
+        <item>Wifi 11</item>
+        <item>Wifi 12</item>
+        <item>Wifi 13</item>
+        <item>Wifi 14</item>
+        <item>Wifi 15</item>
+    </string-array>
+    <string-array name="data_usage_style_entries">
+        <item>Izquierda</item>
+        <item>Centro</item>
+        <item>Derecha</item>
+    </string-array>
+    <string-array name="power_items">
+        <item>Apagar</item>
+        <item>Reiniciar</item>
+        <item>Reinicio Rápido</item>
+        <item>Modo Recovery</item>
+        <item>Modo Download</item>
+        <item>Reiniciar SystemUI</item>
+    </string-array>
+
+
+    <array name="network_icon_drawables">
+        <item>@drawable/stat_sys_network_traffic_a_updown</item>
+        <item>@drawable/stat_sys_network_traffic_b_updown</item>
+        <item>@drawable/stat_sys_network_traffic_c_updown</item>
+        <item>@drawable/stat_sys_network_traffic_d_updown</item>
+        <item>@drawable/stat_sys_network_traffic_e_updown</item>
+        <item>@drawable/stat_sys_network_traffic_f_updown</item>
+        <item>@drawable/stat_sys_network_traffic_g_updown</item>
+        <item>@drawable/stat_sys_network_traffic_h_updown</item>
+
+    </array>
+
+    <string-array name="network_icon_style">
+        <item>Defecto</item>
+        <item>Red 1</item>
+        <item>Red 2</item>
+        <item>Red 3</item>
+        <item>Red 4</item>
+        <item>Red 5</item>
+        <item>Red 6</item>
+        <item>Red 7</item>
+    </string-array>
+    <string-array name="clock_style_entries">
+        <item>@string/status_bar_location_left</item>
+        <item>@string/status_bar_location_center</item>
+        <item>@string/status_bar_location_right</item>
+    </string-array>
+    <string-array name="statusbar_view_position_entries">
+        <item>@string/status_bar_location_right</item>
+        <item>@string/status_bar_location_left</item>
+    </string-array>
+
+    <string-array name="statusbar_custom_signal_entries">
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </string-array>
+
+
+
+    <array name="analogclock_style_drawables">
+        <item>@drawable/clock_dial</item>
+        <item>@drawable/analog_clock_dial</item>
+        <item>@drawable/analog_clock_dial1</item>
+        <item>@drawable/analog_clock_dial2</item>
+        <item>@drawable/analog_clock_dial3</item>
+        <item>@drawable/analog_clock_dial4</item>
+        <item>@drawable/analog_clock_dial5</item>
+        <item>@drawable/analog_clock_dial6</item>
+        <item>@drawable/analog_clock_dial7</item>
+        <item>@drawable/analog_clock_dial8</item>
+        <item>@drawable/analog_clock_dial9</item>
+        <item>@drawable/analog_clock_dial10</item>
+    </array>
+    <string-array name="analogclock_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="analogclock_style_entries">
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+    </string-array>
+    <string-array name="font_style_entries">
+        <item>Sistema por defecto</item>
+        <item>Fuente 1</item>
+        <item>Fuente 2</item>
+        <item>Fuente 3</item>
+        <item>Fuente 4</item>
+        <item>Fuente 5</item>
+        <item>Fuente 6</item>
+        <item>Fuente 7</item>
+        <item>Fuente 8</item>
+        <item>Fuente 9</item>
+        <item>Fuente 10</item>
+        <item>Fuente 11</item>
+        <item>Fuente 12</item>
+        <item>Fuente 14</item>
+        <item>Fuente 15</item>
+        <item>Fuente 16</item>
+        <item>Fuente 17</item>
+        <item>Fuente 18</item>
+        <item>Fuente 19</item>
+        <item>Fuente 20</item>
+        <item>Fuente 21</item>
+        <item>Fuente 22</item>
+        <item>Fuente 23</item>
+        <item>Fuente 24</item>
+        <item>Fuente 25(Soporte chino simplificado)</item>
+        <item>Fuente 26(Soporte chino simplificado)</item>
+        <item>Fuente 27(Soporte chino simplificado)</item>
+        <item>Fuente 28(Soporte chino simplificado)</item>
+        <item>Fuente 29(Soporte chino simplificado)</item>
+        <item>Fuente 30(Soporte chino simplificado)</item>
+        <item>Fuente 31(Soporte chino simplificado)</item>
+        <item>Fuente 32(Soporte chino simplificado)</item>
+        <item>Fuente 33(Soporte chino simplificado)</item>
+        <item>Fuente 34(Soporte chino simplificado)</item>
+        <item>Fuente 35(Soporte chino simplificado)</item>
+        <item>Fuente 36 Hitomi(Hecho a medida)</item>
+    </string-array>
+
+
+    <string-array name="global_action_entries">
+        <item>@string/global_action_default</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_home</item>
+        <item>@string/global_action_back</item>
+        <item>@string/global_action_volume1</item>
+        <item>@string/global_action_volume2</item>
+        <item>@string/global_action_mobiledata</item>
+        <item>@string/global_action_localscreenshots</item>
+        <item>@string/global_action_wificode</item>
+        <item>@string/global_action_search</item>
+        <item>@string/global_action_task</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_notificationbar</item>
+        <item>@string/global_action_screenshot</item>
+        <item>@string/global_action_process</item>
+        <item>@string/global_action_killed</item>
+        <item>@string/global_action_recording</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_nextsong</item>
+        <item>@string/global_action_playpause</item>
+        <item>@string/global_action_sound</item>
+        <item>@string/global_action_wifi</item>
+        <item>@string/global_action_powermenu</item>
+        <item>@string/global_action_airplane</item>
+        <item>@string/global_action_upapp</item>
+        <item>@string/global_action_bixvoice</item>
+        <item>@string/global_action_bixhome</item>
+        <item>@string/app_name</item>
+        <item>@string/global_action_outdoors</item>
+        <item>@string/global_action_app</item>
+        <item>@string/global_action_split</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_mipop</item>
+        <item>@string/global_action_floating</item>
+    </string-array>
+    <string-array name="statusbar_icon_hide_options">
+                   <item>Rotación</item>
+        <item>Sim1</item>
+        <item>Sim2</item>
+        <item>Alarma</item>
+        <item>Datos Mobiles</item>
+        <item>Ahorro de energía</item>
+        <item>Avión</item>
+        <item>Auriculares</item>
+        <item>Sonido</item>
+        <item>WIFI</item>
+        <item>Bluetooth</item>
+        <item>NFC</item>
+        <item>Bateria(Only for stock battery)</item>
+        <item>Proyección</item>
+            </string-array> 
+
+</resources>
+

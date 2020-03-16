@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.SaltSettingIconListPreference
+        android:title="@string/statusbar_logo_style"
+        android:key="statusbar_logo_style"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="0"
+   />
+
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:title="@string/statusbar_logo_orientation" android:key="statusbar_logo_orientation"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_view_values"
+        android:entries="@array/statusbar_view_options"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="logo_size"
+        android:title="@string/statusbar_logo_size"
+        android:defaultValue="8"
+        android:min="5"
+        android:max="9"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="start_padding"
+        android:title="@string/statusbar_logo_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="end_padding"
+        android:title="@string/statusbar_logo_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_logo_color_enabled"
+        android:title="@string/statusbar_logo_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_logo_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+
+        android:key="statusbar_logo_color"/>
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_logo_dark_color_enabled"
+        android:title="@string/statusbar_logo_dark_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/tatusbar_logo_dark_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99000000"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_logo_dark_color"/>
+</PreferenceScreen>

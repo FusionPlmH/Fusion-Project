@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/global_gestures" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/global_gestures_custom" android:key="global_finger_gestures_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="5" android:title="@string/global_gestures_number_fingers" android:key="leo_salt_global_finger_count_gestures" android:dependency="global_finger_gestures_enable" android:defaultValue="3" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/direct_title" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="global_finger_gestures_enable_vibrator_enable" android:dependency="global_finger_gestures_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="leo_salt_global_finger_gestures_enable_vibrator_level" android:dependency="global_finger_gestures_enable_vibrator_enable" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/global_gestures_screen" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/global_gestures_up" android:key="finger_top_gestures" android:dependency="global_finger_gestures_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/global_gestures_down" android:key="finger_bottom_gestures" android:dependency="global_finger_gestures_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" salt:isSilent="0" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/global_gestures_left" android:key="finger_left_gestures" android:dependency="global_finger_gestures_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/global_gestures_right" android:key="finger_right_gestures" android:dependency="global_finger_gestures_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+</PreferenceScreen>

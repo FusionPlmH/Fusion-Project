@@ -1,0 +1,19 @@
+<resources>
+
+    <declare-styleable name="Clock">
+        <attr name="amPmStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="showDark" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LeoAnalogClock">
+        <attr name="leo_dial" format="reference" />
+        <attr name="leo_hour" format="reference" />
+        <attr name="leo_minute" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DateView">
+        <attr name="datePattern" format="string" />
+    </declare-styleable>
+</resources>

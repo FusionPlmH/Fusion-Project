@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/device_info_statusbar" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/device_info_statusbar_enabled" android:key="device_info_statusbar_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/device_info_statusbar_style" android:key="Infostatusbarstyle" android:defaultValue="4" android:entryValues="@array/deviceinfo_style_values" />
+    <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/device_info_statusbar_font" android:key="device_info_statusbar_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="20" android:title="@string/device_info_statusbar_size" android:key="statusbarInfosize" android:summary="@string/seekbar_sumarry" android:defaultValue="13" android:min="8" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_devinfo_enabled" android:key="device_info_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/device_info_entries" android:title="@string/qs_devinfo_linenumber" android:key="Infoenabledstyle" android:defaultValue="3" android:entryValues="@array/device_info_values" />
+    <com.leo.salt.preference.SaltSettingListPreference android:entries="@array/data_usage_style_entries" android:title="@string/qs_devinfo_location" android:key="device_info_orientation" android:dependency="Infoenabledstyle" android:defaultValue="2" android:entryValues="@array/data_usage_style_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="20" android:title="@string/qs_devinfo_linenumber" android:key="Infosize" android:summary="@string/seekbar_sumarry" android:defaultValue="13" android:min="8" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo_one" android:key="one">
+        <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/qs_devinfo_one_style" android:key="InfoOnestyle" android:dependency="Infoenabledstyle" android:defaultValue="0" android:entryValues="@array/deviceinfo_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_devinfo_one_font" android:key="device_info_one_font" android:dependency="Infoenabledstyle" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/qs_devinfo_one_color" android:key="device_info_one_color" android:dependency="Infoenabledstyle" android:defaultValue="0xCCFAFAFA" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo_two" android:key="two">
+        <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/qs_devinfo_two_style" android:key="InfoTwostyle" android:dependency="Infoenabledstyle" android:defaultValue="0" android:entryValues="@array/deviceinfo_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_devinfo_two_font" android:key="device_info_two_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/qs_devinfo_two_color" android:key="device_info_two_color" android:dependency="Infoenabledstyle" android:defaultValue="0xCCFAFAFA" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo_three" android:key="Three" android:dependency="Infoenabledstyle">
+        <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/qs_devinfo_three_style" android:key="InfoThreestyle" android:defaultValue="0" android:entryValues="@array/deviceinfo_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_devinfo_three_font" android:key="device_info_three_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/qs_devinfo_three_color" android:key="device_info_three_color" android:defaultValue="0xCCFAFAFA" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo_four" android:key="Four" android:dependency="Infoenabledstyle">
+        <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/qs_devinfo_four_style" android:key="InfoFourstyle" android:defaultValue="0" android:entryValues="@array/deviceinfo_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_devinfo_four_font" android:key="device_info_four_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/qs_devinfo_four_color" android:key="device_info_four_color" android:defaultValue="0xCCFAFAFA" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_devinfo_five" android:key="Five" android:dependency="Infoenabledstyle">
+        <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/deviceinfo_style_entries" android:title="@string/qs_devinfo_five_style" android:key="InfoFivestyle" android:defaultValue="0" android:entryValues="@array/deviceinfo_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_devinfo_five_font" android:key="device_info_five_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/qs_devinfo_five_color" android:key="device_info_five_color" android:defaultValue="0xCCFAFAFA" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

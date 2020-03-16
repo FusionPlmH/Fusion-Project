@@ -1,0 +1,35 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+ >
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppBarLight">
+        <android.support.v7.widget.Toolbar
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?colorPrimary"
+            app:layout_collapseMode="pin"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_navigationicon"
+            android:navigationIcon="@drawable/ic_navigationicon"/>
+    </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/content_main"/>
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

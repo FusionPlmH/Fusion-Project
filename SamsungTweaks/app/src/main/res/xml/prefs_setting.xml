@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/theme" />
+   <com.fusionleo.salt.preference.MyPreference
+            android:key="leo_tweaks_app_theme"
+            android:title="@string/app_theme"/>
+   <com.fusionleo.salt.preference.CardPreferenceBorder  />
+   <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/subtitle" />
+   <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/switch_subtitle" android:key="leo_tweaks_switch_subtitle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+   <com.fusionleo.salt.preference.MyEditTextPreference
+       android:dependency="leo_tweaks_switch_subtitle"
+       android:dialogMessage="@string/custom_text_essage"
+       android:dialogTitle="@string/custom_text_title"
+       android:hint="@string/subtitle_label_hint"
+       android:key="leo_tweaks_subtitle_label"
+       android:persistent="true"
+       android:defaultValue="Fusion Leo"
+       android:title="@string/subtitle_label" />
+   <com.fusionleo.salt.preference.CardPreferenceBorder  />
+   <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_other" />
+   <com.fusionleo.salt.preference.MyPreference
+       android:key="leo_tweaks_app_clear"
+       android:title="@string/app_clear"/>
+   <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/app_launcher_enabled" android:key="leo_tweaks_app_launcher_enabled"  android:summaryOn="@string/app_launcher_enabled_yes" android:summaryOff="@string/app_launcher_enabled_no" android:persistent="false"/>
+   <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/switch_donate" android:key="leo_tweaks_switch_donate" android:defaultValue="false" android:summaryOn="@string/switch_donate_summary" android:summaryOff="@string/switch_donate_summary2" />
+   <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/fab_style" android:key="leo_tweaks_fab_style" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: leo-framework-res.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- webp
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1_0303
+versionInfo:
+  versionCode: '520710'
+  versionName: LeoFramework(P)_V7.0

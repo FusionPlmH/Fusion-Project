@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:key="qs_colock"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="QsClockEnabled"
+        android:title="@string/qs_clock_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="QsDateEnabled"
+        android:title="@string/qs_date_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:key="QsClockFont"
+        android:title="@string/qs_clock_font"
+        android:defaultValue="0"
+        android:dependency="QsClockEnabled"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="QsDataFont"
+        android:title="@string/qs_date_font"
+        android:defaultValue="0"
+        android:dependency="QsDateEnabled"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_clock_china_detail" android:dependency="QsClockEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:key="QsClockDetailEnabled"
+        android:title="@string/qs_clock_china_detail_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsClockDetailEnabled"
+        android:key="QsClockChinaDetailSyle"
+        android:title="@string/qs_clock_china_detail_style"
+        android:defaultValue="0"
+        android:entryValues="@array/qs_detail_values"
+        android:entries="@array/qs_detail_entries" />
+
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsClockDetailEnabled"
+        android:key="QsClockChinaDetailSymbol"
+        android:title="@string/qs_clock_china_detail_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_values"
+        android:entries="@array/symbol_entries"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="QsClockDetailEnabled"
+        android:key="QsClockDetailZoomEnabled"
+        android:title="@string/qs_clock_china_detail_scale"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsClockDetailZoomEnabled"
+        android:key="QsClockChinaDetailZoomScale"
+        android:title="@string/qs_clock_china_detail_ratio"
+        android:defaultValue="0"
+        android:entryValues="@array/scaling_values"
+        android:entries="@array/scaling_entries"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date_week"  android:dependency="QsDateEnabled">
+
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="QsDateWeekEnabled"
+        android:title="@string/qs_date_week_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsDateWeekEnabled"
+        android:key="QsDateWeekStyle"
+        android:title="@string/qs_date_week_style"
+        android:defaultValue="0"
+        android:entryValues="@array/date_week_values"
+        android:entries="@array/date_week_entries"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date_lunar" android:dependency="QsDateEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:key="QsDateLunarEnabled"
+        android:title="@string/qs_date_lunar_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsDateLunarEnabled"
+        android:key="QsDateLunarStyle"
+        android:title="@string/qs_date_lunar_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_setyle_values"
+        android:entries="@array/lunar_setyle_options" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="QsDateLunarEnabled"
+        android:key="QsDateLunarMonthStyle"
+        android:title="@string/qs_date_lunar_month_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_sting_values"
+        android:entries="@array/lunar_sting_options" />
+    <org.salt.preference.SaltMultipleChoicePreference android:title="@string/qs_date_lunar_special"
+        android:key="lunar_style"
+        android:dependency="QsDateLunarEnabled"
+        salt:showSelectAll="false"
+        salt:BroadcastKey="@string/broadcast_qs_clock"
+        salt:multipleChoiceTitles="@array/lunar_style_titles"
+        salt:multipleChoiceKeys="@array/lunar_style_keys"
+        salt:multipleChoiceSummaries="@array/lunar_style_summaries"
+        salt:multipleChoiceDefaults="@array/lunar_style_defaults"
+        salt:choiceSelector="switch_selector"
+        />
+
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

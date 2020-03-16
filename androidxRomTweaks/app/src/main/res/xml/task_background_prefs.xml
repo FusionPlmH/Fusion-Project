@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/task_bg"/>
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="recents_bg_enabled"
+        android:title="@string/task_bg_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_style"
+        android:title="@string/bgv_mode"
+        android:defaultValue="0"
+        android:entryValues="@array/bg_style_values"
+        android:entries="@array/bg_style_entries" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bgv_single_color_gategory" android:key="only_bg_color">
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_enabled"
+        android:title="@string/bgv_single_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x00000000"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_color"/>
+</com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bgv_gradient_color_gategory" android:key="gradient_color">
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_gradient_type"
+        android:title="@string/bgv_gradient_color_style"
+        android:defaultValue="0"
+        android:entryValues="@array/bg_three_gradient_model_type_values"
+        android:entries="@array/bg_three_gradient_model_type_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_enabled"
+        android:key="leo_salt_recents_bg_gradient_radius"
+        android:title="@string/bgv_gradient_color_radius"
+        android:defaultValue="480"
+        android:min="480"
+        android:max="1600"
+        salt:interval="1"
+        salt:unitsLeft=""
+        salt:unitsRight=" R"
+        />
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_gradient_style"
+        android:title="@string/bgv_gradient_color_mode"
+        android:defaultValue="0"
+        android:entryValues="@array/bg_gradient_type_values"
+        android:entries="@array/bg_gradient_type_entries"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_enabled"
+        android:title="@string/bgv_gradient_color_a"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_one_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_enabled"
+        android:title="@string/bgv_gradient_color_b"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_two_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_enabled"
+        android:title="@string/bgv_gradient_color_c"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_thee_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_six_enabled"
+        android:title="@string/bgv_gradient_color_start_f"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_six_enabled"
+        android:title="@string/bgv_gradient_color_d"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_four_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_six_enabled"
+        android:title="@string/bgv_gradient_color_e"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_five_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_six_enabled"
+        android:title="@string/bgv_gradient_color_f"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99252525"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_six_color"/>
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_enabled"
+        android:key="leo_salt_recents_bg_dashed_radius"
+        android:title="@string/dashed_radius_title"
+        android:defaultValue="20"
+        android:min="1"
+        android:max="65"
+        salt:interval="1"
+        salt:unitsLeft="@string/radius_title"
+        salt:unitsRight=" R"
+        />
+</com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bgv_dashed" android:key="dashed">
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="recents_bg_enabled"
+        android:title="@string/dashed_title"
+        android:key="recents_bg_dashed_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_dashed_enabled"
+        android:title="@string/dashed_color_title"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x6033b5e5"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_dashed_color"/>
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_dashed_enabled"
+        android:key="leo_salt_recents_bg_dashed_thickness"
+        android:title="@string/dashed_thickness_title"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="30"
+        salt:interval="1"
+        salt:unitsLeft="@string/thickness_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_dashed_enabled"
+        android:key="leo_salt_recents_bg_dashed_width"
+        android:title="@string/dashed_width_title"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="30"
+        salt:interval="1"
+        salt:unitsLeft="@string/width_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_dashed_enabled"
+        android:key="leo_salt_recents_bg_dashed_gap"
+        android:title="@string/dashed_gop_title"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="30"
+        salt:interval="1"
+        salt:unitsLeft="@string/gop_title"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bgv_wallpaper" android:key="wallpaper">
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_wallpaper_color_enabled"
+        android:title="@string/bgv_color_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="recents_bg_wallpaper_color_enabled"
+        android:title="@string/bgv_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xffffffff"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="recents_bg_wallpaper_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_wallpaper_alpha_enabled"
+        android:title="@string/bgv_alpha_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_wallpaper_alpha_enabled"
+        android:key="leo_salt_recents_bg_wallpaper_alpha"
+        android:title="@string/bgv_alpha"
+        android:defaultValue="155"
+        android:min="0"
+        android:max="255"
+        salt:interval="1"
+        salt:unitsLeft="@string/alpha_res"
+        salt:unitsRight=" Alpha"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="recents_bg_enabled"
+        android:key="recents_bg_wallpaper_blur_enabled"
+        android:title="@string/bgv_blur_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="recents_bg_wallpaper_blur_enabled"
+        android:key="leo_salt_recents_bg_wallpaper_blur_style"
+        android:title="@string/bgv_blur"
+        android:defaultValue="15"
+        android:min="5"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft="@string/blur_res"
+        salt:unitsRight=" R"
+        />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

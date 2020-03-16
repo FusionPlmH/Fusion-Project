@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="发布日期"
+        android:textSize="18dp"
+        android:id="@+id/rom_raw_date"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ota版本"
+        android:textSize="18dp"
+        android:id="@+id/ota_versions" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ota日期"
+        android:textSize="18dp"
+        android:id="@+id/ota_date" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="推送截止时间"
+        android:textSize="18dp"
+        android:textColor="#7C4DFF"
+        android:id="@+id/ota_stop_date" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="是否开始推送"
+        android:textSize="18dp"
+        android:textColor="#009688"
+        android:id="@+id/ota_push" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="更新日志"
+        android:textSize="15dp"
+        android:id="@+id/change_log" />
+
+</LinearLayout>

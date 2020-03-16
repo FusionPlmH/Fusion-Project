@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/apps_category_drawer">
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/apps_blur_shadow" android:key="blur_shadow" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingChooseSwitchPreference android:title="@string/apps_drawer_carrier" android:key="drawer_carrier" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" salt:clickValues="1" />
+        <com.leo.salt.preference.SaltSettingChooseSwitchPreference android:title="@string/apps_drawer_card" android:key="drawer_card" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" salt:clickValues="0" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/apps_category_donate" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/apps_network_check" android:key="network_check" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/apps_checkupdates" android:key="checkupdates" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <SwitchPreference android:key="checkuapkspdates" android:defaultValue="false" />
+    <Preference android:title="@string/apps_shortcut" android:key="leo_shortcut" android:summary="@string/apps_shortcut_summary" />
+    <SwitchPreference android:persistent="false" android:key="leo_tools_launcher_enabled" />
+    <SwitchPreference android:title="一言显示为天气" android:key="checkuaweatherpkspdates" android:defaultValue="false" android:summaryOn="已经将一言显示为天气如果天气未定位将为空" android:summaryOff="没有收到最新通知时将主页上的一言显示为当前天气" />
+    <SwitchPreference android:title="一言复制分享" android:key="checkuaweatherpkspdatdfdses" android:defaultValue="false" android:summaryOn="禁用复制一言时附带的出处" android:summaryOff="复制一言时附带出处" />
+</PreferenceScreen>

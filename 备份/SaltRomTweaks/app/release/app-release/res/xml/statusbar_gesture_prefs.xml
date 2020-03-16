@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="vibrator_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="vibrator_level" android:dependency="vibrator_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_longpress" android:key="longPress_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_longpress_style" android:key="LongPress" android:dependency="longPress_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_slide" android:key="slide_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_left_slide" android:key="LeftSlide" android:dependency="slide_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_right_slide" android:key="RightSlide" android:dependency="slide_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_left_click" android:key="LeftActionEnabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_left_click_style" android:key="LeftAction" android:dependency="LeftActionEnabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_right_click" android:key="RightActionEnabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_right_click_style" android:key="RightAction" android:dependency="RightActionEnabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+</PreferenceScreen>

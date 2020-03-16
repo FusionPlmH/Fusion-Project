@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sv_index"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?Global_Divider"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+
+            card_view:cardUseCompatPadding="true"
+           >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="状态栏"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold" />
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:numColumns="1"
+                    android:paddingBottom="15dp"
+                    android:verticalSpacing="2dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/select_statusbar_mode"
+                        android:layout_alignBottom="@+id/select_statusbar_mode"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/select_statusbar_mode"
+                        android:text="主题模式"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/select_statusbar_mode"
+                        style="@style/MyListButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="主题模式" />..
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+     >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="通知栏"
+                        android:id="@+id/notificationbar_bar"
+                        android:textColor="?colorAccent"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"/>
+
+
+
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_pulldown"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pulldown_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/select_pulldown_mode"
+                        android:layout_alignBottom="@+id/select_pulldown_mode"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/select_pulldown_mode"
+                        android:text="主题模式"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/select_pulldown_mode"
+                        style="@style/MyListButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="主题模式" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+         >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="最近任务"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"
+                   />
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_task"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/select_task_mode"
+                        android:layout_alignBottom="@+id/select_task_mode"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/select_task_mode"
+                        android:text="主题模式"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/select_task_mode"
+                        style="@style/MyListButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="主题模式" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="锁定屏幕"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_keyguard"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/select_lockscreen_mode"
+                        android:layout_alignBottom="@+id/select_lockscreen_mode"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/select_lockscreen_mode"
+                        android:text="主题模式"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/select_lockscreen_mode"
+                        style="@style/MyListButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="主题模式" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+         >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="电源菜单"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_power"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/select_power_mode"
+                        android:layout_alignBottom="@+id/select_power_mode"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/select_power_mode"
+                        android:text="主题模式"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/select_power_mode"
+                        style="@style/MyListButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="14dp"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:text="主题模式" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="通信‖桌面"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_launcher"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/select_home_mode"
+                    android:layout_alignBottom="@+id/select_home_mode"
+                    android:layout_marginEnd="11dp"
+                    android:layout_toStartOf="@+id/select_home_mode"
+                    android:text="主题模式"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/select_home_mode"
+                    style="@style/MyListButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="14dp"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="主题模式" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="按键手势"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_keys"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="系统微调"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_system"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:verticalSpacing="2dp"
+                    android:numColumns="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

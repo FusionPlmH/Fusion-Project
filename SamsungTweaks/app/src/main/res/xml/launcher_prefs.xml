@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_layout" />
+    <PreferenceScreen android:title="@string/launcher_layout_tilte" android:summary="@string/launcher_layout_tilte_sumarry">
+        <intent android:targetPackage="com.sec.android.app.launcher" android:targetClass="com.android.launcher3.home.HomeModeChangeActivity" />
+    </PreferenceScreen>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_effect_tilte" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/launcher_effect_entries" android:title="@string/launcher_effect" android:key="leo_tweaks_launcher_effect" android:defaultValue="0" android:entryValues="@array/launcher_effect_values"/>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_icon_sink_tilte" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_icon_sink" android:key="leo_tweaks_launcher_icon_sink" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.sec.android.app.launcher"/>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+
+
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/vibrator_title" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_launcher_doubletap_vibrator" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_launcher_doubletap_vibrator_level" android:dependency="leo_tweaks_launcher_doubletap_vibrator" android:summary="@string/vibrator_level_summary" android:defaultValue="70" app:minValue="30" app:maxValue="100" app:unitsValue="" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_uptap_tilte" />
+
+        <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_uptap" android:key="leo_tweaks_launcher_uptap" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/launcher_uptap_action" android:key="leo_tweaks_launcher_uptap_action"  android:defaultValue="107" android:entryValues="@array/notification_shortcut_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/launcher_uptap_app" android:key="leo_tweaks_launcher_uptap_app"  includeSearch="true" setSeparatorString="\###" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_downtap_tilte" />
+        <com.fusionleo.salt.preference.MyPreferenceAlerts android:key="LaunchDisplay"  android:summary="@string/leo_tweaks_launcher_downtap" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_downtap" android:key="leo_tweaks_launcher_downtap" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/launcher_downtap_action" android:key="leo_tweaks_launcher_downtap_action"  android:defaultValue="107" android:entryValues="@array/notification_shortcut_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/launcher_downtap_app" android:key="leo_tweaks_launcher_downtap_app"  includeSearch="true" setSeparatorString="\###" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_doubletap_tilte" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_doubletap" android:key="leo_tweaks_launcher_doubletap" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/launcher_doubletap_action" android:key="leo_tweaks_launcher_doubletap_action"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/launcher_doubletap_app" android:key="leo_tweaks_launcher_doubletap_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/launcher_text_color_tilte" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/launcher_text_color_toggle" android:key="leo_tweaks_launcher_text_color_toggle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/launcher_text_color" android:key="leo_tweaks_launcher_text_color"  android:dependency="leo_tweaks_launcher_text_color_toggle" android:summary="@string/white_color" leo:defaultColor="\#ffffffff" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/launcher_text_font" android:key="leo_tweaks_launcher_text_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</PreferenceScreen>

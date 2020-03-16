@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="2"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:background="#66494848"
+        android:orientation="vertical" >
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/pay_alipay"
+            android:id="@+id/pay_alipay"
+            android:text="支付宝付款码"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_collect_alipay"
+            android:id="@+id/collect_alipay"
+            android:text="支付宝收款码"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:text="支付宝扫一扫"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edge_alipay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:drawableTop="@drawable/scan_alipay"
+            android:fontFamily="sec-roboto-light"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:text="微信扫一扫"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/scan_weixin"
+            android:id="@+id/edge_wechat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:text="官网"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_www"
+            android:id="@+id/edge_www"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:text="LeoTweaks"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_leo"
+            android:id="@+id/edge_leo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:fontFamily="sec-roboto-light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:id="@+id/edge_apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sec-roboto-light"
+            android:gravity="bottom"
+            android:padding="5dp"
+            android:text="by:Leo不咸的盐巴"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

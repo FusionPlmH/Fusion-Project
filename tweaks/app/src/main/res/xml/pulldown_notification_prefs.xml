@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="‖通知项目‖" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="允许滑动删除系统通知" android:key="leo_tweaks_disable_persistent_notifications"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="‖通知项目‖文本" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="自定义通知项目文本颜色" android:key="leo_tweaks_unlock_notification_colors"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_notification_text_random_color"  android:dependency="leo_tweaks_unlock_notification_colors"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="通知标题颜色" android:key="leo_tweaks_notification_title_text_color" app:reverseDependency="leo_tweaks_notification_text_random_color" android:summary="背景颜色为单独一种颜色（默认值:#fffafafa)" android:dependency="leo_tweaks_unlock_notification_colors" leo:defaultColor="#d9252525" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="通知摘要颜色" android:key="leo_tweaks_notification_summary_text_color" app:reverseDependency="leo_tweaks_notification_text_random_color"  android:summary="背景颜色为单独一种颜色（默认值:#fffafafa)" android:dependency="leo_tweaks_unlock_notification_colors" leo:defaultColor="#d9252525" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="允许通知APP标题着色" android:key="leo_tweaks_link_app_name_color"  android:defaultValue="false" android:dependency="leo_tweaks_unlock_notification_colors"  android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="‖通知设置‖文本设置" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用‖通知设置‖颜色自定义" android:key="leo_tweaks_notice_button_text_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="统一设置‖通知设置‖颜色" android:key="leo_tweaks_notice_button_text_all_color_enabled" android:dependency="leo_tweaks_notice_button_text_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="‖通知设置‖统一颜色" android:key="leo_tweaks_notice_button_text_all_color"  android:dependency="leo_tweaks_notice_button_text_all_color_enabled"  android:summary="默认颜色:#d9252525"  leo:defaultColor="\#d9252525"/>
+    <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_notice_button_random_color"  android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_notice_button_text_all_color_enabled"  android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="‖清除‖文本颜色" android:key="leo_tweaks_notice_clear_all_button_text_color" android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_navbar_icon_random_color" android:summary="默认颜色:#d9252525" leo:defaultColor="\#d9252525" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="‖清除‖字体风格" android:key="leo_tweaks_notice_clear_all_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="‖通知设置‖文本颜色" android:key="leo_tweaks_notice_noti_setting_button_text_color" android:summary="默认颜色:#d9252525" leo:defaultColor="\#d9252525" android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_navbar_icon_random_color" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="‖通知设置‖字体风格" android:key="leo_tweaks_notice_noti_setting_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="文本大小" android:key="leo_tweaks_notice_noti_clear_button_text_size" android:summary="左右滑动调节文本大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue=" %" />
+</PreferenceScreen>

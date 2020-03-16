@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="农历设置" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_date_lunar_enabled" android:key="LOCKLUNAR" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/lunar_setyle_options" android:title="@string/qs_date_lunar_style" android:key="LOCKLUNARSTYLE" android:dependency="LOCKLUNAR" android:defaultValue="5" android:entryValues="@array/lunar_setyle_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/lunar_sting_options" android:title="@string/qs_date_lunar_month_style" android:key="LOCKLUNARMONTH" android:dependency="LOCKLUNAR" android:defaultValue="0" android:entryValues="@array/lunar_sting_values" />
+    <com.leo.salt.preference.SaltSettingMultipleChoicePreference android:title="@string/qs_date_lunar_special" android:key="lunar_style" android:dependency="LOCKLUNAR" salt:choiceSelector="switch_selector" salt:multipleChoiceDefaults="@array/lunar_style_defaults" salt:multipleChoiceKeys="@array/ls_lunar_style_keys" salt:multipleChoiceSummaries="@array/lunar_style_summaries" salt:multipleChoiceTitles="@array/lunar_style_titles" salt:showSelectAll="false" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="自定义农历颜色" android:key="LOCKLUNARCOLOR" android:dependency="LOCKLUNAR" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="设置农历颜色" android:key="keyguard_lunar_color" android:dependency="LOCKLUNARCOLOR" android:defaultValue="0xC3FFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="25" android:title="设置农历文本大小" android:key="LOCKLUNARSZIE" android:summary="@string/seekbar_sumarry" android:dependency="LOCKLUNAR" android:defaultValue="15" android:min="5" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_date_lunar_font" android:key="keyguard_lunar_font" android:dependency="LOCKLUNAR" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</PreferenceScreen>

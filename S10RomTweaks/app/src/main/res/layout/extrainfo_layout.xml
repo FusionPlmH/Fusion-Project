@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:background="?MainwindowBG"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+                <android.support.v7.widget.CardView    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+                    >
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="15dp" android:orientation="vertical">
+                                <TextView android:id="@+id/make_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceListItem"
+                                    android:text="生产信息"
+                                    />
+                                <TextView android:id="@+id/make_info"
+                                    android:paddingTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/cpu_title"
+                                    android:layout_alignStart="@id/cpu_title"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                                    android:textColor="?android:attr/textColorSecondary"
+                                    />
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="15dp" android:orientation="vertical">
+                                <TextView android:id="@+id/cpu_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceListItem"
+                                    android:text=""
+                                     />
+                                <TextView android:id="@+id/cpu_info"
+                                    android:paddingTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/cpu_title"
+                                    android:layout_alignStart="@id/cpu_title"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                                    android:textColor="?android:attr/textColorSecondary"
+                                 />
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="15dp" android:orientation="vertical">
+                                <TextView android:id="@+id/storage_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceListItem"
+                                    android:text=""
+                                    />
+                                <TextView android:id="@+id/storage_info"
+                                    android:paddingTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/storage_title"
+                                    android:layout_alignStart="@id/storage_title"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                                    android:textColor="?android:attr/textColorSecondary"
+                                    />
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="15dp" android:orientation="vertical">
+                                <TextView android:id="@+id/screen_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceListItem"
+                                    android:text=""
+                                    />
+                                <TextView android:id="@+id/screen_info"
+                                    android:paddingTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/storage_title"
+                                    android:layout_alignStart="@id/storage_title"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                                    android:textColor="?android:attr/textColorSecondary"
+                                    />
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="15dp" android:orientation="vertical">
+                                <TextView android:id="@+id/battery_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceListItem"
+                                    android:text=""
+                                    />
+                                <TextView android:id="@+id/battery_info"
+                                    android:paddingTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/storage_title"
+                                    android:layout_alignStart="@id/storage_title"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                                    android:textColor="?android:attr/textColorSecondary"
+                                    />
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/link_conut"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+                        <TextView
+                            android:padding="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/link_count"/>
+                </android.support.v7.widget.CardView>
+        </LinearLayout>
+</ScrollView>
+
+
+

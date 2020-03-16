@@ -1,0 +1,123 @@
+<android.support.design.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppBarLight"
+        android:id="@+id/app_bar"
+        app:elevation="0dp"
+        app:layout_scrollFlags="scroll"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="245.0dip">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:contentScrim="?colorCollapsing"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent"
+            app:expandedTitleGravity="center"
+            app:titleEnabled="true">
+            <com.leo.salt.tweaks.view.BannerLayout
+                android:id="@+id/banner"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                app:autoPlayDuration="4000"
+                app:indicatorMargin="10dp"
+
+                app:indicatorPosition="rightBottom"
+                app:indicatorShape="oval"
+                app:indicatorSpace="3dp"
+                app:isAutoPlay="true"
+                app:scrollDuration="600"
+                app:selectedIndicatorColor="?attr/colorPrimary"
+                app:selectedIndicatorHeight="6dp"
+                app:selectedIndicatorWidth="6dp"
+                app:unSelectedIndicatorColor="#99ffffff"
+                app:unSelectedIndicatorHeight="6dp"
+                app:unSelectedIndicatorWidth="6dp"/>
+            <android.support.v7.widget.Toolbar
+                app:contentInsetStartWithNavigation="-10dp"
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:minHeight="?actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            <LinearLayout
+                android:id="@+id/CollapsingToolbarLayoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal"
+                >
+                <com.leo.salt.tweaks.view.widget.GradientColorTextView
+                    android:id="@+id/CollapsingToolbarLayoutSubText"
+                    android:ellipsize="marquee" android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textDirection="locale"
+                    android:maxWidth="250.0dip"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:fontFamily="sec-roboto-condensed"
+                    android:paddingLeft="5dip"
+                    android:text="加载失败(或者天气未定位)"
+                    android:textSize="18dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/navigation"
+        android:id="@+id/nestedScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/content_main"/>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/home_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+
+            android:src="@drawable/ic_add_black_24dp" />
+        <android.support.design.widget.BottomNavigationView
+            app:labelVisibilityMode="labeled"
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            app:itemIconTint="?navColorSelector"
+            app:itemTextColor="?navColorSelector"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

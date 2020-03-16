@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MQMatchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_form_tip_textColor" android:id="@id/tip_tv" android:layout_marginTop="@dimen/mq_size_level4" android:layout_marginRight="@dimen/mq_size_level1" android:layout_marginBottom="@dimen/mq_size_level1" style="@style/MQWrapWrap" />
+    <EditText android:textSize="@dimen/mq_textSize_level2" android:textColor="@color/mq_form_et_textColor" android:textColorHint="@color/mq_form_et_textColorHint" android:id="@id/content_et" android:background="@drawable/mq_selector_input_bg" android:paddingTop="@dimen/mq_size_level4" android:paddingBottom="@dimen/mq_size_level2" android:layout_below="@id/tip_tv" android:textCursorDrawable="@drawable/mq_shape_cursor" style="@style/MQMatchWrap" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="clear"
+        android:enabled="true"
+        android:icon="@drawable/ic_speed"
+        android:shortcutShortLabel="@string/shortcut_celer"
+        android:shortcutLongLabel="@string/shortcut_celer"
+        android:shortcutDisabledMessage="@string/shortcut_celer">
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.leo.salt.tweaks"
+            android:targetClass="com.os.salt.widget.CleanActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="lock"
+        android:enabled="true"
+        android:icon="@drawable/ic_lock_screen"
+        android:shortcutShortLabel="@string/shortcut_lock"
+        android:shortcutLongLabel="@string/shortcut_lock"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.leo.salt.tweaks"
+            android:targetClass="com.os.salt.widget.LockActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="power"
+        android:enabled="true"
+        android:icon="@drawable/ic_poweroff"
+        android:shortcutShortLabel="@string/do_power"
+        android:shortcutLongLabel="@string/do_power"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.leo.salt.tweaks"
+            android:targetClass="com.os.salt.widget.ShutdownActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="restart"
+        android:enabled="true"
+        android:icon="@drawable/ic_restart"
+        android:shortcutShortLabel="@string/do_restart"
+        android:shortcutLongLabel="@string/do_restart"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.leo.salt.tweaks"
+            android:targetClass="com.os.salt.widget.RestartActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

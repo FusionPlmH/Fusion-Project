@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#11888888"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp">
+
+    <TextView
+        android:id="@+id/app_options_title"
+        style="@style/DialogTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apps_select_title" />
+    <com.salt.frame.saltview.OverScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--备份APK-->
+                <LinearLayout
+                    android:id="@+id/app_options_backup_apk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_backup"
+                        android:tint="?colorAccent" />
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_backup_apk" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <!--备份全部-->
+                <LinearLayout
+                    android:id="@+id/app_options_backup_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_backup_data"
+                        android:tint="?colorAccent" />
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_backup_data" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_trim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_clear"
+                        android:tint="?colorAccent" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_clear_cache" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <!--清空数据-->
+                <LinearLayout
+                    android:id="@+id/app_options_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_clear_data"
+                        android:tint="@android:color/holo_red_light"/>
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_clear_data" />
+                </LinearLayout>
+                <!--卸载保留数据-->
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_uninstall_keep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_uninstall"
+                        android:tint="@android:color/holo_red_light" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_uninstall_data" />
+                </LinearLayout>
+                <!--卸载应用-->
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_uninstall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_uninstall"
+                        android:tint="@android:color/holo_red_light"/>
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_uninstall" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_uninstall_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_uninstall"
+                        android:tint="@android:color/holo_red_light"/>
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_uninstall_user" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_app_freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_freeze"
+                        android:tint="?colorAccent" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_freeze" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <!--解冻-->
+                <LinearLayout
+                    android:id="@+id/app_options_app_unfreeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_freeze"
+                        android:tint="?colorAccent" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_unfreeze" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <!--隐藏-->
+                <LinearLayout
+                    android:id="@+id/app_options_app_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding">
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_hide"
+                        android:tint="?colorAccent" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_hide" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <!--复制应用包名-->
+                <LinearLayout
+                    android:id="@+id/app_options_single_only"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/app_options_copay_package"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/apks_space_padding"
+                        android:paddingBottom="@dimen/apks_space_padding"
+                        android:background="@drawable/krscript_item_ripple"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/apks_icon_size"
+                            android:layout_height="@dimen/apks_icon_size"
+                            android:layout_marginLeft="@dimen/apks_icon_right"
+                            android:layout_marginRight="@dimen/apks_icon_right"
+                            android:src="@drawable/app_options_copy"
+                            android:tint="?colorAccent" />
+
+                        <TextView
+                            style="@style/ApksTitleStyle"
+                            android:text="@string/apps_copy_name" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/apks_space"/>
+                    <!--启动应用-->
+                    <LinearLayout
+                        android:id="@+id/app_options_open"
+                        android:paddingTop="@dimen/apks_space_padding"
+                        android:paddingBottom="@dimen/apks_space_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/krscript_item_ripple"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/apks_icon_size"
+                            android:layout_height="@dimen/apks_icon_size"
+                            android:layout_marginRight="@dimen/apks_icon_right"
+                            android:layout_marginLeft="@dimen/apks_icon_right"
+                            android:src="@drawable/app_options_start"
+                            android:tint="?colorAccent" />
+
+                        <TextView
+                            style="@style/ApksTitleStyle"
+                            android:text="@string/apps_start" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/apks_space"/>
+                    <LinearLayout
+                        android:id="@+id/app_options_open_detail"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/apks_space_padding"
+                        android:paddingBottom="@dimen/apks_space_padding"
+                        android:background="@drawable/krscript_item_ripple"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/apks_icon_size"
+                            android:layout_height="@dimen/apks_icon_size"
+                            android:layout_marginRight="@dimen/apks_icon_right"
+                            android:layout_marginLeft="@dimen/apks_icon_right"
+                            android:src="@drawable/app_options_details"
+                            android:tint="?colorAccent" />
+
+                        <TextView
+                            style="@style/ApksTitleStyle"
+                            android:text="@string/apps_info" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/apks_space"/>
+                    <!--在应用商店查看-->
+                    <LinearLayout
+                        android:id="@+id/app_options_app_store"
+                        android:paddingTop="@dimen/apks_space_padding"
+                        android:paddingBottom="@dimen/apks_space_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/krscript_item_ripple"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/apks_icon_size"
+                            android:layout_height="@dimen/apks_icon_size"
+                            android:layout_marginLeft="@dimen/apks_icon_right"
+                            android:layout_marginRight="@dimen/apks_icon_right"
+                            android:src="@drawable/app_options_appstore"
+                            />
+
+                        <TextView
+                            style="@style/ApksTitleStyle"
+                            android:text="@string/apps_appstore" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/apks_space"/>
+                    <LinearLayout
+                        android:id="@+id/app_options_as_system"
+                        android:paddingTop="@dimen/apks_space_padding"
+                        android:paddingBottom="@dimen/apks_space_padding"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/krscript_item_ripple"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/apks_icon_size"
+                            android:layout_height="@dimen/apks_icon_size"
+                            android:layout_marginLeft="@dimen/apks_icon_right"
+                            android:layout_marginRight="@dimen/apks_icon_right"
+                            android:src="@drawable/app_options_as_system"
+                            android:tint="@color/material_red_A300" />
+
+                        <TextView
+                            style="@style/ApksTitleStyle"
+                            android:text="转为系统应用" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/apks_space"/>
+                <LinearLayout
+                    android:id="@+id/app_options_dex2oat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/krscript_item_ripple"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/apks_space_padding"
+                    android:paddingBottom="@dimen/apks_space_padding"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/apks_icon_size"
+                        android:layout_height="@dimen/apks_icon_size"
+                        android:layout_marginLeft="@dimen/apks_icon_right"
+                        android:layout_marginRight="@dimen/apks_icon_right"
+                        android:src="@drawable/app_options_dex2oat"
+                        android:tint="@color/material_deep_teal_500" />
+
+                    <TextView
+                        style="@style/ApksTitleStyle"
+                        android:text="@string/apps_as_dex2oat" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+</com.salt.frame.saltview.OverScrollView>
+</LinearLayout>

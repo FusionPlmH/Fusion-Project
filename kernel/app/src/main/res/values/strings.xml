@@ -1,0 +1,53 @@
+<resources >
+ <string name="app_name">FusionLeoKernel</string>
+    <string name="cannot_get_su">operation failed because of lack of superuser access</string>
+    <string name="ok">I know</string>
+    <string name="data_loading">Load data</string>
+    <string name="sorry">Sorry!!!</string>
+    <string name="devices_no">"It seems that we have not supported your device! If you are wrong with our model, please contact us\n to see the specific support model: https://www.leorom.cc/index.php /kernel.html"</string>
+    <string name="download_no">There is no update available for your device!</string>
+    <string name="model_name">Support list</string>
+    <string name="network_error_name">Use a network connection</string>
+    <string name="network_error">is not connected to the network!\n\ndata loading and kernel downloads need to use network connection</string>
+    <string name="install_kernel">Install the kernel to the device and restart it later</string>
+    <string name="reminder">"If the network fluctuations cause the download to stop; the solution is as follows: \n1. Click the pause button - click the Continue button to implement the breakpoint retransmission\n2. If the appeal plan still cannot be resolved, it is recommended that you use the mobile data download."</string>
+    <string name="download">Download</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="cancel">Cancel</string>
+    <string name="restart"> restart</string>
+    <string name="download_name">Kernel  Download</string>
+    <string name="log">update log</string>
+    <string name="more">View more</string>
+    <string name="app_info">"This is a kernel manager developed by the FusionLeo team. The integrated kernel download and installation is completed in one step. More functions will be developed one after another!\n At the same time compatible with most of the ROMs of Samsung's same model"</string>
+    <string name="rom_info">Not currently LeoROM recommends that you upgrade to LeoROM for better compatibility</string>
+    <string-array name="modelName">
+        <item>SM-G9550</item>
+        <item>SM-G9508</item>
+        <item>SM-G9500</item>
+        <item>SM-N9500</item>
+        <item>SM-G9650</item>
+        <item>SM-G9600</item>
+        <item>SM-G955N</item>
+        <item>SM-G950N</item>
+        <item>SM-G955F</item>
+        <item>SM-G955FD</item>
+        <item>SM-G950F</item>
+        <item>SM-G950FD</item>
+        <item>SM-N950F</item>
+        <item>SM-N950N</item>
+        <item>SM-N950FD</item>
+        <item>SM-G965N</item>
+        <item>SM-G960N</item>
+        <item>SM-G965FD</item>
+        <item>SM-G960FD</item>
+        <item>SM-G965F</item>
+        <item>SM-G960F</item>
+        <item>SCV35</item>
+        <item>SCV36</item>
+        <item>SC-02J</item>
+        <item>SC-03J</item>
+        <item>SM-N9508</item>
+        <item>SM-G9608</item>
+    </string-array>
+</resources>

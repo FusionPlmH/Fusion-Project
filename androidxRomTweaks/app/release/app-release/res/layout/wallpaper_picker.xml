@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_container" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.CardView android:tag="about_cardview" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?cardBackgroundColor" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height" app:cardUseCompatPadding="false">
+            <ImageView android:id="@id/wallpaper_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v7.widget.CardView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/wallpaper_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?cardBackgroundColor" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height" app:cardUseCompatPadding="false">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/width_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/width_wallpaper_size" android:inputType="number" />
+            <EditText android:id="@id/height_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/height_wallpaper_size" android:layout_below="@id/width_edit" android:inputType="number" />
+            <android.support.v7.widget.CardView android:id="@id/select_wallpaper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" app:cardBackgroundColor="?colorAccent" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height" app:cardUseCompatPadding="true">
+                <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="选择壁纸" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

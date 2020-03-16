@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="唤醒屏幕" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="音量键唤醒屏幕" android:key="leo_tweaks_volume_wake_screen" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="USB插入/拔出唤醒屏幕" android:key="leo_tweaks_wake_usb" android:defaultValue="true" android:summaryOn="当插入/拔出USB时唤醒屏幕" android:summaryOff="@string/off" />
+</PreferenceScreen>

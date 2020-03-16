@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="DialogStyleLight" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowMinWidthMajor">94.99999%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="DialogTitleStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0074d4</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="Light.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Light.Wallpaper" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+    </style>
+    <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowMinWidthMajor">94.99999%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="Theme.Dialog.Dark" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowMinWidthMajor">94.99999%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+</resources>

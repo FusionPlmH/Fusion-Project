@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="pager_image1">false</item>
+    <item type="id" name="pager_image2">false</item>
+    <item type="id" name="pager_image3">false</item>
+    <item type="id" name="pager_image4">false</item>
+    <item type="id" name="pager_image5">false</item>
+    <item type="id" name="pager_image6">false</item>
+    <item type="id" name="pager_image7">false</item>
+    <item type="id" name="pager_image8">false</item>
+</resources>

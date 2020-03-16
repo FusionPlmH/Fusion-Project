@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <CheckBox
+        android:id="@+id/select_state"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:clickable="false"
+        android:editable="false"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/ItemIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/select_state"
+        android:maxHeight="45dp"
+        android:maxWidth="45dp"
+        android:minHeight="45dp"
+        android:minWidth="45dp" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/ItemEnabledStateText"
+        android:layout_width="40dp"
+        android:minWidth="40dp"
+        android:textAlignment="textEnd"
+        android:textColor="#0094ff"
+        android:textSize="12dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ItemEnabledStateText"
+        android:id="@+id/ItemWranText"
+        android:layout_width="40dp"
+        android:minWidth="40dp"
+        android:textAlignment="textEnd"
+        android:textColor="#d00"
+        android:textSize="12dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/ItemEnabledStateText"
+        android:id="@+id/center"
+        android:layout_toRightOf="@+id/ItemIcon"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text=""
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:lines="1"
+            android:text=""
+            android:textColor="#8888"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_toLeftOf="@+id/ItemEnabledStateText"
+        android:layout_below="@id/center"
+        android:layout_alignLeft="@+id/center"
+        android:id="@+id/ItemPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:text=""
+        android:textColor="#aaa"
+        android:textSize="11dp" />
+</RelativeLayout>

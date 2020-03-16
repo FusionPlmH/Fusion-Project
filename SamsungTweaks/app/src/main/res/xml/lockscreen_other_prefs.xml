@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/quick_unlock" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/lock_iris" android:key="leo_tweaks_lock_iris" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pin_code" android:key="leo_tweaks_pin_code" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/goole_smart_quick_unlock" android:key="leo_tweaks_goole_smart_quick_unlock" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/biometric_unlock" android:key="leo_tweaks_biometric_unlock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_other" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_rotate" android:key="leo_tweaks_keyguard_rotate" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_statusbar_enabled" android:key="leo_tweaks_statusbar_keyguard" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_dropdown_enabled" android:key="leo_tweaks_disabled_lock_qs" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_charging_text" android:key="leo_tweaks_keyguard_charging_text" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_unlock_text" android:key="leo_tweaks_keyguard_unlock_text" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_wallpaper" />
+    <PreferenceScreen  android:title="@string/keyguard_wallpaper_viewpager" android:summary="@string/keyguard_wallpaper_viewpager_sumarry">
+        <intent android:targetPackage="com.samsung.android.keyguardwallpaperupdator" android:action="android.intent.action.MAIN" android:targetClass="com.samsung.android.keyguardwallpaperupdator.ui.KeyguardPhotoSlideMainActivity" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

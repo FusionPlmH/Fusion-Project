@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/fingerprint_title"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="fingerprint_gesture_quick"
+        android:title="@string/fingerprint_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/fingerprint_gesture"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="fingerprint_gesture_quick"
+        android:key="fingerprint_up_action"
+        android:title="@string/fingerprint_upglide"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="fingerprint_gesture_quick"
+        android:key="fingerprint_down_action"
+        android:title="@string/fingerprint_glide"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:theme="@style/AppBarLight" android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="200.0dip" app:elevation="0.0dip" app:layout_scrollFlags="scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="?colorCollapsing" app:expandedTitleGravity="center" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:statusBarScrim="@android:color/transparent" app:titleEnabled="true">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:navigationIcon="@drawable/ic_navigationicon" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_navigationicon" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

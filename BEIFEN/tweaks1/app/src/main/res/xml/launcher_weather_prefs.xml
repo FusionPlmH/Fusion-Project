@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="日期" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="@string/clock_date_style" android:key="leo_launcher_weather_date_format" android:defaultValue="MMMd日,EEE" android:entryValues="@array/clock_date_format_entries_values" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="星期显示" android:key="leo_launcher_weather_date_week_display" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.sec.android.daemonapp"/>
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/clock_date_week_entries" android:title="@string/clock_week_style" android:key="leo_launcher_weather_date_week_style" android:defaultValue="0" android:entryValues="@array/clock_date_week_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/date_style_entries" android:title="星期显示位置" android:key="leo_launcher_weather_date_week_orientation"  android:defaultValue="0" android:entryValues="@array/date_style_values" />
+        <com.tweaks.leo.preference.CardPreferenceBorder  />
+        <com.tweaks.leo.preference.MyPreferenceCategory android:title="显示格式" />
+        <com.tweaks.leo.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="分隔符号" android:key="leo_launcher_weather_lunar_symbol"  android:defaultValue="1" android:entryValues="@array/symbol_style_values" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="单行显示" android:key="leo_launcher_weather_date_br_display" android:defaultValue="true" android:summaryOn="以单行模式显示日期和农历" android:summaryOff="以双行模式显示日期与农历（需要放大天气插件布局）" />
+        <com.tweaks.leo.preference.CardPreferenceBorder  />
+        <com.tweaks.leo.preference.MyPreferenceCategory android:title="农历" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="显示农历" android:key="leo_launcher_weather_lunar" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.sec.android.daemonapp"/>
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/lunar_style_entries" android:title="@string/lunar_style" android:key="leo_launcher_weather_lunar_style" android:dependency="leo_launcher_weather_lunar" android:defaultValue="0" android:entryValues="@array/lunar_style_values" />
+        <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="星座" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="星座显示" android:key="leo_launcher_weather_lunar_constellation" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="星座显示位置" android:key="leo_launcher_weather_lunar_constellation_orientation" android:defaultValue="false" android:summaryOn="显示在农历右侧" android:summaryOff="显示在农历左侧" />
+
+
+</PreferenceScreen>

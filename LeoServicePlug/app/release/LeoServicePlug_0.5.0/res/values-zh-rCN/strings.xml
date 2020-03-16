@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_all">全屏模式</string>
+    <string name="action_fall">悬浮球</string>
+    <string name="action_lock">一键锁屏</string>
+    <string name="action_outdoors">户外模式</string>
+    <string name="action_pop">屏幕助手</string>
+    <string name="action_ram">一键清理</string>
+    <string name="action_reboot">重启菜单</string>
+    <string name="action_reminder">同时按住电源键和音量减小键7秒可重启手机.</string>
+    <string name="app_name">LeoServicePlug</string>
+</resources>

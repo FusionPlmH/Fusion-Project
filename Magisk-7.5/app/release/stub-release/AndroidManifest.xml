@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.topjohnwu.magisk" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:appComponentFactory="a.a" android:icon="@drawable/ic_launcher" android:installLocation="internalOnly" android:label="Magisk Manager" android:name="a.e" android:supportsRtl="true" android:usesCleartextTraffic="true">
+        <activity android:configChanges="orientation|screenSize" android:name="a.c" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="a.b"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.f" android:screenOrientation="nosensor"/>
+        <activity android:directBootAware="true" android:excludeFromRecents="true" android:exported="false" android:name="a.m" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:directBootAware="true" android:name="a.h">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="a.j"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
+        <service android:directBootAware="false" android:enabled="true" android:exported="true" android:name="a.x" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="a.r" android:process=":remote" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.topjohnwu.magisk.provider" android:exported="false" android:grantUriPermissions="true" android:name="a.p">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+</manifest>

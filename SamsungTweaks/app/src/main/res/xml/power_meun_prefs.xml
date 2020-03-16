@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/power_text_title" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_text" android:key="leo_tweaks_power_text" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/power_text_color" android:key="leo_tweaks_power_text_color" android:dependency="leo_tweaks_power_text" android:summary="@string/white_color"  leo:defaultColor="#FFFFFFFF" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_text_color_link" android:key="leo_tweaks_power_text_color_link" android:dependency="leo_tweaks_power_text" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/power_text_size" android:key="leo_tweaks_power_text_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_power_text" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_power_text_font"   android:dependency="leo_tweaks_power_text" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/power_hint_title" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_hint_layout_disabled" android:key="leo_tweaks_power_hint_layout_disabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_hint" android:key="leo_tweaks_power_hint" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/power_text_color" android:key="leo_tweaks_power_hint_color" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:summary="@string/white_color"  leo:defaultColor="#FFFFFFFF" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_text_color_link" android:key="leo_tweaks_power_hint_color_link" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/power_text_size" android:key="leo_tweaks_power_hint_size" android:summary="@string/seksbar_sumarry"  app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:key="leo_tweaks_power_hint_font"   android:dependency="leo_tweaks_power_hint" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/power_imageview_title" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_imageview" android:key="leo_tweaks_power_imageview" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/power_imageview_color" android:key="leo_tweaks_power_imageview_color" android:dependency="leo_tweaks_power_imageview" android:summary="@string/white_color" leo:defaultColor="#FFFFFFFF" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/power_imageview_size" android:key="leo_tweaks_power_imageview_size" android:dependency="leo_tweaks_power_imageview" android:summary="@string/seksbar_sumarry" android:defaultValue="8" app:minValue="2" app:maxValue="8" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/power_confirm" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_menu_click_state" android:key="leo_tweaks_power_menu_click_state" android:defaultValue="false" android:summaryOn="@string/power_menu_click_state_yes" android:summaryOff="@string/power_menu_click_state_no" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/power_confirm_dialog" android:key="leo_tweaks_power_confirm_dialog" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/power_menu_item_title" />
+    <com.fusionleo.salt.preference.MyMultiSelectPreference android:title="@string/power_menu_item" android:key="leo_tweaks_power_menu_item" android:defaultValue="power,restart,emergencymode" android:dialogTitle="@string/power_menu_item_dialog_title" app:multiEntryList="@array/power_menu_options" app:multiValuesList="@array/power_menu_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/power_menu_order_entries" android:title="@string/power_menu_item_order" android:key="leo_tweaks_power_menu_item_order" android:defaultValue="0" android:entryValues="@array/power_menu_order_values" />
+</PreferenceScreen>

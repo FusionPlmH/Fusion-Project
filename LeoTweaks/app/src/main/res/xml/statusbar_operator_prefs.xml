@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="状态栏运营商" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="状态栏运营商（显示/隐藏）" android:key="leo_tweaks_status_bar_carrier" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="状态栏运营商切换" android:key="leo_tweaks_status_bar_carrier_style" android:dependency="leo_tweaks_status_bar_carrier" android:defaultValue="false"  android:summaryOn="自定义文本" android:summaryOff="运营商" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="显示设置" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="状态栏运营商显示位置" android:key="leo_tweaks_status_bar_carrier_orientation" android:dependency="leo_tweaks_status_bar_carrier" android:defaultValue="1" android:entryValues="@array/statusbar_view_position_values" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="单行显示" android:key="leo_tweaks_status_bar_carrier_single" android:defaultValue="false" android:dependency="leo_tweaks_status_bar_carrier" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="单行文本大小" android:key="leo_tweaks_status_bar_carrier_single_size" android:dependency="leo_tweaks_status_bar_carrier_single" android:summary="左右滑动调节大小" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="双行文本大小" android:key="leo_tweaks_status_bar_carrier_multi_size" app:reverseDependency="leo_tweaks_status_bar_carrier_single" android:summary="左右滑动调节大小" android:defaultValue="9" app:minValue="5" app:maxValue="10" app:unitsValue="sp" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="文本设置" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_status_bar_carrier_font" android:dependency="leo_tweaks_status_bar_carrier" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_status_bar_carrier_style"
+        android:dialogMessage="请输入任意文字或者Emoji表情删除文本为默认运营商"
+        android:dialogTitle="自定义运营商文本"
+        android:hint="例如：不忘初心"
+        android:key="leo_tweaks_status_bar_carrier_string_single"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="自定义文本(单行)" />
+    <com.tweaks.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_status_bar_carrier_style"
+        app:reverseDependency="leo_tweaks_status_bar_carrier_single"
+        android:dialogMessage="请输入任意文字或者Emoji表情删除文本为默认运营商"
+        android:dialogTitle="自定义运营商文本"
+        android:hint="例如：不忘初心"
+        android:key="leo_tweaks_status_bar_carrier_string_multi"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="自定义文本(双行)" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="允许自定义运营商颜色" android:key="leo_tweaks_status_bar_carrier_color_enabled" android:dependency="leo_tweaks_status_bar_carrier"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_status_bar_carrier_random_color" android:dependency="leo_tweaks_status_bar_carrier_color_enabled"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="状态栏运营商颜色" android:key="leo_tweaks_status_bar_carrier_color" app:reverseDependency="leo_tweaks_status_bar_carrier_random_color" android:summary="默认值:#FFFFFFFF" android:dependency="leo_tweaks_status_bar_carrier_color_enabled" leo:defaultColor="#ffffffff" />
+</PreferenceScreen>

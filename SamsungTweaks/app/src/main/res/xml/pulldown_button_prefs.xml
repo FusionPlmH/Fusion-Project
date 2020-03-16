@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/setting_button" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pulldown_setting_button" android:key="leo_tweaks_pulldown_setting_button" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pulldown_button_color_enabled" android:key="leo_tweaks_pulldown_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_pulldown_button_random_color"  android:dependency="leo_tweaks_pulldown_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/pulldown_button_color" android:key="leo_tweaks_pulldown_button_color"  app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_pulldown_button_color_enabled" android:summary="#ff252525" leo:defaultColor="\#ff252525" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/multiuser_button" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/pulldown_multiuser_button" android:key="leo_tweaks_pulldown_multiuser_button" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/qs_max" android:key="leo_tweaks_qs_max" android:summary="@string/seksbar_sumarry" android:defaultValue="6" app:minValue="3" app:maxValue="10" app:unitsValue=" 个" />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/qs_button" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/qs_button_color_enabled" android:key="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/qs_icon_random_color" android:key="leo_tweaks_qs_icon_random_color"  android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/qs_icon_on_color" android:key="leo_tweaks_qs_icon_on_color" app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="#ff00aeff" leo:defaultColor="\#ff00aeff"  />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/qs_icon_off_color" android:key="leo_tweaks_qs_icon_off_color" app:reverseDependency="leo_tweaks_qs_icon_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="#4d252525" leo:defaultColor="\#4d252525"  />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/qs_icon_label_random_color" android:key="leo_tweaks_qs_icon_label_random_color"  android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/qs_icon_label_color" android:key="leo_tweaks_qs_icon_label_color" app:reverseDependency="leo_tweaks_qs_icon_label_random_color" android:dependency="leo_tweaks_qs_button_color_enabled" android:summary="#ff252525" leo:defaultColor="\#ff252525" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style"  android:dependency="leo_tweaks_qs_button_color_enabled" android:key="leo_tweaks_qs_icon_label_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/qs_label_divider" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/qs_label_divider_visible" android:key="leo_tweaks_qs_label_divider_visible" android:dependency="leo_tweaks_qs_button_color_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/qs_label_divider_color" android:key="leo_tweaks_qs_label_divider_color" android:dependency="leo_tweaks_qs_label_divider_visible" android:summary="#33252525" leo:defaultColor="\#33252525" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+</PreferenceScreen>

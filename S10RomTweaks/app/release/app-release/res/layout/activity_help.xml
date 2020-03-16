@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/changelog_app_bar_height" card_view:statusBarScrim="@android:color/transparent">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" card_view:contentScrim="@android:color/transparent" card_view:expandedTitleGravity="center_horizontal" card_view:expandedTitleTextAppearance="@android:color/transparent" card_view:layout_scrollFlags="exitUntilCollapsed|scroll|snap" card_view:statusBarScrim="@android:color/transparent">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:navigationIcon="@drawable/ic_navigationicon" card_view:contentInsetStartWithNavigation="0.0dip" card_view:layout_collapseMode="pin" card_view:navigationIcon="@drawable/ic_navigationicon" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" card_view:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid_top">
+            <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="0.0dip" card_view:cardUseCompatPadding="false">
+                <TextView android:textSize="20.0dip" android:id="@id/help_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:tint="?android:colorAccent" />
+            </android.support.v7.widget.CardView>
+            <Space android:layout_width="fill_parent" android:layout_height="70.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/online_update" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="15.0dip" android:textColor="?colorAccent" android:gravity="center" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/userdonate_inform" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

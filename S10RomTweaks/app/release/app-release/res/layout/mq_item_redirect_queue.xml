@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:padding="@dimen/mq_size_level2" style="@style/MQMatchWrap.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_redirect_queue_anim" android:layout_marginTop="@dimen/mq_size_level2" android:layout_marginBottom="@dimen/mq_size_level2" android:src="@drawable/mq_anim_redirect_queue" style="@style/MQWrapWrap" />
+    <LinearLayout android:gravity="center_horizontal" style="@style/MQMatchWrap.Horizontal">
+        <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_event_gray" android:id="@id/tv_redirect_queue_tip" android:text="@string/mq_queue_leave_msg" style="@style/MQWrapWrap" />
+        <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_colorPrimary" android:id="@id/tv_redirect_queue_leave_msg" android:paddingLeft="@dimen/mq_size_level1" android:paddingRight="@dimen/mq_size_level1" android:clickable="true" android:text="@string/mq_leave_msg" style="@style/MQWrapWrap" />
+    </LinearLayout>
+</LinearLayout>

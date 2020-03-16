@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/keyguard_statusbar_name"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/keyguard_Biometrics" android:key="wake_Biometrics"  android:defaultValue="false"  android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/keyguard_statusbar" android:key="keyguard_statusbar"     android:defaultValue="false"  android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <org.salt.preference.SaltSettingCategoryPreference android:key="CNKeyguardLunar"/>
+    <org.salt.preference.SaltPreference android:key="KeyguardLunar" android:summary="设置LEO锁屏农历" />
+
+</androidx.preference.PreferenceScreen>

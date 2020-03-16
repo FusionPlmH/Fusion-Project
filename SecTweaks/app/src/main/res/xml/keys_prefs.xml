@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/keys_action_toggle_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/keys_action_toggle" android:key="leo_tweaks_keys_action_toggle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/vibrator_title"  android:dependency="leo_tweaks_keys_action_toggle">
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_nav_action_vibratior" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_nav_action_vibratior_level" android:dependency="leo_tweaks_nav_action_vibratior" android:summary="@string/vibrator_level_summary" android:defaultValue="20" app:minValue="5" app:maxValue="50" app:unitsValue="" />
+</com.leo.salt.preference.MyPreferenceCategory>
+        <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/hardware_home" android:dependency="leo_tweaks_keys_action_toggle">
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_home_longpress_action" android:key="leo_tweaks_nav_home_action"  android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_home_longpress_app" android:key="leo_tweaks_nav_home_action_string"   includeSearch="true" setSeparatorString="\###" />
+	 <com.leo.salt.preference.CardPreferenceBorder  />
+</com.leo.salt.preference.MyPreferenceCategory>
+<com.leo.salt.preference.MyPreferenceCategory android:title="@string/hardware_back" android:dependency="leo_tweaks_keys_action_toggle">
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_back_long_action" android:key="leo_tweaks_hardware_back_long_action"  android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_back_long_action_app" android:key="leo_tweaks_hardware_back_long_action_app"  includeSearch="true" setSeparatorString="\###" />
+        <com.leo.salt.preference.CardPreferenceBorder  />
+    </com.leo.salt.preference.MyPreferenceCategory>
+<com.leo.salt.preference.MyPreferenceCategory android:title="@string/hardware_task" android:dependency="leo_tweaks_keys_action_toggle">
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_taskleft_long_action" android:key="leo_tweaks_hardware_taskleft_long_action"  android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_taskleft_long_app" android:key="leo_tweaks_hardware_taskleft_long_app"  includeSearch="true" setSeparatorString="\###" />
+
+    </com.leo.salt.preference.MyPreferenceCategory>
+    </PreferenceScreen>

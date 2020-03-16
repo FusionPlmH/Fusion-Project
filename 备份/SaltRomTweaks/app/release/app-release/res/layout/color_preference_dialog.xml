@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">> <TextView android:textSize="12.0sp" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hex" />
+            <EditText android:id="@id/edit_text" android:visibility="visible" android:hint="Color Value" android:inputType="textNoSuggestions" style="@style/PickerEditText" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="center" android:id="@id/color_preview_container" android:layout_width="fill_parent" android:layout_height="@dimen/default_preview_height">
+                <ImageView android:id="@id/color_preview" android:layout_width="@dimen/oval_notification_size" android:layout_height="@dimen/oval_notification_size" android:src="@android:color/transparent" android:elevation="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:id="@id/lightness_slider_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亮度" />
+    <com.leo.salt.colorpicker.slider.LightnessSlider android:id="@id/lightness_slider" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+    <TextView android:textSize="12.0sp" android:id="@id/alpha_slider_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="透明度" />
+    <com.leo.salt.colorpicker.slider.AlphaSlider android:id="@id/alpha_slider" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+</LinearLayout>

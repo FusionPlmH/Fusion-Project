@@ -1,0 +1,50 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: 7qn4lUdZMle0x0aJN7EV/gWSYPLrXNEz/4oPMJ2njGM=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA-256-Digest: NTMdbxumY9/o/RJt9vV313dXmhQwGW9UzY8Cl7JPWiA=
+
+Name: classes.dex
+SHA-256-Digest: oQiO2DzcKKULRvG6i2tpq738jbwrHVivwh117ZFgyfM=
+
+Name: res/drawable-v24/apps_edge_bg.webp
+SHA-256-Digest: 4sfLEaZe7UnT0KJ9boNbEF7mxvhtjRIIN7upba2Drqc=
+
+Name: res/drawable-v24/ic_apps.xml
+SHA-256-Digest: jwkU3RNm714aKbQMByOTvgvmPXPKHAL/Mk1gEhDtDsw=
+
+Name: res/drawable-v24/ic_lock_screen.xml
+SHA-256-Digest: euBcdp/X+dfFfNsgx9bo2zCtENhqC5pRew387DHoS5k=
+
+Name: res/drawable-xxhdpi-v4/ic_clear.png
+SHA-256-Digest: 9i2u5gcW9z/0XORhVFQ39P8/WgbeAXMxi+jQg7V7JDo=
+
+Name: res/drawable-xxhdpi-v4/ic_donate.xml
+SHA-256-Digest: WnCWkGMBRcGoQ7N6Dk6I4oHpQNFVGTz5rq5ByX6I/y8=
+
+Name: res/drawable-xxhdpi-v4/ic_leo.png
+SHA-256-Digest: zaAcPDF8eRVbPLjE+b0vYsAIFY8/RpjlopyFbItQRhc=
+
+Name: res/drawable-xxxhdpi-v4/ic_fusion.xml
+SHA-256-Digest: rcmitjb9yyUFfXQYjd5j0574ngaghrDtNHL0dJb8VRA=
+
+Name: res/drawable-xxxhdpi-v4/ic_wifi.xml
+SHA-256-Digest: yZXZmcTRysmsPMAjuynvI3EG+Z8UTmpd40Kg9gWAmmA=
+
+Name: res/drawable-xxxhdpi-v4/scan_alipay.xml
+SHA-256-Digest: rxFvzwqMo2GWLuHq/wwkkDlzmXgcWqubrZoQSvKUyUg=
+
+Name: res/drawable-xxxhdpi-v4/scan_weixin.xml
+SHA-256-Digest: Y+2AmPPVgouua94O2jufchNXvEuASjV5Ss3YLKm9cdI=
+
+Name: res/layout/cocktail_salt_panel.xml
+SHA-256-Digest: /iRPHj5Ol588NRDPYA8napDjlkYzrFJHqPiuLb+wdYM=
+
+Name: res/xml/edge_single_plus.xml
+SHA-256-Digest: gSIaWLVA+f53VK+rRQRmk6DrnF51nu3SJRP/2UBeMN0=
+
+Name: resources.arsc
+SHA-256-Digest: hHXLlS2R1J8iN99S10LRNJlpjVEALQcowsRg3w586/M=
+

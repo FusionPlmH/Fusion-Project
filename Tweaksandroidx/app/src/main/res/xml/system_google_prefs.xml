@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/google_name"
+        android:key="leo_Google_Category">
+        <org.salt.preference.SaltPreference
+            android:title="@string/google_service"
+            android:key="leo_install_google_service"
+            android:summary="@string/google_other_download_sumarry"/>
+        <org.salt.preference.SaltPreference
+            android:title="@string/google_name_remove"
+            android:key="leo_google_remove"
+            android:summary="@string/google_name_remove_summary"/>
+        <org.salt.preference.SaltSwitchPreference
+            android:title="@string/freeze_goole_service"
+            android:key="leo_freeze_google_service"
+            android:defaultValue="true"/>
+        <org.salt.preference.SaltPreference
+            android:title="@string/google_optimize"
+            android:key="leo_optimize_google_service"
+            android:summary="@string/google_optimize_sumarry"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="软件"
+        android:key="leo_fluid_Category" >
+        <org.salt.preference.SaltPreference
+            android:title="流体手势安装卸载"
+            android:key="leo_fluid_service" />
+        <org.salt.preference.SaltPreference
+            android:title="字体组合包安装卸载"
+            android:key="leo_fonts_service"
+            android:summary="几十种字体可选"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="@string/model_mode"
+        android:key="leo_model_Category" >
+        <org.salt.preference.SaltPreference
+            android:key="leo_dpi_service" />
+        <org.salt.preference.SaltPreference
+            android:title="@string/model_mod"
+            android:key="leo_model_service" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="Magisk"
+        android:key="leo_magisk_Category" >
+    <org.salt.preference.SaltPreference
+        android:title="@string/magisk_patch_title"
+        android:key="leo_magisk_path"
+        android:summary="@string/magisk_patch_sumarry"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="OneUI 2.0 安装EdXposed过于复杂 如需安装请联系我们指导安装(仅限捐赠用户)"
+        android:key="leo_EdXposed_Category_info"/>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="EdXposed"
+        android:key="leo_EdXposed_Category">
+        <org.salt.preference.SaltPreference
+            android:title="@string/edx_1"
+            android:key="leo_EdXposed_service_install"
+            android:summary="@string/edx_2"/>
+        <org.salt.preference.SaltPreference
+            android:title="@string/edx_3"
+            android:key="leo_EdXposed_service_patch"
+            android:summary="@string/edx_4"/>
+        <org.salt.preference.SaltPreference
+            android:title="@string/edx_5"
+            android:key="leo_EdXposed_service_Uninstaller" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="@string/fingerprint_mod"
+        android:key="leo_fingerprint_Category">
+        <org.salt.preference.SaltPreference
+            android:title="@string/fingerprint_mod"
+            android:key="leo_fingerprint"
+            android:summary="@string/fingerprint_mod_sumarry"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

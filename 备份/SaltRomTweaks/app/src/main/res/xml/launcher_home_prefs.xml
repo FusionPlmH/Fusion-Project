@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference
+        android:key="launcher_blurview_enabled"
+        android:title="@string/launcher_blurview"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        salt:clickValues="0"
+        />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="launcher_blurview_color_enabled"
+        android:title="@string/bgv_color_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+
+        android:title="@string/bgv_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xffffffff"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="launcher_blurview_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="launcher_blurview_alpha_enabled"
+        android:title="@string/bgv_alpha_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="leo_salt_launcher_blurview_alpha"
+        android:title="@string/bgv_alpha"
+        android:defaultValue="255"
+        android:min="100"
+        android:max="255"
+        salt:interval="1"
+        salt:unitsLeft="@string/alpha_res"
+        salt:unitsRight=" Alpha"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="leo_salt_launcher_blurview_style"
+        android:title="@string/bgv_blur"
+        android:defaultValue="15"
+        android:min="5"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft="@string/blur_res"
+        salt:unitsRight=" R"
+        />
+</PreferenceScreen>

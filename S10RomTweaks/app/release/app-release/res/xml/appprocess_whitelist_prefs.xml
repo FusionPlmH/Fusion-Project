@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingAppMultiSelectListPreference android:persistent="false" android:title="@string/kill_process_title" android:key="process_whitelist" android:summary="@string/kill_process_title_summary" /> /> </PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference android:title="@string/launcher_blurview" android:key="launcher_blurview_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" salt:clickValues="0" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/bgv_color_start" android:key="launcher_blurview_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/bgv_color" android:key="launcher_blurview_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/bgv_alpha_start" android:key="launcher_blurview_alpha_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="255" android:title="@string/bgv_alpha" android:key="leo_salt_launcher_blurview_alpha" android:defaultValue="255" android:min="100" salt:interval="1" salt:unitsLeft="@string/alpha_res" salt:unitsRight=" Alpha" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="25" android:title="@string/bgv_blur" android:key="leo_salt_launcher_blurview_style" android:defaultValue="15" android:min="5" salt:interval="1" salt:unitsLeft="@string/blur_res" salt:unitsRight=" R" />
+</PreferenceScreen>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leo.salt.tweaks.view.LeoNavigationDrawer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/firstView"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200.0dip"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "#00000000">
+            <ImageView
+                android:id="@+id/app_cardvgView"
+
+                android:alpha="0.6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:id="@+id/app_carrier"
+                        android:text="运营商"/>
+                    <TextView
+                        android:textSize="18dp"
+                        android:id="@+id/app_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/firstView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/ffas"
+
+        tools:ignore="UnknownId">
+<ListView
+    android:id="@+id/list_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollFooter="@android:color/transparent"
+    android:overScrollHeader="@android:color/transparent"
+    android:layoutAnimation="@anim/listview_anim"
+    ></ListView>
+    </LinearLayout>
+    <!--添加脚布局-->
+    <RelativeLayout
+        android:id="@+id/ffas"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "@color/colorAccentMain">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tools_night"
+                    android:drawableTop="?iconNightMode"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="?stringNightMode"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+                <com.leo.salt.tweaks.view.widget.WeatherView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#fff"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="天气未定位"
+                    android:layout_gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/current_weather"
+                    />
+            </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+</com.leo.salt.tweaks.view.LeoNavigationDrawer >

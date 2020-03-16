@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="Salt.MainTheme.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimarydark</item>
+        <item name="colorPrimaryDark">@color/colorPrimarydark</item>
+        <item name="android:colorBackground">?colorPrimary</item>
+        <item name="cardBgColor">@color/dark_cardview_bg</item>
+        <item name="android:listDivider">?colorPrimary</item>
+        <item name="colorAccent">@color/colorAccentdark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="checkboxStyle">?radioButtonStyle</item>
+        <item name="switchStyle">@style/SaltSwitchLight</item>
+        <item name="navColorSelector">@color/nav_items_selector_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.Light.PopupMenu</item>
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+        <item name="saltTitleColor">?colorPrimary</item>
+        <item name="stroke_view_color">#808080</item>
+        <item name="transparency">@android:color/transparent</item>
+        <item name="spinnerStyle">@android:style/Widget.DeviceDefault.Spinner</item>
+        <item name="android:dialogTheme">@style/DialogDeviceDefault</item>
+        <item name="android:alertDialogTheme">@style/DialogDeviceDefault</item>
+        <item name="alertDialogTheme">@style/DialogDeviceDefault.AppCompatDialog</item>
+    </style>
+    <style name="AppBarDark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="SaltSwitchLight" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/salt_switch_thumb_dark</item>
+        <item name="track">@drawable/salt_switch_track_selector_dark</item>
+    </style>
+    <style name="DialogDeviceDefault" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">95.0%</item>
+    </style>
+</resources>

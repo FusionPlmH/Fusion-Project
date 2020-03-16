@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/settingsbutton" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/settingsbutton_visibility" android:key="leo_tweaks_header_settingsbutton_visibility" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/settingsbutton_click" android:key="leo_tweaks_header_settingsbutton_click"  app:reverseDependency="leo_tweaks_header_settingsbutton_visibility" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/settingsbutton_string" android:key="leo_tweaks_header_settingsbutton_string"  includeSearch="true" setSeparatorString="\###" app:reverseDependency="leo_tweaks_header_settingsbutton_visibility"/>
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/searchbutton" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/searchbutton_bisibility" android:key="leo_tweaks_header_searchbutton_bisibility" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/searchbutton_click" android:key="leo_tweaks_header_searchbutton_click"  app:reverseDependency="leo_tweaks_header_searchbutton_bisibility" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/searchbutton_string" android:key="leo_tweaks_header_searchbutton_string"  includeSearch="true" setSeparatorString="\###" app:reverseDependency="leo_tweaks_header_searchbutton_bisibility"/>
+
+</PreferenceScreen>

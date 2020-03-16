@@ -1,0 +1,134 @@
+<com.android.fusionleo.statusbar.LeoKeyguardWeather
+	android:gravity="bottom|center"
+	android:layout_gravity="bottom|center"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+		<LinearLayout
+
+			android:layout_width="wrap_content"
+			android:layout_height="48dp"
+			android:orientation="horizontal">
+
+			<LinearLayout
+
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+			<com.android.systemui.widget.SystemUITextView
+				android:layout_gravity="bottom"
+				android:gravity="bottom"
+				android:tag="leo_amber_weather_state"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorAccent"
+				android:text="@string/app_name"
+				android:textSize="20dp"
+				/>
+			<com.android.systemui.widget.SystemUITextView
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:tag="leo_amber_weather_current_temp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textSize="40dp"
+				android:textColor="@color/colorAccent"
+				/>
+				<com.android.systemui.widget.SystemUITextView
+					android:layout_marginTop="3dp"
+					android:layout_centerHorizontal="true"
+					android:gravity="bottom|center"
+					android:tag="leo_amber_weather_high_temp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/colorAccent"
+					android:text="@string/app_name"
+					android:textSize="16dp"
+					/>
+			</LinearLayout>
+
+		</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="horizontal">
+        <com.android.systemui.widget.SystemUIImageView
+            android:tag="leo_amber_weather_location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leo_ic_location"
+            />
+		<com.android.systemui.widget.SystemUITextView
+			android:tag="leo_amber_weather_location"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:text="@string/app_name"
+			android:textSize="18dp"
+			/>
+		<com.android.systemui.widget.SystemUITextView
+			android:tag="leo_amber_weather_aqi"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:text="@string/app_name"
+			android:textSize="18dp"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_gravity="center"
+		android:gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<com.android.systemui.widget.SystemUIImageView
+			android:tag="leo_amber_weather_sunrise_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/leo_ic_sunrise"
+
+			/>
+		<com.android.systemui.widget.SystemUITextView
+			android:tag="leo_amber_weather_sunrise"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:text="@string/app_name"
+			/>
+		<com.android.systemui.widget.SystemUIImageView
+			android:layout_marginLeft="3dp"
+			android:tag="leo_amber_weather_sunset_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/leo_ic_sunset"
+			/>
+		<com.android.systemui.widget.SystemUITextView
+			android:tag="leo_amber_weather_sunset"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:text="@string/app_name"
+			android:textSize="15dp"
+			/>
+
+		<com.android.systemui.widget.SystemUITextView
+			android:layout_marginLeft="5dp"
+			android:tag="leo_amber_weather_real_feel_temp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAccent"
+			android:text="@string/app_name"
+			android:textSize="15dp"
+			/>
+	</LinearLayout>
+
+</com.android.fusionleo.statusbar.LeoKeyguardWeather>

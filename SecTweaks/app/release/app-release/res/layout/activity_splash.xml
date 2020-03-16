@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/leoos" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/splash_background" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_marginBottom="45.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="?colorAccent" android:id="@id/root_access_text" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="检查ROOT" />
+        <TextView android:textSize="15.0dip" android:textColor="?colorAccent" android:id="@id/busybox_text" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/checkbusybox" />
+        <TextView android:textSize="18.0dip" android:textColor="?colorAccent" android:id="@id/app_versions" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="版本" />
+        <ProgressBar android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal" />
+    </LinearLayout>
+</FrameLayout>

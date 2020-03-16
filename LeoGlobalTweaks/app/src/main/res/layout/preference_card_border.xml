@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="15.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?MainwindowBG" android:foregroundTint="?MainwindowBG" />
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="?MainwindowBG" android:foregroundTint="?MainwindowBG"  />
+
+
+</FrameLayout>

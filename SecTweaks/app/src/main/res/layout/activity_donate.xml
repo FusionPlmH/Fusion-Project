@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.leo.salt.donate.DonateActivity">
+<include layout="@layout/toolbar_container"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?MainwindowBG"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+
+
+                >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="12dp"
+                    card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:text="@string/donate_why"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/donate_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="180.0dip"
+                            android:text="@string/donate_info" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:text="@string/alipay_wechat"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb35" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb60" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb80" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rmb100" />
+                        </RadioGroup>
+
+                        <Button
+                            android:id="@+id/bt_alipay"
+                            style="@style/MyButton"
+                            android:minWidth="180.0dip"
+                            android:text="@string/alipay_default" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#AE9B9B9B" />
+                        <Button
+                            android:id="@+id/bt_alipay_free"
+                            style="@style/MyButton"
+                            android:minWidth="180.0dip"
+                            android:text="@string/alipay_custom" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#AE9B9B9B" />
+                        <Button
+                            android:id="@+id/bt_weixin"
+                            style="@style/MyButton"
+                            android:minWidth="180.0dip"
+                            android:text="@string/wechat_pay" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="12dp"
+                    card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+                    card_view:cardCornerRadius="@dimen/card_view_radius"
+                    card_view:cardElevation="@dimen/shadow_height">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:text="@string/pulldown_attention"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/donate_info_ota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="180.0dip"
+                            android:textSize="14sp"
+                            android:text="@string/donate_info_ota" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/qq_1"
+                                style="@style/MyListButton"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="13dp"
+                                android:gravity="center"
+                                android:minWidth="100dp"
+                                android:text="@string/qq_dialogue" />
+
+                            <Button
+                                android:id="@+id/qq_2"
+                                style="@style/MyListButton"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="13dp"
+                                android:gravity="center"
+                                android:minWidth="100dp"
+                                android:text="@string/qq_dialogue2" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

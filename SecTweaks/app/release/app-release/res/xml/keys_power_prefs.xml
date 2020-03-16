@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/keys_action_toggle_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/power_action_toggle" android:key="leo_tweaks_power_action_toggle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/hardware_power" android:dependency="leo_tweaks_power_action_toggle">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_power_button_long_action" android:key="leo_tweaks_hardware_power_button_long_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_power_button_long_action_app" android:key="leo_tweaks_hardware_power_button_long_action_app" includeSearch="true" setSeparatorString="\###" />
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_power_double_action" android:key="leo_tweaks_hardware_power_double_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_power_double_action_app" android:key="leo_tweaks_hardware_power_double_action_app" includeSearch="true" setSeparatorString="\###" />
+        <com.leo.salt.preference.MyPreferenceAlerts android:key="USEFUL_FEATURE_MAIN_SETTINGS" android:summary="@string/leo_tweaks_hardware_power_double_action_app" />
+        <com.leo.salt.preference.CardPreferenceBorder />
+    </com.leo.salt.preference.MyPreferenceCategory>
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/hardware_power_ls" android:dependency="leo_tweaks_power_action_toggle">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/notification_ls_entries" android:title="@string/hardware_power_ls_long_action" android:key="leo_tweaks_hardware_power_ls_long_action" android:defaultValue="125" android:entryValues="@array/notification_ls_values" />
+        <com.leo.salt.preference.MyListPreference android:entries="@array/notification_qb_entries" android:title="@string/hardware_power_double_ls_action" android:key="leo_tweaks_hardware_power_double_ls_action" android:defaultValue="88" android:entryValues="@array/notification_qb_values" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+</PreferenceScreen>

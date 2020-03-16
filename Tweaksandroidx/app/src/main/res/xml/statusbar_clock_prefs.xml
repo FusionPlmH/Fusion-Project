@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock" >
+    <org.salt.preference.SaltSwitchPreference
+        android:title="@string/statusbar_clock_enabled"
+        android:key="clock_show"
+        android:defaultValue="true"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="clock_show"
+        android:title="@string/statusbar_clock_orientation" android:key="clock_orientation"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_clock_values"
+        android:entries="@array/statusbar_clock_options"
+      />
+
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_autohide"
+        android:title="@string/statusbar_clock_autohide"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="statusbar_clock_autohide"
+        android:key="leo_salt_statusbar_clock_hideduration_style"
+        android:summary="@string/seekbar_sumarry"
+        android:title="@string/statusbar_clock_hideduration"
+        android:defaultValue="15"
+        android:min="5"
+        android:max="300"
+        salt:interval="5"
+        salt:unitsLeft=""
+        salt:unitsRight=" ms"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="statusbar_clock_autohide"
+        android:key="leo_salt_statusbar_clock_showduration_style"
+        android:summary="@string/seekbar_sumarry"
+        android:title="@string/statusbar_clock_showduration"
+        android:defaultValue="100"
+        android:min="5"
+        android:max="600"
+        salt:interval="5"
+        salt:unitsLeft=""
+        salt:unitsRight=" ms"
+        />
+
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_twelve_format"
+        android:title="@string/statusbar_clock_twelve"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_seconds_enabled"
+        android:title="@string/statusbar_clock_seconds"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_padding"  android:key="statusbar_clock_padding_enabled"         android:dependency="clock_show">
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="start_padding"
+        android:summary="@string/seekbar_padding_sumarry"
+        android:title="@string/statusbar_clock_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="end_padding"
+        android:summary="@string/seekbar_padding_sumarry"
+        android:title="@string/statusbar_clock_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        />
+</org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_china_detail" android:key="statusbar_clock_detail_enabled"         android:dependency="clock_show">
+    <org.salt.preference.SaltSwitchPreference
+        android:key="detail_enabled"
+        android:title="@string/statusbar_clock_china_detail_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_style"
+        android:title="@string/statusbar_clock_china_detail_style"
+        android:defaultValue="0"
+        android:entryValues="@array/detail_values"
+        android:entries="@array/detail_entries" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="detail_enabled"
+        android:key="lunar_month_style"
+        android:title="@string/statusbar_clock_china_lunar_month_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_sting_values"
+        android:entries="@array/lunar_sting_options" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_location"
+        android:title="@string/statusbar_clock_china_detail_location"
+        android:defaultValue="0"
+        android:entryValues="@array/date_location_values"
+        android:entries="@array/date_location_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_symbol"
+        android:title="@string/statusbar_clock_china_detail_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="ampm_style"
+        android:title="@string/statusbar_clock_ampm_style"
+        android:defaultValue="0"
+        android:entryValues="@array/am_pm_values"
+        android:entries="@array/am_pm_entries"
+        />
+</org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_date" android:key="statusbar_clock_date_enabled"         android:dependency="clock_show">
+    <org.salt.preference.SaltListPreference
+
+        android:key="date_enabled"
+        android:title="@string/statusbar_clock_date_enabled"
+        android:defaultValue="0"
+        android:entryValues="@array/date_values"
+        android:entries="@array/date_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="date_location"
+        android:title="@string/statusbar_clock_date_location"
+        android:defaultValue="1"
+        android:entryValues="@array/date_location_values"
+        android:entries="@array/date_location_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="date_style"
+        android:title="@string/statusbar_clock_date_style"
+        android:defaultValue="0"
+        android:entryValues="@array/date_en_values"
+        android:entries="@array/date_en_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="date_format"
+        android:title="@string/statusbar_clock_date_format"
+        android:defaultValue="0"
+        android:summary="%1$s"
+        android:entries="@array/clock_date_format_entries_values"
+        android:entryValues="@array/clock_date_format_entries_values"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="week_enabled"
+        android:title="@string/statusbar_clock_week_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="week_enabled"
+        android:key="week_format"
+        android:title="@string/statusbar_clock_week_format"
+        android:defaultValue="0"
+        android:entryValues="@array/date_week_values"
+        android:entries="@array/date_week_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="week_enabled"
+        android:key="week_location"
+        android:title="@string/statusbar_clock_week_location"
+        android:defaultValue="1"
+        android:entryValues="@array/week_location_values"
+        android:entries="@array/week_location_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="week_enabled"
+        android:key="week_symbol"
+        android:title="@string/statusbar_clock_week_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/text_set" />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_single_enabled"
+        android:title="@string/statusbar_clock_single_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltSeekBarPreference
+        salt:reverseDependency="statusbar_clock_single_enabled"
+        android:key="multi_size"
+
+        android:title="@string/statusbar_clock_multi_size"
+        android:defaultValue="9"
+        android:min="1"
+        android:max="10"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        android:summary="@string/seekbar_text_sumarry"
+        salt:unitsRight=" dp"
+        />
+
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="statusbar_clock_single_enabled"
+        android:key="single_size"
+        android:summary="@string/seekbar_text_sumarry"
+        android:title="@string/statusbar_clock_single_size"
+        android:defaultValue="14"
+        android:min="1"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <org.salt.preference.SaltListPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_font_style"
+        android:title="@string/statusbar_clock_font_style"
+        android:defaultValue="0"
+
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_color_enabled"
+        android:title="@string/statusbar_clock_color_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/statusbar_clock_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        android:summary="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:dependency="statusbar_clock_color_enabled"
+        android:key="statusbar_clock_color"/>
+
+</androidx.preference.PreferenceScreen>

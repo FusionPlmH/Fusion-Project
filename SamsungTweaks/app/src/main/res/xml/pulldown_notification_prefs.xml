@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/disable_persistent" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/disable_persistent_notifications" android:key="leo_tweaks_disable_persistent_notifications"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/otification_colors" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/unlock_notification_colors" android:key="leo_tweaks_unlock_notification_colors"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_notification_text_random_color"  android:dependency="leo_tweaks_unlock_notification_colors"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/notification_title_text_color" android:key="leo_tweaks_notification_title_text_color" app:reverseDependency="leo_tweaks_notification_text_random_color" android:summary="@string/black_color" android:dependency="leo_tweaks_unlock_notification_colors" leo:defaultColor="#d9252525" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/notification_summary_text_color" android:key="leo_tweaks_notification_summary_text_color" app:reverseDependency="leo_tweaks_notification_text_random_color"  android:summary="@string/black_color" android:dependency="leo_tweaks_unlock_notification_colors" leo:defaultColor="#d9252525" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/link_app_name_color" android:key="leo_tweaks_link_app_name_color"  android:defaultValue="false" android:dependency="leo_tweaks_unlock_notification_colors"  android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/notice_button_text" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/notice_button_text_color_enabled" android:key="leo_tweaks_notice_button_text_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/notice_button_text_all_color_enabled" android:key="leo_tweaks_notice_button_text_all_color_enabled" android:dependency="leo_tweaks_notice_button_text_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/notice_button_text_all_color" android:key="leo_tweaks_notice_button_text_all_color"  android:dependency="leo_tweaks_notice_button_text_all_color_enabled"  android:summary="@string/black_color2"  leo:defaultColor="#d9252525"/>
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_notice_button_random_color"  android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_notice_button_text_all_color_enabled"  android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/notice_clear_all_button_text_color" android:key="leo_tweaks_notice_clear_all_button_text_color" android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_navbar_icon_random_color" android:summary="@string/black_color2" leo:defaultColor="#d9252525" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_notice_clear_all_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/notice_noti_setting_button_text_color" android:key="leo_tweaks_notice_noti_setting_button_text_color" android:summary="@string/black_color2" leo:defaultColor="#d9252525" android:dependency="leo_tweaks_notice_button_text_color_enabled" app:reverseDependency="leo_tweaks_navbar_icon_random_color" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_notice_noti_setting_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/notice_noti_clear_button_text_size" android:key="leo_tweaks_notice_noti_clear_button_text_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue=" %" />
+</PreferenceScreen>

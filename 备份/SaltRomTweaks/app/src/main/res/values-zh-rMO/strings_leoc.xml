@@ -1,0 +1,110 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <string name="global_gestures_right">從屏幕右側往左滑動手勢</string>
+
+   <string name="hardware_nav_keys">三大金剛自定義</string>
+   <string name="keys_custom">自定義三大金剛動作</string>
+   <string name="task_keys">任務鍵</string>
+   <string name="hardware_longpress_task">長按任務鍵動作</string>
+   <string name="back_keys">返回鍵</string>
+   <string name="hardware_longpress_back">長按返回鍵動作</string>
+   <string name="home_keys">主頁鍵</string>
+   <string name="hardware_longpress_home">長按主頁鍵動作</string>
+
+   <string name="keyguard_alarm">鎖屏下一個鬧鐘</string>
+   <string name="keyguard_alarm_icon">鬧鐘圖標</string>
+   <string name="keyguard_alarm_text_info">鬧鐘圖標說明文本</string>
+   <string name="keyguard_alarm_text_size">鬧鍾文本大小</string>
+   <string name="keyguard_alarm_text_font">鬧鐘字體風格</string>
+   <string name="keyguard_alarm_color_custom">自定義鬧鐘顏色</string>
+   <string name="keyguard_alarm_text_color">鬧鍾文本顏色</string>
+   <string name="keyguard_alarm_icon_color">鬧鐘圖標顏色</string>
+
+   <string name="keyguard_carrier">鎖屏運營商</string>
+   <string name="keyguard_alarm_dual">自定義雙運營商文本</string>
+   <string name="keyguard_alarm_str_custom">自定義狀態欄運營商文本</string>
+   <string name="keyguard_alarm_size">運營商大小</string>
+   <string name="keyguard_alarm_symbol">分割符號</string>
+   <string name="keyguard_alarm_font">運營商字體風格</string>
+   <string name="keyguard_alarm_dark_color_start">設置狀態欄背景為深色運營商顏色</string>
+   <string name="keyguard_alarm_dark_color">狀態欄背景為深色運營商顏色</string>
+   <string name="keyguard_alarm_light_color_start">設置狀態欄背景為淺色運營商顏色</string>
+   <string name="keyguard_alarm_light_color">設置狀態欄背景為淺色運營商顏色</string>
+   <string name="keyguard_action_doubleTap_enabled">鎖屏雙擊狀態欄動作啟用</string>
+   <string name="keyguard_action_enabled">雙擊鎖屏任意位置動作啟動</string>
+   <string name="keyguard_action_style">鎖屏動作</string>
+
+   <string name="keyguard_weather_enabled">鎖屏天氣插件</string>
+   <string name="keyguard_aweather_style">天氣插件類型</string>
+   <string name="keyguard_weather_top">插件置頂邊距</string>
+   <string name="keyguard_weather_height">插件高度</string>
+
+
+   <string name="launcher_gesture_category">桌面滑動手勢</string>
+   <string name="launcher_gesture_enabled">啟用桌面滑動手勢</string>
+   <string name="launcher_gesture_sliding_top">桌面上滑手勢</string>
+   <string name="launcher_gesture_warning">"1.使用桌面滑動手勢不可關閉主屏設置-在主屏幕中使用搜索\n2.使用桌面下滑手勢不可開啟主屏設置-快速打開通知面板\n如果你已經修改這兩項設置點擊可改變設置"</string>
+   <string name="launcher_gesture_sliding_bottom">桌面下滑手勢</string>
+   <string name="launcher_gesture_double_category">桌面雙擊</string>
+   <string name="launcher_gesture_double_enabled">啟用桌面雙擊手勢</string>
+   <string name="launcher_gesture_double">桌面雙擊手勢</string>
+
+   <string name="launcher_blurview">自定義桌面高斯模糊壁紙</string>
+
+
+   <string name="mini_pop">屏幕助手</string>
+   <string name="mini_pop_start">啟用屏幕助手</string>
+   <string name="mini_pop_action">屏幕助手動作</string>
+   <string name="mini_pop_back">返回按鈕動作</string>
+   <string name="mini_pop_home">Home按鈕動作</string>
+   <string name="mini_pop_task">任務按鈕動作</string>
+   <string name="mini_pop_flashlight">手電筒按鈕動作</string>
+
+   <string name="bgv_mode">背景模式</string>
+   <string name="bgv_single_color_gategory">單一背景顏色</string>
+   <string name="bgv_single_color">設置單一背景顏色</string>
+   <string name="bgv_gradient_color_gategory">漸變背景顏色</string>
+   <string name="bgv_gradient_color_style">漸變顏色風格</string>
+   <string name="bgv_gradient_color_radius">放射性漸變顏色半徑</string>
+   <string name="bgv_gradient_color_mode">線性漸變顏色模式</string>
+   <string name="bgv_gradient_color_a">漸變顏色Ⅰ</string>
+   <string name="bgv_gradient_color_b">漸變顏色Ⅱ</string>
+   <string name="bgv_gradient_color_c">漸變顏色Ⅲ</string>
+   <string name="bgv_gradient_color_start_f">啟用Ⅵ色漸變</string>
+   <string name="bgv_gradient_color_d">漸變顏色Ⅳ</string>
+   <string name="bgv_gradient_color_e">漸變顏色Ⅴ</string>
+   <string name="bgv_gradient_color_f">漸變顏色Ⅵ</string>
+   <string name="bgv_wallpaper">背景壁紙</string>
+   <string name="bgv_dashed">背景虛線描邊</string>
+   <string name="bgv_color_start">允許背景壁紙著色</string>
+   <string name="bgv_color">設置背景壁紙疊加顏色</string>
+   <string name="bgv_alpha_start">背景壁紙透明度</string>
+   <string name="bgv_alpha">設置背景壁紙透明度</string>
+   <string name="bgv_blur_start">背景壁紙高斯模糊</string>
+   <string name="bgv_blur">設置背景壁紙模糊度</string>
+   <string name="blur_res">模糊度&#160;</string>
+   <string name="alpha_res">透明度&#160;</string>
+
+   <string name="nav_bgv">導航欄背景</string>
+   <string name="nav_bgv_custom">自定義導航欄背景</string>
+
+   <string name="nav_height">導航欄高度設置</string>
+   <string name="nav_landscape_enable">設置橫屏導航欄高度</string>
+   <string name="nav_landscape_enable_style">橫屏導航欄高度</string>
+   <string name="nav_portrait_enable">設置豎屏導航欄高度</string>
+   <string name="nav_portrait_enable_style">豎屏導航欄高度</string>
+   <string name="hide_nav">隱藏導航欄</string>
+   <string name="hide_nav_whitelist">導航欄隱藏白名單</string>
+   <string name="hide_nav_whitelist_summary">選擇你不需要隱藏導航欄目的程序</string>
+   <string name="launcher_setting">桌面設置</string>
+   <string name="launcher_icon_text">顯示托盤程序名稱</string>
+   <string name="launcher_effect">桌面滾動特效</string>
+
+   <string name="salt_power_menu">Leo高級電源菜單</string>
+   <string name="salt_power_menu_enable">啟用Leo高級電源菜單</string>
+   <string name="salt_power_menu_style">設置電源菜單風格</string>
+   <string name="salt_power_menu_number">設置電源菜單項目數量</string>
+   <string name="a">&#160;個</string>
+   <string name="salt_power_menu_column">設置電源菜單九宮格列數</string>
+   <string name="column">&#160;列</string>
+   <string name="salt_power_menu_status_bar">隱藏電源菜單狀態欄</string>
+</resources>

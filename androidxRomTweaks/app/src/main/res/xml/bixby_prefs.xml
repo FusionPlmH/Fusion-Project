@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_title"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="global_bixby_action_enable"
+        android:title="@string/bixby_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_category_title"/>
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_bixby_action_enable"
+        android:key="bixby_click"
+        android:title="@string/bixby_press"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_bixby_action_enable"
+        android:key="bixby_longpress"
+        android:title="@string/bixby_longpress"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_lock_category_title"/>
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_bixby_action_enable"
+        android:key="keyguard_bixby_click"
+        android:title="@string/bixby_lock_press"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_keyguard_values"
+        android:entries="@array/global_action_keyguard_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_bixby_action_enable"
+        android:key="keyguard_bixby_longpress"
+        android:title="@string/bixby_lock_longpress"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_keyguard_values"
+        android:entries="@array/global_action_keyguard_entries"
+        />
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/right" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="?appbarlayout" android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="245.0dip" app:layout_scrollFlags="scroll">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="6.0dip" app:contentScrim="?colorPrimary" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:statusBarScrim="@android:color/transparent" app:titleEnabled="false">
+            <View android:background="@drawable/gradient" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <android.support.v4.view.ViewPager android:id="@id/image_viewPager" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.7" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="30.0dip" android:weightSum="10.0">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:animateLayoutChanges="true">
+                    <TextView android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tv_pager_title" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="加载图片轮播失败" android:layout_weight="8.0" />
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/lineLayout_dot" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" app:contentInsetStartWithNavigation="-10.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/navigation" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/content_main" />
+            <View android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@id/fab_drawer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fab_margin" android:layout_marginBottom="65.0dip" android:src="@drawable/ic_drawer" app:rippleColor="#ffa6a6a6" />
+    <android.support.design.widget.BottomNavigationView android:layout_gravity="bottom" android:id="@id/navigation" android:background="?BottomNavigationBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:itemIconTint="?navColorSelector" app:itemTextColor="?navColorSelector" app:labelVisibilityMode="labeled" app:menu="@menu/navigation" />
+</android.support.design.widget.CoordinatorLayout>

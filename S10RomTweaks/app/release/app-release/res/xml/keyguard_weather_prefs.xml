@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/keyguard_weather_enabled" android:key="weather_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/widget_entries" android:title="@string/keyguard_aweather_style" android:key="weather_style" android:defaultValue="0" android:entryValues="@array/widget_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="100" android:title="@string/keyguard_weather_top" android:key="weather_top" android:summary="@string/seekbar_padding_sumarry" android:defaultValue="5" android:min="0" salt:interval="1" salt:unitsLeft="@string/padding_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="1400" android:title="@string/keyguard_weather_height" android:key="weather_height" android:summary="@string/seekbar_sumarry" android:defaultValue="350" android:min="0" salt:interval="5" salt:unitsLeft="@string/height_title" salt:unitsRight=" dp" />
+</PreferenceScreen>

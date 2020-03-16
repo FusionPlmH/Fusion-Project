@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/keyguard_statusbar_name" />
+    <SwitchPreference android:title="@string/keyguard_Biometrics" android:key="wake_Biometrics" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <SwitchPreference android:title="@string/keyguard_statusbar" android:key="keyguard_statusbar" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <SwitchPreference android:title="锁屏旋转" android:key="allow_rotation" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingPreference android:key="dynamiclock" />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:key="CNKeyguardLunar">
+        <com.leo.salt.preference.SaltSettingPreference android:key="KeyguardLunar" android:summary="设置LEO锁屏农历" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

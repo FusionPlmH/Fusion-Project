@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeFoundation" parent="Theme.MaterialComponents.NoActionBar" />
+
+    <style name="MagiskTheme.SUFoundation" parent="Theme.MaterialComponents.Dialog" />
+
+    <style name="MagiskTheme" parent="ThemeFoundation.Colored.ExtraProps">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="cardStyle">@style/CardViewStyle.Dark</item>
+        <item name="imageColorTint">@color/dark_secondary_text</item>
+        <item name="colorControl">?android:attr/textColorSecondary</item>
+        <item name="colorAccentFallback">@color/accentFallback</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="leobgcolor">?colorPrimary</item>
+        <item name="cardleoColor">@color/card_background_color_dark</item>
+        <item name="barleoColor">@color/card_background_color_light</item>
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+        <item name="colorSecondary">@color/colorAccentMain</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:dialogTheme">@style/DialogStyleDark</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleDark</item>
+    </style>
+    <style name="DialogStyleDark" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

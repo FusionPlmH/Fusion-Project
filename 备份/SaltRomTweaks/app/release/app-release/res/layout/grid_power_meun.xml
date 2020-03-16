@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/bg_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.leo.salt.plug.OverScrollGridView android:gravity="center" android:id="@id/grid_about" android:paddingTop="50.0dip" android:scrollbars="none" android:layoutAnimation="@anim/grid_layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="85.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="50.0dip" android:numColumns="1" />
+        </LinearLayout>
+        <FrameLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/bg_content" android:layout_alignParentBottom="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <ImageView android:id="@id/sound_selector" android:background="?android:selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.3" />
+                    <ImageView android:gravity="center" android:id="@id/vibration_selector" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.3" />
+                    <ImageView android:gravity="right" android:id="@id/silence_selector" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.3" />
+                </LinearLayout>
+                <TextView android:textSize="15.0dip" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/action_reminder" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

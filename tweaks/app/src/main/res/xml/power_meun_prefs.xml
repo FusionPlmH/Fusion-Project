@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="电源菜单文本" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="自定义电源菜单文本" android:key="leo_tweaks_power_text" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="字体颜色" android:key="leo_tweaks_power_text_color" android:dependency="leo_tweaks_power_text" android:summary="默认颜色:#FFFFFFFF"  leo:defaultColor="#FFFFFFFF" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="允许浅色背景文字着色" android:key="leo_tweaks_power_text_color_link" android:dependency="leo_tweaks_power_text" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="字体大小" android:key="leo_tweaks_power_text_size" android:summary="左右滑动调节大小" android:dependency="leo_tweaks_power_text" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_power_text_font"   android:dependency="leo_tweaks_power_text" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="重启提示文本" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="禁用重启提示布局自定义电源菜单背景可全屏" android:key="leo_tweaks_power_hint_layout_disabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="自定义电源菜单文本" android:key="leo_tweaks_power_hint" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="字体颜色" android:key="leo_tweaks_power_hint_color" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:summary="默认颜色:#FFFFFFFF"  leo:defaultColor="#FFFFFFFF" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="允许浅色背景文字着色" android:key="leo_tweaks_power_hint_color_link" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="字体大小" android:key="leo_tweaks_power_hint_size" android:summary="左右滑动调节大小"  app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:dependency="leo_tweaks_power_hint" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" app:reverseDependency="leo_tweaks_power_hint_layout_disabled" android:key="leo_tweaks_power_hint_font"   android:dependency="leo_tweaks_power_hint" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="电源菜单图标" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="自定义电源菜单图标" android:key="leo_tweaks_power_imageview" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="图标颜色" android:key="leo_tweaks_power_imageview_color" android:dependency="leo_tweaks_power_imageview" android:summary="默认颜色:#FFFFFFFF" leo:defaultColor="#FFFFFFFF" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="图标大小" android:key="leo_tweaks_power_imageview_size" android:dependency="leo_tweaks_power_imageview" android:summary="左右滑动调节大小" android:defaultValue="8" app:minValue="2" app:maxValue="8" app:unitsValue="dip" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="确认对话框" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="电源菜单点击状态" android:key="leo_tweaks_power_menu_click_state" android:defaultValue="false" android:summaryOn="当前电源菜单动作可点击" android:summaryOff="当前电源菜单动作不可点击" />
+    <com.tweaks.leo.preference.MyCheckBoxPreference android:title="确认对话框" android:key="leo_tweaks_power_confirm_dialog" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="电源菜单" />
+
+    <com.tweaks.leo.preference.MyMultiSelectPreference android:title="电源菜单项目" android:key="leo_tweaks_power_menu_item" android:defaultValue="power,restart,emergencymode" android:dialogTitle="选择需要显示的电源菜单项目" app:multiEntryList="@array/power_menu_options" app:multiValuesList="@array/power_menu_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/power_menu_order_entries" android:title="电源菜单排序" android:key="leo_tweaks_power_menu_item_order" android:defaultValue="0" android:entryValues="@array/power_menu_order_values" />
+</PreferenceScreen>

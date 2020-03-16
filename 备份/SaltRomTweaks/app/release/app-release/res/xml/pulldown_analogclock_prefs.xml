@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/analogclock_enabled" android:key="analogclock_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingIconListPreference android:title="@string/analogclock_dial_style" android:key="panel_analogclock_dial_style" android:defaultValue="0" salt:drawableIconColor="?transparency" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/analogclock_dial_color" android:key="panel_analogclock_dial_color" android:defaultValue="0xFF0074D4" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/analogclock_hour_color" android:key="panel_analogclock_hour_color" android:defaultValue="0xFF808080" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/analogclock_minute_color" android:key="panel_analogclock_minute_color" android:defaultValue="0xFF808080" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+</PreferenceScreen>

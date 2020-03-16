@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_percent"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="Percentenabled"
+        android:title="@string/batt_percent_show"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="Percentenabled"
+        android:key="PercentSize"
+        android:title="@string/batt_percent_size"
+        android:defaultValue="15"
+        android:min="8"
+        android:max="20"
+        salt:interval="1"
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="Percentenabled"
+        android:key="statusbar_battery_text_font"
+        android:title="@string/batt_percent_font"
+        android:defaultValue="0"
+        salt:BroadcastKey="@string/broadcast_battery"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_icon"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="batteryStyle"
+        android:title="@string/statusbar_battery"
+        android:defaultValue="0"
+        android:entryValues="@array/battery_style_values"
+        android:entries="@array/battery_style_entries"
+        />
+
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="size"
+        android:title="@string/statusbar_battery_icon_size"
+        android:defaultValue="60"
+        android:min="40"
+        android:max="120"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="start_padding"
+        android:title="@string/statusbar_battery_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="end_padding"
+        android:title="@string/statusbar_battery_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_color" android:key="batt_color">
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_battery_color_enabled"
+        android:title="@string/statusbar_battery_color_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_battery"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/statusbar_battery_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        android:summary="0xC3FFFFFF"
+        salt:BroadcastKey="@string/broadcast_battery"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:dependency="statusbar_battery_color_enabled"
+        android:key="statusbar_battery_color"/>
+        <org.salt.preference.SaltColorPickerPreference
+            android:title="@string/statusbar_battery_dark_color"
+            salt:lightnessSlider="true"
+            android:dependency="statusbar_battery_color_enabled"
+            android:defaultValue="0xFF00FF00"
+            android:summary="0xFF00FF00"
+            salt:density="12"
+            salt:BroadcastKey="@string/broadcast_battery"
+            salt:alphaSlider="true"
+            android:key="statusbar_battery_dark_color"/>
+
+    </org.salt.preference.SaltSettingCategoryPreference>
+
+
+
+</androidx.preference.PreferenceScreen>

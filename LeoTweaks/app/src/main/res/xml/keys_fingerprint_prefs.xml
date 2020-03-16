@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.tweaks.salt.preference.MyPreferenceCategory android:title="指纹键" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="允许自定义指纹键手势" android:key="fingerprint_gesture_quick" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+        <com.tweaks.salt.preference.CardPreferenceBorder  />
+        <com.tweaks.salt.preference.MyPreferenceCategory android:title="指纹键下滑" />
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="指纹键下滑手势" android:key="leo_tweaks_hardware_fingerprint_down_action"  android:dependency="fingerprint_gesture_quick"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.salt.preference.IntentDialogPreference android:title="指纹键下滑手势启动程序" android:key="leo_tweaks_hardware_fingerprint_down_action_app"  android:dependency="fingerprint_gesture_quick" includeSearch="true" setSeparatorString="\###" />
+        <com.tweaks.salt.preference.CardPreferenceBorder  />
+        <com.tweaks.salt.preference.MyPreferenceCategory android:title="指纹键上滑" />
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="指纹键上滑手势" android:key="leo_tweaks_hardware_fingerprint_up_action"  android:dependency="fingerprint_gesture_quick" android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.salt.preference.IntentDialogPreference android:title="指纹键上滑手势启动程序" android:key="leo_tweaks_hardware_fingerprint_up_action_app"  android:dependency="fingerprint_gesture_quick" includeSearch="true" setSeparatorString="\###" />
+
+</PreferenceScreen>

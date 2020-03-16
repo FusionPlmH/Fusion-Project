@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/statusbar_temperature" android:key="leo_tweaks_statusbar_temperature" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/show_text_set" android:key="leo_tweaks_temperature">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="状态栏标签显示位置" android:key="leo_tweaks_statusbar_temperature_orientation" android:dependency="leo_tweaks_statusbar_temperature" android:defaultValue="0" android:entryValues="@array/statusbar_view_position_values" />
+        <com.leo.salt.preference.MySwitchPreference android:title="@string/single_off" android:key="leo_tweaks_statusbar_temperature_single" android:dependency="leo_tweaks_statusbar_temperature" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.MySeekBarPreference android:title="@string/single_size" android:key="leo_tweaks_statusbar_temperature_single_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_statusbar_temperature_single" android:defaultValue="14" app:maxValue="20" app:minValue="5" app:unitsValue="dip" />
+        <com.leo.salt.preference.MySeekBarPreference android:title="@string/multi_size" android:key="leo_tweaks_statusbar_temperature_multi_string" android:summary="@string/seksbar_sumarry" android:defaultValue="9" app:maxValue="10" app:minValue="3" app:reverseDependency="leo_tweaks_statusbar_temperature_single" app:unitsValue="dip" />
+        <com.leo.salt.preference.CardPreferenceBorder />
+    </com.leo.salt.preference.MyPreferenceCategory>
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/text_set" android:key="leo_tweaks_temperature2">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_statusbar_temperature_font" android:dependency="leo_tweaks_statusbar_temperature" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.MySwitchPreference android:title="@string/statusbar_temperature_color_enabled" android:key="leo_tweaks_statusbar_temperature_color_enabled" android:dependency="leo_tweaks_statusbar_temperature" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_statusbar_temperature_random_color" android:dependency="leo_tweaks_statusbar_temperature_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/random_color_summary" />
+        <com.leo.salt.preference.ColorPickerPreference android:title="@string/statusbar_temperature_color" android:key="leo_tweaks_statusbar_temperature_color" android:summary="@string/default_colors" android:dependency="leo_tweaks_statusbar_temperature_color_enabled" leo:defaultColor="@color/status_bar_default_colors" app:reverseDependency="leo_tweaks_statusbar_temperature_random_color" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+</PreferenceScreen>

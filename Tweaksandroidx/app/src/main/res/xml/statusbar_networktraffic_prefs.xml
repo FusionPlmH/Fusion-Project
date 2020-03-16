@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="显示网速">
+    <org.salt.preference.SaltSwitchPreference
+        android:key="NetworkTrafficDisplay"
+        android:title="显示网速"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+        <org.salt.preference.SaltListPreference
+            android:title="网速模式" android:key="NetworkTrafficSeta"
+            android:defaultValue="0"
+            android:dependency="NetworkTrafficDisplay"
+            android:entryValues="@array/statusbar_traffic_values"
+            android:entries="@array/statusbar_traffic_options"
+            />
+        <org.salt.preference.SaltSeekBarPreference
+            android:dependency="NetworkTrafficDisplay"
+            android:key="NetworkTrafficRefreshInterval"
+            android:title="网速刷新间隔"
+            android:defaultValue="1"
+            android:min="1"
+            android:max="10"
+            salt:interval="1"
+            salt:unitsLeft=""
+            android:summary="@string/seekbar_sumarry"
+            salt:unitsRight=" s"
+            />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="NetworkTrafficDisplay"
+        android:key="NetworkAutoHideThreshold"
+        android:title="自动隐藏阈值"
+        android:defaultValue="0"
+        android:min="0"
+        android:max="10"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsRight=" KB/s"
+        />
+        <org.salt.preference.SaltListPreference
+            android:title="@string/statusbar_traffic_orientation" android:key="statusbar_traffic_position"
+            android:defaultValue="0"
+            salt:BroadcastKey="@string/broadcast_stausbar"
+            android:dependency="NetworkTrafficDisplay"
+            android:entryValues="@array/statusbar_view_values"
+            android:entries="@array/statusbar_view_options"
+            />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="网速图标"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="NetworkTrafficDisplay"
+        android:key="NetworkTrafficArrowDisplay"
+        android:title="显示箭头图标"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltIconListPreference
+        android:dependency="NetworkTrafficArrowDisplay"
+        android:title="选择网速箭头"
+        android:key="statusbar_traffic_arrow_style"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="0"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="NetworkTrafficArrowDisplay"
+        android:key="NetworkTrafficArrowPosition"
+        android:title="箭头显示在网速右侧"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="边距设置"/>
+        <org.salt.preference.SaltSeekBarPreference
+            android:dependency="NetworkTrafficArrowDisplay"
+            android:key="NetworkTrafficIconPadding"
+            android:title="图标与文本之间的边距"
+            android:defaultValue="1"
+            android:min="0"
+            android:max="5"
+            salt:interval="1"
+            salt:unitsLeft="@string/padding_title"
+            salt:unitsRight=" dp"
+            android:summary="@string/seekbar_padding_sumarry"
+            />
+        <org.salt.preference.SaltSeekBarPreference
+           android:dependency="NetworkTrafficDisplay"
+            android:key="NetworkTrafficEndPadding"
+            android:title="网速左侧边距"
+            android:defaultValue="1"
+            android:min="0"
+            android:max="5"
+            salt:interval="1"
+            salt:unitsLeft="@string/padding_title"
+            salt:unitsRight=" dp"
+            android:summary="@string/seekbar_padding_sumarry"
+            />
+        <org.salt.preference.SaltSeekBarPreference
+            android:dependency="NetworkTrafficDisplay"
+            android:key="NetworkTrafficStartPadding"
+            android:title="网速右侧边距"
+            android:defaultValue="1"
+            android:min="0"
+            android:max="5"
+            salt:interval="1"
+            salt:unitsLeft="@string/padding_title"
+            salt:unitsRight=" dp"
+            android:summary="@string/seekbar_padding_sumarry"
+            />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="字体与颜色">
+        <org.salt.preference.SaltSeekBarPreference
+            android:dependency="NetworkTrafficDisplay"
+            android:key="NetworkTrafficTextSize"
+            android:title="网速文本大小"
+            android:defaultValue="9"
+            android:min="5"
+            android:max="12"
+            salt:interval="1"
+            salt:unitsLeft="@string/text_size_title"
+            android:summary="@string/seekbar_text_sumarry"
+            salt:unitsRight=" sp"
+            />
+        <org.salt.preference.SaltListPreference
+            android:key="NetworkTrafficTextFont"
+            android:title="网速字体设置"
+            android:defaultValue="0"
+            android:dependency="NetworkTrafficDisplay"
+            android:entryValues="@array/font_style_values"
+            android:entries="@array/font_style_entries" />
+        <org.salt.preference.SaltSwitchPreference
+            android:dependency="NetworkTrafficDisplay"
+            android:key="statusbar_traffic_color_enabled"
+            android:title="@string/statusbar_traffic_color_enabled"
+            android:defaultValue="false"
+            salt:BroadcastKey="@string/broadcast_stausbar"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+
+        <org.salt.preference.SaltColorPickerPreference
+            android:dependency="statusbar_traffic_color_enabled"
+            android:title="@string/statusbar_traffic_color"
+            salt:lightnessSlider="true"
+            android:defaultValue="0xC3FFFFFF"
+            android:summary="0xC3FFFFFF"
+            salt:density="12"
+            salt:BroadcastKey="@string/broadcast_stausbar"
+            salt:alphaSlider="true"
+            android:key="statusbar_traffic_color"/>
+        <org.salt.preference.SaltColorPickerPreference
+            android:dependency="statusbar_traffic_color_enabled"
+            android:title="@string/statusbar_traffic_icon_color"
+            salt:lightnessSlider="true"
+            android:defaultValue="0xC3FFFFFF"
+            android:summary="0xC3FFFFFF"
+            salt:BroadcastKey="@string/broadcast_stausbar"
+            salt:density="12"
+            salt:alphaSlider="true"
+            salt:reverseDependency="statusbar_traffic_extends_color"
+            android:key="statusbar_traffic_icon_color"/>
+        <org.salt.preference.SaltSwitchPreference
+            android:dependency="statusbar_traffic_color_enabled"
+            android:key="statusbar_traffic_extends_color"
+            android:title="@string/statusbar_traffic_extends_color"
+            android:defaultValue="false"
+            salt:BroadcastKey="@string/broadcast_stausbar"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

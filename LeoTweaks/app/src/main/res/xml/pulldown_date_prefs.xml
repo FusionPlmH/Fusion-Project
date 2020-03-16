@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+  <com.tweaks.salt.preference.MyPreferenceCategory android:title="时间" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="时间显示隐藏" android:key="leo_tweaks_pulldown_clock" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+
+  <com.tweaks.salt.preference.MySwitchPreference android:title="中国时间细节" android:key="leo_tweaks_pulldown_clock_detail" android:dependency="leo_tweaks_pulldown_clock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/china_clock_details_entries" android:title="时间细节风格" android:key="leo_tweaks_pulldown_clock_detail_style"  android:dependency="leo_tweaks_pulldown_clock" android:defaultValue="0" app:dependentValue="1" android:entryValues="@array/china_clock_details_values" />
+  <com.tweaks.salt.preference.MySwitchPreference android:title="秒显示隐藏" android:key="leo_tweaks_pulldown_clock_second" android:dependency="leo_tweaks_pulldown_clock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.tweaks.salt.preference.CardPreferenceBorder  />
+  <com.tweaks.salt.preference.MyPreferenceCategory android:title="颜色设置" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="是否允许自定义颜色" android:key="leo_tweaks_pulldown_clock_color_custom" android:dependency="leo_tweaks_pulldown_clock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="是否允许统一设置时间颜色" android:key="leo_tweaks_pulldown_clock_colorall" android:dependency="leo_tweaks_pulldown_clock_color_custom" leo:defaultColor="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="设置统一时间颜色" android:key="leo_tweaks_pulldown_clock_all_color" android:summary="默认颜色:#ff252525" android:dependency="leo_tweaks_pulldown_clock_colorall"  leo:defaultColor="\#ff252525" />
+  <com.tweaks.salt.preference.MySwitchPreference android:title="按钮文本随机颜色" android:key="leo_tweaks_pulldown_clock_random_color"  app:reverseDependency="leo_tweaks_pulldown_clock_colorall" android:dependency="leo_tweaks_pulldown_clock_color_custom" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+  <com.tweaks.salt.preference.ColorPickerPreference android:title="时间颜色" android:key="leo_tweaks_pulldown_clock_color" android:summary="默认颜色:#ff252525" android:dependency="leo_tweaks_pulldown_clock_color_custom" app:reverseDependency="leo_tweaks_pulldown_clock_random_color" leo:defaultColor="\#ff252525" />
+  <com.tweaks.salt.preference.ColorPickerPreference android:title="细节颜色" android:key="leo_tweaks_pulldown_clock_detail_color" android:summary="默认颜色:#ff252525" android:dependency="leo_tweaks_pulldown_clock_color_custom" app:reverseDependency="leo_tweaks_pulldown_clock_random_color" leo:defaultColor="\#ff252525" />
+  <com.tweaks.salt.preference.ColorPickerPreference android:title="秒颜色" android:key="leo_tweaks_pulldown_clock_second_color" android:summary="默认颜色:#ff252525" android:dependency="leo_tweaks_pulldown_clock_color_custom" app:reverseDependency="leo_tweaks_pulldown_clock_random_color" leo:defaultColor="\#ff252525" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+  <com.tweaks.salt.preference.MyPreferenceCategory android:title="字体设置" />
+  <com.tweaks.salt.preference.MySeekBarPreference android:title="时间文本大小" android:key="leo_tweaks_pulldown_clock_size" android:dependency="leo_tweaks_pulldown_clock" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_pulldown_clock_font" android:dependency="leo_tweaks_pulldown_clock" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+  <com.tweaks.salt.preference.MySeekBarPreference android:title="细节文本大小" android:key="leo_tweaks_pulldown_clock_detail_size" android:dependency="leo_tweaks_pulldown_clock_detail" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_pulldown_clock_detail_font" android:dependency="leo_tweaks_pulldown_clock_detail" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+  <com.tweaks.salt.preference.MySeekBarPreference android:title="秒文本大小" android:key="leo_tweaks_pulldown_clock_second_size" android:dependency="leo_tweaks_pulldown_clock_second" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+  <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="日期设置" />
+
+    <com.tweaks.salt.preference.MySwitchPreference android:title="日期显示隐藏" android:key="leo_tweaks_pulldown_date_visible" android:defaultValue="true"  android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="@string/clock_date_style" android:key="leo_date_format" android:dependency="leo_tweaks_pulldown_date_visible" android:defaultValue="0" android:entryValues="@array/clock_date_format_entries_values" />
+  <com.tweaks.salt.preference.MySeekBarPreference android:title="日期文本大小" android:key="leo_tweaks_pulldown_date_size" android:dependency="leo_tweaks_pulldown_date_visible" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+  <com.tweaks.salt.preference.MySwitchPreference android:title="@string/clock_week" android:key="leo_tweaks_pulldown_date_week_display" android:dependency="leo_tweaks_pulldown_date_visible"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/clock_date_week_entries" android:title="@string/clock_week_style" android:key="leo_tweaks_pulldown_date_week_style" android:dependency="leo_tweaks_pulldown_date_week_display" android:defaultValue="0" android:entryValues="@array/clock_date_week_values" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/date_style_entries" android:title="星期显示位置" android:key="leo_tweaks_pulldown_date_week_orientation" android:dependency="leo_tweaks_pulldown_date_week_display" android:defaultValue="0" android:entryValues="@array/date_style_values" />
+  <com.tweaks.salt.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="分隔符号" android:key="leo_tweaks_pulldown_date_symbol" android:dependency="leo_tweaks_pulldown_date_week_display" android:defaultValue="1" android:entryValues="@array/symbol_style_values" />
+
+
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="农历设置" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="下拉农历" android:key="leo_tweaks_pulldown_lunar_visible" android:dependency="leo_tweaks_pulldown_date_visible" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="星座显示位置" android:key="leo_tweaks_pulldown_lunar_orientation" android:dependency="leo_tweaks_pulldown_lunar_constellation" android:defaultValue="false" android:summaryOn="农历左侧" android:summaryOff="农历右侧" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="显示星座" android:key="leo_tweaks_pulldown_lunar_constellation" android:defaultValue="false" android:dependency="leo_tweaks_pulldown_lunar_visible" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="分隔符号" android:key="leo_tweaks_pulldown_lunar_symbol" android:dependency="leo_tweaks_pulldown_lunar_constellation" android:defaultValue="1" android:entryValues="@array/symbol_style_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="字体设置" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="农历日期文本大小" android:key="leo_tweaks_pulldown_date_size" android:dependency="leo_tweaks_pulldown_date_visible" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="日期字体" android:key="leo_tweaks_pulldown_date_font" android:dependency="leo_tweaks_pulldown_date_visible" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="农历字体" android:key="leo_tweaks_pulldown_lunar_font" android:dependency="leo_tweaks_pulldown_lunar_visible" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="颜色设置" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="是否允许自定义颜色" android:key="leo_tweaks_pulldown_date_color_custom" android:dependency="leo_tweaks_pulldown_date_visible" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="是否允许统一设置日期农历颜色" android:key="leo_tweaks_pulldown_date_colorall" android:dependency="leo_tweaks_pulldown_date_color_custom" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="设置统一日期农历颜色" android:key="leo_tweaks_pulldown_date_all_color" android:summary="默认颜色:#ff252525" android:dependency="leo_tweaks_pulldown_date_colorall"  leo:defaultColor="\#ff252525" />
+  <com.tweaks.salt.preference.MySwitchPreference android:title="按钮文本随机颜色" android:key="leo_tweaks_pulldown_date_random_color"  app:reverseDependency="leo_tweaks_pulldown_date_colorall" android:dependency="leo_tweaks_pulldown_date_color_custom" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="日期颜色" android:key="leo_tweaks_pulldown_date_color" android:summary="默认颜色:#ff252525" app:reverseDependency="leo_tweaks_pulldown_date_random_color" android:dependency="leo_tweaks_pulldown_date_color_custom" leo:defaultColor="\#ff252525" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="农历颜色" android:key="leo_tweaks_pulldown_lunar_color" android:summary="默认颜色:#ff252525" app:reverseDependency="leo_tweaks_pulldown_date_random_color" android:dependency="leo_tweaks_pulldown_date_color_custom" leo:defaultColor="\#ff252525" />
+
+</PreferenceScreen>

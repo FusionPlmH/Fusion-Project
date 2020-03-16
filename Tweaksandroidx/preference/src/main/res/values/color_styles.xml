@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="PickerEditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">4dp</item>
+		<item name="android:imeOptions">actionNext</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+	<color name="pink">#fc6bc5</color>
+	<style name="saltlinearLayoutCompat_vertical">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:background">@drawable/card_rimary</item>
+		<item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+	</style>
+	<color name="gray">@android:color/darker_gray</color>
+</resources>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="font_style_entries">
+        <item>系统默认</item>
+        <item>sans-serif </item>
+        <item>sans-serif (斜体)</item>
+        <item>sans-serif (粗体)</item>
+        <item>sec-roboto-light</item>
+        <item>sec-roboto-light (斜体)</item>
+        <item>sec-roboto-light (粗体)</item>
+        <item>sec-roboto-light (粗斜体)</item>
+        <item>sans-serif-light</item>
+        <item>sans-serif-light (斜体)</item>
+        <item>sans-serif-thin</item>
+        <item>sans-serif-thin (斜体)</item>
+        <item>sans-serif-condensed</item>
+        <item>sans-serif-condensed (斜体)</item>
+        <item>sans-serif-condensed-light</item>
+        <item>sans-serif-condensed-light (斜体)</item>
+        <item>sans-serif-condensed (粗体)</item>
+        <item>sans-serif-condensed (粗斜体)</item>
+        <item>sans-serif-medium </item>
+        <item>sans-serif-medium (斜体)</item>
+        <item>sans-serif-black</item>
+        <item>sans-serif-black (斜体)</item>
+        <item>钟齐吴嘉手写字体</item>
+        <item>汉仪赵丽颖字体</item>
+        <item>羿创追爱字体</item>
+        <item>汉仪黑仔字体</item>
+        <item>迷你娃娃篆字体</item>
+        <item>Calista字体</item>
+        <item>立体行楷字体</item>
+        <item>牡丹字体</item>
+        <item>方正楷体</item>
+        <item>方正硬笔楷字体</item>
+        <item>汉语拼音字体</item>
+        <item>华康少女字体</item>
+        <item>Alibaba-PuHuiTi-Medium</item>
+    </string-array>
+    <string-array name="font_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+    </string-array>
+    <string-array name="statusbar_view_options">
+        <item>状态栏左侧</item>
+        <item>状态栏右侧</item>
+    </string-array>
+    <string-array name="statusbar_view_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="temp_style_entries" translatable="false">
+        <item>Battery/CPU</item>
+        <item>CPU</item>
+        <item>Battery</item>
+    </string-array>
+    <string-array name="temp_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="battery_style_entries">
+        <item>@string/batt_disable</item>
+        <item>@string/batt_stock</item>
+        <item>@string/batt_leo</item>
+    </string-array>
+    <string-array name="battery_style_values">
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_entries" translatable="false">
+        <item>@string/battery_bar_hide</item>
+        <item>@string/battery_bar_statusbar</item>
+        <item>@string/battery_bar_topnav</item>
+        <item>@string/battery_bar_bottomnav</item>
+    </string-array>
+
+    <string-array name="battery_bar_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="battery_bar_style_entries" translatable="false">
+        <item>@string/battery_bar_reg</item>
+        <item>@string/battery_bar_center</item>
+        <item>@string/battery_bar_reversed</item>
+    </string-array>
+
+    <string-array name="battery_bar_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="symbol_style_entries">
+        <item>@string/default_null</item>
+        <item>,</item>
+        <item>|</item>
+        <item>—</item>
+        <item>✤</item>
+        <item>✧</item>
+        <item>❆</item>
+        <item>♡</item>
+        <item>∴</item>
+        <item>∷</item>
+        <item>➻</item>
+        <item>ღ</item>
+        <item>⇆</item>
+        <item>☞</item>
+        <item>@string/symbol_custom</item>
+    </string-array>
+    <string-array name="symbol_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="deviceinfo_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item> 13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="deviceinfo_style_entries">
+        <item>品牌型号信息</item>
+        <item>安卓版本</item>
+        <item>编译编号</item>
+        <item>WLAN信息</item>
+        <item>温度信息</item>
+        <item>存储信息</item>
+        <item>下一个闹钟</item>
+        <item>CPU 型号</item>
+        <item>CPU 使用率</item>
+        <item>CPU Mhz</item>
+        <item>CPU 核心数与位数</item>
+        <item>GPU 型号</item>
+        <item>GPU 使用率</item>
+        <item>GPU Mhz</item>
+        <item>电池电量</item>
+        <item>电池电压与电流</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_entries">
+        <item>disable</item>
+        <item>displayed at the bottom of the notification bar</item>
+        <item>displayed at the top of the notification bar</item>
+    </string-array>
+    <string-array name="data_usage_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="data_usage_style_entries">
+        <item>左</item>
+        <item>中</item>
+        <item>右</item>
+    </string-array>
+    <string-array name="device_info_entries">
+        <item>1 行</item>
+        <item>2 行</item>
+        <item>3 行</item>
+        <item>4 行</item>
+        <item>5 行 </item>
+    </string-array>
+    <string-array name="device_info_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="clock_date_format_entries_values">
+        <item>@string/default_date_format</item>
+        <item>EEE</item>
+        <item>MM/dd</item>
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>@string/default_date_formatA</item>
+        <item>MMMMdd</item>
+        <item>yyyyMMMMdd</item>
+        <item>MMMMdd,yyyy</item>
+        <item>dd</item>
+        <item>@string/default_date_formatB</item>
+        <item>dd/MM</item>
+        <item>MM/dd</item>
+        <item>dd-MMM</item>
+        <item>yyyy/MM/dd</item>
+        <item>zz</item>
+        <item>@string/java_date_format</item>
+    </string-array>
+    <string-array name="am_pm_entries" translatable="false">
+        <item>禁用</item>
+        <item>小号AM/PM</item>
+        <item>正常AM/PM</item>
+    </string-array>
+    <string-array name="am_pm_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="detail_entries">
+        <item>12时辰:辰时,卯时,酉时等</item>
+        <item>12时段:上午,下午,傍晚等</item>
+        <item>五更:一更,二更,三更等</item>
+        <item>四季:春夏秋冬</item>
+        <item>12星座</item>
+        <item>中国农历</item>
+        <item>一年中的今天</item>
+        <item>自定义文本</item>
+    </string-array>
+    <string-array name="detail_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="lunar_sting_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="lunar_sting_options">
+         <item>默认</item>
+         <item>古代时令:孟夏.仲夏.季夏</item>
+         <item>地支:寅月.卯月</item>
+          <item>甲或己年:丙寅月.丁卯月</item>
+         <item>乙或庚年:戊寅月.己卯月</item>
+         <item>戊或癸年:甲寅月.乙卯月</item>
+    </string-array> 
+    <string-array name="date_entries">
+        <item>隐藏</item>
+        <item>小号日期</item>
+        <item>正常日期</item>
+    </string-array>
+
+    <string-array name="date_location_entries">
+        <item>时间左侧</item>
+        <item>时间右侧</item>
+    </string-array>
+
+    <string-array name="week_location_entries">
+        <item>日期右侧</item>
+        <item>日期左侧</item>
+    </string-array>
+
+    <string-array name="date_en_entries">
+        <item>默认</item>
+        <item>小写字母</item>
+        <item>大写字母</item>
+    </string-array>
+
+    <string-array name="date_week_entries">
+        <item>系统默认</item>
+        <item>星期一</item>
+        <item>礼拜一</item>
+        <item>一</item>
+        <item>曜日记法星期格式</item>
+        <item>古巴比伦星期格式</item>
+    </string-array>
+    <string-array name="date_location_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="date_en_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="date_week_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="week_location_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="clockdate_click_options">
+        <item>时间日期设置</item>
+        <item>闹钟列表</item>
+        <item>设置闹钟</item>
+        <item>定时器</item>
+        <item>日历</item>
+        <item>@string/global_action_apps</item>
+        <item>@string/global_action_shortcut</item>
+    </string-array>
+    <string-array name="clockdate_click_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="scaling_entries">
+        <item>缩小百分之20</item>
+        <item>缩小百分之30</item>
+        <item>缩小百分之40</item>
+        <item>缩小百分之50</item>
+        <item>缩小百分之60</item>
+        <item>缩小百分之70</item>
+    </string-array>
+    <string-array name="scaling_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="symbol_entries">
+        <item>@string/default_null</item>
+        <item>,</item>
+        <item>|</item>
+        <item>—</item>
+        <item>✤</item>
+        <item>✧</item>
+        <item>❆</item>
+        <item>♡</item>
+        <item>∴</item>
+        <item>∷</item>
+        <item>➻</item>
+        <item>ღ</item>
+        <item>⇆</item>
+        <item>☞</item>
+    </string-array>
+    <string-array name="symbol_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item> 13</item>
+    </string-array>
+    <string-array name="qs_detail_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="qs_detail_entries">
+        <item>12时辰:辰时,卯时,酉时等</item>
+        <item>12时段:上午,下午,傍晚等</item>
+        <item>五更:一更,二更,三更等</item>
+        <item>四季:春夏秋冬</item>
+        <item>12星座</item>
+    </string-array>
+    <string-array name="lunar_setyle_options">
+        <item>默认</item>
+        <item>生肖农历</item>
+        <item>干支生肖农历</item>
+        <item>干支生肖24节气阳历节日</item>
+        <item>干支生肖24节气农历</item>
+        <item>干支生肖24节气节日农历</item> 
+    </string-array> 
+    <string-array name="lunar_setyle_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="widget_entries">
+        <item>基本天气</item>
+        <item>基本天气+高低温度</item>
+        <item>基本天气+高低温度+AQI+体感温度</item>
+     </string-array> 
+    <string-array name="widget_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="statusbar_traffic_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="statusbar_traffic_options">
+        <item>上传/下载速率</item>
+        <item>上传速率</item>
+        <item>下载速率</item>
+    </string-array>
+    <string-array name="qs_action_entries">
+        <item>@string/global_action_leo</item>
+        <item>@string/global_action_clear_notice</item>
+        <item>@string/global_action_kill_progress</item>
+        <item>@string/global_action_back</item>
+        <item>@string/global_action_home</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_task</item>
+        <item>@string/global_action_splitscreen</item>
+        <item>@string/global_action_apps</item>
+    </string-array>
+    <string-array name="qs_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="global_action_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_apps</item>
+        <item>@string/global_action_shortcut</item>
+        <item>@string/global_action_back</item>
+        <item>@string/global_action_home</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_task</item>
+        <item>@string/global_action_splitscreen</item>
+        <item>@string/global_action_powermeun</item>
+        <item>@string/global_action_s</item>
+        <item>@string/global_action_screenrecord</item>
+        <item>@string/global_action_screenshot</item>
+        <item>@string/global_action_part_screenshot</item>
+        <item>@string/global_action_wifi_code</item>
+        <item>@string/global_action_leo</item>
+        <item>@string/global_action_notification</item>
+        <item>@string/global_action_quick_panel</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_wifi</item>
+        <item>@string/global_action_airplane</item>
+        <item>@string/global_action_floating</item>
+        <item>@string/global_action_outdoors</item>
+        <item>@string/global_action_pop</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_fullscreen</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+        <item>@string/global_action_volume</item>
+        <item>@string/global_action_silence</item>
+        <item>@string/global_action_vibrator</item>
+        <item>@string/global_action_bb_home</item>
+        <item>@string/global_action_bb_volume</item>
+        <item>@string/global_action_last_apps</item>
+        <item>@string/global_action_kill_progress</item>
+        <item>@string/global_action_kill</item>
+        <item>@string/global_action_mobile_data</item>
+        <item>@string/global_action_volume_panel</item>
+        <item>@string/global_action_clear_notice</item>
+        <item>@string/global_action_apps_manage</item>
+        <item>@string/global_action_wifi_hotspot</item>
+        <item>@string/global_action_clockdate_setting</item>
+        <item>@string/global_action_alarm_list</item>
+        <item>@string/global_action_alarm_setting</item>
+        <item>@string/global_action_timer</item>
+        <item>@string/global_action_calendar</item>
+        <item>@string/global_action_scan</item>
+    </string-array>
+    <string-array name="global_action_values">
+        <item>0</item>
+        <item>88</item>
+        <item>99</item>
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>209</item>
+        <item>210</item>
+        <item>211</item>
+        <item>212</item>
+        <item>213</item>
+        <item>214</item>
+        <item>215</item>
+        <item>216</item>
+        <item>217</item>
+        <item>218</item>
+        <item>219</item>
+        <item>220</item>
+        <item>221</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+        <item>225</item>
+        <item>226</item>
+        <item>227</item>
+        <item>228</item>
+        <item>229</item>
+        <item>230</item>
+        <item>231</item>
+        <item>232</item>
+        <item>233</item>
+        <item>234</item>
+        <item>235</item>
+        <item>236</item>
+        <item>237</item>
+        <item>238</item>
+        <item>239</item>
+        <item>240</item>
+        <item>241</item>
+        <item>242</item>
+        <item>710</item>
+    </string-array>
+    <string-array name="power_menu_style_entries">
+        <item>@string/power_simplify</item>
+        <item>@string/power_a</item>
+        <item>@string/power_b</item>
+        <item>@string/power_c</item>
+        <item>@string/power_d</item>
+    </string-array>
+    <string-array name="power_menu_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array> 
+    <string-array name="global_action_keyguard_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_awaken</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+        <item>@string/global_action_lock</item>
+    </string-array>
+    <string-array name="global_action_keyguard_values">
+        <item>0</item>
+        <item>214</item>
+        <item>220</item>
+        <item>260</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+        <item>202</item>
+    </string-array>
+    <string-array name="global_action_keyguard2_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+    </string-array>
+    <string-array name="global_action_keyguard2_values">
+        <item>0</item>
+        <item>214</item>
+        <item>220</item>
+        <item>202</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+    </string-array>
+    <string-array name="task_info_style_entries">
+        <item>@string/storage_a</item>
+        <item>@string/storage_b</item>
+    </string-array>
+    <string-array name="task_info_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="home_effect_entries">
+        <item>桌面特效 ①</item>
+        <item>桌面特效 ②</item>
+        <item>桌面特效 ③</item>
+        <item>桌面特效 ④</item>
+        <item>桌面特效 ⑤</item>
+        <item>桌面特效 ⑥</item>
+        <item>桌面特效 ⑦</item>
+        <item>桌面特效 ⑧</item>
+        <item>桌面特效 ⑨</item>
+        <item>桌面特效 ⑩</item>
+        <item>桌面特效 ⑪</item>
+        <item>桌面特效 ⑫</item>
+        <item>桌面特效 ⑬</item>
+    </string-array>
+    <string-array name="home_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+</resources>

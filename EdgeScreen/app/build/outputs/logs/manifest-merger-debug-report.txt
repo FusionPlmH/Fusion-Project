@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:8:5-117
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:8:22-114
+application
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:10:5-45:19
+	android:label
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:12:9-41
+	android:allowBackup
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.leoedge.amber.EdgeConfigure
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:label
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:16:13-45
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:15:13-42
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:17:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:18:25-66
+activity#com.leoedge.amber.immersive_mode.ImmersiveModeActivity
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:21:9-33:20
+	android:label
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:23:13-45
+	android:theme
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:24:13-77
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:22:13-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:25:13-28:29
+category#android.intent.category.LAUNCHER
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:27:27-74
+meta-data#com.samsung.android.cocktail.subwindow.enable
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:30:13-32:40
+	android:value
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:32:17-37
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:31:17-77
+receiver#com.leoedge.amber.singleplus.CocktailSinglePlusProvider
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:35:9-43:20
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:35:19-72
+intent-filter#action:name:com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:36:13-38:29
+action#com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:37:17-97
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:37:25-94
+meta-data#com.samsung.android.cocktail.provider
+ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:40:13-42:60
+	android:resource
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:42:17-57
+	android:name
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml:41:17-69
+uses-sdk
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		ADDED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml
+		INJECTED from D:\code\EdgeScreen\app\src\main\AndroidManifest.xml

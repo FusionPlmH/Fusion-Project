@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="GoodLock_entries">
+        <item>側屏閃光</item>
+        <item>多任務切換</item>
+        <item>單手操作</item>
+    </string-array>
+    <string-array name="qq_items">
+        <item>LeoRom 1群</item>
+        <item>LeoRom 2群</item>
+        <item>Fusion Kernel群</item>
+    </string-array>
+<string-array name="window_animation_scale_entries">
+        <item>關閉動畫</item>
+        <item>動畫 0.2x</item>
+        <item>動畫 0.25x</item>
+        <item>動畫 0.3x</item>
+        <item>動畫 0.4x</item>
+        <item>動畫 0.5x</item>
+        <item>動畫 0.6x</item>
+        <item>動畫 0.7x</item>
+        <item>動畫 0.8x</item>
+        <item>動畫 0.9x</item>
+        <item>動畫 1x</item>
+        <item>動畫 1.5x</item>
+        <item>動畫 2x</item>
+        <item>動畫 3x</item>
+        <item>動畫 5x</item>
+        <item>動畫 10x</item>
+    </string-array>
+  
+    <string-array name="wipe_entries">
+        <item>清理Data</item>
+        <item>清理Cache</item>
+        <item>清理Dalvik</item>
+        <item>清理系統設置數據</item>
+    </string-array>
+    <string-array name="network_items">     
+        <item>網絡設置</item> 
+        <item>@string/show_dsp_sumarry</item>
+        <item>三星隱藏網絡設置</item>   
+    </string-array>
+    <string-array name="hidden_icons_options">
+        <item>狀態欄屏幕旋轉圖標</item>
+        <item>狀態欄卡1HD圖標</item>
+        <item>狀態欄卡2HD圖標</item>
+        <item>狀態欄鬧鐘圖標</item>
+        <item>狀態欄移動信號</item>
+        <item>狀態欄省電模式圖標</item>
+        <item>狀態欄飛行模式</item>
+        <item>狀態欄耳機</item>
+        <item>狀態欄聲音</item>
+        <item>狀態欄WIFI圖標</item>
+        <item>狀態欄藍牙圖標</item>
+        <item>狀態欄NFC圖標</item>
+        <item>狀態欄電池圖標(僅官方電池有效)</item>
+        <item>狀態欄投射圖標</item>
+    </string-array>
+  
+    <string-array name="power_menu_options">
+        <item>關機</item>
+        <item>移動數據</item>
+        <item>飛行模式</item>
+        <item>重新啟動</item>
+        <item>多用戶模式</item>
+        <item>助理菜單</item>
+        <item>三星設定</item>
+        <item>緊急模式</item>
+        <item>屏幕截圖</item>
+        <item>卡刷模式</item>
+        <item>線刷模式</item>
+        <item>屏幕錄像</item>
+        <item>快速重啟</item>
+        <item>手電筒</item>
+        <item>個性化設置</item>
+        <item>屏幕助手</item>
+        <item>聲音模式</item>
+        <item>WIFI模式</item>
+    </string-array>
+    <string-array name="power_menu_order_entries">
+        <item>默認順序</item>
+        <item>相反順序</item>
+        <item>隨機順序</item>
+    </string-array>
+   
+    <string-array name="device_info_entries">
+        <item>設備型號</item>
+        <item>安卓版本</item>
+        <item>ROM版本</item>
+        <item>無線網絡</item>
+        <item>下一個鬧鐘</item>
+        <item>溫度</item>
+        <item>存儲</item>
+        <item>電池狀態</item>
+        <item>Cpu使用率</item>
+        <item>Cpu型號</item>
+        <item>Cpu頻率</item>
+        <item>電量容量</item>
+    </string-array>
+   
+    <string-array name="device_orientation_entries">
+        <item>居中對齊</item>
+         <item>右對齊</item>
+        <item>左對齊</item>
+    </string-array>
+   
+    <string-array name="aod_lunar_entries">
+        <item>系統默認</item>
+        <item>時辰 年月日</item>
+        <item>屬相 年月日</item>
+        <item>幹支 屬相 年 月 日</item>
+        <item>自定義文本</item>
+    </string-array>
+    
+   <string-array name="nv_home_icon_entries">
+        <item>默認</item>
+        <item>導航圖標 1</item>
+        <item>導航圖標 2</item>
+        <item>導航圖標 3</item>
+        <item>導航圖標 4</item>
+        <item>導航圖標 5</item>
+        <item>導航圖標 6</item>
+        <item>導航圖標 7</item>
+        <item>導航圖標 8</item>
+        <item>導航圖標 9</item>
+        <item>導航圖標 10</item>
+        <item>導航圖標 11</item>
+        <item>導航圖標 12</item>
+        <item>導航圖標 13</item>
+        <item>導航圖標 14</item>
+        <item>導航圖標 15</item>
+        <item>導航圖標 16</item>
+        <item>導航圖標 17</item>
+        <item>導航圖標 18</item>
+        <item>導航圖標 19</item>
+        <item>導航圖標 20</item>
+        <item>導航圖標 21</item>
+        <item>導航圖標 22</item>
+    </string-array>
+    
+    <string-array name="nv_back_icon_entries">
+        <item>默認</item>
+        <item>返回圖標 1</item>
+        <item>返回圖標 2</item>
+        <item>返回圖標 3</item>
+        <item>返回圖標 4</item>
+        <item>返回圖標 5</item>
+        <item>返回圖標 6</item>
+        <item>返回圖標 7</item>
+        <item>返回圖標 8</item>
+        <item>返回圖標 9</item>
+        <item>返回圖標 10</item>
+        <item>返回圖標 11</item>
+        <item>返回圖標 12</item>
+        <item>返回圖標 13</item>
+        <item>返回圖標 14</item>
+        <item>返回圖標 15</item>
+        <item>返回圖標 16</item>
+        <item>返回圖標 17</item>
+        <item>返回圖標 18</item>
+        <item>返回圖標 19</item>
+        <item>返回圖標 20</item>
+        <item>返回圖標 21</item>
+        <item>返回圖標 22</item>
+    </string-array>
+
+    <string-array name="location_service">
+        <item>高德定位</item>
+        <item>百度定位（默認）</item>
+    </string-array>
+    <string-array name="nv_recent_icon_entries">
+        <item>默認</item>
+        <item>最近任務圖標 1</item>
+        <item>最近任務圖標 2</item>
+        <item>最近任務圖標 3</item>
+        <item>最近任務圖標 4</item>
+        <item>最近任務圖標 5</item>
+        <item>最近任務圖標 6</item>
+        <item>最近任務圖標 7</item>
+        <item>最近任務圖標 8</item>
+        <item>最近任務圖標 9</item>
+        <item>最近任務圖標 10</item>
+        <item>最近任務圖標 11</item>
+        <item>最近任務圖標 12</item>
+        <item>最近任務圖標 13</item>
+        <item>最近任務圖標 14</item>
+        <item>最近任務圖標 15</item>
+        <item>最近任務圖標 16</item>
+        <item>最近任務圖標 17</item>
+        <item>最近任務圖標 18</item>
+        <item>最近任務圖標 19</item>
+        <item>最近任務圖標 20</item>
+        <item>最近任務圖標 21</item>
+        <item>最近任務圖標 22</item>
+    </string-array>
+    <string-array name="nv_home2_icon_entries">
+        <item>默認</item>
+        <item>HOME 圖標 1</item>
+        <item>HOME 圖標 2</item>
+        <item>HOME 圖標 3</item>
+        <item>HOME 圖標 4</item>
+        <item>HOME 圖標 5</item>
+        <item>HOME 圖標 6</item>
+        <item>HOME 圖標 7</item>
+        <item>HOME 圖標 8</item>
+        <item>HOME 圖標 9</item>
+        <item>HOME 圖標 10</item>
+        <item>HOME 圖標 11</item>
+        <item>HOME 圖標 12</item>
+        <item>HOME 圖標 13</item>
+        <item>HOME 圖標 14</item>
+        <item>HOME 圖標 15</item>
+        <item>HOME 圖標 16</item>
+        <item>HOME 圖標 17</item>
+        <item>HOME 圖標 18</item>
+        <item>HOME 圖標 19</item>
+        <item>HOME 圖標 20</item>
+        <item>HOME 圖標 21</item>
+        <item>HOME 圖標 22</item>
+    </string-array>
+
+    <string-array name="notification_fingerprint_entries">
+        <item>默認</item>
+        <item>鎖定屏幕</item>
+        <item>HOME</item>
+        <item>返回</item>
+        <item>音量+</item>
+        <item>音量—</item>
+        <item>移動數據</item>
+        <item>部分截圖</item>
+        <item>S 搜索</item>
+        <item>本地WIFI密碼</item>
+        <item>最近任務</item>
+        <item>照相機</item>
+        <item>通知欄</item>
+        <item>屏幕截圖</item>
+        <item>清理後臺進程</item>
+        <item>任意程序</item>
+        <item>結束進程</item>
+        <item>輔助燈光</item>
+        <item>@string/app_name</item>
+        <item>屏幕錄制</item>
+        <item>下一曲</item>
+        <item>上一曲</item>
+        <item>播放/暫停</item>
+        <item>聲音模式</item>
+        <item>WIFI狀態</item>
+        <item>分屏</item>
+        <item>電源菜單</item>
+        <item>飛行模式</item>
+        <item>Bixby 主頁</item>
+        <item>Bixby 語音</item>
+        <item>上次使用APP</item>
+        <item>戶外模式</item>
+        <item>屏幕助手</item>
+    </string-array>
+    <string-array name="notification_bixby_entries">
+        <item>無動作</item>
+        <item>輔助燈光</item>
+    </string-array>
+  
+    <string-array name="notification_ls_entries">
+        <item>無動作</item>
+        <item>輔助燈光</item>
+        <item>電源菜單</item>
+    </string-array>
+    <string-array name="notification_ls_values">
+        <item>88</item>
+        <item>116</item>
+        <item>125</item>
+    </string-array>
+    <string-array name="notification_qb_entries">
+        <item>無動作</item>
+        <item>相機</item>
+        <item>輔助燈光</item>
+    </string-array>
+   
+    <string-array name="launcher_bg_style_entries">
+                 <item>默認系統壁紙</item>
+                 <item>@string/blur_wallpaper</item>
+             </string-array>
+   
+    <string-array name="battery_bar_entries">
+        <item>隱藏</item>
+        <item>狀態欄頂部</item>
+        <item>鎖屏欄狀態欄頂部</item>
+
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>正常</item>
+        <item>中心鏡像</item>
+    </string-array>
+
+    <string-array name="battery_model_entries">
+        <item>系統默認</item>
+        <item>Leo電池模組</item>
+    </string-array>
+
+    <string-array name="bg_gradient_type_entries">
+        <item>由上至下漸變</item>
+        <item>由下至上漸變</item>
+        <item>由左至右漸變</item>
+        <item>由右至左漸變</item>
+        <item>由右下角至往左上角漸變</item>
+        <item>由左下角至右上角漸變</item>
+        <item>由左上角至右下角漸變</item>
+        <item>由右上角至左下角漸變</item>
+    </string-array>
+	
+    <string-array name="bg_three_gradient_model_type_entries">
+        <item>線性漸變</item>
+        <item>放射漸變</item>
+        <item>掃描漸變</item>
+    </string-array>
+	
+    <string-array name="bg_type_entries">
+        <item>自定義顏色</item>
+        <item>背景壁紙</item>
+    </string-array>
+	
+    <string-array name="activity_bg_type_entries">
+        <item>自定義顏色</item>
+        <item>背景壁紙</item>
+    </string-array>
+	
+    <string-array name="clock_date_display_entries">
+        <item>隱藏</item>
+        <item>小</item>
+        <item>正常</item>
+    </string-array>
+	
+    <string-array name="clock_date_style_entries">
+        <item>正常</item>
+        <item>英文日期為小寫字母</item>
+        <item>英文日期為大寫字母</item>
+    </string-array>
+	
+    <string-array name="clock_date_week_entries">
+        <item>周一</item>
+        <item>星期一</item>
+        <item>一</item>
+    </string-array>
+	
+    <string-array name="clock_details_entries">
+        <item>12時辰</item>
+        <item>12時段</item>
+        <item>星座</item>
+        <item>農歷</item>
+        <item>季節</item>
+    </string-array>
+	
+    <string-array name="china_clock_details_entries">
+        <item>12時辰</item>
+        <item>12時段</item>
+        <item>星座</item>
+        <item>季節</item>
+    </string-array>
+	
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>阿裏巴巴</item>
+        <item>蘋果</item>
+        <item>百度</item>
+        <item>中國移動</item>
+        <item>谷歌</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>騰訊QQ</item>
+        <item>中國電信</item>
+        <item>中國聯通</item>
+        <item>微軟</item>
+        <item>Ubuntu</item>
+        <item>中國電信2</item>
+    </string-array>
+	
+    <string-array name="clock_style_entries">
+        <item>狀態欄右側</item>
+        <item>狀態欄中間</item>
+        <item>狀態欄左側</item>
+    </string-array>
+	
+    <string-array name="font_style_entries">
+        <item>系統默認</item>
+        <item>字體1</item>
+        <item>字體2</item>
+        <item>字體3</item>
+        <item>字體4</item>
+        <item>字體5</item>
+        <item>字體6</item>
+        <item>字體7</item>
+        <item>字體8</item>
+        <item>字體9</item>
+        <item>字體10</item>
+        <item>字體11</item>
+        <item>字體12</item>
+        <item>字體14</item>
+        <item>字體15</item>
+        <item>字體16</item>
+        <item>字體17</item>
+        <item>字體18</item>
+        <item>字體19</item>
+        <item>字體20</item>
+        <item>字體21</item>
+        <item>字體22</item>
+        <item>字體23</item>
+        <item>字體24</item>
+        <item>字體25(支持中文)</item>
+        <item>字體26(支持中文)</item>
+        <item>字體27(支持中文)</item>
+        <item>字體28(支持中文)</item>
+        <item>字體29(支持中文)</item>
+        <item>字體30(支持中文)</item>
+        <item>字體31(支持中文)</item>
+        <item>字體32(支持中文)</item>
+        <item>字體33(支持中文)</item>
+        <item>字體34(支持中文)</item>
+        <item>字體35(支持中文)</item>
+    </string-array>
+	
+    <string-array name="notification_shortcut_entries">
+        <item>無動作</item>
+        <item>鎖定屏幕</item>
+        <item>HOME</item>
+        <item>返回</item>
+        <item>音量+</item>
+        <item>音量—</item>
+        <item>移動數據</item>
+        <item>部分截圖</item>
+        <item>S 搜索</item>
+        <item>本地WIFI密碼</item>
+        <item>最近任務</item>
+        <item>照相機</item>
+        <item>通知欄</item>
+        <item>屏幕截圖</item>
+        <item>清理後臺進程</item>
+        <item>任意程序</item>
+        <item>結束進程</item>
+        <item>輔助燈光</item>
+        <item>@string/app_name</item>
+        <item>屏幕錄制</item>
+        <item>下一曲</item>
+        <item>上一曲</item>
+        <item>播放/暫停</item>
+        <item>聲音模式</item>
+        <item>WIFI狀態</item>
+        <item>分屏</item>
+        <item>電源菜單</item>
+        <item>飛行模式</item>
+        <item>Bixby 主頁</item>
+        <item>Bixby 語音</item>
+        <item>上次使用APP</item>
+        <item>戶外模式</item>
+        <item>屏幕助手</item>
+    </string-array>
+
+    <string-array name="launcher_effect_entries">
+        <item>默認</item>
+        <item>桌面特效1</item>
+        <item>桌面特效2</item>
+        <item>桌面特效3</item>
+        <item>桌面特效4</item>
+        <item>桌面特效5</item>
+        <item>桌面特效6</item>
+        <item>桌面特效7</item>
+        <item>桌面特效8</item>
+        <item>桌面特效9</item>
+        <item>桌面特效10</item>
+        <item>桌面特效11</item>
+        <item>桌面特效12</item>
+        <item>桌面特效13</item>
+        <item>桌面特效14</item>
+        <item>桌面特效15</item>
+        <item>桌面特效16</item>
+        <item>桌面特效17</item>
+        <item>桌面特效18</item>
+        <item>桌面特效19</item>
+        <item>桌面特效20</item>
+        <item>桌面特效21</item>
+    </string-array>
+	
+    <string-array name="lunar_style_entries">
+        <item>月-日</item>
+        <item>時辰-年-月-日</item>
+        <item>屬相-年-月-日</item>
+        <item>時辰—屬相-年-月-日</item>
+    </string-array>
+	
+    <string-array name="network_traffic_unit_entries">
+        <item>字節/秒</item>
+        <item>比特/秒</item>
+    </string-array>
+	
+    <string-array name="signal_style">
+        <item>默認</item>
+        <item>信號圖標1</item>
+        <item>信號圖標2</item>
+        <item>信號圖標3</item>
+        <item>信號圖標4</item>
+        <item>信號圖標5</item>
+        <item>信號圖標6</item>
+        <item>信號圖標7</item>
+        <item>信號圖標8</item>
+        <item>信號圖標9</item>
+        <item>信號圖標10</item>
+        <item>信號圖標11</item>
+        <item>信號圖標12</item>
+        <item>信號圖標13</item>
+        <item>信號圖標14</item>
+        <item>信號圖標15</item>
+        <item>信號圖標16</item>
+        <item>信號圖標17</item>
+        <item>信號圖標18</item>
+    </string-array>
+	
+    <string-array name="status_bar_ampm_entries">
+        <item>禁用</item>
+        <item>小</item>
+        <item>正常</item>
+    </string-array>
+	
+    <string-array name="statusbar_view_position_entries">
+        <item>右側</item>
+        <item>左側</item>
+    </string-array>
+	
+    <string-array name="traffic_state_entries">
+        <item>隱藏網速指示器</item>
+        <item>顯示上傳網速</item>
+        <item>顯示下載網速</item>
+        <item>顯示上傳與下載</item>
+    </string-array>
+	
+    <string-array name="wifi_style">
+        <item>默認</item>
+        <item>WIFI圖標1</item>
+        <item>WIFI圖標2</item>
+        <item>WIFI圖標3</item>
+        <item>WIFI圖標4</item>
+        <item>WIFI圖標5</item>
+        <item>WIFI圖標6</item>
+        <item>WIFI圖標7</item>
+        <item>WIFI圖標8</item>
+        <item>WIFI圖標9</item>
+        <item>WIFI圖標10</item>
+        <item>WIFI圖標11</item>
+        <item>WIFI圖標12</item>
+        <item>WIFI圖標13</item>
+        <item>WIFI圖標14</item>
+        <item>WIFI圖標15</item>
+    </string-array>
+	
+    <string-array name="data_usage_style_entries">
+        <item>左邊</item>
+        <item>居中</item>
+        <item>默認</item>
+    </string-array>
+	
+    <string-array name="power_items">
+        <item>關閉電源</item>
+        <item>重新啟動</item>
+        <item>快速重啟</item>
+        <item>卡刷模式</item>
+        <item>線刷模式</item>
+        <item>重啟UI</item>
+    </string-array>
+    <string-array name="network_icon_style">
+        <item>默認網速圖標</item>
+        <item>網速圖標1</item>
+        <item>網速圖標2</item>
+        <item>網速圖標3</item>
+        <item>網速圖標4</item>
+        <item>網速圖標5</item>
+        <item>網速圖標6</item>
+        <item>網速圖標7</item>
+    </string-array>
+</resources>
+
+

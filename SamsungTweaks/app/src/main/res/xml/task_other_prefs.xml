@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/recents_memory_gategory" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/recents_memory_title" android:key="leo_tweaks_recents_memory" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/recents_memory_info_refresh_gategory" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/recents_memory_info_refresh_title" android:key="leo_tweaks_recents_memory_info_refresh"  android:summary="@string/seksbar_sumarry" android:defaultValue="2500" app:minValue="200" app:maxValue="15000" app:unitsValue=" ms" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/recents_memory_click_gategory" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/recents_memory_click_title" android:key="leo_tweaks_recents_memory_click" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_recents_memory_click_vibrator" android:dependency="leo_tweaks_recents_memory_click" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_recents_memory_click_vibrator_level" android:dependency="leo_tweaks_recents_memory_click" android:summary="@string/vibrator_level_summary" android:defaultValue="20" app:minValue="5" app:maxValue="50" app:unitsValue="" />
+
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/text_set" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/text_size" android:key="leo_tweaks_recents_memory_info_size"  android:summary="@string/seek_summary" android:defaultValue="14" app:minValue="5" app:maxValue="20" app:unitsValue=" dp" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_recents_memory_info_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/recents_memory_info_language" android:key="leo_tweaks_recents_memory_info_language" android:defaultValue="true" android:summaryOn="中文" android:summaryOff="English"  />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/recents_memory_info_textcolor" android:key="leo_tweaks_recents_memory_info_textcolor" android:summary="@string/white_color" leo:defaultColor="\#ffffffff" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/recents_memory_info_usedcolor" android:key="leo_tweaks_recents_memory_info_usedcolor" android:summary="@string/white_color" leo:defaultColor="\#ffffffff" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/recents_memory_info_freecolor" android:key="leo_tweaks_recents_memory_info_freecolor" android:summary="@string/white_color" leo:defaultColor="\#ffffffff" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/recents_memory_info_bgcolor_gategory" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/recents_memory_info_bgcolor" android:key="leo_tweaks_recents_memory_info_bgcolor" android:summary="@string/blue_color" leo:defaultColor="\#6033b5e5" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/stroke_start" android:key="leo_tweaks_recents_memory_stroke_enabled"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/stroke_color" android:key="leo_tweaks_recents_memory_stroke_color" android:summary="@string/stroke_color_summary" android:dependency="leo_tweaks_recents_memory_stroke_enabled" leo:defaultColor="\#00BCD4" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/stroke_thickness" android:key="leo_tweaks_recents_memory_stroke_thickness" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_recents_memory_stroke_enabled" android:defaultValue="6" app:minValue="1" app:maxValue="25" app:unitsValue=" um" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/stroke_width" android:key="leo_tweaks_recents_memory_stroke_width" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_recents_memory_stroke_enabled" android:defaultValue="3" app:minValue="0" app:maxValue="50" app:unitsValue=" um" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/stroke_gap" android:key="leo_tweaks_recents_memory_stroke_gap" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_recents_memory_stroke_enabled" android:defaultValue="6" app:minValue="1" app:maxValue="50" app:unitsValue=" um" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/stroke_corners" android:key="leo_tweaks_recents_memory_stroke_corner_radius" android:summary="@string/seksbar_sumarry" android:defaultValue="0" app:minValue="0" app:maxValue="60" app:unitsValue="  °" />
+</PreferenceScreen>

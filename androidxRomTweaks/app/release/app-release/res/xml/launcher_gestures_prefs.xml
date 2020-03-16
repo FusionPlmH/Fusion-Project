@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="launcher_gesture_double_vibrator_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="leo_salt_launcher_gesture_double_vibrator_level" android:dependency="launcher_gesture_double_vibrator_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_gesture_category" android:key="leo_salt_launcher_sliding" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/launcher_gesture_enabled" android:key="sliding_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingCardWarningPreference android:key="launcher_warning" salt:warningClick="home" salt:warningString="@string/launcher_gesture_warning" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/launcher_gesture_sliding_top" android:key="sliding_top" android:dependency="sliding_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/launcher_gesture_sliding_bottom" android:key="sliding_bottom" android:dependency="sliding_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_gesture_double_category" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/launcher_gesture_double_enabled" android:key="launcher_gesture_double_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/launcher_gesture_double" android:key="gesture_double" android:dependency="launcher_gesture_double_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+</PreferenceScreen>

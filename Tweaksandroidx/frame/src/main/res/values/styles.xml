@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="CustomTheme_Dialog" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+    </style>
+    <style name="PermissionDefaultNormalStyle" >
+        <item name="PermissionTitleColor">#737373</item>
+        <item name="PermissionMsgColor">#737373</item>
+        <item name="PermissionItemTextColor">#737373</item>
+        <item name="PermissionButtonBackground">@drawable/shape_btn_next</item>
+        <item name="PermissionBackround">@drawable/shape_bg_white</item>
+        <item name="PermissionButtonTextColor">@android:color/white</item>
+    </style>
+    <dimen name="default_panel_icon_padding">5dp</dimen>
+
+    <style name="DialogStyleLight" parent="@style/Base.V7.ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="DialogTitleStyle" parent="@style/RtlOverlay.DialogWindowTitle.AppCompat">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?colorAccent</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="ApksTitleStyle">
+        <item name="android:textSize">16.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="Theme.Dialog.Dark" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

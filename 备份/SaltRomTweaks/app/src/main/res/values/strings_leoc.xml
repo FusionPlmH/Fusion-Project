@@ -1,0 +1,110 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="global_gestures_right">Swipe left from the right side of the screen</string>
+
+   <string name="hardware_nav_keys">Three King Kong Customization</string>
+   <string name="keys_custom">Customize three King Kong actions</string>
+   <string name="task_keys">task key</string>
+   <string name="hardware_longpress_task">long press the task key action</string>
+   <string name="back_keys">Back key</string>
+   <string name="hardware_longpress_back">long press the return key action</string>
+   <string name="home_keys">home button</string>
+   <string name="hardware_longpress_home">long press the home button action</string>
+
+   <string name="keyguard_alarm">lock screen next alarm</string>
+   <string name="keyguard_alarm_icon">alarm icon</string>
+   <string name="keyguard_alarm_text_info">alarm icon description text</string>
+   <string name="keyguard_alarm_text_size">alarm text size</string>
+   <string name="keyguard_alarm_text_font">alarm font style</string>
+   <string name="keyguard_alarm_color_custom">Customize the alarm color</string>
+   <string name="keyguard_alarm_text_color">alarm text color</string>
+   <string name="keyguard_alarm_icon_color">alarm icon color</string>
+
+   <string name="keyguard_carrier">lock screen operator</string>
+   <string name="keyguard_alarm_dual">Custom dual carrier text</string>
+   <string name="keyguard_alarm_str_custom">Custom status bar operator text</string>
+   <string name="keyguard_alarm_size">operator size</string>
+   <string name="keyguard_alarm_symbol">split symbol</string>
+   <string name="keyguard_alarm_font">Operator font style</string>
+   <string name="keyguard_alarm_dark_color_start">Set the status bar background to dark carrier color</string>
+   <string name="keyguard_alarm_dark_color">The status bar background is dark carrier color</string>
+   <string name="keyguard_alarm_light_color_start">Set the status bar background to light carrier color</string>
+   <string name="keyguard_alarm_light_color">Set the status bar background to light carrier color</string>
+   <string name="keyguard_action_doubleTap_enabled">lock screen double-click status bar action enabled</string>
+   <string name="keyguard_action_enabled">double-click the lock screen to start the action anywhere</string>
+   <string name="keyguard_action_style">lock screen action</string>
+
+   <string name="keyguard_weather_enabled">Lock Screen Weather Plugin</string>
+   <string name="keyguard_aweather_style">weather plugin type</string>
+   <string name="keyguard_weather_top">plug-in top margin</string>
+   <string name="keyguard_weather_height">plugin height</string>
+
+
+   <string name="launcher_gesture_category">desktop swipe gesture</string>
+   <string name="launcher_gesture_enabled">Enable desktop swipe gestures</string>
+   <string name="launcher_gesture_sliding_top">Slide gesture on the desktop</string>
+   <string name="launcher_gesture_warning">"1. Use the desktop swipe gesture to not turn off the main screen settings - use the search in the main screen \n2. Use the desktop swipe gesture to not open the main screen settings - quickly open the notification panel \n if you have modified both Item setting click to change the setting "</string>
+   <string name="launcher_gesture_sliding_bottom">desktop glide gesture</string>
+   <string name="launcher_gesture_double_category">double click on the desktop</string>
+   <string name="launcher_gesture_double_enabled">Enable desktop double-click gestures</string>
+   <string name="launcher_gesture_double">desktop double click gesture</string>
+
+   <string name="launcher_blurview">Custom desktop Gaussian Blur Wallpaper</string>
+
+
+   <string name="mini_pop">Screen Assistant</string>
+   <string name="mini_pop_start">Enable Screen Assistant</string>
+   <string name="mini_pop_action">screen helper action</string>
+   <string name="mini_pop_back">Back button action</string>
+   <string name="mini_pop_home">Home button action</string>
+   <string name="mini_pop_task">task button action</string>
+   <string name="mini_pop_flashlight">flashlight button action</string>
+
+   <string name="bgv_mode">background mode</string>
+   <string name="bgv_single_color_gategory">single background color</string>
+   <string name="bgv_single_color">set a single background color</string>
+   <string name="bgv_gradient_color_gategory">gradient background color</string>
+   <string name="bgv_gradient_color_style">gradient color style</string>
+   <string name="bgv_gradient_color_radius">radiative gradient color radius</string>
+   <string name="bgv_gradient_color_mode">linear gradient color mode</string>
+   <string name="bgv_gradient_color_a">gradient color I</string>
+   <string name="bgv_gradient_color_b">gradient color II</string>
+   <string name="bgv_gradient_color_c">gradient color III</string>
+   <string name="bgv_gradient_color_start_f">Enable VI color gradient</string>
+   <string name="bgv_gradient_color_d">gradient color IV</string>
+   <string name="bgv_gradient_color_e">gradient color V</string>
+   <string name="bgv_gradient_color_f">gradient color VI</string>
+   <string name="bgv_wallpaper">background wallpaper</string>
+   <string name="bgv_dashed">background dotted stroke</string>
+   <string name="bgv_color_start">Allow background wallpaper coloring</string>
+   <string name="bgv_color">set the background wallpaper overlay color</string>
+   <string name="bgv_alpha_start">background wallpaper transparency</string>
+   <string name="bgv_alpha">Set background wallpaper transparency</string>
+   <string name="bgv_blur_start">Background wallpaper Gaussian Blur</string>
+   <string name="bgv_blur">set the background wallpaper ambiguity</string>
+   <string name="blur_res">ambiguity &#160;</string>
+   <string name="alpha_res">Transparency&#160;</string>
+
+   <string name="nav_bgv">Navigation bar background</string>
+   <string name="nav_bgv_custom">custom navigation bar background</string>
+
+   <string name="nav_height">Navigation bar height setting</string>
+   <string name="nav_landscape_enable">set the height of the horizontal navigation bar</string>
+   <string name="nav_landscape_enable_style">horizontal navigation bar height</string>
+   <string name="nav_portrait_enable">set the height of the vertical screen navigation bar</string>
+   <string name="nav_portrait_enable_style">vertical navigation bar height</string>
+   <string name="hide_nav">Hide the navigation bar</string>
+   <string name="hide_nav_whitelist">Navigation bar hides whitelist</string>
+   <string name="hide_nav_whitelist_summary">Select the program you don t need to hide the navigation bar</string>
+   <string name="launcher_setting">desktop settings</string>
+   <string name="launcher_icon_text">display tray program name</string>
+   <string name="launcher_effect">Desktop scrolling effect</string>
+
+   <string name="salt_power_menu">Leo advanced power menu</string>
+   <string name="salt_power_menu_enable">Enable Leo Advanced Power Menu</string>
+   <string name="salt_power_menu_style">set the power menu style</string>
+   <string name="salt_power_menu_number">set the number of power menu items</string>
+   <string name="a">&#160;One</string>
+   <string name="salt_power_menu_column">set the power menu nine square grid number</string>
+   <string name="column">&#160;column</string>
+   <string name="salt_power_menu_status_bar">Hide the power menu status bar</string>
+</resources>

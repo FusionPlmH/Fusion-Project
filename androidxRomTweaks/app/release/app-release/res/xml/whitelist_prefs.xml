@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="结束程序白名单设置" android:key="kill_whitelist" android:summary="选择你需要设置为白名单的程序,单击程序可从白名单中移除" />
+</PreferenceScreen>

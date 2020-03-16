@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/nav_home" android:id="@id/navigation_home" android:title="@string/nav_tab_home" />
+    <item android:icon="@drawable/nav_ui" android:id="@id/navigation_ui" android:title="SystemUI" />
+    <item android:icon="@drawable/nav_display" android:id="@id/nav_display" android:title="@string/nav_tab_display" />
+    <item android:icon="@drawable/nav_action" android:id="@id/navigation_action" android:title="@string/nav_tab_action" />
+    <item android:icon="@drawable/nav_assist" android:id="@id/navigation_tools" android:title="@string/nav_tab_tools" />
+</menu>

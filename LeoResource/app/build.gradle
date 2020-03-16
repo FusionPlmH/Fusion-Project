@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.leo.framework"
+        targetSdkVersion 28
+        versionCode 520710
+        versionName "LeoFramework(P)_V7.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        } }
+}
+String SDK_DIR = System.getenv("ANDROID_SDK_HOME")
+if (SDK_DIR == null) {
+    Properties props = new Properties()
+    props.load(new FileInputStream(project.rootProject.file("local.properties")))
+    SDK_DIR = props.get('sdk.dir');
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly files("${SDK_DIR}/platforms/android-25/data/layoutlib.jar")
+}

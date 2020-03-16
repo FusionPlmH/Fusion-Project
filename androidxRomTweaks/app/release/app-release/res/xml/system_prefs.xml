@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingPreference android:title="修复淘宝优酷热更新问题" android:key="leo_taobao" android:summary="出现淘宝优酷闪退可以试试" android:defaultValue="false" />
+    <com.leo.salt.preference.SaltSettingPreference android:title="@string/doze" android:key="leo_doze" android:summary="@string/doze_sumarry" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/airplane_tactics" android:key="leo_airplane" android:summary="@string/airplane_tactics_summary" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/sim_dialog" android:key="leo_stk" android:summary="@string/sim_dialog_summary" android:defaultValue="false" />
+    <com.leo.salt.preference.SaltSettingPreference android:title="@string/battery_log" android:key="leo_battery_log" android:summary="@string/battery_log_summary" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/wake_unplugged" android:key="wake_unplugged" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <SwitchPreference android:title="@string/sim_restriction" android:key="SimSdBlock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/system_animation" />
+    <com.leo.salt.preference.SaltSettingAnimationPreference android:entries="@array/window_animation_scale_entries" android:title="@string/window_animation" android:key="window_animation_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.SaltSettingAnimationPreference android:entries="@array/window_animation_scale_entries" android:title="@string/transition_animation" android:key="transition_animation_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.SaltSettingAnimationPreference android:entries="@array/window_animation_scale_entries" android:title="@string/animator_duration" android:key="animator_duration_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.SaltSettingPreference android:title="@string/boot_animation" android:key="leo_boot_anim" android:summary="@string/boot_animation_sumarry" />
+</PreferenceScreen>

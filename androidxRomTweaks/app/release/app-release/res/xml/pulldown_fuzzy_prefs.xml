@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_bg" android:key="qs_blur_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="20" android:title="@string/qs_bg_sumarry" android:key="qs_blursyule" android:dependency="qs_blur_enabled" android:defaultValue="15" android:min="5" salt:interval="1" salt:unitsLeft="@string/blur_res" salt:unitsRight=" R" />
+</PreferenceScreen>

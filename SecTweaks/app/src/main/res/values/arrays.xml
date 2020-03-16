@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="full_screen_options">
+        <item>@string/full_screen_0</item>
+        <item>@string/full_screen_1</item>
+        <item>@string/full_screen_2</item>
+        <item>@string/full_screen_3</item>
+        <item>@string/full_screen_4</item>
+        <item>@string/full_screen_5</item>
+    </string-array>
+    <string-array name="full_screen_values">
+        <item>immersive.full</item>
+        <item>immersive.full=*</item>
+        <item>immersive.status=*</item>
+        <item>immersive.navigation=*</item>
+        <item>immersive.status=apps,-com.tencent.mobileqq,-com.sec.android.app.launcher,-com.tencent.mm,-com.eg.android.AlipayGphone,-com.taobao.taobao,com.tencent.tim</item>
+        <item>immersive.navigation=apps,-com.tencent.mobileqq,-com.sec.android.app.launcher,-com.tencent.mm,-com.eg.android.AlipayGphone,-com.taobao.taobao,com.tencent.tim</item>
+    </string-array>
+    <string-array name="google_services_options">
+        <item>@string/google_services_0</item>
+        <item>@string/google_services_1</item>
+    </string-array>
+    <string-array name="google_services_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="GoodLock_entries">
+        <item>Edge Lighting</item>
+        <item>Multitask Menu</item>
+        <item>OneHand Mode</item>
+    </string-array>
+    <string-array name="qq_items">
+        <item>LeoEOM_QQ1群</item>
+        <item>LeoROM_QQ2群</item>
+    </string-array>
+	
+    	<string-array name="log_it_share_type_values">
+              <item>0</item>
+        </string-array>
+		
+        <string-array name="log_it_share_type_entries">
+            <item>@string/log_it_share_type_zip</item>
+       </string-array>
+	   
+       <string-array name="backup_items">
+            <item>backup data</item>
+            <item>restore data</item>
+         </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Disable Animation</item>
+        <item>Animation 0.2x</item>
+        <item>Animation 0.25x</item>
+        <item>Animation 0.3x</item>
+        <item>Animation 0.4x</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 0.6x</item>
+        <item>Animation 0.7x</item>
+        <item>Animation 0.8x</item>
+        <item>Animation 0.9x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 3x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.2</item>
+        <item>.25</item>
+        <item>.3</item>
+        <item>.4</item>
+        <item>.5</item>
+        <item>.6</item>
+        <item>.7</item>
+        <item>.8</item>
+        <item>.9</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="wipe_entries">
+        <item>Clean Data</item>
+        <item>Clean Cache</item>
+        <item>Clean Dalvik</item>
+        <item>Clean System setup and Data</item>
+    </string-array>
+    <string-array name="network_items">     
+        <item>Network Menu</item> 
+        <item>@string/show_dsp_sumarry</item>
+        <item>Samsung Hidden Network Menu</item>   
+    </string-array>
+    <array name="material_designer_colors">
+        <item>@color/bluePrimary</item>
+        <item>@color/tealPrimary</item>
+        <item>@color/leoPrimary</item>
+        <item>@color/redPrimary</item>
+        <item>@color/defaultPrimary</item>
+        <item>@color/purplePrimary</item>
+        <item>@color/greenPrimary</item>
+        <item>@color/orangePrimary</item>
+        <item>@color/greyPrimary</item>
+        <item>@color/blue_greyPrimary</item>
+        <item>@color/pinkPrimary</item>
+        <item>@color/deep_purplePrimary</item>
+        <item>@color/limePrimary</item>
+        <item>@color/indigoPrimary</item>
+        <item>@color/cyanPrimary</item>
+        <item>@color/dark_cardview_bg</item>
+        <item>@color/deep_orangePrimary</item>
+        <item>@color/dark_cardview_bg</item>
+    </array>
+
+    <string-array name="device_info_entries">
+        <item>Device</item>
+        <item>Android version</item>
+        <item>ROM version</item>
+        <item>Wireless Network</item>
+        <item>Next Alarm</item>
+        <item>Temperature</item>
+        <item>Storage</item>
+        <item>Battery state</item>
+        <item>Cpu use</item>
+        <item>Cpu model</item>
+        <item>Cpu frequency</item>
+        <item>Battery capacity</item>
+        <item>Voltage current</item>
+    </string-array>
+    <string-array name="device_info_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="device_orientation_entries">
+        <item>Centre Alignment</item>
+         <item>Right Alignment</item>
+        <item>Left Alignment</item>
+    </string-array>
+    <string-array name="device_orientation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="location_service">
+        <item>AMAP location</item>
+        <item>Baidu location（Default）</item>
+    </string-array>
+
+    <string-array name="clock_date_format_entries_values">
+        <item>EEE</item>
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMMM dd</item>
+        <item>MMMM dd- yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>dd</item>
+        <item>dd/MM</item>
+        <item>MM/dd</item>
+        <item>dd-MMM</item>
+        <item>yyyy MM/dd</item>
+        <item>customize</item>
+    </string-array>
+    <string-array name="date_style_entries">
+        <item>Date on Right</item>
+        <item>Date on left</item>
+    </string-array>
+    <string-array name="date_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="symbol_style_entries">
+        <item>None</item>
+        <item>,</item>
+        <item>/</item>
+        <item>‖</item>
+        <item>✤</item>
+        <item>*</item>
+        <item>ღ</item>
+        <item>｜</item>
+        <item>∫</item>
+        <item>♪</item>
+        <item>┆</item>
+    </string-array>
+    <string-array name="symbol_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="clock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <array name="logo_style_drawables">
+        <item>@drawable/ic_leo</item>
+        <item>@drawable/ic_alibaba</item>
+        <item>@drawable/ic_apple_logo</item>
+        <item>@drawable/ic_baidu</item>
+        <item>@drawable/ic_cmcc</item>
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_ios</item>
+        <item>@drawable/ic_linux</item>
+        <item>@drawable/ic_tencent</item>
+        <item>@drawable/ic_telecom</item>
+        <item>@drawable/ic_unicom</item>
+        <item>@drawable/ic_windows</item>
+        <item>@drawable/ic_ubuntu</item>
+        <item>@drawable/ic_ctc_go</item>
+    </array>
+
+
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+
+    </string-array>
+    <string-array name="battery_model_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="bg_gradient_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="bg_three_gradient_model_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="bg_type_values">
+        <item>0</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="clock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="clock_date_week_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="clock_details_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="clock_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dpi_dialog_items">
+        <item>480 dpi</item>
+        <item>450 dpi</item>
+        <item>420 dpi</item>
+        <item>390 dpi</item>
+        <item>360 dpi</item>
+        <item>330 dpi</item>
+        <item>customize</item>
+    </string-array>
+    <string-array name="dpi_dialog_values">
+        <item>480</item>
+        <item>450</item>
+        <item>420</item>
+        <item>390</item>
+        <item>360</item>
+        <item>330</item>
+        <item>Custom DPI</item>
+    </string-array>
+    <string-array name="font_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+    </string-array><string-array name="logo_style_values">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+</string-array>
+
+
+    <string-array name="network_traffic_frequency_entries">
+        <item>500 ms</item>
+        <item>1000 ms</item>
+        <item>1500 ms</item>
+        <item>2000 ms</item>
+    </string-array>
+	
+    <string-array name="network_traffic_frequency_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+	
+    <string-array name="votage_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="notification_ls_entries">
+        <item>No action</item>
+        <item>Auxiliary Light</item>
+        <item>Powermenu</item>
+    </string-array>
+	
+    <string-array name="notification_ls_values">
+        <item>88</item>
+        <item>116</item>
+        <item>121</item>
+    </string-array>
+	
+    <string-array name="notification_qb_entries">
+        <item>No action</item>
+        <item>Camera</item>
+        <item>Auxiliary Light</item>
+    </string-array>
+	
+    <string-array name="notification_qb_values">
+        <item>88</item>
+        <item>110</item>
+        <item>116</item>
+    </string-array>
+	
+    <array name="signal_style_drawables">
+        <item>@drawable/stat_sys_signal</item>
+        <item>@drawable/stat_sys_signal_a_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_b_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_c_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_d_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_e_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_f_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_g_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_h_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_i_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_j_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_k_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_l_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_m_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_n_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_o_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_p_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_q_5_auto_rotate</item>
+        <item>@drawable/stat_sys_signal_r_5_auto_rotate</item>
+    </array>
+	
+    <string-array name="signal_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="statusbar_view_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	
+    <string-array name="traffic_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	
+    <array name="wifi_style_drawables">
+        <item>@drawable/stat_sys_wifi</item>
+        <item>@drawable/stat_sys_wifi_signal_a_4</item>
+        <item>@drawable/stat_sys_wifi_signal_b_4</item>
+        <item>@drawable/stat_sys_wifi_signal_c_4</item>
+        <item>@drawable/stat_sys_wifi_signal_c_4</item>
+        <item>@drawable/stat_sys_wifi_signal_e_4</item>
+        <item>@drawable/stat_sys_wifi_signal_f_4</item>
+        <item>@drawable/stat_sys_wifi_signal_g_4</item>
+        <item>@drawable/stat_sys_wifi_signal_h_4</item>
+        <item>@drawable/stat_sys_wifi_signal_i_4</item>
+        <item>@drawable/stat_sys_wifi_signal_j_4</item>
+        <item>@drawable/stat_sys_wifi_signal_k_4</item>
+        <item>@drawable/stat_sys_wifi_signal_l_4</item>
+        <item>@drawable/stat_sys_wifi_signal_l_4</item>
+        <item>@drawable/stat_sys_wifi_signal_n_4</item>
+        <item>@drawable/stat_sys_wifi_signal_o_4</item>
+    </array>
+    <string-array name="wifi_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string-array name="status_bar_ampm_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+
+    <string-array name="data_usage_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="battery_bar_entries">
+        <item>Hideen</item>
+        <item>Status bar on top</item>
+        <item>Lockscreen bar Status bar on top</item>
+
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Normal</item>
+        <item>Centre mirror</item>
+    </string-array>
+
+    <string-array name="battery_model_entries">
+        <item>System Default</item>
+        <item>Leo Battery </item>
+    </string-array>
+
+    <string-array name="bg_gradient_type_entries">
+        <item>Top to bottom </item>
+        <item>Bottom to top gradient</item>
+        <item>From left to right gradient</item>
+        <item>From right to left gradient</item>
+        <item>From bottom right to top left gradient</item>
+        <item>From bottom right to top right gradient</item>
+        <item>From top left to bottom right gradient</item>
+        <item>From top right to bottom left gradient</item>
+    </string-array>
+
+    <string-array name="bg_three_gradient_model_type_entries">
+        <item>Linear gradient</item>
+        <item>Radiaion gradient</item>
+        <item>Screen gradient</item>
+    </string-array>
+
+    <string-array name="bg_type_entries">
+        <item>customize Colour</item>
+        <item>Backgroup Wallpaper</item>
+    </string-array>
+
+    <string-array name="clock_date_display_entries">
+        <item>Hidden</item>
+        <item>Small</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="clock_date_style_entries">
+        <item>Normal</item>
+        <item>English date with small letter</item>
+        <item>English date with capital letter</item>
+    </string-array>
+
+    <string-array name="clock_date_week_entries">
+        <item>Monday</item>
+        <item>Monday</item>
+        <item>one</item>
+        <item>Japanese week</item>
+    </string-array>
+
+    <string-array name="clock_details_entries">
+        <item>12 time </item>
+        <item>12 period time</item>
+        <item>Constellation</item>
+        <item>农历</item>
+        <item>season</item>
+    </string-array>
+	
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>Alibaba</item>
+        <item>Apple</item>
+        <item>Baidu</item>
+        <item>China Mobile</item>
+        <item>Google</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>QQ</item>
+        <item>China Telecom</item>
+        <item>China Unicom</item>
+        <item>Microsoft</item>
+        <item>Ubuntu</item>
+        <item>China Telecom 2</item>
+    </string-array>
+	
+    <string-array name="font_style_entries">
+        <item>SystemDefault</item>
+        <item>Font 1</item>
+        <item>Font 2</item>
+        <item>Font 3</item>
+        <item>Font 4</item>
+        <item>Font 5</item>
+        <item>Font 6</item>
+        <item>Font 7</item>
+        <item>Font 8</item>
+        <item>Font 9</item>
+        <item>Font 10</item>
+        <item>Font 11</item>
+        <item>Font 12</item>
+        <item>Font 14</item>
+        <item>Font 15</item>
+        <item>Font 16</item>
+        <item>Font 17</item>
+        <item>Font 18</item>
+        <item>Font 19</item>
+        <item>Font 20</item>
+        <item>Font 21</item>
+        <item>Font 22</item>
+        <item>Font 23</item>
+        <item>Font 24</item>
+        <item>Font 25(Support Simplified Chinese)</item>
+        <item>Font 26(Support Simplified Chinese)</item>
+        <item>Font 27(Support Simplified Chinese)</item>
+        <item>Font 28(Support Simplified Chinese)</item>
+        <item>Font 29(Support Simplified Chinese)</item>
+        <item>Font 30(Support Simplified Chinese)</item>
+        <item>Font 31(Support Simplified Chinese)</item>
+        <item>Font 32(Support Simplified Chinese)</item>
+        <item>Font 33(Support Simplified Chinese)</item>
+        <item>Font 34(Support Simplified Chinese)</item>
+        <item>Font 35(Support Simplified Chinese)</item>
+        <item>Font 36 Hitomi(custom made)</item>
+    </string-array>
+	
+    <string-array name="votage_style_entries">
+        <item>电压</item>
+        <item>电流</item>
+        <item>电压+电流</item>
+    </string-array>
+
+    <string-array name="signal_style">
+        <item>Default</item>
+        <item>Signal logo1</item>
+        <item>Signal logo2</item>
+        <item>Signal logo3</item>
+        <item>Signal logo4</item>
+        <item>Signal logo5</item>
+        <item>Signal logo6</item>
+        <item>Signal logo7</item>
+        <item>Signal logo8</item>
+        <item>Signal logo9</item>
+        <item>Signal logo10</item>
+        <item>Signal logo11</item>
+        <item>Signal logo12</item>
+        <item>Signal logo13</item>
+        <item>Signal logo14</item>
+        <item>Signal logo15</item>
+        <item>Signal logo16</item>
+        <item>Signal logo17</item>
+        <item>Signal logo18</item>
+    </string-array>
+
+    <string-array name="status_bar_ampm_entries">
+        <item>Disable</item>
+        <item>Small</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="traffic_state_entries">
+        <item>Hide trafficstate</item>
+        <item>Show upload speed</item>
+        <item>Show upload speed</item>
+        <item>Show both upload/download speed</item>
+    </string-array>
+
+    <string-array name="wifi_style">
+        <item>Default</item>
+        <item>WIFIlogo1</item>
+        <item>WIFIlogo2</item>
+        <item>WIFIlogo3</item>
+        <item>WIFIlogo4</item>
+        <item>WIFIlogo5</item>
+        <item>WIFIlogo6</item>
+        <item>WIFIlogo7</item>
+        <item>WIFIlogo8</item>
+        <item>WIFIlogo9</item>
+        <item>WIFIlogo10</item>
+        <item>WIFIlogo11</item>
+        <item>WIFIlogo12</item>
+        <item>WIFIlogo13</item>
+        <item>WIFIlogo14</item>
+        <item>WIFIlogo15</item>
+    </string-array>
+	
+    <string-array name="data_usage_style_entries">
+        <item>Left</item>
+        <item>Centre</item>
+        <item>Default</item>
+    </string-array>
+	
+    <string-array name="power_items">
+        <item>Shutdwown</item>
+        <item>Reboot</item>
+        <item>Quick Reboot</item>
+        <item>Recovery mode</item>
+        <item>Download mode</item>
+        <item>Relanuch UI</item>
+    </string-array>
+
+    <array name="network_icon_drawables">
+        <item>@drawable/stat_sys_network_traffic_a_updown</item>
+        <item>@drawable/stat_sys_network_traffic_b_updown</item>
+        <item>@drawable/stat_sys_network_traffic_c_updown</item>
+        <item>@drawable/stat_sys_network_traffic_d_updown</item>
+        <item>@drawable/stat_sys_network_traffic_e_updown</item>
+        <item>@drawable/stat_sys_network_traffic_f_updown</item>
+        <item>@drawable/stat_sys_network_traffic_g_updown</item>
+        <item>@drawable/stat_sys_network_traffic_h_updown</item>
+    </array>
+	
+    <string-array name="network_icon_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+	
+    <string-array name="network_icon_style">
+        <item>Default Network logo</item>
+        <item> Network logo1</item>
+        <item> Network logo2</item>
+        <item> Network logo3</item>
+        <item> Network logo4</item>
+        <item> Network logo5</item>
+        <item> Network logo6</item>
+        <item> Network logo7</item>
+    </string-array>
+	
+    <string-array name="clock_style_entries">
+        <item>@string/status_bar_location_left</item>
+        <item>@string/status_bar_location_center</item>
+        <item>@string/status_bar_location_right</item>
+    </string-array>
+	
+    <string-array name="statusbar_view_position_entries">
+        <item>@string/status_bar_location_right</item>
+        <item>@string/status_bar_location_left</item>
+    </string-array>
+
+    <string-array name="statusbar_custom_signal_entries">
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </string-array>
+	
+    <string-array name="statusbar_custom_signal_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+    <array name="analogclock_style_drawables">
+        <item>@drawable/clock_dial</item>
+        <item>@drawable/analog_clock_dial</item>
+        <item>@drawable/analog_clock_dial1</item>
+        <item>@drawable/analog_clock_dial2</item>
+        <item>@drawable/analog_clock_dial3</item>
+        <item>@drawable/analog_clock_dial4</item>
+        <item>@drawable/analog_clock_dial5</item>
+        <item>@drawable/analog_clock_dial6</item>
+        <item>@drawable/analog_clock_dial7</item>
+        <item>@drawable/analog_clock_dial8</item>
+        <item>@drawable/analog_clock_dial9</item>
+        <item>@drawable/analog_clock_dial10</item>
+    </array>
+	
+    <string-array name="analogclock_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+	
+    <string-array name="analogclock_style_entries">
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+        <item>@string/analog_clock_dial_styt</item>
+    </string-array>
+
+
+    <string-array name="global_action_entries">
+        <item>@string/global_action_default</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_home</item>
+        <item>@string/global_action_back</item>
+        <item>@string/global_action_volume1</item>
+        <item>@string/global_action_volume2</item>
+        <item>@string/global_action_mobiledata</item>
+        <item>@string/global_action_localscreenshots</item>
+        <item>@string/global_action_wificode</item>
+        <item>@string/global_action_search</item>
+        <item>@string/global_action_task</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_notificationbar</item>
+        <item>@string/global_action_screenshot</item>
+        <item>@string/global_action_process</item>
+        <item>@string/global_action_killed</item>
+        <item>@string/global_action_recording</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_nextsong</item>
+        <item>@string/global_action_playpause</item>
+        <item>@string/global_action_sound</item>
+        <item>@string/global_action_wifi</item>
+        <item>@string/global_action_powermenu</item>
+        <item>@string/global_action_airplane</item>
+        <item>@string/global_action_upapp</item>
+        <item>@string/global_action_bixvoice</item>
+        <item>@string/global_action_bixhome</item>
+        <item>@string/app_name</item>
+        <item>@string/global_action_outdoors</item>
+        <item>@string/global_action_app</item>
+        <item>@string/global_action_split</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_mipop</item>
+        <item>@string/global_action_floating</item>
+        <item>@string/global_action_today</item>
+    </string-array>
+	
+    <string-array name="global_action_values">
+        <item>0</item>
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>115</item>
+        <item>116</item>
+        <item>117</item>
+        <item>118</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>123</item>
+        <item>124</item>
+        <item>125</item>
+        <item>126</item>
+        <item>127</item>
+        <item>128</item>
+        <item>129</item>
+        <item>130</item>
+        <item>131</item>
+        <item>132</item>
+        <item>133</item>
+
+    </string-array>
+	
+       <string-array name="statusbar_icon_hide_options">
+            <item>rotation</item>
+            <item>HD1</item>
+            <item>HD2</item>
+            <item>alarm</item>
+            <item>mobile data</item>
+            <item>power saving mode</item>
+            <item>airplane mode </item>
+            <item>headset</item>
+            <item>Sound/vibration</item>
+            <item>WIFI</item>
+            <item>bluetooth</item>
+            <item>NFC</item>
+            <item>Battery (official only)</item>
+            <item>cast</item>
+        </string-array> 
+    <string-array name="statusbar_icon_hide_values">
+        <item>rotate</item>
+        <item>ims_volte</item>
+        <item>ims_volte2</item>
+        <item>alarm_clock</item>
+        <item>mobile</item>
+        <item>power_saver</item>
+        <item>airplane</item>
+        <item>headset</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>bluetooth</item>
+        <item>nfc</item>
+        <item>battery</item>
+        <item>cast</item>
+    </string-array> 
+    <string-array name="launcher_bg_style_entries">
+                 <item>@string/default_wallpaper</item>
+                 <item>@string/blur_wallpaper</item>
+             </string-array>
+    <string-array name="launcher_bg_style_values">
+        <item>0</item>
+        <item>999</item>
+    </string-array>
+
+
+    <string-array name="power_menu_values">
+        <item>power</item>
+        <item>restart</item>
+        <item>emergency</item>
+        <item>data_mode</item>
+        <item>leo_screenshot</item>
+        <item>leo_quickboot</item>
+        <item>leo_recovery</item>
+        <item>leo_download</item>
+        <item>leo_flashlight</item>
+        <item>leo_outdoor</item>
+        <item>leo_mipop</item>
+        <item>leo_screenrecord</item>
+        <item>leo_airplane</item>
+        <item>leo_wifi</item>
+        <item>leo_tweaks</item>
+        <item>leo_sound</item>
+        <item>leo_floating</item>
+        <item>leo_SystemUI</item>
+    </string-array>
+    <string-array name="power_menu_options">
+        <item>Shutdown</item>
+        <item>Mobile data</item>
+        <item>Airplane mode</item>
+        <item>Reboot</item>
+        <item>Multiuser</item>
+        <item>Assistant menu</item>
+        <item>Samsung Setup</item>
+        <item>Emergency mode</item>
+        <item>Screen Capture</item>
+        <item>Recovery mode</item>
+        <item>Download mode</item>
+        <item>Screen recorder</item>
+        <item>Quick Reboot</item>
+        <item>Flashlight</item>
+        <item>Personalise Setup</item>
+        <item>Screen Helper</item>
+        <item>Sound Mode</item>
+        <item>WIFI Mode</item>
+    </string-array>
+</resources>
+
+

@@ -1,0 +1,28 @@
+<resources> 
+ <declare-styleable name="DateView">
+        <attr name="datePattern" format="string" />
+    </declare-styleable>
+    <declare-styleable name="Clock">
+    <attr name="amPmStyle" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="small" value="1" />
+        <enum name="gone" value="2" />
+    </attr>
+    </declare-styleable>
+    <declare-styleable name="LeoAnalogClock">
+        <attr name="leo_dial" format="reference" />
+        <attr name="leo_hour" format="reference" />
+        <attr name="leo_minute" format="reference" />
+        <attr name="leo_second" format="reference" />
+    </declare-styleable>
+	<declare-styleable name="ClockTextView">
+    
+    </declare-styleable>
+	<declare-styleable name="SysuiWidgetRes">
+
+    </declare-styleable>
+    <declare-styleable name="ClockTextView_typeface">
+
+
+    </declare-styleable>
+	</resources>

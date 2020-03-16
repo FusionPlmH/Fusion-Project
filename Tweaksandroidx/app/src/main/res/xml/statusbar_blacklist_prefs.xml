@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <org.salt.preference.SaltPreference
+        android:key="StatusBar_blacklist_packages"
+        android:title="@string/hide_nav_whitelist"
+        android:summary="@string/hide_nav_whitelist_summary"
+        />
+
+
+</androidx.preference.PreferenceScreen>

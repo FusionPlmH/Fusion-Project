@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="defaultPrimary">#2A7289</color>
+    <color name="redPrimary">#F44336</color>
+    <color name="redAccent">#FF5252</color>
+    <color name="pinkPrimary">#E91E63</color>
+    <color name="pinkAccent">#009688</color>
+    <color name="purplePrimary">#9C27B0</color>
+    <color name="purpleAccent">#E040FB</color>
+    <color name="bluePrimary">#2196F3</color>
+    <color name="blueAccent">#448AFF</color>
+    <color name="greenPrimary">#4CAF50</color>
+    <color name="greenAccent">#69F0AE</color>
+    <color name="orangePrimary">#FF9800</color>
+    <color name="orangeAccent">#FFAB40</color>
+    <color name="greyPrimary">#0f0045</color>
+    <color name="greyAccent">#fd4901</color>
+    <color name="blue_greyPrimary">#607D8B</color>
+    <color name="blue_greyAccent">#8EACBB</color>
+    <color name="tealPrimary">#009688</color>
+    <color name="tealAccent">#E91E63</color>
+    <color name="deep_purplePrimary">#673AB7</color>
+    <color name="deep_purpleAccent">#7C4DFF</color>
+    <color name="limePrimary">#CDDC39</color>
+    <color name="limeAccent">#EEFF41</color>
+    <color name="indigoPrimary">#3F51B5</color>
+    <color name="indigoAccent">#536DFE</color>
+    <color name="cyanPrimary">#00BCD4</color>
+    <color name="deep_orangePrimary">#FF5722</color>
+    <color name="deep_orangeAccent">#FF6E40</color>
+    <color name="whitePrimary">#fffafafa</color>
+    <color name="leoPrimary">#01579b</color>
+    <color name="leoAccent">#E91E63</color>
+    <color name="light_divider_bg">	#DCDCDC</color>
+    <color name="dark_divider_bg">#ff292929</color>
+    <color name="light_cardview_bg">#FFfafafa</color>
+    <color name="dark_cardview_bg">#ff0f0f0f</color>
+    <color name="window_bg">@color/light_cardview_bg</color>
+    <color name="DrawableList">#ff969696</color>
+    <color name="light_blue">#FF0091ff</color>
+    <color name="Dialogbackground">@color/defaultPrimary</color>
+</resources>

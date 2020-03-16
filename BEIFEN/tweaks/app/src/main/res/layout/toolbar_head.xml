@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/toobar_donate"
+                    android:orientation="vertical">
+                    <com.tweaks.leo.ui.DrawText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toolbar_navigation_donate"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        view:drawable_height="30dp"
+                        view:drawable_location="top"
+                        view:drawable_src="@drawable/ic_donate"
+                        view:drawable_width="30dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/toobar_power"
+                    android:orientation="vertical">
+                    <com.tweaks.leo.ui.DrawText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toolbar_navigation_power"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        view:drawable_height="30dp"
+                        view:drawable_location="top"
+                        view:drawable_src="@drawable/ic_hotboot"
+                        view:drawable_width="30dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/toobar_log"
+                    android:orientation="vertical">
+                    <com.tweaks.leo.ui.DrawText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toolbar_navigation_update"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        view:drawable_height="30dp"
+                        view:drawable_location="top"
+                        view:drawable_src="@drawable/ic_changelog"
+                        view:drawable_width="30dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/toobar_assist"
+                    android:orientation="vertical">
+                    <com.tweaks.leo.ui.DrawText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toolbar_navigation_help"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        view:drawable_height="30dp"
+                        view:drawable_location="top"
+                        view:drawable_src="@drawable/ic_instructions"
+                        view:drawable_width="30dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/toobar_share"
+                    android:orientation="vertical">
+                    <com.tweaks.leo.ui.DrawText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toolbar_navigation_share"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        view:drawable_height="30dp"
+                        view:drawable_location="top"
+                        view:drawable_src="@drawable/ic_share"
+                        view:drawable_width="30dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

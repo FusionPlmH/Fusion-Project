@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="农历设置"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="LOCKLUNAR"
+        android:title="@string/qs_date_lunar_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="LOCKLUNAR"
+        android:key="LOCKLUNARSTYLE"
+        android:title="@string/qs_date_lunar_style"
+        android:defaultValue="5"
+        android:entryValues="@array/lunar_setyle_values"
+        android:entries="@array/lunar_setyle_options" />
+    <org.salt.preference.SaltListPreference
+        android:dependency="LOCKLUNAR"
+        android:key="LOCKLUNARMONTH"
+        android:title="@string/qs_date_lunar_month_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_sting_values"
+        android:entries="@array/lunar_sting_options" />
+    <org.salt.preference.SaltMultipleChoicePreference android:title="@string/qs_date_lunar_special"
+        android:key="lunar_style"
+        android:dependency="LOCKLUNAR"
+        salt:showSelectAll="false"
+        salt:BroadcastKey="@string/broadcast_lock_lunar"
+        salt:multipleChoiceTitles="@array/lunar_style_titles"
+        salt:multipleChoiceKeys="@array/ls_lunar_style_keys"
+        salt:multipleChoiceSummaries="@array/lunar_style_summaries"
+        salt:multipleChoiceDefaults="@array/lunar_style_defaults"
+        salt:choiceSelector="switch_selector"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="LOCKLUNAR"
+        android:key="LOCKLUNARCOLOR"
+        android:title="自定义农历颜色"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="设置农历颜色"
+        android:dependency="LOCKLUNARCOLOR"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        android:summary="0xC3FFFFFF"
+        salt:density="12"
+        salt:BroadcastKey="@string/broadcast_lock_lunar"
+        salt:alphaSlider="true"
+        android:key="keyguard_lunar_color"/>
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="LOCKLUNAR"
+        android:key="LOCKLUNARSZIE"
+        android:summary="@string/seekbar_sumarry"
+        android:title="设置农历文本大小"
+        android:defaultValue="15"
+        android:min="5"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="LOCKLUNAR"
+        android:key="keyguard_lunar_font"
+        salt:BroadcastKey="@string/broadcast_lock_lunar"
+        android:title="@string/qs_date_lunar_font"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"/>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,2 @@
+include ':app', ':frame', ':samsung', ':script', ':preference'
+rootProject.name='Tweaksandroidx'

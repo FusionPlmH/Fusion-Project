@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/dialog_check_Layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/national_and_regional_restrictions_sumarry"
+            android:paddingStart="16dp"
+            android:textSize="@dimen/grid_title_size"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="15dp"/>
+        <GridView
+            android:id="@+id/grid_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:numColumns="5"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/national_and_regional_restrictions_sumarry2"
+            android:paddingStart="16dp"
+            android:textSize="@dimen/grid_title_size"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        />
+    <CheckBox
+
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:id="@+id/dialog_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_check"
+       >
+    </CheckBox>
+</LinearLayout>

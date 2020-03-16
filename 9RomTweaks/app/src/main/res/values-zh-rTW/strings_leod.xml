@@ -1,0 +1,102 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="salt_power_menu_dialog_title">自定義對話框標題</string>
+   <string name="salt_power_menu_dialog_confirm">電源菜單確認對話框</string>
+   <string name="salt_power_menu_springback_effect">設置電源菜單回彈距離</string>
+   <string name="salt_power_menu_icon_text">電源菜單圖標文本</string>
+   <string name="salt_power_menu_icon_size">設置電源菜單九宮格圖標大小</string>
+   <string name="salt_power_menu_text_size">設置電源菜單文本大小</string>
+   <string name="salt_power_menu_text_font">設置電源菜單文本字體</string>
+   <string name="salt_power_menu_text_color">設置電源菜單文本顏色</string>
+   <string name="salt_power_menu_bg">電源菜單背景</string>
+   <string name="salt_power_menu_bg_home">電源菜單使用桌面壁紙為背景</string>
+   <string name="salt_power_menu_bg_blur">自定義模糊背景</string>
+   <string name="salt_power_menu_bg_blur_style">設置電源菜背景模糊度</string>
+
+
+   <string name="power_keys_name">電源鍵動作</string>
+   <string name="power_keys_custom">自定義電源鍵動作</string>
+   <string name="power_keys">亮屏電源鍵動作</string>
+   <string name="power_keys_sj">電源鍵雙擊動作</string>
+   <string name="power_keys_ca">電源鍵長按動作</string>
+   <string name="power_keys_lock">鎖屏電源鍵動作</string>
+   <string name="power_keys_lock_sj">鎖屏電源鍵雙擊動作</string>
+   <string name="power_keys_lock_ca">鎖屏電源鍵長按動作</string>
+
+   <string name="apps_category_drawer">側滑抽屜</string>
+   <string name="apps_blur_shadow">側滑啟用高斯模糊背景</string>
+   <string name="apps_drawer_carrier">側滑運營商自定義</string>
+   <string name="apps_drawer_card">設置側滑卡片背景壁紙</string>
+   <string name="apps_category_donate">捐贈版功能</string>
+   <string name="apps_network_check">屏蔽網絡檢查</string>
+   <string name="apps_checkupdates">允許檢測ROM更新</string>
+   <string name="apps_shortcut">桌面快捷方式</string>
+   <string name="apps_shortcut_summary">選擇一個快捷方式添加到桌面</string>
+
+   <string name="analogclock_enabled">下拉模擬時間顯示</string>
+   <string name="analogclock_dial_style">錶盤選擇</string>
+   <string name="analogclock_dial_color">錶盤顏色</string>
+   <string name="analogclock_hour_color">時針顏色</string>
+   <string name="analogclock_minute_color">分針顏色</string>
+   <string name="qs_button_leo">Leo清除按鈕</string>
+   <string name="qs_button_leo_click">Leo清除按鈕動作</string>
+   <string name="qs_button_leo_cleanram_whitelist">內存清理白名單設置</string>
+   <string name="qs_button_leo_collapsepanel">點擊Leo清除按鈕關閉通知欄</string>
+   <string name="qs_button_setting">設定按鈕</string>
+   <string name="qs_button_setting_click">設定按鈕動作</string>
+   <string name="qs_button_search">搜索按鈕</string>
+   <string name="qs_button_search_click">搜索按鈕動作</string>
+
+   <string name="qs_carrier_string">自定義通知欄運營商文本</string>
+   <string name="qs_carrier_dual">@string/keyguard_alarm_dual</string>
+   <string name="qs_carrier_size">運營商大小</string>
+   <string name="qs_carrier_symbol">分割符號</string>
+   <string name="qs_carrier_font">運營商字體風格</string>
+   <string name="qs_carrier_color">運營商文本顏色</string>
+
+   <string name="qs_clock_enabled">啟用下拉時間</string>
+   <string name="qs_clock_size">時間大小</string>
+   <string name="qs_clock_expand_size">展開時間大小</string>
+   <string name="qs_clock_china_detail">中國時間細節設置</string>
+   <string name="qs_clock_china_detail_enabled">啟用中國時間細節</string>
+   <string name="qs_clock_china_detail_style">中國時間細節風格</string>
+   <string name="qs_clock_china_detail_symbol">中國時間細節與時間之間的分割符號</string>
+   <string name="qs_clock_china_detail_scale">中國時間細節字體縮放</string>
+   <string name="qs_clock_china_detail_ratio">中國時間細節字體縮放比例</string>
+   <string name="qs_clock_click">點擊動作</string>
+   <string name="qs_clock_click_enabled">啟用時間動作</string>
+   <string name="qs_clock_click_style">選擇時間點擊動作</string>
+   <string name="qs_clock_click_collapsepanel">啟用點擊動作時關閉通知欄</string>
+
+   <string name="national_and_regional_restrictions">地區語言限制</string>
+   <string name="national_and_regional_restrictions_sumarry">本頁面部分功能僅適用於以下地區:\n中國23個省、5個自治區、4個直轄市、2個特別行政區</string>
+   <string name="national_and_regional_restrictions_sumarry2">支持以上地區所使用的簡體中文、繁體中文</string>
+   <string name="dialog_check">以後不再顯示</string>
+
+   <string name="qs_datausage_enabled">流量顯示位置</string>
+   <string name="qs_datausage_location">流量顯示位置</string>
+   <string name="qs_datausage_size">流量顯示文本大小</string>
+   <string name="qs_datausage_font">流量顯示字體</string>
+   <string name="qs_sim_check">通知欄SIM卡</string>
+
+   <string name="qs_date">日期設置</string>
+   <string name="qs_date_enabled">顯示下拉日期</string>
+   <string name="qs_date_style">日期格式</string>
+   <string name="qs_date_week_enabled">顯示星期</string>
+   <string name="qs_date_week_style">星期格式</string>
+   <string name="qs_date_week_location">星期顯示位置</string>
+   <string name="qs_date_week_symbol">星期與日期之間的分割符號</string>
+   <string name="qs_date_lunar">農曆設置</string>
+   <string name="qs_date_lunar_enabled">啟用農曆</string>
+   <string name="qs_date_lunar_style">中國農曆風格</string>
+   <string name="qs_date_lunar_month_style">中國農曆月份風格</string>
+   <string name="qs_date_lunar_special">農曆特殊符號設置</string>
+   <string name="qs_date_lunar_symbol">農曆與日期之間的分割符號</string>
+   <string name="qs_date_text">字體設置</string>
+   <string name="qs_date_font">日期字體</string>
+   <string name="qs_date_lunar_font">農曆字體</string>
+   <string name="qs_date_size">日期大小</string>
+   <string name="qs_date_expand_size">展開日期大小</string>
+   <string name="qs_date_click">點擊動作</string>
+   <string name="qs_date_click_enabled">啟用日期動作</string>
+
+</resources>

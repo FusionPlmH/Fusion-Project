@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_container" />
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.constraint.Guideline android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <TextView android:textSize="20.0sp" android:ellipsize="middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="@string/dst_dsp" />
+        <AutoCompleteTextView android:textSize="20.0sp" android:id="@id/ipaddr_etxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/ip_dsp" android:maxLines="1" android:completionHint="@string/ip_lastfive" android:completionThreshold="1" android:dropDownWidth="fill_parent" android:dropDownHeight="wrap_content" android:dropDownHorizontalOffset="20.0sp" />
+        <TextView android:textSize="20.0sp" android:ellipsize="middle" android:gravity="center" android:id="@id/show_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_dsp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="300.0dip">
+            <Button android:id="@id/start_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ping_dsp" style="@style/Widget.AppCompat.Button.Colored" />
+            <Button android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_dsp" style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

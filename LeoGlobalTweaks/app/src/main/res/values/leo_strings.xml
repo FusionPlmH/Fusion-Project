@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources >
+    <string name="about_sina">新浪微博</string>
+    <string name="about_qq">加入QQ群</string>
+    <string name="about_service">在线客服</string>
+    <string name="about_telegram">Telegram</string>
+    <string name="android_info">安卓信息</string>
+    <string name="device_info">硬件信息</string>
+    <string name="cpu_info">CPU 信息</string>
+    <string name="storage_info">存储信息</string>
+    <string name="battery_info_current">电池电流</string>
+    <string name="battery_info_voltage">电池电压</string>
+    <string name="battery_info_cycleindex">循环次数</string>
+    <string name="battery_info_designCapacity">设计容量</string>
+    <string name="battery_info_tusableindex">估计可用容量</string>
+    <string name="battery_info_temp">电池温度</string>
+    <string name="device_info_manufacturers">设备厂商</string>
+    <string name="device_info_model">设备型号</string>
+    <string name="device_info_serial">设备序列号</string>
+    <string name="device_info_carrier">运营商</string>
+    <string name="device_info_phonenumber">手机号码</string>
+    <string name="device_info_runtime">设备运行时间</string>
+    <string name="screen_info">屏幕信息</string>
+    <string name="screen_inches_unit"> 英寸</string>
+    <string name="screen_real_metrics">屏幕分辨率</string>
+    <string name="screen_density">屏幕密度</string>
+    <string name="screen_refresh">屏幕刷新</string>
+    <string name="temp_info">温度</string>
+    <string name="rom_info">ROM名称</string>
+    <string name="leo_info">Leo框架</string>
+    <string name="basics_info">底包</string>
+    <string name="android_versions">版本</string>
+
+    <string name="compile_info">编译版本号</string>
+    <string name="kernel_info">内核</string>
+    <string name="baseband_info">基带</string>
+    <string name="usb_sounds">USB连接提示音</string>
+    <string name="volume_sounds">音量键控制提示音</string>
+    <string name="lowbattery_sounds">低电量提示音</string>
+    <string name="lock_sounds">锁屏提示音</string>
+    <string name="unlock_sounds">解锁提示音</string>
+    <string name="capture_screen_sounds">截图提示音</string>
+    <string name="apppicker_label_exception">无法获取</string>
+    <string name="global_action_app">启用任意程序</string>
+    <string name="global_action_app_select">选择一个应用程序</string>
+    <string name="global_action_app_warning">长按某个APP项目可进入APP详细活动选择对话框,可以选择APP内的某个活动</string>
+</resources>

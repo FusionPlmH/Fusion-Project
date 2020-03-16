@@ -1,0 +1,19 @@
+[
+{
+  "directory": "D:/AndroidTools/code/leo90/app/.cxx/cmake/debug/x86",
+  "command": "D:\\AndroidTools\\SD\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsalt6_6_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\salt6.6.dir\\src\\main\\cpp\\salt6.6.cpp.o -c D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\salt6.6.cpp",
+  "file": "D:/AndroidTools/code/leo90/app/src/main/cpp/salt6.6.cpp"
+},
+
+{
+  "directory": "D:/AndroidTools/code/leo90/app/.cxx/cmake/debug/x86",
+  "command": "D:\\AndroidTools\\SD\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DAmber9_4_520_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\Amber9.4.520.dir\\src\\main\\cpp\\Amber9.4.520.cpp.o -c D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\Amber9.4.520.cpp",
+  "file": "D:/AndroidTools/code/leo90/app/src/main/cpp/Amber9.4.520.cpp"
+},
+
+{
+  "directory": "D:/AndroidTools/code/leo90/app/.cxx/cmake/debug/x86",
+  "command": "D:\\AndroidTools\\SD\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android19 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsec_9_0_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\sec_9.0.dir\\src\\main\\cpp\\sec_9.0.cpp.o -c D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\sec_9.0.cpp",
+  "file": "D:/AndroidTools/code/leo90/app/src/main/cpp/sec_9.0.cpp"
+}
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/mq_form_tip_textColor" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mq_auth_code" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <EditText android:textSize="15.0sp" android:textColor="@color/mq_form_et_textColor" android:id="@id/auth_code_et" android:paddingRight="72.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:hint="@string/mq_hint_input" android:lines="1" android:singleLine="true" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" style="@style/MQFormEditText" />
+        <ImageView android:id="@id/auth_code_iv" android:layout_width="64.0dip" android:layout_height="32.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

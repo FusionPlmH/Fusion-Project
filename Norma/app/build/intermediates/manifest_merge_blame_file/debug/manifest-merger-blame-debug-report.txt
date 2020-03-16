@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wubydax.romcontrol.v2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="22" />
+9-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:6:5-66
+11-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+12-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:7:5-72
+12-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:7:22-70
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+15-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:10:5-77
+15-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:10:22-75
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:11:5-74
+16-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:11:22-72
+17    <uses-permission android:name="android.permission.REBOOT" />
+17-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:12:5-13:59
+17-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:12:22-62
+18    <uses-permission android:name="android.permission.DEVICE_POWER" />
+18-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:14:5-15:59
+18-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:14:22-68
+19    <uses-permission android:name="android.permission.RECOVERY" />
+19-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:16:5-66
+19-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:16:22-64
+20
+21    <application
+21-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:18:5-49:19
+22        android:name="com.wubydax.romcontrol.v2.MyApp"
+22-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:19:9-30
+23        android:allowBackup="true"
+23-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:20:9-35
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:21:9-43
+26        android:label="@string/app_name"
+26-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:22:9-41
+27        android:largeHeap="true"
+27-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:23:9-33
+28        android:supportsRtl="true"
+28-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:24:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppThemeDark"
+30-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:26:9-44
+31        android:usesCleartextTraffic="true" >
+31-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:25:9-44
+32        <meta-data
+32-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:28:9-110
+33            android:name="com.samsung.android.sdk.multiwindow.penwindow.enable"
+33-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:28:20-87
+34            android:value="true" />
+34-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:28:88-108
+35        <meta-data
+35-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:29:9-94
+36            android:name="com.sec.android.support.multiwindow"
+36-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:29:20-70
+37            android:value="true" />
+37-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:29:71-91
+38
+39        <activity
+39-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:30:9-39:20
+40            android:name="com.wubydax.romcontrol.v2.MainActivity"
+40-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:31:13-41
+41            android:label="@string/app_name" >
+41-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:32:13-45
+42            <intent-filter>
+42-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:33:13-38:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:34:17-68
+43-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:34:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:36:17-76
+45-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:36:27-74
+46                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+46-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:37:17-89
+46-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:37:27-86
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:40:9-43:20
+50            android:name="com.wubydax.romcontrol.v2.AboutActivity"
+50-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:41:13-42
+51            android:parentActivityName="com.wubydax.romcontrol.v2.MainActivity" >
+51-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:42:13-55
+52        </activity>
+53
+54        <service
+54-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:45:9-48:19
+55            android:name="com.wubydax.romcontrol.v2.utils.BackupRestoreIntentService"
+55-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:46:13-61
+56            android:exported="false" >
+56-->D:\AndroidTools\code\Norma\app\src\main\AndroidManifest.xml:47:13-37
+57        </service>
+58
+59        <meta-data
+59-->[com.android.support:design:26.0.0-beta1] C:\Users\leo\.gradle\caches\transforms-2\files-2.1\cd70cdc4aa326c99bd49ceca9d0d61f2\design-26.0.0-beta1\AndroidManifest.xml:26:9-28:44
+60            android:name="android.support.VERSION"
+60-->[com.android.support:design:26.0.0-beta1] C:\Users\leo\.gradle\caches\transforms-2\files-2.1\cd70cdc4aa326c99bd49ceca9d0d61f2\design-26.0.0-beta1\AndroidManifest.xml:27:13-51
+61            android:value="26.0.0-beta1" />
+61-->[com.android.support:design:26.0.0-beta1] C:\Users\leo\.gradle\caches\transforms-2\files-2.1\cd70cdc4aa326c99bd49ceca9d0d61f2\design-26.0.0-beta1\AndroidManifest.xml:28:13-41
+62    </application>
+63
+64</manifest>

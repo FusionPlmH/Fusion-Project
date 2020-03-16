@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="splashcolor">#ff00aeff</color>
+   <color name="sem_app_bar_bg_color">#fff2f2f2</color>
+   <color name="sem_app_bar_bg_color_dark">#ff080808</color>
+   <color name="colorPrimaryMain">@color/sem_app_bar_bg_color</color>
+   <color name="colorAccentMain">#ff0f9d58</color>
+   <color name="colorAccentMainDark">#ff6347</color>
+   <color name="colorPrimaryMainDark">@color/sem_app_bar_bg_color_dark</color>
+   <color name="dark_cardview_bg">#ff292929</color>
+   <color name="colorPrimaryMain_setting">#D81B60</color>
+   <color name="colorAccent_setting">@color/splashcolor</color>
+   <dimen name="button_size">35dip</dimen>
+    <color name="colorPrimaryMain_ui">@color/violet</color>
+   <color name="material_deep_teal_500">#ff0f9d58</color>
+   <color name="material_red_A300">#ffff5722</color>
+   <color name="material_red_A100">@color/material_red_A700</color>
+   <color name="material_red_A700">#ffd50000</color>
+   <color name="fotaCancel">@color/material_red_A100</color>
+   <color name="colorBlue">#138ed6</color>
+   <color name="pink">#fc6bc5</color>
+   <color name="pretty">#e2259a</color>
+   <color name="violet">#7800c2</color>
+   <color name="lightPink">#BC8DE4</color>
+
+</resources>

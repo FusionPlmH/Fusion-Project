@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/mq_activity_bg" style="@style/MQMatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title_rl" android:background="@drawable/mq_bg_title" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/back_rl" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" style="@style/MQWrapMatch">
+            <ImageView android:id="@id/back_iv" android:layout_marginRight="@dimen/mq_size_level1" android:src="@drawable/mq_ic_back" android:layout_centerVertical="true" style="@style/MQWrapMatch" />
+            <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@color/mq_activity_title_textColor" android:id="@id/back_tv" android:text="@string/mq_back" android:layout_toRightOf="@id/back_iv" android:layout_centerVertical="true" style="@style/MQWrapWrap" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@color/mq_activity_title_textColor" android:gravity="center" android:id="@id/title_tv" android:maxWidth="175.0dip" android:text="@string/mq_leave_msg" android:singleLine="true" android:layout_centerHorizontal="true" style="@style/MQWrapMatch" />
+        <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@color/mq_activity_title_textColor" android:gravity="center_vertical" android:id="@id/submit_tv" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" android:clickable="true" android:layout_marginRight="@dimen/mq_size_level1" android:text="@string/mq_submit" android:layout_alignParentRight="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:overScrollMode="never" style="@style/MQMatchMatch">
+        <LinearLayout android:paddingLeft="@dimen/mq_size_level4" android:paddingRight="@dimen/mq_size_level4" android:paddingBottom="@dimen/mq_size_level4" style="@style/MQMatchMatch.Vertical">
+            <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_form_tip_textColor" android:id="@id/message_tip_tv" android:layout_marginTop="@dimen/mq_size_level4" style="@style/MQMatchWrap" />
+            <LinearLayout android:id="@id/input_container_ll" style="@style/MQMatchWrap.Vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

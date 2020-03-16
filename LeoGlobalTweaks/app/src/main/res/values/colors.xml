@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashcolor1">#E040FB</color>
+    <color name="splashcolor2">#009688</color>
+    <color name="splashcolor">#ff00aeff</color>
+    <color name="sem_app_bar_bg_color">#fff2f2f2</color>
+    <color name="sem_app_bar_bg_color_dark">#ff080808</color>
+    <color name="colorPrimaryMain">@color/sem_app_bar_bg_color</color>
+    <color name="colorAccentMain">#ff00aeff</color>
+    <color name="colorPrimaryMainDark">@color/sem_app_bar_bg_color_dark</color>
+    <color name="dark_cardview_bg">#ff292929</color>
+</resources>

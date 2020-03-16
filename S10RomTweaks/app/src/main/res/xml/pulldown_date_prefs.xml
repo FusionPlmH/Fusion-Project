@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date" />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsdateEnabled"
+        android:title="@string/qs_date_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="qsdateformat"
+        android:title="@string/qs_date_style"
+        android:defaultValue="0"
+        android:summary="%1$s"
+        android:entries="@array/clock_date_format_entries_values"
+        android:entryValues="@array/clock_date_format_entries_values"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsweekenabled"
+        android:title="@string/qs_date_week_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsweekenabled"
+        android:key="qsweekformat"
+        android:title="@string/qs_date_week_style"
+        android:defaultValue="0"
+        android:entryValues="@array/date_week_values"
+        android:entries="@array/date_week_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsweekenabled"
+        android:key="qsweeklocation"
+        android:title="@string/qs_date_week_location"
+        android:defaultValue="0"
+        android:entryValues="@array/week_location_values"
+        android:entries="@array/week_location_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsweekenabled"
+        android:key="qsweeksymbol"
+        android:title="@string/qs_date_week_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_values"
+        android:entries="@array/symbol_entries"
+        />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date_lunar" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qslunarenabled"
+        android:title="@string/qs_date_lunar_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qslunarenabled"
+        android:key="qslunarstyle"
+        android:title="@string/qs_date_lunar_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_setyle_values"
+        android:entries="@array/lunar_setyle_options" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qslunarenabled"
+        android:key="qslunarmonthstyle"
+        android:title="@string/qs_date_lunar_month_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_sting_values"
+        android:entries="@array/lunar_sting_options" />
+    <com.leo.salt.preference.SaltSettingMultipleChoicePreference android:title="@string/qs_date_lunar_special"
+        android:key="lunar_style"
+        android:dependency="qslunarenabled"
+        salt:showSelectAll="false"
+        salt:multipleChoiceTitles="@array/lunar_style_titles"
+        salt:multipleChoiceKeys="@array/lunar_style_keys"
+        salt:multipleChoiceSummaries="@array/lunar_style_summaries"
+        salt:multipleChoiceDefaults="@array/lunar_style_defaults"
+        salt:choiceSelector="switch_selector"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qslunarenabled"
+        android:key="qsLunarsymbol"
+        android:title="@string/qs_date_lunar_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date_text" />
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:key="qs_date_font"
+        android:title="@string/qs_date_font"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:key="qs_date_lunar_font"
+        android:title="@string/qs_date_lunar_font"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+
+        android:key="qsdatesize"
+        android:summary="@string/seekbar_text_sumarry"
+        android:title="@string/qs_date_size"
+        android:defaultValue="16"
+        android:min="1"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+
+        android:key="qsdateboxsize"
+        android:summary="@string/seekbar_text_sumarry"
+        android:title="@string/qs_date_expand_size"
+        android:defaultValue="19"
+        android:min="1"
+        android:max="30"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_date_click" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsdateClickEnabled"
+        android:title="@string/qs_date_click_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsdateClickEnabled"
+        android:title="@string/qs_date_click_style" android:key="qsdateclickstyle"
+        android:defaultValue="0"
+        android:entryValues="@array/clockdate_click_values"
+        android:entries="@array/clockdate_click_options"
+        />
+
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsdateClickEnabled"
+        android:title="@string/qs_date_click_collapsepanel"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="qsdateCollapsePanel"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsdateClickEnabled"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="qsdateVibrator"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="qsdateVibrator"
+        android:key="qsdateVibratorLevel"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+</PreferenceScreen>

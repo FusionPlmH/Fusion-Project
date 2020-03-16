@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/nav_donate"
+            android:title="@string/nav_donate" />
+        <item
+            android:id="@+id/nav_source_library"
+            android:icon="@drawable/nav_source_library"
+            android:title="@string/nav_source_library" />
+        <item
+            android:id="@+id/nav_power_meun"
+            android:icon="@drawable/nav_power_meun"
+            android:title="@string/nav_power_meun" />
+        <item
+            android:id="@+id/nav_changelog"
+            android:icon="@drawable/nav_changelog"
+            android:title="@string/nav_changelog" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/nav_help"
+            android:title="@string/nav_help" />
+        <item
+            android:id="@+id/nav_reset"
+            android:icon="@drawable/ic_reset"
+            android:title="@string/nav_backup_restore" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="@string/nav_share" />
+    </group>
+</menu>

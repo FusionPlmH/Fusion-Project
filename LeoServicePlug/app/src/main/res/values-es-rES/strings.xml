@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeoServicePlug</string>
+    <string name = "action_lock">pantalla de bloqueo de un solo clic</string>
+         <string name = "action_ram"> Limpieza con un clic</string>
+         <string name = "action_outdoors">modo al aire libr </string>
+         <string name = "action_reboot">menú de reinicio</string>
+         <string name = "action_fall">bola de suspensión</string>
+         <string name = "action_pop">Screen Assistant </string>
+         <string name = "action_all">modo de pantalla completa</string>
+    <string name="action_reminder">Mantenga presionado el botón de encendido y el botón para bajar el volumen durante 7 segundos para reiniciar el teléfono.</string>
+</resources>

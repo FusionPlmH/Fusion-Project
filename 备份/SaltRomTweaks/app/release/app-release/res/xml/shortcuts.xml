@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_clear" android:enabled="true" android:shortcutId="clear" android:shortcutShortLabel="@string/shortcut_celer" android:shortcutLongLabel="@string/shortcut_celer" android:shortcutDisabledMessage="@string/shortcut_celer"> > <intent android:targetPackage="com.leo.salt.tweaks" android:action="android.intent.action.VIEW" android:targetClass="com.leo.salt.tweaks.amber.CleanActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_lock_screen" android:enabled="true" android:shortcutId="lock" android:shortcutShortLabel="@string/shortcut_lock" android:shortcutLongLabel="@string/shortcut_lock">
+        <intent android:targetPackage="com.leo.salt.tweaks" android:action="android.intent.action.VIEW" android:targetClass="com.leo.salt.activity.LockScreenActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

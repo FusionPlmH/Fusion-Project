@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="edge_alipay" />
+    <item type="id" name="edge_apps" />
+    <item type="id" name="edge_clear" />
+    <item type="id" name="edge_donate" />
+    <item type="id" name="edge_fusion" />
+    <item type="id" name="edge_leo" />
+    <item type="id" name="edge_lock" />
+    <item type="id" name="edge_wechat" />
+    <item type="id" name="edge_wifi" />
+</resources>

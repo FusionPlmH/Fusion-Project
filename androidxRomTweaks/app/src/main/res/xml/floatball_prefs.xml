@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/floatball_name"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="BallDisplay"
+        android:title="@string/floatball_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+
+        />
+    <com.leo.salt.preference.SaltSettingCardWarningPreference   android:key="Ballarning"  />
+
+    <com.leo.salt.preference.SaltSettingIconListPreference
+        android:title="@string/floatball_icon_style"
+        android:key="qs_floatball_style"
+        salt:drawableIconColor="?transparency"
+        android:defaultValue="0"
+        android:dependency="BallDisplay"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="Ballsize"
+        android:title="@string/floatball_size"
+        android:defaultValue="10"
+        android:min="5"
+        android:max="15"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        android:dependency="BallDisplay"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="BallConceal"
+        android:dependency="BallDisplay"
+        android:title="@string/floatball_hide"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback"   android:key="BallibratoDisplay" android:dependency="BallDisplay">
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="BallVibrator"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="BallVibrator"
+        android:key="BallLevel"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/floatball_action"  android:key="Ballactionlay"  android:dependency="BallDisplay">
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+
+        android:key="floclick"
+        android:title="@string/floatball_click"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="BallUP"
+        android:title="@string/floatball_up"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+        <com.leo.salt.preference.SaltSettingDefaultListPreference
+            android:key="BallDown"
+            android:title="@string/floatball_down"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+        <com.leo.salt.preference.SaltSettingDefaultListPreference
+            android:key="BallLeft"
+            android:title="@string/floatball_left"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+        <com.leo.salt.preference.SaltSettingDefaultListPreference
+            android:key="BallRight"
+            android:title="@string/floatball_right"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="wifi"
+        android:enabled="true"
+        android:icon="@drawable/drawer_wifi"
+        android:shortcutShortLabel="@string/gv_name_wifi"
+        android:shortcutLongLabel="@string/gv_name_wifi"
+       >
+        <intent
+            android:action="action1"
+            android:targetPackage="com.tweaks.leo"
+            android:targetClass="com.tweaks.leo.activity.WifiPasswordActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="delete_shortcut"
+        android:enabled="true"
+        android:icon="@drawable/grid_delete_icon"
+        android:shortcutShortLabel="@string/assist_grid_apps"
+        android:shortcutLongLabel="@string/assist_grid_apps"
+       >
+        <intent
+            android:action="action2"
+            android:targetPackage="com.tweaks.leo"
+            android:targetClass="com.tweaks.leo.activity.SystemappActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="donate_shortcut"
+        android:enabled="true"
+        android:icon="@drawable/ic_donate"
+        android:shortcutShortLabel="@string/toolbar_navigation_donate"
+        android:shortcutLongLabel="@string/toolbar_navigation_donate"
+        >
+        <intent
+            android:action="action3"
+            android:targetPackage="com.tweaks.leo"
+            android:targetClass="com.tweaks.leo.donate.DonateActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="clear"
+        android:enabled="true"
+        android:icon="@drawable/ic_clear"
+        android:shortcutShortLabel="@string/accelerate"
+        android:shortcutLongLabel="@string/accelerate"
+        >
+        <intent
+            android:action="action4"
+            android:targetPackage="com.tweaks.leo"
+            android:targetClass="com.tweaks.leo.activity.CleanActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="lock"
+        android:enabled="true"
+        android:icon="@drawable/ic_lock_screen"
+        android:shortcutShortLabel="@string/lock"
+        android:shortcutLongLabel="@string/lock"
+        >
+        <intent
+            android:action="action5"
+            android:targetPackage="com.tweaks.leo"
+            android:targetClass="com.tweaks.leo.activity.LockScreenActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

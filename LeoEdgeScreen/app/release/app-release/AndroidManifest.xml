@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.leo.edge.screen" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <application>
+        <meta-data android:name="com.samsung.android.cocktail.mode" android:value="edge_single_plus"/>
+        <receiver android:name="com.leo.edge.screen.CocktailSaltProvider">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.cocktail.provider" android:resource="@xml/edge_single_plus"/>
+        </receiver>
+    </application>
+</manifest>

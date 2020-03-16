@@ -1,0 +1,166 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+D:\DOC\20161121SDK_Release\LookSDK_v1.4.0\2. Sample App\Look\EdgeScreen\studio
+                                            -      -                          
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* proguard-project.txt
+* studio\
+* studio\.idea\
+* studio\.idea\.name
+* studio\.idea\compiler.xml
+* studio\.idea\copyright\
+* studio\.idea\copyright\profiles_settings.xml
+* studio\.idea\encodings.xml
+* studio\.idea\misc.xml
+* studio\.idea\workspace.xml
+* studio\app\
+* studio\app\build.gradle
+* studio\app\libs\
+* studio\app\libs\look_v1.3.1.jar
+* studio\app\libs\sdk-v1.0.0.jar
+* studio\app\src\
+* studio\app\src\main\
+* studio\app\src\main\AndroidManifest.xml
+* studio\app\src\main\java\
+* studio\app\src\main\java\com\
+* studio\app\src\main\java\com\example\
+* studio\app\src\main\java\com\example\edgescreen\
+* studio\app\src\main\java\com\example\edgescreen\EdgeConfigure.java
+* studio\app\src\main\java\com\example\edgescreen\feeds\
+* studio\app\src\main\java\com\example\edgescreen\feeds\CocktailFeedsProvider.java
+* studio\app\src\main\java\com\example\edgescreen\immersive_mode\
+* studio\app\src\main\java\com\example\edgescreen\immersive_mode\ImmersiveModeActivity.java
+* studio\app\src\main\java\com\example\edgescreen\list\
+* studio\app\src\main\java\com\example\edgescreen\list\CocktailListAdapterFactory.java
+* studio\app\src\main\java\com\example\edgescreen\list\CocktailListAdapterProvider.java
+* studio\app\src\main\java\com\example\edgescreen\list\CocktailListAdapterService.java
+* studio\app\src\main\java\com\example\edgescreen\list\Constants.java
+* studio\app\src\main\java\com\example\edgescreen\list\DBHelper.java
+* studio\app\src\main\java\com\example\edgescreen\single\
+* studio\app\src\main\java\com\example\edgescreen\single\CocktailSingleProvider.java
+* studio\app\src\main\java\com\example\edgescreen\singleplus\
+* studio\app\src\main\java\com\example\edgescreen\singleplus\CocktailSinglePlusProvider.java
+* studio\app\src\main\res\
+* studio\app\src\main\res\drawable-hdpi\
+* studio\app\src\main\res\drawable-hdpi\ic_launcher.png
+* studio\app\src\main\res\drawable-mdpi\
+* studio\app\src\main\res\drawable-mdpi\ic_launcher.png
+* studio\app\src\main\res\drawable-xhdpi\
+* studio\app\src\main\res\drawable-xhdpi\ic_launcher.png
+* studio\app\src\main\res\drawable-xxhdpi\
+* studio\app\src\main\res\drawable-xxhdpi\apps_edge.png
+* studio\app\src\main\res\drawable-xxhdpi\apps_edge_bg.png
+* studio\app\src\main\res\drawable-xxhdpi\bg_preview.png
+* studio\app\src\main\res\drawable-xxhdpi\bg_snotepanel.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_launcher.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen1.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen2.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen3.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen4.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen5.png
+* studio\app\src\main\res\drawable-xxhdpi\ic_note_pen6.png
+* studio\app\src\main\res\drawable-xxhdpi\icon01.png
+* studio\app\src\main\res\drawable-xxhdpi\icon02.png
+* studio\app\src\main\res\drawable-xxhdpi\icon03.png
+* studio\app\src\main\res\drawable-xxhdpi\icon04.png
+* studio\app\src\main\res\drawable-xxhdpi\icon05.png
+* studio\app\src\main\res\drawable-xxhdpi\icon06.png
+* studio\app\src\main\res\drawable-xxhdpi\note_bg.png
+* studio\app\src\main\res\layout-land\
+* studio\app\src\main\res\layout-land\feeds_panel_layout.xml
+* studio\app\src\main\res\layout-land\sample_panel.xml
+* studio\app\src\main\res\layout-land\sub_view.xml
+* studio\app\src\main\res\layout-land\widget_item.xml
+* studio\app\src\main\res\layout-land\widget_layout.xml
+* studio\app\src\main\res\layout\
+* studio\app\src\main\res\layout\activity_immersive_mode.xml
+* studio\app\src\main\res\layout\activity_main.xml
+* studio\app\src\main\res\layout\feeds_panel_layout.xml
+* studio\app\src\main\res\layout\sample_edge_single_plus.xml
+* studio\app\src\main\res\layout\sample_panel.xml
+* studio\app\src\main\res\layout\sub_view.xml
+* studio\app\src\main\res\layout\widget_item.xml
+* studio\app\src\main\res\layout\widget_layout.xml
+* studio\app\src\main\res\menu\
+* studio\app\src\main\res\menu\main.xml
+* studio\app\src\main\res\values-sw600dp\
+* studio\app\src\main\res\values-sw600dp\dimens.xml
+* studio\app\src\main\res\values-sw720dp-land\
+* studio\app\src\main\res\values-sw720dp-land\dimens.xml
+* studio\app\src\main\res\values-v11\
+* studio\app\src\main\res\values-v11\styles.xml
+* studio\app\src\main\res\values-v14\
+* studio\app\src\main\res\values-v14\styles.xml
+* studio\app\src\main\res\values-w820dp\
+* studio\app\src\main\res\values-w820dp\dimens.xml
+* studio\app\src\main\res\values\
+* studio\app\src\main\res\values\dimens.xml
+* studio\app\src\main\res\values\strings.xml
+* studio\app\src\main\res\values\styles.xml
+* studio\app\src\main\res\xml\
+* studio\app\src\main\res\xml\edge_feeds.xml
+* studio\app\src\main\res\xml\edge_single.xml
+* studio\app\src\main\res\xml\edge_single_list.xml
+* studio\app\src\main\res\xml\edge_single_plus.xml
+* studio\build.gradle
+* studio\gradle\
+* studio\gradle\wrapper\
+* studio\gradle\wrapper\gradle-wrapper.jar
+* studio\gradle\wrapper\gradle-wrapper.properties
+* studio\gradlew
+* studio\gradlew.bat
+* studio\local.properties
+* studio\settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\look_v1.3.1.jar => app\libs\look_v1.3.1.jar
+* libs\sdk-v1.0.0.jar => app\libs\sdk-v1.0.0.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppBarLight" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" android:textColor="?stringColor" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/web_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+        </android.support.v7.widget.Toolbar>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:progressTint="?colorAccent" android:indeterminateTint="?colorAccent" style="?android:progressBarStyleHorizontal" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_ly" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+                <com.leo.salt.tweaks.view.widget.LeoWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

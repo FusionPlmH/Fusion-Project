@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:title="@string/statusbar_carrier_orientation" android:key="statusbar_carrier_orientation"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_view_values"
+        android:entries="@array/statusbar_view_options"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_carrier_custom_single_enabled"
+        android:title="@string/statusbar_carrier_custom_single"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference
+        android:title="@string/statusbar_carrier_custom"
+        android:key="statusbar_carrier_custom"
+        salt:clickValues="6"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="size"
+        android:title="@string/statusbar_carrier_size"
+        android:defaultValue="14"
+        android:min="5"
+        android:max="18"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="MultiSize"
+        android:title="@string/statusbar_carrier_multisize"
+        android:defaultValue="9"
+        android:min="5"
+        android:max="10"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="start_padding"
+        android:title="@string/statusbar_carrier_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="end_padding"
+        android:title="@string/statusbar_carrier_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:key="statusbar_carrier_font_style"
+        android:title="@string/statusbar_carrier_font_style"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_carrier_color_enabled"
+        android:title="@string/statusbar_carrier_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_carrier_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:dependency="statusbar_carrier_color_enabled"
+        android:key="statusbar_carrier_color"/>
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_carrier_dark_color_enabled"
+        android:title="@string/statusbar_carrier_dark_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_carrier_dark_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99000000"
+        salt:density="12"
+        android:dependency="statusbar_carrier_dark_color_enabled"
+        salt:alphaSlider="true"
+        android:key="statusbar_carrier_dark_color"/>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+  <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏天气" />
+  <com.tweaks.leo.preference.MySwitchPreference android:title="显示天气" android:key="leo_tweaks_status_bar_weather" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.tweaks.leo.preference.MyPreferenceCategory android:title="显示设置" />
+  <com.tweaks.leo.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="状态栏天气显示位置" android:key="leo_tweaks_status_bar_weather_orientation" android:dependency="leo_tweaks_status_bar_weather" android:defaultValue="1" android:entryValues="@array/statusbar_view_position_values" />
+  <com.tweaks.leo.preference.MySwitchPreference android:title="单行显示" android:key="leo_tweaks_status_bar_weather_single" android:defaultValue="false" android:dependency="leo_tweaks_status_bar_weather" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.tweaks.leo.preference.MySeekBarPreference android:title="单行文本大小" android:key="leo_tweaks_status_bar_weather_single_size" android:dependency="leo_tweaks_status_bar_weather_single" android:summary="左右滑动调节大小" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+  <com.tweaks.leo.preference.MySeekBarPreference android:title="双行文本大小" android:key="leo_tweaks_status_bar_weather_multi_size" app:reverseDependency="leo_tweaks_status_bar_weather_single" android:summary="左右滑动调节大小" android:defaultValue="9" app:minValue="5" app:maxValue="10" app:unitsValue="sp" />
+  <com.tweaks.leo.preference.MyPreferenceCategory android:title="文本设置" />
+  <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_status_bar_weather_font" android:dependency="leo_tweaks_status_bar_weather" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+  <com.tweaks.leo.preference.MySwitchPreference android:title="允许自定义状态栏天气颜色" android:key="leo_tweaks_status_bar_weather_color_enabled" android:dependency="leo_tweaks_status_bar_weather"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+  <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_status_bar_weather_random_color" android:dependency="leo_tweaks_status_bar_weather_color_enabled"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+  <com.tweaks.leo.preference.ColorPickerPreference android:title="状态栏天气颜色" android:key="leo_tweaks_status_bar_weather_color" app:reverseDependency="leo_tweaks_status_bar_weather_random_color" android:summary="默认值:#FFFFFFFF" android:dependency="leo_tweaks_status_bar_weather" leo:defaultColor="#ffffffff" />
+</PreferenceScreen>

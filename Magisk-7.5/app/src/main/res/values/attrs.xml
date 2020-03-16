@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cardStyle" format="reference"/>
+    <attr name="colorAccentFallback" format="reference" />
+    <attr name="imageColorTint" format="reference" />
+    <attr name="colorControl" format="reference"/>
+    <attr name="leobgcolor" format="color"/>
+    <attr name="cardleoColor" format="color"/>
+    <attr name="barleoColor" format="color"/>
+</resources>

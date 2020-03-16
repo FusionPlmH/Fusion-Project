@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="限制破解"/>
+    <org.salt.preference.SaltPreference android:title="破解应用分身限制" android:key="crack_spare"    android:summary="解除三星对应用分身的限制"/>
+    <org.salt.preference.SaltPreference android:title="破解主题限制" android:key="crack_theme"   android:summary="解除主题免费试用时间限制" />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="优化调整"/>
+    <org.salt.preference.SaltPreference android:title="修复淘宝优酷热更新问题" android:key="leo_taobao" android:defaultValue="false" android:summary="出现淘宝优酷闪退可以试试"/>
+    <org.salt.preference.SaltPreference android:title="@string/doze" android:key="leo_doze" android:defaultValue="false" android:summary="@string/doze_sumarry"/>
+
+    <org.salt.preference.SaltPreference android:title="@string/battery_log" android:key="leo_battery_log" android:defaultValue="false" android:summary="@string/battery_log_summary"/>
+    <org.salt.preference.SaltPreference android:title="电池校正" android:key="BatteryRefreshBeta" android:defaultValue="false" android:summary="电池充满时可进行电池数据校正"/>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="细节设置"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/airplane_tactics" android:key="leo_airplane" android:defaultValue="false" android:summary="@string/airplane_tactics_summary"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/sim_dialog" android:key="leo_stk" android:defaultValue="false" android:summary="@string/sim_dialog_summary"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/wake_unplugged" android:key="wake_unplugged"   android:defaultValue="false"
+        android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <org.salt.preference.SaltSwitchPreference android:title="@string/sim_restriction" android:key="SimSdBlock"   android:defaultValue="false"
+        android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/system_animation"/>
+
+    <org.salt.preference.SaltListPreference android:title="@string/window_animation" android:key="window_animation_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries"   android:entryValues="@array/window_animation_scale_values" salt:modeSettings="1"/>
+    <org.salt.preference.SaltListPreference android:title="@string/transition_animation" android:key="transition_animation_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries"  android:entryValues="@array/window_animation_scale_values" salt:modeSettings="1"/>
+    <org.salt.preference.SaltListPreference android:title="@string/animator_duration" android:key="animator_duration_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries" android:entryValues="@array/window_animation_scale_values" salt:modeSettings="1"/>
+    <org.salt.preference.SaltPreference android:title="@string/boot_animation" android:key="leo_boot_anim" android:summary="@string/boot_animation_sumarry"/>
+</androidx.preference.PreferenceScreen>

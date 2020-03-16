@@ -1,0 +1,249 @@
+<resources>
+    <string name="download_without">Currently on newest update </string>
+    <string name="update_count_down">autoupdate count</string>
+    <string name="second">second</string>
+    <string name="process_download">downing update</string>
+    <string name="download_ok">finish downloading,after 10sec system will reboot</string>
+    <string name="process_update">updating system</string>
+    <string name="download_pause">pause</string>
+    <string name="download_cancel">cancel</string>
+    <string name="download_start">start</string>
+    <string name="ota_update_system">OTA Line</string>
+    <string name="ota_update_url">Line1</string>
+    <string name="ota_update_url_2">Line2</string>
+    <string name="publish_date">pulish date:</string>
+    <string name="ota_versions">OTA version:</string>
+    <string name="stop_date">stop date:</string>
+    <string name="push">push or not:</string>
+    <string name="update_ota">System Update</string>
+    <string name="network_no">no internet connect,can not use OTA</string>
+    <string name="upload_ota">fetching data......</string>
+    <string name="next">next time</string>
+    <string name="wilful">force to use data</string>
+    <string name="network_data" >We have detected that you are currently in the mobile data state. Due to the large amount of traffic data used for online update, we suggest that you switch to the wireless network!Using OTA service!</string>
+    <string name="wechat_pay">微信捐赠</string>
+    <string name="alipay_custom">支付宝捐赠</string>
+    <string name="alipay_wechat">捐赠</string>
+    <string name="donate_why">为什么需要你的捐赠</string>
+    <string name="donate_info">捐赠信息</string>
+    <string name="wechat_pay_step">微信捐赠步骤</string>
+    <string name="wechat_pay_step_sumarry">"点击确定按钮后会跳转微信扫描二维码界面：\n\n1. 点击右上角的菜单按钮\n\n2. 点击'从相册选取二维码'\n\n3. 选择第一张二维码图片即可\n\n"</string>
+    <string name="wechat_not_installed">微信未安装</string>
+    <string name="no_qq">没有发现QQ或者QQ版本不正确，导致无法使用.请下载最新版本!</string>
+    <string name="donate_why_sumarry">"1.捐赠为了降低服务器成本\n2.我们作为开发者熬夜制作总想有些回报以及你们的鼓励\n3.你的捐赠将是对我们最大的鼓励,让我们更加有激情制作下去\n4.一包香烟,一杯咖啡都是对我们得肯定鼓励与关怀\n5.捐赠后你将获得更多个性化功能\n6.以及OTA更新"</string>
+    <item name="pager_image1" type="id" />
+    <item name="pager_image2" type="id" />
+    <item name="pager_image3" type="id" />
+    <item name="pager_image4" type="id" />
+    <item name="pager_image5" type="id" />
+    <item name="pager_image6" type="id" />
+    <item name="pager_image7" type="id" />
+    <item name="pager_image8" type="id" />
+    <string name="website">Website</string>
+    <string name="assist_grid_log">Log cat</string>
+    <string name="assist_grid_autostart">Autostart manager</string>
+    <string name="assist_grid_apps">Apps manager</string>
+    <string name="assist_grid_wifi">WIFI Password</string>
+    <string name="nav_tab_home">Home</string>
+         <string name="nav_tab_personalized">Advanced</string>
+         <string name="nav_tab_tools">Tools</string>
+         <string name="nav_tab_dev">device info</string>
+    <string name="nav_donate">Donation</string>
+    <string name="nav_source_library">Gratitude and Reource library</string>
+    <string name="nav_power_meun">Power menu</string>
+    <string name="nav_changelog">Changelog</string>
+    <string name="nav_help">Help</string>
+    <string name="nav_share">share</string>
+    <string name="app_name">LeoTweaks</string>
+    <string name="execute_success">Execute success</string>
+    <string name="execute_fail">Execute fail</string>
+    <string name="execute_wait">Executing...please wait..</string>
+    <string name="apps_loading">Loading please wait...</string>
+    <string name="no_su_dialog_title">Grant SU fail</string>
+    <string name="no_su_dialog_title_overtime">Get ROOT permission timeout</string>
+    <string name="check_root">Checking ROOT permissions</string>
+    <string name="no_su_dialog_message">Sorry，Fail to grant Root,Some functin is limited !</string>
+    <string name="manually_root">Manually give root premission</string>
+    <string name="btn_refresh">Try ahain</string>
+    <string name="btn_skip">Skip</string>
+    <string name="error_su_timeout">Timeout，Please make sure your root manager is running，and try again！</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="global_actions_donation">"Hello\nDonate USD $15-20\nDonate for a long-term use, as long as Leo is still updating your current model, you can enjoy all the features including OTA, etc."</string>
+    <string name="no_ota">No updates available</string>
+    <string name="no_donate_sumarry">You are currently using [normal version] \n some functions will be limited</string>
+    <string name="unit_run_time">Run time </string>
+    <string name="unit_run_hour"> &#160;Hour &#160;</string>
+    <string name="unit_run_minute"> &#160;Minutes</string>
+    <string name="assist_grid_dpi">DPI</string>
+    <string name="assist_grid_network_sumarry">network mod</string>
+    <string name="assist_grid_developer_sumarry">quick on developer mode</string>
+    <string name="assist_grid_agps_sumarry">Set A-GPS</string>
+    <string name="assist_grid_jellybean_sumarry">JellyBean game</string>
+    <string name="assist_grid_marshmallow_sumarry">Marshmallow game</string>
+
+    <string name="assist_grid_img">Img manager</string>
+
+
+    <string name="list_grid_sound">System Sound</string>
+    <string name="list_grid_system">System tweak</string>
+    <string name="edge_single_plus_name">Leo side screen</string><![CDATA[
+        
+    ]]><string name="list_grid_goodlock">GoodLock</string><![CDATA[
+
+
+
+
+
+        
+    ]]><string name="show_dsp_sumarry">ping connect</string><![CDATA[
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    ]]>
+    <string name="dpi_spit_message">Be careful when you setting DPI:\n\n<b>allow DPI range is 330-480\n\n</b>\n\n please do not set DPI when you on 2k resolution.\n\n 1080P default DPI is『420』\n\n<b></b></string>
+    <string name="no_activity">App is not install!</string>
+    <string name="show_dsp">ping test</string>
+    <string name="system_title">system tweak</string>
+    <string name="assist_grid_tools">Advanced Tools</string>
+    <string name="assist_grid_system_hiding">System hiding</string>
+    <string name="reboot_device">Reboot device</string>
+    <string name="illegal_value_title">DPI value is not allow!</string>
+    <string name="text_illegal_value">Your DPI can not set as this %1$s\n\nPlease set between 330 - 480.\n\nThank you!</string>
+    <string name="back_button_custom">Back to DPI cutom</string>
+    <string name="show_current_dpi">Set current DPI to\n\n Current DPI is %1$s</string>
+    <string name="select_dpi">Select DPI:</string>
+    <string name="custom_dpi_input">Input value between 330 - 480</string>
+    <string name="text_hint">Input dpi value</string>
+    <string name="back_to_preset">Default</string>
+
+    <string name="autostarts_all_btn_title">Enable option</string>
+    <string name="autostarts_allow_progress_msg">progressing ...</string>
+    <string name="autostarts_allowed">Disabled</string>
+    <string name="autostarts_empty_msg">No bootup application</string>
+    <string name="autostarts_optimize_btn_title">All option</string>
+    <string name="autostarts_optimize_empty_msg">Not optimize any option</string>
+    <string name="autostarts_prohibit_progress_msg">Disabling...</string>
+    <string name="autostarts_prohibited">Granted</string>
+    <string name="reset">reset</string>
+    <string name="use_apps">Installation</string>
+    <string name="system_apps">System app</string>
+    <string name="backups_apps">Backup</string>
+    <string name="apps_hide_record">Hide app record and log</string>
+    <string name="apps_recover">Recoverying the app , please wait...</string>
+    <string name="app_selected_none">Not select and application！</string>
+
+    <string name="app_manage_store">check on app store</string>
+    <string name="app_manage_packagename_copy">Copy packagename『PackageName』</string>
+    <string name="app_manage_info">App infp </string>
+    <string name="app_manage_eisabled_apk">disable and hide</string>
+    <string name="app_manage_unfreeze_apk">unfreeze</string>
+    <string name="app_manage_freeze_apk">freeze</string>
+    <string name="app_manage_clear_cache">clean cache</string>
+    <string name="app_manage_clear_data">clean data</string>
+    <string name="app_manage_uninstall_apk_data">uninstall『keep data』</string>
+    <string name="app_manage_uninstall_apk">full uninstall</string>
+    <string name="app_manage_backup_apk">only backup apk</string>
+    <string name="app_manage_backup_apk_data">backup『apk and data』</string>
+    <string name="app_manage_restore_delete">delete backup</string>
+    <string name="app_manage_restore_apk">restore apk『install only』</string>
+    <string name="app_manage_restore_apk_data">restore『app and data』</string>
+    <string name="app_manage_restore_data">restore『data』</string>
+    <string name="copy_ok">Copying:</string>
+    <string name="sorry">sorry</string>
+    <string name="no_store">Can not find any app store , want to jump into other app store?</string>
+    <string name="party_store">Third party app store</string>
+    <string name="apps_search_box">Search PackageName</string>
+    <string name="apps_manage_message">✔ 已备份\n✘ 备份的版本比安装的版本更高\n★ 已安装的版本比备份的版本旧\n☆ 已备份数据未备份APK\n如果你线刷官方ROM数据或者刷机后将丢失</string>
+    <string name="not_displayed">No longer display</string>
+    <string name="backup_file_exists">Overwrite the file?</string>
+    <string name="backup_file_repea">File is appeare，Select to overwrite ?</string>
+    <string name="flash_hint">Is it flash</string>
+    <string name="flash_efs">Flash EFS image, If flashing the wrong image ,you will lost IMEI AND CANT NOT BOOT UP!!</string>
+    <string name="flash_rec">Flash TWRP recovery , We cant not ensure your recovery is correct ,Make sure your recovery file is suitable for your devices!</string>
+    <string name="flash_boot">Flash Boot/kernel image,make sure your file is suitable with your device,Flashing incorrect image will cause your phone bootloop or other problem!</string>
+    <string name="flash_confirm">Confirm flash?</string>
+    <string name="backup_action_title_boot">Backup boot</string>
+    <string name="backup_action_title">Backuping</string>
+    <string name="restore_action_title_boot">Flashing Boot</string>
+    <string name="restore_action_desc_boot">Select to flash boot.img</string>
+    <string name="backup_space_small">Device space is not enough ，please clean up atleast 10GB space！</string>
+    <string name="backup_action_title_rec">Backup Recovery</string>
+    <string name="backup_action_sumarry">to img,copy to</string>
+    <string name="restore_action_title_rec">Flashing Recovery</string>
+    <string name="restore_action_desc_rec">Select to flash recovery.img</string>
+    <string name="backup_action_title_efs">Backup EFS</string>
+    <string name="restore_action_title_efs">Flash EFS</string>
+    <string name="restore_action_desc_efs">Select to Flash EFS.img</string>
+    <string name="restore_action_title_zip">Zip Flash</string>
+    <string name="restore_action_desc_zip">Select*zip file to flash</string>
+       <string name="please_check_root">Check ROOT permissions</string>
+        <string name="please_check_root_summary">Please check if you have a ROOT phone and allow this app to access ROOT permissions!</string>
+        <string name="bo_flash"> will be swiped </string>
+        <string name="bo_flash_summary">Do not operate the phone!</string>
+     <string name="operation_ok"> operation succeeded </string>
+        <string name="img_flash_failure">Mirror failed to print </string>
+        <string name="export_ok">export succeeded, saved as </string>
+        <string name="export_failure">export failed </string>
+      <string name="file_name">Select File</string>
+    <string name="logcat_title">Logcat</string>
+    <string name="kmesg_title">kernel cat</string>
+    <string name="dmesg_title">boot cat</string>
+    <string name="log_it_title">cat log</string>
+    <string name="log_it_dialog_title">share</string>
+    <string name="logcat_warning">share log to developer!</string>
+    <string name="share_title">shar now</string>
+    <string name="log_it_summary">please wait to cat the log</string>
+    <string name="log_it_logs_in_progress">catting the log&#8230;</string>
+    <string name="log_it_share_type_title">share method</string>
+    <string name="log_it_share_type_zip">ZIP file</string>
+     <string name="log_log">log item </string>
+        <string name="log_summary">If the software FC appears this log must be crawled </string>
+        <string name="log_clean">clean up </string>
+        <string name="log_clean_summary">delete the last crawl log file </string>
+
+
+    <string name="ip_lastfive">Previous ip</string>
+    <string name="dst_dsp">Destination:</string>
+    <string name="error">error</string>
+    <string name="can_download">download now</string>
+    <string name="can_samsung_store">Can not detect samsung store,moving to third part app store</string>
+
+    <!--sound-->
+</resources>

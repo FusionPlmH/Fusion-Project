@@ -1,0 +1,21 @@
+<resources>
+    <string name="hitomi_power_menu_airplane">飛行模式</string>
+    <string name="hitomi_power_menu_download">線刷模式</string>
+    <string name="hitomi_power_menu_flashlight">輔助燈光</string>
+    <string name="hitomi_power_menu_floating">懸浮球</string>
+    <string name="hitomi_power_menu_leo">Leo 電源菜單</string>
+    <string name="hitomi_power_menu_mipop">屏幕助手</string>
+    <string name="hitomi_power_menu_mobiledata">移動數據</string>
+    <string name="hitomi_power_menu_name">Hitomi 電源菜單</string>
+    <string name="hitomi_power_menu_outdoors">戶外模式</string>
+    <string name="hitomi_power_menu_quick_reboot">快速重啟</string>
+    <string name="hitomi_power_menu_recovery">卡刷模式</string>
+    <string name="hitomi_power_menu_restart">重新啟動</string>
+    <string name="hitomi_power_menu_screenrecord">屏幕錄製</string>
+    <string name="hitomi_power_menu_screenshot">屏幕截圖</string>
+    <string name="hitomi_power_menu_shutdown">關閉電源</string>
+    <string name="hitomi_power_menu_sound">​​聲音模式</string>
+    <string name="hitomi_power_menu_wifi">Wifi 切換</string>
+    <string name="hitomi_power_menu_vibration">震動模式</string>
+    <string name="hitomi_power_menu_silence">無聲模式</string>
+</resources>

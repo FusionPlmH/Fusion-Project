@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppBarDark" android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="430.0dip" app:elevation="0.0dip">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:navigationIcon="@drawable/ic_navigationicon" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_navigationicon" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/CollapsingToolbarLayoutText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:animateLayoutChanges="true">
+            <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/user_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="25.0dip" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/rom_versions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:tint="?android:colorAccent" android:fontFamily="sec-roboto-light" />
+            <ImageView android:background="@drawable/bg_snow" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/navigation" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="?android:colorAccent" android:text="@string/permissions_version" android:fontFamily="sec-roboto-light" />
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:id="@id/donate_vip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sec-roboto-light" />
+                </LinearLayout>
+                <Space android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_margin="1.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18.0dip" android:id="@id/donate_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="?android:colorAccent" android:text="@string/permissions_donate_state" android:fontFamily="sec-roboto-light" />
+                        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:id="@id/vip_versions" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sec-roboto-light" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/donate" android:background="?android:selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true">
+                        <View android:layout_gravity="center" android:background="#ffb5b5b5" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="20.0dip" android:textStyle="bold" android:layout_gravity="center" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:tint="?android:colorAccent" android:text="@string/permissions_donate" android:layout_alignParentRight="true" android:fontFamily="sec-roboto-light" android:layout_alignParentEnd="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Space android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_margin="1.0dip" />
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/colorPrimaryMain_setting" android:id="@id/donate_no_info" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sec-roboto-light" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18.0dip" android:layout_gravity="center_vertical" android:id="@id/unlock_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:colorAccent" android:text="@string/permissions_unlock_state" android:fontFamily="sec-roboto-light" />
+                        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:id="@id/unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" android:textAlignment="viewStart" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/unlock_permission" android:background="?android:selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true">
+                        <View android:layout_gravity="center" android:background="#ffb5b5b5" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="20.0dip" android:textStyle="bold" android:layout_gravity="center" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:tint="?android:colorAccent" android:text="@string/permissions_unlock" android:layout_alignParentRight="true" android:fontFamily="sec-roboto-light" android:layout_alignParentEnd="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Space android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_margin="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="?android:colorAccent" android:text="@string/permissions_number" android:fontFamily="sec-roboto-light" />
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:id="@id/device_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sec-roboto-light" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

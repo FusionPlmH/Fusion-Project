@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback" android:key="home_launcher_gesture"/>
+    <org.salt.preference.SaltSwitchPreference
+
+        android:key="launcher_gesture_double_vibrator_enabled"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="launcher_gesture_double_vibrator_enabled"
+        android:key="leo_salt_launcher_gesture_double_vibrator_level"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_gesture_category" android:key="leo_salt_launcher_sliding" android:dependency="home_launcher_gesture"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="sliding_enabled"
+        android:title="@string/launcher_gesture_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="sliding_enabled"
+        android:key="sliding_top"
+        android:title="@string/launcher_gesture_sliding_top"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="sliding_enabled"
+        android:key="sliding_bottom"
+        android:title="@string/launcher_gesture_sliding_bottom"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltInfoPreference
+        android:key="launcher_warning9"
+        salt:infoAction="home9"
+        salt:infoTitle="使用帮助"
+        salt:imageBoolean="false"
+        salt:infoMessage="@string/launcher_gesture_warning"/>
+    <org.salt.preference.SaltInfoPreference
+        android:key="launcher_warning10"
+        salt:infoTitle="使用帮助"
+        salt:infoMessage="如图所示你需要在[主屏幕设置]中关闭图中两项功能方可正常使用桌面上下滑动手势\n【点击关闭】"
+        salt:infoAction="home10"
+        salt:imageBoolean="true"
+        salt:imageSource="@drawable/home_oneui2_info"/>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_gesture_double_category" android:dependency="home_launcher_gesture">
+
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="DoubleEnabled"
+        android:title="@string/launcher_gesture_double_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltListPreference
+        android:dependency="DoubleEnabled"
+        android:key="gesture_double"
+        android:title="@string/launcher_gesture_double"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

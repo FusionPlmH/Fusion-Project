@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_01" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_02" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_03" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_04" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_05" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_06" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_07" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_08" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_09" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_10" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_11" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_12" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_13" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_14" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_15" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_16" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_17" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_18" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_19" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_20" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_21" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_22" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_23" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_24" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_25" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_26" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_27" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_28" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_29" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_30" />
+    <item android:duration="100" android:drawable="@drawable/mq_redirect_queue_31" />
+</animation-list>

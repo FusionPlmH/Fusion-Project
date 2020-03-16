@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:key="analogcolock"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="analogclock_enabled"
+        android:title="@string/analogclock_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_panel"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltIconListPreference
+        android:title="@string/analogclock_dial_style"
+        android:key="panel_analogclock_dial_style"
+        android:defaultValue="0"
+        salt:drawableIconColor="?transparency"
+        />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/analogclock_dial_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xff0074d4"
+        android:summary="0xff0074d4"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="panel_analogclock_dial_color"/>
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/analogclock_hour_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xff808080"
+        android:summary="0xff808080"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="panel_analogclock_hour_color"/>
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/analogclock_minute_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xff808080"
+        android:summary="0xff808080"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="panel_analogclock_minute_color"/>
+</androidx.preference.PreferenceScreen>

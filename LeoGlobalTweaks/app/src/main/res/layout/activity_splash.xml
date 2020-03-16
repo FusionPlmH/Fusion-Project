@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_splash" xmlns:android="http://schemas.android.com/apk/res/android">
+<View
+    android:id="@+id/background_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+   <LinearLayout
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:id="@+id/logo_splash"
+          android:scaleType="fitCenter"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:padding="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/name_splash"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/http_splash"/>
+   </LinearLayout>
+</RelativeLayout>

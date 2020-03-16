@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/nav_height" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/nav_landscape_enable" android:key="nav_landscape_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="75" android:title="@string/nav_landscape_enable_style" android:key="leo_salt_nav_landscape_enable_style" android:summary="@string/seekbar_sumarry" android:dependency="nav_landscape_enable" android:defaultValue="45" android:min="0" salt:interval="1" salt:unitsLeft="" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/nav_portrait_enable" android:key="nav_portrait_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="75" android:title="@string/nav_portrait_enable_style" android:key="leo_salt_nav_portrait_enable_style" android:summary="@string/seekbar_sumarry" android:dependency="nav_portrait_enable" android:defaultValue="45" android:min="0" salt:unitsLeft="" salt:unitsRight=" dp" />
+    <Preference android:key="nav_action" />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_setting" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/launcher_icon_text" android:key="icon_text" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingListPreference android:entries="@array/home_effect_entries" android:title="@string/launcher_effect" android:key="launcher_effect_style" android:defaultValue="0" android:entryValues="@array/home_effect_values" />
+</PreferenceScreen>

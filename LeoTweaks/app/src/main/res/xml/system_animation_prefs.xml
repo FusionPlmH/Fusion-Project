@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="谷歌服务"/>
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/google_services_options" android:title="冻结谷歌服务" android:key="leo_tweaks_google_services_freeze" android:defaultValue="0" android:entryValues="@array/google_services_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <PreferenceCategory android:title="应用分身"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="应用分身程序支持" android:key="leo_tweaks_dual_app_enabled" android:defaultValue="true" android:summaryOn="当前支持以安装程序分身" android:summaryOff="当前支持所有程序分身" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <PreferenceCategory android:title="其他"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="截图声音提示" android:key="leo_tweaks_capture_screen_alert" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="耳机音量过大提示" android:key="leo_tweaks_volume_safety_tips" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MyPreference android:title="ROOT模式" android:key="leo_tweaks_root" android:summary="切换ROOT方案" />
+    <com.tweaks.salt.preference.MyPreference android:title="定位服务" android:key="leo_tweaks_location" android:summary="根据你的需求选择定位服务" />
+    <com.tweaks.salt.preference.MyPreference android:title="数据清理" android:key="leo_tweaks_wipe" android:summary="选择你需要清理的项目" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="SIM卡对话框" android:key="leo_tweaks_stk_dialog" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="系统动画"/>
+    <com.tweaks.salt.preference.GlobalListPreference android:title="窗口动画" android:key="window_animation_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries"   android:entryValues="@array/window_animation_scale_values" />
+    <com.tweaks.salt.preference.GlobalListPreference android:title="过度动画" android:key="transition_animation_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries"  android:entryValues="@array/window_animation_scale_values" />
+    <com.tweaks.salt.preference.GlobalListPreference android:title="动画影像伸缩时间效果" android:key="animator_duration_scale" android:defaultValue="1" android:entries="@array/window_animation_scale_entries" android:entryValues="@array/window_animation_scale_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="魔趣列表动画"/>
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/listview_animation_entries" android:title="列表动画" android:key="leo_tweaks_abs_list_animation_style"  android:defaultValue="0" android:entryValues="@array/listview_animation_values" />
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/listview_interpolator_entries" android:title="列表插入动画" android:key="leo_tweaks_abs_list_interpolator_style" android:defaultValue="0" android:entryValues="@array/listview_interpolator_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="Toast弹窗动画"/>
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/toast_animation_entries" android:title="Toast弹窗动画" android:key="leo_tweaks_toast_animation" android:defaultValue="Animation.Toast" android:entryValues="@array/toast_animation_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <PreferenceCategory android:title="安全限制"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="安全限制" android:key="leo_tweaks_secure_window" android:defaultValue="false" android:summaryOn="安全限制已启用" android:summaryOff="可在受保护的窗口截图"/>
+</PreferenceScreen>

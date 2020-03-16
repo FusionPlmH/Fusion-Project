@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mq_photo_activity_bg" style="@style/MQMatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager android:id="@id/content_hvp" style="@style/MQMatchMatch" />
+    <RelativeLayout android:id="@id/title_rl" android:background="@color/mq_photo_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height">
+        <ImageView android:id="@id/back_iv" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" android:src="@drawable/mq_ic_back_white" style="@style/MQWrapMatch" />
+        <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/title_tv" android:layout_toRightOf="@id/back_iv" style="@style/MQWrapMatch" />
+        <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit_tv" android:background="@drawable/mq_selector_btn_photo_send" android:paddingLeft="@dimen/mq_size_level2" android:paddingRight="@dimen/mq_size_level2" android:clickable="true" android:layout_margin="@dimen/mq_size_level2" android:minWidth="80.0dip" android:text="@string/mq_confirm" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/choose_rl" android:background="@color/mq_photo_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/choose_tv" android:paddingLeft="@dimen/mq_size_level2" android:paddingRight="@dimen/mq_size_level2" android:clickable="true" android:layout_marginRight="@dimen/mq_size_level2" android:text="@string/mq_choose" android:drawableLeft="@drawable/mq_ic_cb_normal" android:drawablePadding="@dimen/mq_size_level1" android:layout_alignParentRight="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+</RelativeLayout>

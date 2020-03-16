@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys_name" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/power_keys_custom" android:key="global_power_action_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/power_keys_sj" android:key="power_double_action" android:dependency="global_power_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/power_keys_ca" android:key="power_longpress_action" android:dependency="global_power_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys_lock" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_keyguard_entries" android:title="@string/power_keys_lock_sj" android:key="keyguard_power_double_action" android:dependency="global_power_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_keyguard_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_keyguard_entries" android:title="@string/power_keys_lock_ca" android:key="keyguard_power_longpress_action" android:dependency="global_power_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_keyguard_values" />
+</PreferenceScreen>

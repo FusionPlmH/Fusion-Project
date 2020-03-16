@@ -1,0 +1,56 @@
+<resources>
+    <string name="apps_select_title">Please select the operation </string>
+        <string name="apps_backup_apk">APK backup </string>
+        <string name="apps_backup_data">full backup </string>
+        <string name="apps_clear_cache"> cache clear </string>
+        <string name="apps_clear_data">data cleanup</string>
+        <string name="apps_uninstall">Uninstall the application </string>
+        <string name="apps_uninstall_update">Uninstall update</string>
+        <string name="apps_uninstall_user">Uninstall from the current user </string>
+        <string name="apps_uninstall_data">[reserved data] uninstall </string>
+        <string name="apps_delete">Delete application</string>
+        <string name="apps_freeze">freeze application </string>
+        <string name="apps_unfreeze">Application Thaw </string>
+        <string name="apps_hide">Hide application </string>
+        <string name="apps_copy_name">Copy application package name </string>
+        <string name="apps_start">Start the application</string>
+        <string name="apps_info">Application Information</string>
+        <string name="apps_appstore">View in the app store</string>
+        <string name="apps_as_system"> converted to system application </string>
+        <string name="apps_as_dex2oat">dex2oat compilation </string>
+        <string name="supersu_root"> is getting permission! </string>
+        <string name="behavior_ok"> operation is complete! </string>
+        <string name="behavior_error">An exception occurred!</string>
+        <string name="behavior_error_a">something went wrong</string>
+        <string name="apks_backup_name">Backup APK and data</string>
+        <string name="apks_uis_name">from current user</string>
+        <string name="apks_uis_name_aok">determine to uninstall the selected </string> from the current user
+        <string name="apks_uis_name_a1k"> applications?</string>
+        <string name="apks_uis_name_uid">Failed to get the user ID!</string>
+        <string name="apks_magisk_uid">The parameters have been changed via Magisk, please restart the phone </string>
+        <string name="apks_magisk_nox">Magisk mirror space is insufficient, operation failed!!!</string>
+        <string name="apks_packagename_copy">The package name has been copied: </string>
+        <string name="apks_dead_start">This application may not have an Activity activity</string>
+        <string name="apks_dead_restore_title">Warm reminder </string>
+        <string name="apks_dead_restore_title_info">When restoring an unloaded (not including hidden) app, it will be modified </string>
+        <string name="apks_dead_restore_title_info1">may cause application and data loss or flashback!</string>
+        <string name="apks_dead_state_title">Getting application status</string>
+        <string name="apks_dead_state_title_ins">Requires restarting the phone to restore the following application</string>
+        <string name="apks_dead_state_title_xia">Speak later</string>
+        <string name="apks_dead_state_title_xiaa">The following application failed to recover </string>
+        <string name="apks_uninstall_titlerestore">[Uninstall ‖Hide] application </string>
+        <string name="apks_hide_log">Apply hidden records</string>
+
+        <string name="alert_info_tltie"> Warm reminder! </string>
+        <string name="succeed">success </string>
+        <string name="donate_info_regulation">
+\n\nSend a screenshot of your donation to our Telegram after the donation
+\n\n1.Send a screenshot of your donation to our Telegram after the donation
+\n\n2.If no one in Telegram replies to you, please be patient
+\n\n3.Because we are all at work or studying, please wait patiently.
+
+\n\n👏Thank you for your generosity and support for us.
+\n\n\n Donation Complete Click the [Copy] button to copy the basic information and send it to us so that we can add donation data for you</string>
+        <string name="copy_info">"Please enter the information and click on the copy and send it to us along with your [donation screenshot] so that we can make donation data for you. Once the data is ready, you can directly unlock it without having to re-flash it."</string>
+        <string name="you_copy_info"> you have </string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:key="qs_colock"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsclockenabled"
+        android:title="@string/qs_clock_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="qsclocksize"
+        android:title="@string/qs_clock_size"
+        android:defaultValue="16"
+        android:min="5"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="qsclockboxsize"
+        android:title="@string/qs_clock_expand_size"
+        android:defaultValue="44"
+        android:min="20"
+        android:max="55"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_clock_china_detail" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsclockchinaenabled"
+        android:title="@string/qs_clock_china_detail_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsclockchinaenabled"
+        android:key="qsclockdetailstyle"
+        android:title="@string/qs_clock_china_detail_style"
+        android:defaultValue="0"
+        android:entryValues="@array/qs_detail_values"
+        android:entries="@array/qs_detail_entries" />
+
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsclockchinaenabled"
+        android:key="qsclockdetailsymbol"
+        android:title="@string/qs_clock_china_detail_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_values"
+        android:entries="@array/symbol_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsclockchinaenabled"
+        android:key="qsclockdetailszoom"
+        android:title="@string/qs_clock_china_detail_scale"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsclockdetailszoom"
+        android:key="qsclockdetailsScale"
+        android:title="@string/qs_clock_china_detail_ratio"
+        android:defaultValue="0"
+        android:entryValues="@array/scaling_values"
+        android:entries="@array/scaling_entries"
+        />
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/qs_clock_click" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsclockactionenabled"
+        android:title="@string/qs_clock_click_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsclockactionenabled"
+        android:title="@string/qs_clock_click_style" android:key="qsclockclickstyle"
+        android:defaultValue="0"
+        android:entryValues="@array/clockdate_click_values"
+        android:entries="@array/clockdate_click_options"
+        />
+
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsclockactionenabled"
+        android:title="@string/qs_clock_click_collapsepanel"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="qsclockCollapsePanel"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsclockactionenabled"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="qsclockVibrator"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="qsclockVibrator"
+        android:key="qsclockVibratorLevel"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    </PreferenceScreen>

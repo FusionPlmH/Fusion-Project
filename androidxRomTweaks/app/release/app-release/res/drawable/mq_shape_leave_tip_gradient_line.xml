@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/mq_white" android:endColor="@color/mq_white" android:centerColor="@color/mq_chat_event_gray" />
+</shape>

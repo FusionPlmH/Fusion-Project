@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff303d42" style="@style/MQMatchWrap.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meiqia.meiqiasdk.widget.MQImageView android:id="@id/photo_iv" android:scaleType="center" app:mq_iv_isSquare="true" style="@style/MQMatchWrap" />
+    <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="#ffadb2bb" android:gravity="center" android:id="@id/tip_tv" android:layout_marginBottom="@dimen/mq_size_level3" android:text="@string/mq_take_picture" android:layout_alignBottom="@id/photo_iv" style="@style/MQMatchWrap" />
+    <ImageView android:id="@id/flag_iv" android:paddingLeft="@dimen/mq_size_level2" android:paddingTop="@dimen/mq_size_level1" android:paddingRight="@dimen/mq_size_level1" android:paddingBottom="@dimen/mq_size_level2" android:clickable="true" android:src="@drawable/mq_ic_cb_normal" android:layout_alignParentRight="true" style="@style/MQWrapWrap" />
+</RelativeLayout>

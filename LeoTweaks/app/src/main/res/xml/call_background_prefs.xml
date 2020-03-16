@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="更新参数" />
+    <com.tweaks.salt.preference.MyPreferenceAlerts android:icon="@drawable/ic_reset"  android:title="更新设置"  android:key="leo_tweaks_update_mods"  android:summary="设置完成后,点击更新设置,参数立即生效"/>
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="@string/background_settings" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="@string/start_background_settings" android:key="leo_tweaks_activity_bg_enable"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/activity_bg_type_entries" android:title="@string/custom_background_style" android:key="leo_tweaks_activity_bg_style"  android:defaultValue="0" android:entryValues="@array/activity_bg_type_values" app:dependentValue="0"/>
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="@string/custom_general_background_color_set" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_general_background_color" android:key="leo_tweaks_activity_bg_color" android:summary="背景颜色为单独一种颜色（默认值:#fafafa)" leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="@string/custom_gradient_background_color_set"  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="@string/enabled_gradient_color" android:key="leo_tweaks_activity_bg_gradient_enable"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/bg_three_gradient_model_type_entries" android:title="@string/custom_gradient_background_color_model" android:key="leo_tweaks_activity_bg_gradient_model"   android:dependency="leo_tweaks_activity_bg_gradient_enable" android:defaultValue="0" android:entryValues="@array/bg_three_gradient_model_type_values"  />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/bg_gradient_type_entries" android:title="@string/custom_gradient_background_color_style" android:key="leo_tweaks_activity_bg_gradient_style"  android:dependency="leo_tweaks_activity_bg_gradient_enable" android:defaultValue="1" android:entryValues="@array/bg_gradient_type_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="@string/custom_gradient_background_color_radius" android:key="leo_tweaks_activity_bg_gradient_radius" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_activity_bg_gradient_enable"  android:defaultValue="360" app:minValue="0" app:maxValue="1000" app:unitsValue=" %" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_a" android:key="leo_tweaks_activity_bg_gradient_color_one" android:summary="(默认值:#fafafa)"    android:dependency="leo_tweaks_activity_bg_gradient_enable" leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_b" android:key="leo_tweaks_activity_bg_gradient_color_two" android:summary="(默认值:#fafafa)"   android:dependency="leo_tweaks_activity_bg_gradient_enable" leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_c" android:key="leo_tweaks_activity_bg_gradient_color_three"  android:dependency="leo_tweaks_activity_bg_gradient_enable" android:summary="(默认值:#fafafa)"  leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="@string/start_custom_gradient_background_color_c" android:key="leo_tweaks_activity_bg_gradient_enable_six"    android:dependency="leo_tweaks_activity_bg_gradient_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_d" android:key="leo_tweaks_activity_bg_gradient_color_four" android:summary="(默认值:#fafafa)"   android:dependency="leo_tweaks_activity_bg_gradient_enable_six" leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_e" android:key="leo_tweaks_activity_bg_gradient_color_five" android:summary="(默认值:#fafafa)"  android:dependency="leo_tweaks_activity_bg_gradient_enable_six"  leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/custom_gradient_background_color_f" android:key="leo_tweaks_activity_bg_gradient_color_six" android:summary="(默认值:#fafafa)"   android:dependency="leo_tweaks_activity_bg_gradient_enable_six" leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="@string/stroke_corners" android:key="leo_tweaks_activity_bg_corner_radius"  android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_activity_bg_gradient_enable" android:defaultValue="0" app:minValue="0" app:maxValue="60" app:unitsValue="  °" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="@string/custom_wallpaper_background"/>
+
+    <com.tweaks.salt.preference.MySwitchPreference android:title="@string/start_custom_wallpaper_background_color" android:key="leo_tweaks_activity_wallpaper_color_enabled"  android:dependency="leo_tweaks_activity_bg_style" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="@string/settings_custom_wallpaper_background_color" android:key="leo_tweaks_activity_wallpaper_color" android:summary="(默认值:#FFFFFFFFF)"  android:dependency="leo_tweaks_activity_wallpaper_color_enabled"  leo:defaultColor="@color/whitePrimary" alphaSlider="true"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="@string/start_custom_wallpaper_background_alpha" android:key="leo_tweaks_activity_wallpaper_enabled_transparent" android:dependency="leo_tweaks_activity_bg_style" android:defaultValue="0" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="@string/settings_custom_wallpaper_background_alpha" android:key="leo_tweaks_activity_wallpaper_alpha" android:summary="@string/seksbar_sumarry"  android:dependency="leo_tweaks_activity_wallpaper_enabled_transparent" android:defaultValue="120" app:minValue="70" app:maxValue="255" app:unitsValue=" %" />
+</PreferenceScreen>

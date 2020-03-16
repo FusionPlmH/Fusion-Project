@@ -1,0 +1,83 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: CBipl822cRmm/qQe0W1BVaq8AdAzL3atZUdExbZGSCE=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA-256-Digest: 3QxcMDCsPUzJInn8ClqwmLKE05unozLAPyh9FRcVMqU=
+
+Name: classes.dex
+SHA-256-Digest: LCuElStoUTW603jnatTHfCYVPj36l09zjJjNtPFNF3c=
+
+Name: res/drawable-anydpi-v21/ic_apps.xml
+SHA-256-Digest: +NblKyEYcvrKl8CZZ8qPmGbrBs8pB39qr4ol75OTikI=
+
+Name: res/drawable-anydpi-v21/ic_autostarts.xml
+SHA-256-Digest: i/u9iV4q2H3YuFDr5aEjSlvi3ZIsuA5Sl5Swaq+8kzQ=
+
+Name: res/drawable-anydpi-v21/ic_bowling.xml
+SHA-256-Digest: sf9qCKEaF9mU+SAUKeAZB3J47th7J1xkvJOdBAnRVXg=
+
+Name: res/drawable-anydpi-v21/ic_img.xml
+SHA-256-Digest: B6cjiO7i7IS+YnWD8/ZoC2ntZczQLzSuHpjzc/qiyoQ=
+
+Name: res/drawable-anydpi-v21/ic_mi_pop.xml
+SHA-256-Digest: 9ME4omroZhxBCwDeUGxX8830MTeawe3vK1a6JwoQEEk=
+
+Name: res/drawable-anydpi-v21/ic_money.xml
+SHA-256-Digest: Q112Jul0xmhb0e96/EY9j0enXZ7Ddq+DHfXor86Ztao=
+
+Name: res/drawable-anydpi-v21/ic_settings.xml
+SHA-256-Digest: Zi/Wg3oGh4OHxZ6Pp05cJmiZRcrMcMx6NYt9WYuaHok=
+
+Name: res/drawable-anydpi-v21/ic_wifi.xml
+SHA-256-Digest: lqFP8t4oJOMb9ILjKtzsyHO3waWB5s90gE2btD694fU=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA-256-Digest: aLNipZqT/0qnLB5sgucQvo9TAFj2f1hs/gnAc1cb00s=
+
+Name: res/drawable-xxhdpi-v4/apps_edge_bg.png
+SHA-256-Digest: 53CXrhadiMwtHNAryWhoTzLtqF3Z6kR1lQ88CcY4Ork=
+
+Name: res/drawable-xxhdpi-v4/ic_apps.png
+SHA-256-Digest: Mhw0OeEzwoSmETsuAMXsgN2O+dn+zt0uLhoclgOW/fE=
+
+Name: res/drawable-xxhdpi-v4/ic_autostarts.png
+SHA-256-Digest: /4YuogM9cnbH9qHF63sxA+3kp+u6tQe/NiMkN4SV4wI=
+
+Name: res/drawable-xxhdpi-v4/ic_bowling.png
+SHA-256-Digest: oB6KoOcn8dy6YGdA+SjnNQvRkvXL+8fZSbmdaRp9LTQ=
+
+Name: res/drawable-xxhdpi-v4/ic_clear.png
+SHA-256-Digest: 9i2u5gcW9z/0XORhVFQ39P8/WgbeAXMxi+jQg7V7JDo=
+
+Name: res/drawable-xxhdpi-v4/ic_img.png
+SHA-256-Digest: Px5CIDptclAuhUUfNfoDsR+7M4bbpPlN5qk/ojnoV5w=
+
+Name: res/drawable-xxhdpi-v4/ic_leo.png
+SHA-256-Digest: TRE8Gfw6YEark/H3wU/hBMZR+7QJ6Kb9o6uYoq2/cTI=
+
+Name: res/drawable-xxhdpi-v4/ic_mi_pop.png
+SHA-256-Digest: QCL7B413u80Pd3FEtCm+oLYoClaRe5TVt55IXtImJUc=
+
+Name: res/drawable-xxhdpi-v4/ic_money.png
+SHA-256-Digest: Jv4O6W7dihjrQmV9mVRorz3WvXHtNdQXKgdjNignKNE=
+
+Name: res/drawable-xxhdpi-v4/ic_settings.png
+SHA-256-Digest: fOPa8DVbNcg9wVBXo64+Dr/H4jIzmiVyEOaEgODIu5g=
+
+Name: res/drawable-xxhdpi-v4/ic_wifi.png
+SHA-256-Digest: fhnVji6gWRG4ltdE9DOx/zMGw2jkJD5ONSI8KpRu6io=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: 9FgNz5tNvOpbOlf/rat9MNgpXCkhwzcaY/48Vj0h9rY=
+
+Name: res/layout/cocktail_salt_panel.xml
+SHA-256-Digest: /0me4WAZ23jI54NGt4wmKbRqct2nakZMaaX2bpJifA4=
+
+Name: res/xml/edge_single_plus.xml
+SHA-256-Digest: nPR+fyuz5a08IQ2djBueJfgxDHqFSPa3u5HKieoBDvQ=
+
+Name: resources.arsc
+SHA-256-Digest: /Em4lFXIos17ys9vYncP/ZooW7T3jOR5d/dw5FpYNjU=
+

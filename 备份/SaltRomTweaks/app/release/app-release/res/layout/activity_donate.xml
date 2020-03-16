@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_container" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/navigation" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_marginTop="12.0dip" app:cardBackgroundColor="?cardBackgroundColor" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height">
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/donate_icon" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="180.0dip" android:layout_margin="5.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textAppearance="?android:textAppearanceListItem" android:id="@id/donate_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dip" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?cardBackgroundColor" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height" app:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="16.0sp" android:id="@id/donate_listtitle" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/wei_zhi" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:layout_gravity="center" android:id="@id/bt_alipay_free" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <View android:background="#ae9b9b9b" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+                        <TextView android:textSize="18.0dip" android:layout_gravity="center" android:id="@id/bt_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <View android:background="#ae9b9b9b" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="18.0dip" android:layout_gravity="center" android:id="@id/bt_paypal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v7.widget.CardView android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?colorAccent" app:cardCornerRadius="@dimen/card_view_radius" app:cardElevation="@dimen/shadow_height" app:cardUseCompatPadding="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/view_qq" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/qq_1" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="QQ咨询" android:drawableTop="@drawable/ic_qq" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:drawableTint="#ffd3eaf0" />
+                <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/qq_2" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ咨询" android:drawableTop="@drawable/ic_qq" android:layout_centerHorizontal="true" android:drawableTint="#ffd3eaf0" />
+                <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/qq_3" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="QQ咨询" android:drawableTop="@drawable/ic_qq" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:drawableTint="#ffd3eaf0" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_telegram" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/qq_telegram" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Telegram" android:drawableStart="@drawable/ic_telegram" android:drawableTint="#ffd3eaf0" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

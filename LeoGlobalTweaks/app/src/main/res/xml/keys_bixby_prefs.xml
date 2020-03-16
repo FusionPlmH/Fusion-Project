@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="测试" />
+    <com.leo.global.preference.SaltSettingColorBlendPreference
+        android:title="ColorBlendPreference"
+        android:summary=""
+        salt:keyColorStart="statusbar_battery_bar_battery_low_dark_color"
+        salt:keyColorEnd="statusbar_battery_bar_dark_color"
+        salt:keyBlendReverse="statusbar_battery_bar_blend_color_dark_reverse"
+        salt:defaultValueColorStart="#99000000"
+        salt:defaultValueColorEnd="#99000000"
+        salt:previewStartText="start"
+        salt:previewBetweenText="between"
+        salt:previewEndText="end" />
+    <PreferenceCategory
+        android:title="测试" />
+    <com.leo.global.preference.SaltSettingColorPickerPreference
+        android:title="ColorPickerPreference"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xE3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="leo_tweaks_status_bar_carrier_color"/>
+    <com.leo.global.preference.SaltSettingListPreference
+        android:key="leo_tweaks_statusbar_bg_style"
+        android:title="ListPreference"
+        salt:isSilent="0"
+        android:entries="@array/bg_type_entries"
+        android:entryValues="@array/bg_type_values"
+        android:defaultValue="0" />
+    <com.leo.global.preference.SaltSettingSwitchPreference
+        android:key="statusBar_conceal"
+        android:title="SwitchPreference"
+        android:defaultValue="false"
+        />
+
+    <com.leo.global.preference.SaltSettingCheckBoxPreference
+        android:key="leo_tweaks_pulldown_device_info_enabled"
+        android:title="CheckBoxPreference"
+        android:defaultValue="false"
+        />
+    <com.leo.global.preference.SaltSettingSeekBarPreference
+
+        android:key="leo_tweaks_pulldown_device_array"
+        android:title="SeekBarPreference"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="第 "
+        salt:unitsRight=" 行"
+        />
+    <com.leo.global.preference.SaltSettingBatteryPreference
+        android:title="BatteryPreference"
+        android:key="custombattery_preference"
+        android:summary="" />
+    <com.leo.global.preference.SaltSettingIconListPreference
+        android:title="IconListPreference "
+        android:key="leo_tweaks_status_bar_logo_style"
+        salt:drawableIconColor="?stringColor"
+
+        android:defaultValue="0"
+        salt:drawableArray="@array/logo_style_drawables"
+        salt:entryList="@array/logo_style_entries"
+        salt:entryValuesList="@array/logo_style_values" />
+
+    <com.leo.global.preference.SaltSettingMultiSelectPreference
+        android:title="MultiSelectPreference"
+        android:key="icon_blacklist"
+        android:defaultValue="rotate"
+        salt:multiEntryList="@array/statusbar_icon_hide_options"
+        salt:multiValuesList="@array/statusbar_icon_hide_values"
+         />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+    <com.leo.global.preference.SaltSettingAppMultiSelectListPreference
+        android:key="policy_control"
+        android:persistent="false"
+        android:title="AppMultiSelectListPreference" />
+</PreferenceScreen>

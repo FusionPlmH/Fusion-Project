@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_panel_icon_padding">5dp</dimen>
+    <dimen name="default_window_width">40dp</dimen>
+    <dimen name="icon_note_pen_space_margin">5dp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <dimen name="item_margin">15dp</dimen>
+    <dimen name="panel_horizonal_margin">50dp</dimen>
+    <dimen name="panel_vertical_margin">50dp</dimen>
+    <string name="app_name">LeoEdge</string>
+    <string name="description_edge_single_plus">Leo曲面边缘UI</string>
+    <string name="edge_single_apps">应用程序管理</string>
+    <string name="edge_single_plus_autostarts">自启动管理</string>
+    <string name="edge_single_plus_clear">进程清理</string>
+    <string name="edge_single_plus_donate">捐赠</string>
+    <string name="edge_single_plus_floating">悬浮球</string>
+    <string name="edge_single_plus_img">镜像备份还原</string>
+    <string name="edge_single_plus_minipop">屏幕助手</string>
+    <string name="edge_single_plus_name">Leo曲面侧屏</string>
+    <string name="edge_single_plus_salt">Leo个性化</string>
+    <string name="edge_single_plus_wifi">本地WIFI密码</string>
+    <string name="global_actions_donation">"你好!\n捐赠 HKD$120\n捐赠一次长期使用,只要Leo当前还在更新你当前型号,你就可以享受所有功能包含OTA等"</string>
+    <string name="no_activity">程序链接不存在或者未安装!</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+</resources>

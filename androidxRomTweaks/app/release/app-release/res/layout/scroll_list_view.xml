@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/warning" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+    <com.leo.salt.tweaks.view.widget.OverScrollListView android:layout_gravity="center_horizontal" android:id="@id/thumbnailListView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:indeterminate="true" android:layout_below="@id/warning" android:progressTint="?colorAccent" android:indeterminateTint="?colorAccent" android:indeterminateTintMode="src_in" />
+</LinearLayout>

@@ -1,0 +1,317 @@
+<resources>
+
+    <string-array name="Blacklist_values">
+        <item>@string/blacklist_title</item>
+        <item>@string/grid_AppProcess</item>
+
+    </string-array>
+
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>阿里巴巴</item>
+        <item>苹果</item>
+        <item>百度</item>
+        <item>中国移动</item>
+        <item>谷歌</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>QQ</item>
+        <item>中国电信</item>
+        <item>中国联通</item>
+        <item>微软</item>
+        <item>Ubuntu</item>
+        <item>中国电信2</item>
+        <item>外星人</item>
+        <item>蝙蝠</item>
+        <item>熊猫</item>
+        <item>爱心</item>
+    </string-array>
+
+    <string-array name="traffic_style_entries">
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+        <item>网速箭头</item>
+    </string-array>
+
+
+    <string-array name="powermeun_style_values">
+        <item>@string/confirm_choice_shutdown</item>
+        <item>@string/confirm_choice_restart</item>
+        <item>@string/confirm_choice_quickboot</item>
+        <item>@string/confirm_choice_download</item>
+        <item>@string/confirm_choice_rec</item>
+        <item>重启系统UI</item>
+        <item>移动数据</item>
+        <item>飞行模式</item>
+        <item>手电筒</item>
+        <item>户外模式</item>
+        <item>悬浮球</item>
+        <item>屏幕助手</item>
+        <item>屏幕截图</item>
+        <item>屏幕录制</item>
+        <item>LeoTweaks</item>
+        <item>WLAN</item>
+        <item>锁定屏幕</item>
+        <item>进程清理</item>
+    </string-array>
+    <string-array name="screenshot_style_values">
+        <item>屏幕截图</item>
+        <item>局部截图</item>
+        .  </string-array>
+
+    <string-array name="Chinese_week_style_default">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="Chinese_week_style_general">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="Chinese_week_style_provincialism">
+        <item>礼拜天</item>
+        <item>礼拜一</item>
+        <item>礼拜二</item>
+        <item>礼拜三</item>
+        <item>礼拜四</item>
+        <item>礼拜五</item>
+        <item>礼拜六</item>
+    </string-array>
+    <string-array name="Chinese_week_style_simpleness">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string-array name="Chinese_week_style_ancient">
+        <item>日曜日</item>
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+    </string-array>
+    <string-array name="Chinese_week_style_chaldaict">
+        <item>太阳神日</item>
+        <item>月亮神日</item>
+        <item>战神日</item>
+        <item>主神日</item>
+        <item>雷神日</item>
+        <item>爱神日</item>
+        <item>土神日</item>
+    </string-array>
+    <string-array name="Chinese_12Time">
+        <item>子时</item>
+        <item>丑时</item>
+        <item>寅时</item>
+        <item>卯时</item>
+        <item>辰时</item>
+        <item>巳时</item>
+        <item>午时</item>
+        <item>未时</item>
+        <item>申时</item>
+        <item>酉时</item>
+        <item>戌时</item>
+        <item>亥时</item>
+    </string-array>
+    <string-array name="Chinese_12Timeinterval">
+        <item>凌晨</item>
+        <item>拂晓</item>
+        <item>黎明</item>
+        <item>清晨</item>
+        <item>早晨</item>
+        <item>上午</item>
+        <item>中午</item>
+        <item>午后</item>
+        <item>下午</item>
+        <item>黄昏</item>
+        <item>傍晚</item>
+        <item>晚上</item>
+        <item>深夜</item>
+    </string-array>
+    <string-array name="Chinese_5Time">
+        <item>一更</item>
+        <item>二更</item>
+        <item>三更</item>
+        <item>四更</item>
+        <item>五更</item>
+    </string-array>
+    <string-array name="constellation_12Time">
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>魔羯座</item>
+    </string-array>
+    <string-array name="Chinese_4season">
+        <item>春季</item>
+        <item>夏季</item>
+        <item>秋季</item>
+        <item>冬季</item>
+    </string-array>
+
+
+    <string-array name="Chinese_lunar_festival">
+        <item>除夕夜</item>
+        <item>春节</item>
+        <item>元宵节</item>
+        <item>端午节</item>
+        <item>七夕情人节</item>
+        <item>中元节</item>
+        <item>中秋节</item>
+        <item>重阳节</item>
+        <item>腊八节</item>
+    </string-array>
+    <string-array name="Chinese_lunar_AncientMonth">
+        <item>孟春</item>
+        <item>仲春</item>
+        <item>季春</item>
+        <item>孟夏</item>
+        <item>仲夏</item>
+        <item>季夏</item>
+        <item>孟秋</item>
+        <item>仲秋</item>
+        <item>季秋</item>
+        <item>孟冬</item>
+        <item>仲冬</item>
+        <item>季冬</item>
+    </string-array>
+    <string-array name="Chinese_lunar_Zodiac">
+        <item>鼠</item>
+        <item>牛</item>
+        <item>虎</item>
+        <item>兔</item>
+        <item>龙</item>
+        <item>蛇</item>
+        <item>马</item>
+        <item>羊</item>
+        <item>猴</item>
+        <item>鸡</item>
+        <item>狗</item>
+        <item>猪</item>
+    </string-array>
+    <string-array name="Chinese_lunar_12solar">
+        <item>大寒</item>
+        <item>雨水</item>
+        <item>春分</item>
+        <item>谷雨</item>
+        <item>小满</item>
+        <item>夏至</item>
+        <item>大暑</item>
+        <item>处暑</item>
+        <item>秋分</item>
+        <item>霜降</item>
+        <item>小雪</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="Chinese_lunar_24solar">
+        <item>小寒</item>
+        <item>立春</item>
+        <item>惊蛰</item>
+        <item>清明</item>
+        <item>立夏</item>
+        <item>芒种</item>
+        <item>小暑</item>
+        <item>立秋</item>
+        <item>白露</item>
+        <item>寒露</item>
+        <item>立冬</item>
+        <item>大雪</item>
+    </string-array>
+    <string-array name="Chinese_lunar_Earthly">
+        <item>寅</item>
+        <item>卯</item>
+        <item>辰</item>
+        <item>巳</item>
+        <item>午</item>
+        <item>未</item>
+        <item>申</item>
+        <item>酉</item>
+        <item>戌</item>
+        <item>亥</item>
+        <item>子</item>
+        <item>丑</item>
+    </string-array>
+    <string-array name="Chinese_lunar_Mailyears">
+        <item>丙寅</item>
+        <item>丁卯</item>
+        <item>戊辰</item>
+        <item>己巳</item>
+        <item>庚午</item>
+        <item>辛未</item>
+        <item>壬申</item>
+        <item>癸酉</item>
+        <item>甲戌</item>
+        <item>乙亥</item>
+        <item>丙子</item>
+        <item>丁丑</item>
+    </string-array>
+    <string-array name="Chinese_lunar_Borg">
+        <item>戊寅</item>
+        <item>己卯</item>
+        <item>庚辰</item>
+        <item>辛巳</item>
+        <item>壬午</item>
+        <item>癸未</item>
+        <item>甲申</item>
+        <item>乙酉</item>
+        <item>丙戌</item>
+        <item>丁亥</item>
+        <item>戊子</item>
+        <item>己丑</item>
+    </string-array>
+    <string-array name="Chinese_lunar_Edecyl">
+        <item>甲寅</item>
+        <item>乙卯</item>
+        <item>丙辰</item>
+        <item>丁巳</item>
+        <item>戊午</item>
+        <item>己未</item>
+        <item>庚申</item>
+        <item>辛酉</item>
+        <item>壬戌</item>
+        <item>癸亥</item>
+        <item>甲子</item>
+        <item>乙丑</item>
+    </string-array>
+
+    <string-array name="pay_style">
+        <item>支付宝付款码</item>
+        <item>支付宝收款码</item>
+        <item>支付宝扫一扫</item>
+        <item>微信付款码</item>
+        <item>微信收款码</item>
+        <item>微信扫一扫</item>
+    </string-array>
+
+    <string-array name="ota_name">
+        <item>中国电信下载</item>
+        <item>全球下载</item>
+    </string-array>
+
+</resources>

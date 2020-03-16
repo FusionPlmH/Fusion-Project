@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="China">
+        <item>北  京</item>
+        <item>天  津</item>
+        <item>河  北</item>
+        <item>山  西</item>
+        <item>内蒙古</item>
+        <item>辽  宁</item>
+        <item>吉  林</item>
+        <item>黑龙江</item>
+        <item>上  海</item>
+        <item>江  苏</item>
+        <item>浙  江</item>
+        <item>安  徽</item>
+        <item>福  建</item>
+        <item>江  西</item>
+        <item>山  东</item>
+        <item>河  南</item>
+        <item>湖  北</item>
+        <item>湖  南</item>
+        <item>广  东</item>
+        <item>广  西</item>
+        <item>海  南</item>
+        <item>重  庆</item>
+        <item>四  川</item>
+        <item>贵  州</item>
+        <item>云  南</item>
+        <item>西  藏</item>
+        <item>陕  西</item>
+        <item>甘  肃</item>
+        <item>青  海</item>
+        <item>宁  夏</item>
+        <item>新  疆</item>
+        <item>台  湾</item>
+        <item>香  港</item>
+        <item>澳  门</item>
+    </string-array>
+    <string-array name="PowerMenuSimplify">
+        <item>关机</item>
+        <item>重新启动</item>
+        <item>快速重启</item>
+        <item>线刷模式</item>
+        <item>卡刷模式</item>
+        <item>移动数据</item>
+        <item>飞行模式</item>
+    </string-array>
+    <string-array name="am_pm_entries">
+        <item>Disable</item>
+        <item>Small AM/PM</item>
+        <item>normal AM/PM</item>
+    </string-array>
+    <string-array name="am_pm_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="backup_items">
+        <item>备份数据</item>
+        <item>恢复数据</item>
+    </string-array>
+    <string-array name="battery_bar_entries">
+        <item>@string/battery_bar_hide</item>
+        <item>@string/battery_bar_statusbar</item>
+        <item>@string/battery_bar_topnav</item>
+        <item>@string/battery_bar_bottomnav</item>
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>@string/battery_bar_reg</item>
+        <item>@string/battery_bar_center</item>
+        <item>@string/battery_bar_reversed</item>
+    </string-array>
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="battery_style_entries">
+        <item>@string/batt_disable</item>
+        <item>@string/batt_stock</item>
+        <item>@string/batt_leo</item>
+    </string-array>
+    <string-array name="battery_style_values">
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="bg_gradient_type_entries">
+        <item>gradient from top to bottom</item>
+        <item>gradient from bottom to top</item>
+        <item>gradient from left to right</item>
+        <item>is gradient from right to left</item>
+        <item>is changed from the lower right corner to the upper left corner</item>
+        <item>is changed from the lower left corner to the upper right corner</item>
+        <item>is gradient from top left to bottom right</item>
+        <item>is changed from the upper right corner to the lower left corner</item>
+    </string-array>
+    <string-array name="bg_gradient_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="bg_style_entries">
+        <item>@string/bg_style_a</item>
+        <item>@string/bg_style_b</item>
+        <item>@string/bg_style_c</item>
+    </string-array>
+    <string-array name="bg_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="bg_three_gradient_model_type_entries">
+        <item>linear gradient</item>
+        <item>radiation gradient</item>
+        <item>scan gradient</item>
+    </string-array>
+    <string-array name="bg_three_gradient_model_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="boot_animation">
+        <item>QMG动画文件</item>
+        <item>ZIP动画卡刷包</item>
+        <item>备份当前动画文件</item>
+    </string-array>
+    <string-array name="clock_date_format_entries_values">
+        <item>@string/default_date_format</item>
+        <item>EEE</item>
+        <item>MM/dd</item>
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>@string/default_date_formatA</item>
+        <item>MMMMdd</item>
+        <item>yyyyMMMMdd</item>
+        <item>MMMMdd,yyyy</item>
+        <item>dd</item>
+        <item>@string/default_date_formatB</item>
+        <item>dd/MM</item>
+        <item>MM/dd</item>
+        <item>dd-MMM</item>
+        <item>yyyy/MM/dd</item>
+        <item>zz</item>
+        <item>@string/java_date_format</item>
+    </string-array>
+    <string-array name="clockdate_click_options">
+        <item>time and date settings</item>
+        <item>Alarm list</item>
+        <item>Set alarm clock</item>
+        <item>timer</item>
+        <item>calendar</item>
+        <item>@string/global_action_apps</item>
+        <item>@string/global_action_shortcut</item>
+    </string-array>
+    <string-array name="clockdate_click_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="data_usage_style_entries">
+        <item>left</item>
+        <item>center</item>
+        <item>right</item>
+    </string-array>
+    <string-array name="data_usage_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="date_en_entries">
+        <item>default</item>
+        <item>lowercase letters</item>
+        <item>capital letter</item>
+    </string-array>
+    <string-array name="date_en_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="date_entries">
+        <item>Disable</item>
+        <item>small date</item>
+        <item>normal date</item>
+    </string-array>
+    <string-array name="date_location_entries">
+        <item>time left</item>
+        <item>time to the right</item>
+    </string-array>
+    <string-array name="date_location_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <integer-array name="date_show_defaults">
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="date_show_keys">
+        <item>qs_date</item>
+        <item>qs_date_box</item>
+    </string-array>
+    <string-array name="date_show_summaries">
+        <item>shows hidden drop-down date</item>
+        <item>shows the date after the dropdown is expanded</item>
+    </string-array>
+    <string-array name="date_show_titles">
+        <item>date display</item>
+        <item>expansion date display</item>
+    </string-array>
+    <string-array name="date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="date_week_entries">
+        <item>system default</item>
+        <item>Monday</item>
+        <item>day 1</item>
+        <item>one</item>
+        <item>曜Diary Law Week Format</item>
+        <item>Cuban Babynian Week Format</item>
+    </string-array>
+    <string-array name="date_week_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="detail_entries">
+        <item>12 hours: Chen, when, when, etc.</item>
+        <item>12 time period: morning, afternoon, evening, etc.</item>
+        <item>five more: one more, two more, three more</item>
+        <item>Four Seasons: Spring, Summer, Autumn and Winter</item>
+        <item>12 constellation</item>
+        <item>Chinese Lunar Calendar</item>
+        <item>today in the year</item>
+        <item>custom text</item>
+    </string-array>
+    <string-array name="detail_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="device_info_entries">
+        <item>1 行</item>
+        <item>2 行</item>
+        <item>3 行</item>
+        <item>4 行</item>
+        <item>5 行</item>
+    </string-array>
+    <string-array name="device_info_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="device_templates">
+        <item>"Samsung S10
+SM-G9730"</item>
+        <item>"Samsung S10+
+SM-G9750"</item>
+        <item>"Samsung S9+
+SM-G9650"</item>
+        <item>"Samsung S10+
+SM-G975F"</item>
+        <item>"Samsung S10
+SM-G973F"</item>
+        <item>"Samsung S9
+SM-G9600"</item>
+        <item>"Samsung S10 5G
+SM-G977N"</item>
+        <item>"Samsung S10 5G
+SM-G977B"</item>
+        <item>"Samsung Note10+ 5G
+SM-N9760"</item>
+        <item>"Samsung Note10
+SM-N9700"</item>
+    </string-array>
+    <string-array name="device_templates_data">
+        <item>SM-G9730@beyond1qltechn@beyond1qltezc@beyond1q@beyond1qltezc-user</item>
+        <item>SM-G9750@beyond2qltechn@beyond2qltezc@beyond2q@beyond2qltezc-user</item>
+        <item>SM-G9650@star2qltechn@star2qltezc@star2qltechn@star2qltezc-user</item>
+        <item>SM-G975F@beyond2lte@beyond2ltexx@beyond2@beyond2ltexx-user</item>
+        <item>SM-G973F@beyond1lte@beyond1ltexx@beyond1@beyond1ltexx-user</item>
+        <item>SM-G9600@star1qltechn@star1qltezc@beyondx@star1qltezc-user</item>
+        <item>SM-G977N@beyondx@beyondxks@beyondx@beyondxks-user</item>
+        <item>SM-G977B@beyondx@beyondxxx@beyondx@beyondxxx-user</item>
+        <item>SM-N9760@d2q@d2qzc@d2q@d2qzc-user</item>
+        <item>SM-N9700@d1q@d1qzc@d1q@d1qzc-user</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_entries">
+        <item>disable</item>
+        <item>displayed at the bottom of the notification bar</item>
+        <item>displayed at the top of the notification bar</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="deviceinfo_style_entries">
+        <item>brand model information</item>
+        <item>Android version</item>
+        <item>compilation number</item>
+        <item>Wifi information</item>
+        <item>temperature information</item>
+        <item>Storing information</item>
+        <item>next alarm clock</item>
+        <item>CPU model</item>
+        <item>CPU usage</item>
+        <item>CPU Mhz</item>
+        <item>CPU core number and number of digits</item>
+        <item>GPU model</item>
+        <item>GPU usage</item>
+        <item>GPU Mhz</item>
+        <item>battery power</item>
+        <item>Battery voltage and current</item>
+    </string-array>
+    <string-array name="deviceinfo_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="edge_list__summaries">
+        <item>显示程序管理</item>
+        <item>显示本地WLAN密码查看</item>
+        <item>显示Leo设定</item>
+        <item>显示一键清理</item>
+        <item>显示一键锁屏</item>
+        <item>显示支付宝扫一扫</item>
+        <item>显示微信扫一扫</item>
+        <item>显示FusionLeo内核</item>
+    </string-array>
+    <string-array name="edge_list_defaults_keys">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="edge_list_name">
+        <item>Application Management</item>
+        <item>Local WLAN Password View</item>
+        <item>@string/app_name</item>
+        <item>One-click cleanup</item>
+        <item>one button lock screen</item>
+        <item>Alipay sweep</item>
+        <item>WeChat sweep</item>
+        <item>FusionLeo kernel</item>
+    </string-array>
+    <string-array name="edge_list_style_keys">
+        <item>edge_apps</item>
+        <item>edge_wifi</item>
+        <item>edge_leo</item>
+        <item>edge_clear</item>
+        <item>edge_lock</item>
+        <item>edge_alipay</item>
+        <item>edge_wechat</item>
+        <item>edge_kernel</item>
+    </string-array>
+    <string-array name="floatball_entries">
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+        <item>@string/grid_floatball</item>
+    </string-array>
+    <string-array name="floatball_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="font_style_entries">
+        <item>system default</item>
+        <item>sans-serif</item>
+        <item>sans-serif (italic)</item>
+        <item>sans-serif (bold)</item>
+        <item>sec-roboto-light</item>
+        <item>sec-roboto-light (italic)</item>
+        <item>sec-roboto-light (bold)</item>
+        <item>sec-roboto-light (bold italic)</item>
+        <item>sans-serif-light</item>
+        <item>sans-serif-light (italic)</item>
+        <item>sans-serif-thin</item>
+        <item>sans-serif-thin (italic)</item>
+        <item>sans-serif-condensed</item>
+        <item>sans-serif-condensed (italic)</item>
+        <item>sans-serif-condensed-light</item>
+        <item>sans-serif-condensed-light (italic)</item>
+        <item>sans-serif-condensed (bold)</item>
+        <item>sans-serif-condensed (bold italic)</item>
+        <item>sans-serif-medium</item>
+        <item>sans-serif-medium (italic)</item>
+        <item>sans-serif-black</item>
+        <item>sans-serif-black (italic)</item>
+        <item>Zhong Qi Wu Jia handwriting font</item>
+        <item>Chinese instrument Zhao Liying font</item>
+        <item>Yichuang chases love fonts</item>
+        <item>Chinese instrument black font</item>
+        <item>mini doll font</item>
+        <item>Calista font</item>
+        <item>stereoline font</item>
+        <item>Peony font</item>
+        <item>Founder</item>
+        <item>Founder hard pen font</item>
+        <item>Chinese Pinyin Font</item>
+        <item>Hua kang girl font</item>
+        <item>Alibaba-PuHuiTi-Medium</item>
+    </string-array>
+    <string-array name="font_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+    </string-array>
+    <string-array name="global_action_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_apps</item>
+        <item>@string/global_action_shortcut</item>
+        <item>@string/global_action_back</item>
+        <item>@string/global_action_home</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_task</item>
+        <item>@string/global_action_splitscreen</item>
+        <item>@string/global_action_powermeun</item>
+        <item>@string/global_action_s</item>
+        <item>@string/global_action_screenrecord</item>
+        <item>@string/global_action_screenshot</item>
+        <item>@string/global_action_part_screenshot</item>
+        <item>@string/global_action_wifi_code</item>
+        <item>@string/global_action_leo</item>
+        <item>@string/global_action_notification</item>
+        <item>@string/global_action_quick_panel</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_wifi</item>
+        <item>@string/global_action_airplane</item>
+        <item>@string/global_action_floating</item>
+        <item>@string/global_action_outdoors</item>
+        <item>@string/global_action_pop</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_fullscreen</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+        <item>@string/global_action_volume</item>
+        <item>@string/global_action_silence</item>
+        <item>@string/global_action_vibrator</item>
+        <item>@string/global_action_bb_home</item>
+        <item>@string/global_action_bb_volume</item>
+        <item>@string/global_action_last_apps</item>
+        <item>@string/global_action_kill_progress</item>
+        <item>@string/global_action_kill</item>
+        <item>@string/global_action_mobile_data</item>
+        <item>@string/global_action_volume_panel</item>
+        <item>@string/global_action_clear_notice</item>
+        <item>@string/global_action_apps_manage</item>
+        <item>@string/global_action_wifi_hotspot</item>
+        <item>@string/global_action_scan</item>
+    </string-array>
+    <string-array name="global_action_keyguard2_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_lock</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+    </string-array>
+    <string-array name="global_action_keyguard2_values">
+        <item>0</item>
+        <item>214</item>
+        <item>220</item>
+        <item>202</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+    </string-array>
+    <string-array name="global_action_keyguard_entries">
+        <item>@string/default_string</item>
+        <item>@string/global_action_flashlight</item>
+        <item>@string/global_action_camera</item>
+        <item>@string/global_action_awaken</item>
+        <item>@string/global_action_next</item>
+        <item>@string/global_action_previous</item>
+        <item>@string/global_action_play_pause</item>
+        <item>@string/global_action_lock</item>
+    </string-array>
+    <string-array name="global_action_keyguard_values">
+        <item>0</item>
+        <item>214</item>
+        <item>220</item>
+        <item>260</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+        <item>202</item>
+    </string-array>
+    <string-array name="global_action_values">
+        <item>0</item>
+        <item>88</item>
+        <item>99</item>
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>209</item>
+        <item>210</item>
+        <item>211</item>
+        <item>212</item>
+        <item>213</item>
+        <item>214</item>
+        <item>215</item>
+        <item>216</item>
+        <item>217</item>
+        <item>218</item>
+        <item>219</item>
+        <item>220</item>
+        <item>221</item>
+        <item>222</item>
+        <item>223</item>
+        <item>224</item>
+        <item>225</item>
+        <item>226</item>
+        <item>227</item>
+        <item>228</item>
+        <item>229</item>
+        <item>230</item>
+        <item>231</item>
+        <item>232</item>
+        <item>233</item>
+        <item>234</item>
+        <item>235</item>
+        <item>236</item>
+        <item>237</item>
+        <item>710</item>
+    </string-array>
+    <string-array name="head_button_entries">
+        <item>search</item>
+        <item>settings</item>
+        <item>status bar settings</item>
+        <item>power menu</item>
+    </string-array>
+    <string-array name="head_button_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="home_effect_entries">
+        <item>Desktop Effects 1</item>
+        <item>Desktop Effects 2</item>
+        <item>Desktop Effects 3</item>
+        <item>Desktop Effects 4</item>
+        <item>Desktop Effects 5</item>
+        <item>Desktop Effects 6</item>
+        <item>Desktop Effects 7</item>
+        <item>Desktop Effects 8</item>
+        <item>Desktop Effects 9</item>
+        <item>Desktop Effects 10</item>
+        <item>Desktop Effects 11</item>
+        <item>Desktop Effects 12</item>
+        <item>Desktop Effects 13</item>
+    </string-array>
+    <string-array name="home_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="leo_button_entries">
+        <item>@string/app_name</item>
+        <item>clear notification</item>
+        <item>clean up memory</item>
+    </string-array>
+    <string-array name="leo_button_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="log_info">
+        <item>@string/logcat_title</item>
+        <item>@string/kmesg_title</item>
+        <item>@string/dmesg_title</item>
+    </string-array>
+    <string-array name="ls_lunar_style_keys">
+        <item>keyguard_lunar_zodiac_symbol</item>
+        <item>keyguard_lunar_festival_symbol</item>
+    </string-array>
+    <string-array name="lunar_setyle_options">
+        <item>default</item>
+        <item>Ancient Season: Meng Xia. Midsummer. Summer</item>
+        <item>地支:寅月.卯月</item>
+        <item>A or the year: Bingyue. Ding Haoyue</item>
+        <item>B or Geng Year: Wu Yiyue. 卯 卯</item>
+        <item>戊或癸年:甲寅月.乙卯月</item>
+    </string-array>
+    <string-array name="lunar_setyle_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="lunar_sting_options">
+        <item>default</item>
+        <item>Ancient Season: Meng Xia. Midsummer. Summer</item>
+        <item>地支:寅月.卯月</item>
+        <item>A or the year: Bingyue. Ding Haoyue</item>
+        <item>B or Geng Year: Wu Yiyue. 卯 卯</item>
+        <item>戊或癸年:甲寅月.乙卯月</item>
+    </string-array>
+    <string-array name="lunar_sting_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <integer-array name="lunar_style_defaults">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="lunar_style_keys">
+        <item>qs_date_lunar_sodiac_symbol</item>
+        <item>qs_date_lunar_festival_symbol</item>
+    </string-array>
+    <string-array name="lunar_style_summaries">
+        <item>Enable Zodiac with Symbols</item>
+        <item>Enable holiday with symbols</item>
+    </string-array>
+    <string-array name="lunar_style_titles">
+        <item>Enable Zodiac Symbol</item>
+        <item>Enable holiday symbol</item>
+    </string-array>
+    <string-array name="power_menu_style_entries">
+        <item>@string/power_simplify</item>
+        <item>@string/power_a</item>
+        <item>@string/power_b</item>
+        <item>@string/power_c</item>
+        <item>@string/power_d</item>
+    </string-array>
+    <string-array name="power_menu_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="qs_detail_entries">
+        <item>12 hours: Chen, when, when, etc.</item>
+        <item>12 time period: morning, afternoon, evening, etc.</item>
+        <item>five more: one more, two more, three more</item>
+        <item>Four Seasons: Spring, Summer, Autumn and Winter</item>
+        <item>12 constellation</item>
+    </string-array>
+    <string-array name="qs_detail_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="scaling_entries">
+        <item>shrinks by 20%</item>
+        <item>shrinks by 30%</item>
+        <item>shrinks 40%</item>
+        <item>reduced by 50%</item>
+        <item>shrinks by 60%</item>
+        <item>shrinks by 70%</item>
+    </string-array>
+    <string-array name="scaling_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="statusbar_clock_options">
+        <item>left side of status bar</item>
+        <item>status bar is centered</item>
+        <item>on the right side of the status bar</item>
+    </string-array>
+    <string-array name="statusbar_clock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="statusbar_icon_entries">
+        <item>screen rotation</item>
+        <item>HD1</item>
+        <item>HD2</item>
+        <item>battery icon</item>
+        <item>Bluetooth</item>
+        <item>flight mode</item>
+        <item>NFC</item>
+        <item>mobile data signal</item>
+        <item>energy saving program</item>
+        <item>traffic savings</item>
+        <item>sound</item>
+        <item>WLAN</item>
+        <item>Targeting</item>
+        <item>alarm</item>
+        <item>headphones</item>
+    </string-array>
+    <string-array name="statusbar_icon_values">
+        <item>rotate</item>
+        <item>ims_volte</item>
+        <item>ims_volte2</item>
+        <item>battery_icon</item>
+        <item>bluetooth</item>
+        <item>airplane</item>
+        <item>nfc</item>
+        <item>mobile</item>
+        <item>power_saver</item>
+        <item>data_saver</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>location</item>
+        <item>alarm_clock</item>
+        <item>headset</item>
+    </string-array>
+    <string-array name="statusbar_s10clock_options">
+        <item>left side of status bar</item>
+        <item>on the right side of the status bar</item>
+    </string-array>
+    <string-array name="statusbar_s10clock_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="statusbar_traffic_options">
+        <item>disable</item>
+        <item>upload rate</item>
+        <item>download rate</item>
+        <item>upload/download rate</item>
+    </string-array>
+    <string-array name="statusbar_traffic_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="statusbar_view_options">
+        <item>left side of status bar</item>
+        <item>on the right side of the status bar</item>
+    </string-array>
+    <string-array name="statusbar_view_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="symbol_entries">
+        <item>@string/default_null</item>
+        <item>,</item>
+        <item>|</item>
+        <item>—</item>
+        <item>✤</item>
+        <item>✧</item>
+        <item>❆</item>
+        <item>♡</item>
+        <item>∴</item>
+        <item>∷</item>
+        <item>➻</item>
+        <item>ღ</item>
+        <item>⇆</item>
+        <item>☞</item>
+    </string-array>
+    <string-array name="symbol_style_entries">
+        <item>@string/default_null</item>
+        <item>,</item>
+        <item>|</item>
+        <item>—</item>
+        <item>✤</item>
+        <item>✧</item>
+        <item>❆</item>
+        <item>♡</item>
+        <item>∴</item>
+        <item>∷</item>
+        <item>➻</item>
+        <item>ღ</item>
+        <item>⇆</item>
+        <item>☞</item>
+        <item>@string/symbol_custom</item>
+    </string-array>
+    <string-array name="symbol_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="symbol_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="systemComponentSimplify">
+        <item>网络PING</item>
+        <item>三星隐藏网络设置</item>
+        <item>工程模式</item>
+        <item>硬件检测</item>
+    </string-array>
+    <string-array name="task_info_style_entries">
+        <item>@string/storage_a</item>
+        <item>@string/storage_b</item>
+    </string-array>
+    <string-array name="task_info_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="temp_style_entries">
+        <item>Battery and CPU</item>
+        <item>CPU</item>
+        <item>battery</item>
+    </string-array>
+    <string-array name="temp_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="week_location_entries">
+        <item>date to the right</item>
+        <item>date left</item>
+    </string-array>
+    <string-array name="week_location_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="widget_entries">
+        <item>weather</item>
+        <item>Weather and Clock</item>
+        <item>weather forecast</item>
+        <item>steps</item>
+        <item>step number (white)</item>
+        <item>step number (black)</item>
+    </string-array>
+    <string-array name="widget_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Disable Animation</item>
+        <item>Animation 0.2x</item>
+        <item>Animation 0.25x</item>
+        <item>Animation 0.3x</item>
+        <item>Animation 0.4x</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 0.6x</item>
+        <item>Animation 0.7x</item>
+        <item>Animation 0.8x</item>
+        <item>Animation 0.9x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 3x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.2</item>
+        <item>.25</item>
+        <item>.3</item>
+        <item>.4</item>
+        <item>.5</item>
+        <item>.6</item>
+        <item>.7</item>
+        <item>.8</item>
+        <item>.9</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>

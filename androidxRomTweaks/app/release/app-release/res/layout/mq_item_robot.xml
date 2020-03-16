@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="8.0dip" style="@style/MQWrapWrap.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meiqia.meiqiasdk.widget.MQImageView android:id="@id/iv_robot_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/mq_ic_holder_avatar" app:mq_iv_isCircle="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_robot_container" android:background="@drawable/mq_bg_msg_left" android:layout_width="240.0dip" android:layout_height="wrap_content">
+        <TextView android:textColorLink="@color/mq_chat_left_textColor" android:autoLink="all" android:id="@id/mq_robot_rich_text_container" style="@style/MQWrapWrap.Horizontal" />
+        <LinearLayout android:id="@id/ll_robot_content" style="@style/MQMatchWrap.Vertical" />
+        <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_robot_menu_tip_textColor" android:id="@id/tv_robot_menu_tip" android:padding="@dimen/mq_size_level2" android:text="@string/mq_robot_menu_tip" style="@style/MQMatchWrap" />
+        <LinearLayout android:gravity="right" android:id="@id/ll_robot_evaluate" style="@style/MQMatchWrap.Horizontal">
+            <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_robot_evaluate_textColor" android:id="@id/tv_robot_useless" android:padding="@dimen/mq_size_level2" android:clickable="true" android:layout_marginRight="@dimen/mq_size_level2" android:text="@string/mq_useless" style="@style/MQWrapWrap" />
+            <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_robot_evaluate_textColor" android:id="@id/tv_robot_useful" android:padding="@dimen/mq_size_level2" android:clickable="true" android:text="@string/mq_useful" style="@style/MQWrapWrap" />
+            <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_robot_menu_tip_textColor" android:id="@id/tv_robot_already_feedback" android:padding="@dimen/mq_size_level2" android:text="@string/mq_already_feedback" style="@style/MQWrapWrap" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

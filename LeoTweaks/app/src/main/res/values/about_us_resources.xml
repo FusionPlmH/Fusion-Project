@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+    <array name="opensource_drawables">
+        <item>@drawable/tomatolei</item>
+        <item>@drawable/aurora</item>
+        <item>@drawable/man1993</item>
+        <item>@drawable/sdhz150</item>
+        <item>@drawable/ic_kirkuto</item>
+        <item>@drawable/phoenix</item>
+    </array>
+    <string-array name="opensource_names">
+        <item>累累 (内核编译指导)</item>
+        <item>极光 (锁屏天气思路)</item>
+        <item>Man-1993 (制作讨论)</item>
+        <item>sdhz152 (AOSP源码)</item>
+        <item>kirkuto(950F官底)</item>
+        <item>Phoenix</item>
+    </string-array>
+    <string-array name="opensource_links" translatable="false">
+        <item>http://www.tomatolei.com</item>
+        <item>https://www.weibo.com/AuroraROM</item>
+        <item>http://weibo.com/u/2052386837</item>
+        <item>https://github.com/sdhz152</item>
+        <item>https://www.coolapk.com/u/612684?from=qr</item>
+        <item></item>
+    </string-array>
+
+    <array name="romtame_drawables">
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+        <item>@drawable/ic_github</item>
+    </array>
+    <string-array name="romtame_names">
+        <item>android support library</item>
+        <item>way</item>
+        <item>美洽</item>
+        <item>Picasso</item>
+        <item>okhttp</item>
+        <item>RxTools</item>
+        <item>RootFile</item>
+        <item>Wubydax</item>
+        <item>Flaticon</item>
+        <item>阿里巴巴矢量图标库</item>
+    </string-array>
+    <string-array name="romtame_links" translatable="false">
+        <item>https://developer.android.google.cn/license</item>
+        <item>https://blog.csdn.net/way_ping_li</item>
+        <item>https://github.com/Meiqia/MeiqiaSDK-Android</item>
+        <item>https://github.com/square/picasso</item>
+        <item>https://github.com/square/okhttp</item>
+        <item>https://github.com/vondear/RxTools/blob/master/RxTools-library/src/main/java/com/vondear/rxtools/view/RxToast.java</item>
+        <item>https://github.com/Grarak/KernelAdiutor/blob/master/app/src/main/java/com/grarak/kerneladiutor/utils/root/RootFile.java</item>
+        <item>https://github.com/wubydax/6thGear-RomControl-v2.0/tree/master/app/src/main/java/com/wubydax/romcontrol/v2/prefs</item>
+        <item>https://www.flaticon.com</item>
+        <item>http://www.iconfont.cn/</item>
+    </string-array>
+
+    <array name="test_drawables">
+        <item>@drawable/summer</item>
+    </array>
+    <string-array name="test_names">
+        <item>夏天 (G9500)</item>
+    </string-array>
+    <string-array name="test_links" translatable="false">
+        <item>https://weibo.com/u/5580908065</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/edge_name" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="18" android:title="@string/edge_name_size" android:key="edge_text_size" android:summary="@string/seekbar_sumarry" android:defaultValue="13" android:min="5" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/edge_name_color" android:key="edge_text_color" android:defaultValue="-1" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    <com.leo.salt.preference.SaltSettingMultipleChoicePreference android:title="@string/edge_name_select" android:key="edge_style" android:summary="@string/edge_name_select_summey" salt:choiceSelector="checkbox_selector" salt:multipleChoiceDefaults="@array/edge_list_defaults_keys" salt:multipleChoiceKeys="@array/edge_list_style_keys" salt:multipleChoiceSummaries="@array/edge_list__summaries" salt:multipleChoiceTitles="@array/edge_list_name" salt:showSelectAll="false" />
+    <com.leo.salt.preference.SaltSettingCardButtonPreference salt:buttonString="@string/edge_name_info" salt:packageNameToKill="com.samsung.android.app.cocktailbarservice" />
+</PreferenceScreen>

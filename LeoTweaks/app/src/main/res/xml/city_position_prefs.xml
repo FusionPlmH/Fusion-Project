@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="归属地颜色" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="启用归属地颜色自定义" android:key="leo_tweaks_locate_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="通话记录归属地文本颜色" android:key="leo_tweaks_call_log_position_color" android:summary="默认值:#ff979797"  leo:defaultColor="\#ff979797" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="短信归属地文本颜色" android:key="leo_tweaks_mms_position_color" android:summary="默认值:#ff979797"  leo:defaultColor="\#ff979797" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="拨号面板归属地文本颜色" android:key="leo_tweaks_dialing_locate_color" android:summary="默认值:#ff979797"  leo:defaultColor="\#ff979797" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="短信归属地" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="启用短信归属地" android:key="leo_tweaks_mms_position" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_position_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="短信归属地文本大小" android:key="leo_tweaks_mms_position_size" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="短信时间日期设置" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_date_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="短信时间日期文本大小" android:key="leo_tweaks_mms_date_size" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="短信时间日期文本颜色" android:key="leo_tweaks_mms_date_color" android:summary="默认值:#ff979797" leo:defaultColor="\#ff979797" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="短信预览消息设置" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_content_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="短信预览消息文本大小" android:key="leo_tweaks_mms_content_size" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="短信预览消息文本颜色" android:key="leo_tweaks_mms_content_color" android:summary="默认值:#ff979797"  leo:defaultColor="\#ff979797" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="短信发件人设置" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_avatar_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="短信发件人文本大小" android:key="leo_tweaks_mms_avatar_size" android:summary="左右滑动调节大小" android:defaultValue="17" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="短信发件人文本颜色" android:key="leo_tweaks_mms_avatar_color" android:summary="默认值:#ff252525"  leo:defaultColor="\#ff252525" />
+    <com.tweaks.salt.preference.CardPreferenceBorder />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="通话记录归属地" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="启用通话记录归属地" android:key="leo_tweaks_call_log_position" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="归属地数据库" android:key="leo_tweaks_call_log_position_data_style" android:defaultValue="false" android:summaryOn="官方归属地数据库" android:summaryOff="本地数据库" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_call_log_position_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="通话记录归属地文本大小" android:key="leo_tweaks_call_log_position_size" android:summary="左右滑动调节大小" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="拨号面板归属地" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="启用拨号面板归属地" android:key="leo_tweaks_dialing_locate_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="归属地数据库" android:key="leo_tweaks_dialing_locate_data" android:defaultValue="false" android:summaryOn="本地数据库" android:summaryOff="官方数据库" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_dialing_locate_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="拨号面板归属地文本大小" android:key="leo_tweaks_dialing_locate_size" android:summary="左右滑动调节大小" android:defaultValue="12" app:minValue="5" app:maxValue="18" app:unitsValue="dip" />
+
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceAlerts android:title="注:" android:summary="1000ms等于1s(1000毫秒=1秒)" android:enabled="false"/>
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="通话结束延迟" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="通话结束延迟设置" android:key="leo_tweaks_call_delay" android:summary="默认:3500ms/0则无延迟" android:defaultValue="3500" app:minValue="0" app:maxValue="10000" app:unitsValue=" ms" />
+
+</PreferenceScreen>

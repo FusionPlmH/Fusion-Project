@@ -1,0 +1,76 @@
+{
+  "stringTable": {
+    "0": "D:/AndroidTools/code/leo90/app/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsalt6_6_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fno-experimental-isel -fPIC",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DAmber9_4_520_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fno-experimental-isel -fPIC",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AndroidTools/SD/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsec_9_0_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fno-experimental-isel -fPIC"
+  },
+  "buildFiles": [
+    "D:\\AndroidTools\\SD\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "D:\\AndroidTools\\code\\leo90\\app\\CMakeLists.txt",
+    "D:\\AndroidTools\\SD\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "Amber9.4.520-Debug-arm64-v8a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Amber9.4.520",
+      "buildType": "debug",
+      "toolchain": "1979919870",
+      "abi": "arm64-v8a",
+      "artifactName": "Amber9.4.520",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\Amber9.4.520.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libAmber9.4.520.so"
+    },
+    "sec_9.0-Debug-arm64-v8a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\arm64-v8a\" sec_9.0",
+      "buildType": "debug",
+      "toolchain": "1979919870",
+      "abi": "arm64-v8a",
+      "artifactName": "sec_9.0",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\sec_9.0.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libsec_9.0.so"
+    },
+    "salt6.6-Debug-arm64-v8a": {
+      "buildCommand": "D:\\AndroidTools\\SD\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\AndroidTools\\code\\leo90\\app\\.cxx\\cmake\\debug\\arm64-v8a\" salt6.6",
+      "buildType": "debug",
+      "toolchain": "1979919870",
+      "abi": "arm64-v8a",
+      "artifactName": "salt6.6",
+      "files": [
+        {
+          "src": "D:\\AndroidTools\\code\\leo90\\app\\src\\main\\cpp\\salt6.6.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\AndroidTools\\code\\leo90\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libsalt6.6.so"
+    }
+  },
+  "toolchains": {
+    "1979919870": {
+      "cppCompilerExecutable": "D:\\AndroidTools\\SD\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

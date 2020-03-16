@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto"
+    >
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock" >
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:title="@string/statusbar_clock_enabled"
+        android:key="clock_show"
+        android:defaultValue="true"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="clock_show"
+        android:title="@string/statusbar_clock_orientation" android:key="clock_orientation"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_clock_values"
+        android:entries="@array/statusbar_clock_options"
+      />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_autohide"
+        android:title="@string/statusbar_clock_autohide"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="statusbar_clock_autohide"
+        android:key="leo_salt_statusbar_clock_hideduration_style"
+        android:summary="@string/seekbar_sumarry"
+        android:title="@string/statusbar_clock_hideduration"
+        android:defaultValue="15"
+        android:min="5"
+        android:max="300"
+        salt:interval="5"
+        salt:unitsLeft=""
+        salt:unitsRight=" ms"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="statusbar_clock_autohide"
+        android:key="leo_salt_statusbar_clock_showduration_style"
+        android:summary="@string/seekbar_sumarry"
+        android:title="@string/statusbar_clock_showduration"
+        android:defaultValue="100"
+        android:min="5"
+        android:max="600"
+        salt:interval="5"
+        salt:unitsLeft=""
+        salt:unitsRight=" ms"
+        />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_twelve_format"
+        android:title="@string/statusbar_clock_twelve"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_seconds_enabled"
+        android:title="@string/statusbar_clock_seconds"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_click"     android:key="statusbar_clock_click_enabled">
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="click_enabled"
+        android:title="@string/statusbar_clock_click_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="click_enabled"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="statusbar_clock_vibrator"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="statusbar_clock_vibrator"
+        android:key="leo_salt_statusbar_clock_vibrator_level"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:title="@string/statusbar_clock_click_style" android:key="clock_click"
+        android:defaultValue="0"
+        android:dependency="click_enabled"
+        android:entryValues="@array/clockdate_click_values"
+        android:entries="@array/clockdate_click_options"
+        />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+
+    .  <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_padding"  android:key="statusbar_clock_padding_enabled"         android:dependency="clock_show"
+        >
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="start_padding"
+        android:summary="@string/seekbar_padding_sumarry"
+        android:title="@string/statusbar_clock_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="end_padding"
+        android:summary="@string/seekbar_padding_sumarry"
+        android:title="@string/statusbar_clock_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        />
+</com.leo.salt.preference.SaltSettingCategoryPreference>
+    .  <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_china_detail" android:key="statusbar_clock_detail_enabled"         android:dependency="clock_show"
+        >
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="detail_enabled"
+        android:title="@string/statusbar_clock_china_detail_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_style"
+        android:title="@string/statusbar_clock_china_detail_style"
+        android:defaultValue="0"
+        android:entryValues="@array/detail_values"
+        android:entries="@array/detail_entries" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="detail_enabled"
+        android:key="lunar_month_style"
+        android:title="@string/statusbar_clock_china_lunar_month_style"
+        android:defaultValue="0"
+        android:entryValues="@array/lunar_sting_values"
+        android:entries="@array/lunar_sting_options" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_location"
+        android:title="@string/statusbar_clock_china_detail_location"
+        android:defaultValue="0"
+        android:entryValues="@array/date_location_values"
+        android:entries="@array/date_location_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="detail_enabled"
+        android:key="detail_symbol"
+        android:title="@string/statusbar_clock_china_detail_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="ampm_style"
+        android:title="@string/statusbar_clock_ampm_style"
+        android:defaultValue="0"
+        android:entryValues="@array/am_pm_values"
+        android:entries="@array/am_pm_entries"
+        />
+</com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_clock_date" android:key="statusbar_clock_date_enabled"         android:dependency="clock_show"
+        >
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+
+        android:key="date_enabled"
+        android:title="@string/statusbar_clock_date_enabled"
+        android:defaultValue="0"
+        android:entryValues="@array/date_values"
+        android:entries="@array/date_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="date_location"
+        android:title="@string/statusbar_clock_date_location"
+        android:defaultValue="1"
+        android:entryValues="@array/date_location_values"
+        android:entries="@array/date_location_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="date_style"
+        android:title="@string/statusbar_clock_date_style"
+        android:defaultValue="0"
+        android:entryValues="@array/date_en_values"
+        android:entries="@array/date_en_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="date_format"
+        android:title="@string/statusbar_clock_date_format"
+        android:defaultValue="0"
+        android:summary="%1$s"
+        android:entries="@array/clock_date_format_entries_values"
+        android:entryValues="@array/clock_date_format_entries_values"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="week_enabled"
+        android:title="@string/statusbar_clock_week_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="week_enabled"
+        android:key="week_format"
+        android:title="@string/statusbar_clock_week_format"
+        android:defaultValue="0"
+        android:entryValues="@array/date_week_values"
+        android:entries="@array/date_week_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="week_enabled"
+        android:key="week_location"
+        android:title="@string/statusbar_clock_week_location"
+        android:defaultValue="1"
+        android:entryValues="@array/week_location_values"
+        android:entries="@array/week_location_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="week_enabled"
+        android:key="week_symbol"
+        android:title="@string/statusbar_clock_week_symbol"
+        android:defaultValue="0"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/text_set" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_single_enabled"
+        android:title="@string/statusbar_clock_single_enabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        salt:reverseDependency="statusbar_clock_single_enabled"
+        android:key="multi_size"
+
+        android:title="@string/statusbar_clock_multi_size"
+        android:defaultValue="9"
+        android:min="1"
+        android:max="10"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        android:summary="@string/seekbar_text_sumarry"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="statusbar_clock_single_enabled"
+        android:key="single_size"
+        android:summary="@string/seekbar_text_sumarry"
+        android:title="@string/statusbar_clock_single_size"
+        android:defaultValue="14"
+        android:min="1"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_font_style"
+        android:title="@string/statusbar_clock_font_style"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_color_enabled"
+        android:title="@string/statusbar_clock_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_clock_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:dependency="statusbar_clock_color_enabled"
+        android:key="statusbar_clock_color"/>
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="clock_show"
+        android:key="statusbar_clock_dark_color_enabled"
+        android:title="@string/statusbar_clock_dark_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:title="@string/statusbar_clock_dark_color"
+        android:dependency="statusbar_clock_dark_color_enabled"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99000000"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_clock_dark_color"/>
+</PreferenceScreen>

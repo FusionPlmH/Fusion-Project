@@ -1,0 +1,12 @@
+<resources>
+    <string name="error_su_timeout">waiting for a timeout, make sure your root manager is running in the background and try again! \n\nPlease make sure that you have not blocked the "authorization manager (SuperSu, Magisk Manager, etc.)" from starting, and allow the background pop-up window, display floating window and other permissions. If the authorization dialog has not been popped up, it is recommended to restart the phone and try again! \n</string>
+         <string name="error_root">Sorry, many features will not be available without ROOT permission! </string>
+         <string name="btn_retry">try again</string>
+         <string name="btn_skip">skip </string>
+         <string name="btn_exit">Exit </string>
+         <string name="unlockpro">Unlocking LeoROM, will automatically restart later </string>
+         <string name="do_power"> one-button shutdown </string>
+         <string name="do_restart"> one-click restart </string>
+    <string name="fingerprint_install">Installing the fingerprint payment module, will automatically restart later </string>
+    <string name="fingerprint_uninstall">\nIf you need to uninstall the fingerprint payment module, please uninstall it in Magisk</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/nav_landscape_enable" android:key="navActionenabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/statusbar_right_click_style" android:key="navActionSTYLE" android:dependency="navActionenabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="navActionvibratornaenabled" android:dependency="navActionenabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="vibratornavlevel" android:dependency="navActionvibratornaenabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@id/seekBarPrefSlider" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.Light.SeekBar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:id="@id/minValueText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:id="@id/maxValueText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="0.5dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

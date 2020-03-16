@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="常规设置" />
+    <org.salt.preference.SaltListPreference
+        android:key="carousel_animation"
+        android:title="首页轮播图动画"
+        android:defaultValue="15"
+        android:entryValues="@array/carousel_animation_values"
+        android:entries="@array/carousel_animation_entries" />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:key="leo_home_Launcher"
+        android:persistent="false"/>
+    <org.salt.preference.SaltCheckBoxPreference
+        android:title="移除首页信息展示模块"
+        android:key="leo_home_info_layoutcompat"
+        android:defaultValue="false"
+        android:summary="运营商、天气等"
+       />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:title="点击一言直接分享"
+        android:key="leo_home_share_linking"
+        android:defaultValue="true"
+        android:summary="分享首页轮播图上的滚动文本"
+        />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:title="禁用一言时所附带的出处信息"
+        android:key="leo_home_linking_info"
+        android:defaultValue="false"
+        android:summary="分享时不含出处信息"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="更新提示" />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:key="leo_apps_info_update"
+        android:defaultValue="false"
+        />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:title="OTA跳过检查"
+        android:key="leo_fota_skip_step"
+        android:defaultValue="false"
+        android:summary="进入更新界面直接开始扫描是否有可用更新"
+        />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:title="移动数据进行OTA"
+        android:key="leo_fota_skip_mobile_data"
+        android:defaultValue="false"
+        android:summary="当你在移动数据时同样可以进行升级"
+        />
+</androidx.preference.PreferenceScreen>
+

@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.tweaks.leo.ui.GradientHorizontalTextView
+        android:id="@+id/plus_one_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="在线更新"
+        android:paddingTop="20dp"
+        android:textSize="25dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.tweaks.leo.ui.GradientHorizontalTextView
+                android:id="@+id/rom_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+
+                />
+            <com.tweaks.leo.ui.GradientHorizontalTextView
+                android:id="@+id/rom_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"/>
+            <com.tweaks.leo.ui.GradientHorizontalTextView
+                android:id="@+id/versions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                />
+            <com.tweaks.leo.ui.GradientHorizontalTextView
+                android:id="@+id/chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_below="@+id/versions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/newest_versions"
+            style="@style/MyButton"
+
+            android:layout_weight="10.0"
+            android:minWidth="110.0dip"
+            android:text="检查新版本" />
+
+        <Button
+            android:id="@+id/install"
+            style="@style/MyButton"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+
+            android:minWidth="110.0dip"
+            android:text="更新" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注:!!!!"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+
+                />
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本:"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+</LinearLayout>

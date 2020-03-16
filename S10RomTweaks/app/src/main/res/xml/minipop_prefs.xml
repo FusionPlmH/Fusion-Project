@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/mini_pop"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="minipopDisplay"
+        android:title="@string/mini_pop_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+
+        />
+    <com.leo.salt.preference.SaltSettingCardWarningPreference   android:key="minipoparning"  />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback"   android:key="minipopDlay" android:dependency="minipopDisplay">
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="minipopVibrator"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="minipopVibrator"
+        android:key="minipopLevel"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=""
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+</com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/mini_pop_action"  android:key="minipoptionlay"  android:dependency="minipopDisplay">
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+
+        android:key="minipopbc"
+        android:title="@string/mini_pop_back"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:key="minipopho"
+        android:title="@string/mini_pop_home"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+        <com.leo.salt.preference.SaltSettingDefaultListPreference
+            android:key="minipopre"
+            android:title="@string/mini_pop_task"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+        <com.leo.salt.preference.SaltSettingDefaultListPreference
+            android:key="minipopfla"
+            android:title="@string/mini_pop_flashlight"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

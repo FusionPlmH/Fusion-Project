@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/appIcon"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/use_wallpaper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" card_view:cardBackgroundColor="?colorAccent" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:foreground="?selectableItemBackgroundBorderless" android:text="@string/wallpaper_use" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:id="@id/delete_wallpaper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:foreground="?selectableItemBackgroundBorderless" card_view:cardBackgroundColor="?colorAccent" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="true">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/wallpaper_delete" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

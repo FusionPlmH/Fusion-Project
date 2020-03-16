@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/sem_app_bar_bg_color" />
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/leologo" android:scaleType="center" />
+    </item>
+</layer-list>

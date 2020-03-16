@@ -1,0 +1,77 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: F0fpvKPdTo2MMk6cNENee32bfUncohLWVecK5zu1ch8=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA-256-Digest: holwPT4NZBHG7BDE6tntbY0nJqPaN3RNHS9617RHt8s=
+
+Name: classes.dex
+SHA-256-Digest: 2jGBwtmVgUdpH75tX7MDp+wkADmZxcurkZva2thIplg=
+
+Name: res/anim/grid_layout_animation.xml
+SHA-256-Digest: WFWrSFqG+yYCU81m43pqRHaW2dc87vHlYVKQXFb/AzY=
+
+Name: res/anim/listview_anim.xml
+SHA-256-Digest: g5YHwbwJZ21mGQSeeICcBMRo1Eq9FBdPgzdk4WN/0Do=
+
+Name: res/anim/scale_anim.xml
+SHA-256-Digest: dCKlJ1oiZfcx/Afa1mKGzWP99AKFI+5bktBONVjIqro=
+
+Name: res/anim/slide_in_bottom.xml
+SHA-256-Digest: HHhLRQzBTsSMjI0sykmcCUpHkIVXyOF5g71wUkKu7Io=
+
+Name: res/drawable-xxxhdpi-v4/bg.webp
+SHA-256-Digest: JZxElG1d2+FhzwvO8fyCNLkZ/7H/FzrV1tOELnAAW6Q=
+
+Name: res/drawable/leo.png
+SHA-256-Digest: vSV0JesMic9b11Li581XkO54rRWyZSwMAsuc/aBDD5s=
+
+Name: res/drawable/qs__ball.png
+SHA-256-Digest: YRh/yMi/g/6eyDdKp1TH7mYkoaxp0UAShZERaGBNqIo=
+
+Name: res/drawable/qs__fll.png
+SHA-256-Digest: obM5L+FAUiFAgF+2A8CQi1GkgE2qyzDx9OQBrDLlEuo=
+
+Name: res/drawable/qs__mipop.png
+SHA-256-Digest: 3zSs9VJK1Z1OJCwooh0AqCTMocCiJdRPzHJMntsD+h4=
+
+Name: res/drawable/qs_lockscreen.png
+SHA-256-Digest: RXq4GnnI3ehzNLTkW2XrP7Nbbl2UYazoEl/7a+7r4hA=
+
+Name: res/drawable/qs_outdoors.xml
+SHA-256-Digest: hkDL+kFPAmPONHUHGsIGF8IZtg+B3OoNtpWB6AWSmi8=
+
+Name: res/drawable/qs_ram.png
+SHA-256-Digest: cto1glemIaNkjCfrvHb9U5yYXNiIBY8l5S0kO/U8oyw=
+
+Name: res/drawable/qs_reboot.png
+SHA-256-Digest: MO50x3G8+7/9RURHlg9egnB9eaIqcpuC/Op1m0py0I4=
+
+Name: res/layout/grid_item.xml
+SHA-256-Digest: EQ9A4p9uwOlRJUR8RkLoeazR9UpnFKuf8X0+xZ8Ekv0=
+
+Name: res/layout/grid_power_meun.xml
+SHA-256-Digest: KxOj72dLK2nT//SiS2QBoXF9am9I789bZB8QwUUWDUE=
+
+Name: res/layout/grid_power_meun_dialog.xml
+SHA-256-Digest: fq/2ZtOHQRAEhN0xNKr4+rH9FJI0qdPHiBFj4h+d0XI=
+
+Name: res/layout/grid_power_meun_list.xml
+SHA-256-Digest: uu/Bss6HZpxkcweEAJERk004VDzSmSuBYhXiXC6AcuI=
+
+Name: res/layout/list_items.xml
+SHA-256-Digest: y7UqfExONspI3qbFKRm72v3JwsIHEYijfVkQPTehLoc=
+
+Name: res/layout/power_meun_list.xml
+SHA-256-Digest: mQDYGRJXJT0m4gSJnjE9TMppM2eAIWXwgSMSwl6ZuZk=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA-256-Digest: P5Dwmtd3X7ApPGsXDQJAV8QWrxxSmk+yTWGkDf2yZKM=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
+SHA-256-Digest: IbzC5jiQBZtzscuhI/m/VGmzv7/eb9Ux3Xn/nslReDQ=
+
+Name: resources.arsc
+SHA-256-Digest: 4iS+ePUtble/2BDvB0mz9W6+nIFiknfhHfD6Jb9mOrQ=
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Main" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/colorPrimaryMain</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:listDivider">@color/colorPrimaryMain</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.Light.PopupMenu</item>
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="BottomNavigationBackground">@color/colorPrimaryMain</item>
+        <item name="Global_Divider">@color/colorPrimaryMain</item>
+        <item name="MainwindowBG">@color/colorPrimaryMain</item>
+        <item name="cardBackgroundColor">#ffffffff</item>
+        <item name="changelog_color_bg">?android:colorBackground</item>
+        <item name="changelog_color_commit_bg">#ffeeeeee</item>
+        <item name="changelog_color_commit_message">?android:textColorPrimary</item>
+        <item name="changelog_color_header_back">?colorAccent</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+        <item name="colorCollapsing">@color/colorPrimaryMain</item>
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryMain</item>
+        <item name="iconNightMode">@drawable/ic_day_mode</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="stringColor">#ff000000</item>
+        <item name="stringNightMode">日间模式</item>
+        <item name="transparency">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Main.Dark" parent="@style/Theme.AppCompat">
+        <item name="android:colorBackground">@color/colorPrimaryMainDark</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:listDivider">@color/colorPrimaryMainDark</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.PopupMenu</item>
+        <item name="android:dialogTheme">@style/DialogStyleDark</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleDark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryMainDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="BottomNavigationBackground">@color/colorPrimaryMainDark</item>
+        <item name="Global_Divider">@color/colorPrimaryMainDark</item>
+        <item name="MainwindowBG">@color/colorPrimaryMainDark</item>
+        <item name="cardBackgroundColor">@color/dark_cardview_bg</item>
+        <item name="changelog_color_bg">?android:colorBackground</item>
+        <item name="changelog_color_commit_bg">@color/colorPrimaryMainDark</item>
+        <item name="changelog_color_commit_message">?android:textColorPrimary</item>
+        <item name="changelog_color_header_back">?colorAccent</item>
+        <item name="colorAccent">@color/colorAccentMainDark</item>
+        <item name="colorCollapsing">@color/colorPrimaryMainDark</item>
+        <item name="colorPrimary">@color/colorPrimaryMainDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryMainDark</item>
+        <item name="iconNightMode">@drawable/ic_nightmode</item>
+        <item name="navColorSelector">@color/nav_items_selector_black</item>
+        <item name="stringColor">#ffffffff</item>
+        <item name="stringNightMode">夜间模式</item>
+        <item name="transparency">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Main.Setting" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/colorPrimaryMain</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:listDivider">@color/colorPrimaryMain</item>
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="BottomNavigationBackground">@color/colorPrimaryMain</item>
+        <item name="MainwindowBG">@color/colorPrimaryMain</item>
+        <item name="cardBackgroundColor">#ffffffff</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryMain</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="stringColor">#ffffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored" />
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

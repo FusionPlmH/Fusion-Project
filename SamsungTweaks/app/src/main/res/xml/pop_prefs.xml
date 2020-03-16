@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_pop" />
+    <com.fusionleo.salt.preference.MyCheckBoxPreference android:title="@string/minip_enable" android:key="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_minip_vibrate" android:dependency="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_minip_vibration_level" android:dependency="leo_tweaks_minip_vibrate" android:summary="@string/vibrator_level_summary" android:defaultValue="70" app:minValue="30" app:maxValue="100" app:unitsValue="" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/home_action" android:dependency="leo_tweaks_minip_enable">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/minip_home_action" android:key="leo_tweaks_minip_home_action"    android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/minip_home_action_app" android:key="leo_tweaks_minip_home_action_app"   includeSearch="true" setSeparatorString="\###" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/flashlight_action" android:dependency="leo_tweaks_minip_enable">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/minip_flashlight_action" android:key="leo_tweaks_minip_flashlight_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/minip_flashlight_action_app" android:key="leo_tweaks_minip_flashlight_action_app"   includeSearch="true" setSeparatorString="\###" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/task_action" android:dependency="leo_tweaks_minip_enable">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/minip_task_action" android:key="leo_tweaks_minip_task_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/minip_task_action_app" android:key="leo_tweaks_minip_task_action_app"  includeSearch="true" setSeparatorString="\###" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/back_action" android:dependency="leo_tweaks_minip_enable">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/minip_back_action" android:key="leo_tweaks_minip_back_action"   android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/minip_back_action_app" android:key="leo_tweaks_minip_back_action_app"   includeSearch="true" setSeparatorString="\###" />
+    </com.fusionleo.salt.preference.MyPreferenceCategory>
+</PreferenceScreen>

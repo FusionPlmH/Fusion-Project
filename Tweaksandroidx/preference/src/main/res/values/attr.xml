@@ -1,0 +1,46 @@
+<resources>
+    <declare-styleable name="LeoPreference">
+        <attr name="reverseDependency" format="string"/>
+        <attr name="modeSettings" format="integer"/>
+        <attr name="clickStyle" format="string"/>
+        <attr name="BroadcastKey" format="string|reference"/>
+        <attr name="dependentValue" format="string"/>
+        <attr name="packageName" format="string"/>
+        <attr name="packageKill" format="boolean"/>
+    </declare-styleable>
+    <attr name="navColorSelector" format="color" />
+    <attr name="cardBgColor" format="color" />
+    <attr name="saltTitleColor" format="color" />
+    <attr name="roundedCornerColor" format="color" />
+    <attr name="transparency" format="color" />
+    <dimen name="card_view_radius">30.0dip</dimen>
+    <attr name="stroke_view_color" format="color"/>
+    <declare-styleable name="SaltSettingIconListPreference">
+        <attr format="reference" name="drawableArray"/>
+        <attr format="reference" name="entryList"/>
+        <attr format="reference" name="entryValuesList"/>
+        <attr format="reference" name="drawableIconColor"/>
+    </declare-styleable>
+    <declare-styleable name="MultipleChoicePreference">
+        <attr name="multipleChoiceTitles" format="reference"/>
+        <attr name="multipleChoiceKeys" format="reference"/>
+        <attr name="multipleChoiceSummaries" format="reference"/>
+        <attr name="multipleChoiceDefaults" format="reference"/>
+        <attr name="showSelectAll" format="boolean"/>
+        <attr name="choiceSelector">
+            <enum name="checkbox_selector" value="0"/>
+            <enum name="switch_selector" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SaltSettingMultiSelect">
+        <attr format="reference" name="multiEntryList"/>
+        <attr format="reference" name="multiValuesList"/>
+    </declare-styleable>
+    <declare-styleable name="SaltInfoPreference">
+        <attr format="string|reference" name="infoTitle"/>
+        <attr format="string|reference" name="infoMessage"/>
+        <attr format="string|reference" name="infoAction"/>
+        <attr format="string|reference" name="imageSource"/>
+        <attr format="boolean|reference" name="imageBoolean"/>
+    </declare-styleable>
+</resources>

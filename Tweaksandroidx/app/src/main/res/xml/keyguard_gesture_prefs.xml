@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="keyguard_action_doubleTap_enabled"
+        android:title="@string/keyguard_action_doubleTap_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="keyguard_action_enabled"
+        android:title="@string/keyguard_action_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+
+        android:key="keyguard_action_style"
+        android:title="@string/keyguard_action_style"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_keyguard2_values"
+        android:entries="@array/global_action_keyguard2_entries"
+        />
+</androidx.preference.PreferenceScreen>

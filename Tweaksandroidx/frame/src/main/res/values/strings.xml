@@ -1,0 +1,93 @@
+<resources>
+    <string name="on">@string/abc_capital_on</string>
+    <string name="off" >@string/abc_capital_off</string>
+    <string name="app_name">Leo配置</string>
+    <string name="permission_storage">存储权限</string>
+    <string name="permission_phone">手机状态</string>
+    <string name="permission_camera">拍照权限</string>
+    <string name="permission_dialog_title">为%s授权</string>
+    <string name="permission_dialog_msg">%s需要以下权限，请为其授权</string>
+    <string name="permission_title">请允许获取%s</string>
+    <string name="permission_denied">我们需要获取%1$s, 否则您将无法正常使用%2$s</string>
+    <string name="permission_denied_with_naac">"由于%1$s无法获取%2$s, 不能正常运行, 请开启权限后再使用。\n\n设置路径: 应用管理->%3$s->权限"</string>
+    <string name="permission_cancel">@android:string/cancel</string>
+    <string name="permission_ensure">@android:string/ok</string>
+    <string name="permission_reject">拒绝</string>
+    <string name="permission_btn_next">下一步</string>
+    <string name="start_install">正在安装</string>
+    <string name="permission_go_to_setting">去设置</string>
+    <string name="have_backup">已备份</string>
+    <string name="backup_no">未备份</string>
+    <string name="backup_succeed">成功备份</string>
+    <string name="backup_button">备份</string>
+    <string name="recover_button">还原</string>
+    <string name="partition_name">分区</string>
+    <string name="model_mode">设备型号</string>
+    <string name="model_mod">自定义机型</string>
+    <string name="apps_select_title">请选择操作</string>
+    <string name="apps_backup_apk">APK备份</string>
+    <string name="apps_backup_data">完整备份</string>
+    <string name="apps_clear_cache">缓存清空</string>
+    <string name="apps_clear_data">数据清理</string>
+    <string name="apps_uninstall">卸载应用</string>
+    <string name="apps_uninstall_update">卸载更新</string>
+    <string name="apps_uninstall_user">从当前用户卸载</string>
+    <string name="apps_uninstall_data">[保留数据]卸载</string>
+    <string name="apps_delete">删除应用</string>
+    <string name="apps_freeze">冻结应用</string>
+    <string name="apps_unfreeze">应用解冻</string>
+    <string name="apps_hide">隐藏应用</string>
+    <string name="apps_copy_name">复制应用包名</string>
+    <string name="apps_start">启动应用</string>
+    <string name="apps_info">应用信息</string>
+    <string name="apps_appstore">应用商店中查看</string>
+    <string name="apps_as_system">转为系统应用</string>
+    <string name="apps_as_dex2oat">dex2oat编译</string>
+    <string name="supersu_root">正在获取权限!</string>
+    <string name="behavior_ok">操作完成!</string>
+    <string name="behavior_error">出现异常!</string>
+    <string name="behavior_error_a">发生一些错误</string>
+    <string name="apks_backup_name">备份APK和数据</string>
+    <string name="apks_uis_name">从当前用户</string>
+    <string name="apks_uis_name_aok">确定从当前用户卸载选中的</string>
+    <string name="apks_uis_name_a1k">个应用?</string>
+    <string name="apks_uis_name_uid">获取用户ID失败!</string>
+    <string name="apks_magisk_uid">已通过Magisk更改参数,请重启手机</string>
+    <string name="apks_magisk_nox">Magisk镜像空间不足，操作失败!!!</string>
+    <string name="apks_packagename_copy">包名已复制:</string>
+    <string name="apks_dead_start">这个应用程序可能没有可以启动的(Activity)活动</string>
+    <string name="apks_dead_restore_title">温馨提醒</string>
+    <string name="apks_dead_restore_title_info">还原卸载的(不包括隐藏的)应用时,会修改</string>
+    <string name="apks_dead_restore_title_info1">可能导致应用和数据丢失或者出现闪退!</string>
+    <string name="apks_dead_state_title">正在获取应用状态</string>
+    <string name="apks_dead_state_title_ins">需要重启手机来恢复以下应用</string>
+    <string name="apks_dead_state_title_xia">以后再说</string>
+    <string name="apks_dead_state_title_xiaa">以下应用未能恢复</string>
+    <string name="apks_uninstall_titlerestore">已[卸载‖隐藏]应用</string>
+    <string name="apks_hide_log">应用隐藏记录</string>
+    <string name="apps_search_box">搜索 应用名或包名(PackageName)</string>
+
+    <string name="usage_license">使用LeoROM受到下列条款的制约：\n\n
+一.关于捐赠\n
+LeoROM为免费使用,但是将会受到限制.且捐赠后可以使用完整功能 捐赠仅支持一部手机\n
+1. 个性化设置 部分功能 需要捐赠方可使用\n
+2. 需要捐赠才可以使用的功能都有明显提示\n
+3. 捐赠完全出自你的个人意愿捐赠\n\n
+
+二.联网需求\n
+1. Leo个性化部分资源以及功能需要网络支持,需联网方可使用\n
+2. 如果你同意联网点击下一步\n
+3. 捐赠用户在解锁后可以屏幕联网检查\n\n
+
+三.功能差异\n
+1. 根据所在地区以及设备版本功能上有所差异\n
+
+2. 功能上的差异与捐赠金额无关\n\n
+
+四.免责声明\n
+1. Leo个性化 所有内容资源均来自互联网，部分源代码来自 Github 以及互联网上的开源项目, 详细的开源项目引用列表可通过【侧滑】>【开源库】查看\n
+2. FusionLeo ROM 中所涉及参考其他作者的代码，详细列表可通过【侧滑】>【特别致谢】菜单查看到\n
+3. 在每一个新版本中提供的功能可能会与老版本有较大出入\n
+4. 如需参考Leo的ROM请事先通知我们\n
+5. 禁止任何人在未征求团队同意的私自偷窃.拆解LeoROM代码</string>
+</resources>

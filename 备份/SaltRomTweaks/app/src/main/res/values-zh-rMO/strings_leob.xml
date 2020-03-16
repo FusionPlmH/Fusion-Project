@@ -1,0 +1,100 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="global_action_splitscreen">分屏</string>
+    <string name="global_action_powermeun">電源菜單</string>
+    <string name="global_action_s">S搜索</string>
+    <string name="global_action_screenrecord">屏幕錄像</string>
+    <string name="global_action_screenshot">屏幕截圖</string>
+    <string name="global_action_part_screenshot">局部截圖</string>
+    <string name="global_action_wifi_code">已連接WLAN密碼</string>
+    <string name="global_action_leo">@string/app_name</string>
+    <string name="global_action_notification">通知欄</string>
+    <string name="global_action_quick_panel">快速設置面板</string>
+    <string name="global_action_flashlight">手電筒</string>
+    <string name="global_action_wifi">WLAN切換</string>
+    <string name="global_action_airplane">飛行模式</string>
+    <string name="global_action_floating">懸浮球</string>
+    <string name="global_action_outdoors">戶外模式</string>
+    <string name="global_action_pop">屏幕助手</string>
+    <string name="global_action_camera">啟動相機</string>
+    <string name="global_action_fullscreen">全局屏幕沉浸</string>
+    <string name="global_action_next">下一曲</string>
+    <string name="global_action_previous">上一曲</string>
+    <string name="global_action_play_pause">播放暫停</string>
+    <string name="global_action_volume">聲音模式</string>
+    <string name="global_action_silence">無聲模式切換聲音模式</string>
+    <string name="global_action_vibrator">震動模式切換聲音模式</string>
+    <string name="global_action_bb_home">Bixby主頁</string>
+    <string name="global_action_bb_volume">Bixby語音</string>
+    <string name="global_action_last_apps">切換到上一個打開的程序</string>
+    <string name="global_action_kill_progress">進程清理</string>
+    <string name="global_action_kill">結束當前程序</string>
+    <string name="global_action_mobile_data">移動數據</string>
+    <string name="global_action_volume_panel">音量調節面板</string>
+    <string name="global_action_clear_notice">清除全部通知</string>
+    <string name="global_action_apps_manage">應用程序管理</string>
+    <string name="global_action_wifi_hotspot">WLAN熱點</string>
+    <string name="global_action_scan">快捷支付</string>
+
+    <string name="global_action_awaken">喚醒屏幕</string>
+
+    <string name="bg_style_a">單一顏色</string>
+    <string name="bg_style_b">漸變顏色</string>
+    <string name="bg_style_c">背景壁紙</string>
+    <string name="width_wallpaper_size">壁紙寬度0或不輸將為壁紙默認寬度</string>
+    <string name="height_wallpaper_size">壁紙高度0或不輸將為壁紙默認高度</string>
+    <string name="wallpaper_use">應用壁紙</string>
+    <string name="wallpaper_delete">刪除壁紙</string>
+
+    <string name="wallpaper_power">電源菜單背景</string>
+    <string name="system_animation">系統動畫</string>
+    <string name="window_animation">窗口動畫</string>
+    <string name="transition_animation">過度動畫</string>
+    <string name="animator_duration">動畫影像伸縮時間效果</string>
+
+    <string name="battery_bar_hide">隱藏</string>
+    <string name="battery_bar_statusbar">狀態欄</string>
+    <string name="battery_bar_topnav">在導航欄上</string>
+    <string name="battery_bar_bottomnav">在導航欄下</string>
+    <string name="battery_bar_reg">常規</string>
+    <string name="battery_bar_center">居中</string>
+    <string name="battery_bar_reversed">居右</string>
+    <string name="enabled_check_ota">確定啟用OTA檢查?\n啟用OTA更新檢查,將重啟[LeoTweaks],確定要這麼做?</string>
+    <string name="kill_process_title">結束進程白名單</string>
+    <string name="kill_process_title_summary">選擇你需要設置為白名單的程序,單擊程序可從白名單中移除</string>
+
+    <string name="bixby_title">Bixby動作</string>
+    <string name="bixby_category_title">亮屏Bixby動作</string>
+    <string name="bixby_lock_category_title">鎖屏Bixby動作</string>
+    <string name="bixby_custom">自定義Bixby動作</string>
+    <string name="bixby_press">Bixby短按動作</string>
+    <string name="bixby_longpress">Bixby長按動作</string>
+    <string name="bixby_lock_press">鎖屏Bixby短按動作</string>
+    <string name="bixby_lock_longpress">鎖屏Bixby長按動作</string>
+
+
+    <string name="fingerprint_title">指紋滑動</string>
+    <string name="fingerprint_gesture">指紋滑動手勢</string>
+    <string name="fingerprint_custom">自定義指紋滑動手勢</string>
+    <string name="fingerprint_upglide">指紋鍵上滑手勢</string>
+    <string name="fingerprint_glide">指紋鍵下滑手勢</string>
+
+    <string name="floatball_name">懸浮球</string>
+    <string name="floatball_start">懸浮球啟用</string>
+    <string name="floatball_icon_style">懸浮球 圖標選擇</string>
+    <string name="floatball_size">懸浮球大小</string>
+    <string name="floatball_hide">下滑3秒隱藏懸浮球</string>
+    <string name="floatball_action">懸浮球動作</string>
+    <string name="floatball_click">點擊懸浮球動作</string>
+    <string name="floatball_up">上滑懸浮球動作</string>
+    <string name="floatball_down">下滑懸浮球動作</string>
+    <string name="floatball_left">左滑懸浮球動作</string>
+    <string name="floatball_right">右滑懸浮球動作</string>
+
+    <string name="global_gestures">全局手勢</string>
+    <string name="global_gestures_custom">自定義全局手勢</string>
+    <string name="global_gestures_number_fingers">設置手勢手指數量</string>
+    <string name="global_gestures_screen">屏幕手勢</string>
+    <string name="global_gestures_up">從屏幕上往下滑動手勢</string>
+    <string name="global_gestures_down">從屏幕底部往上滑動手勢</string>
+    <string name="global_gestures_left">從屏幕左側往右滑動手勢</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <include layout="@layout/toolbar_container"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.CardView
+            android:tag="about_cardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="false"
+
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+        <ImageView
+            android:id="@+id/wallpaper_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+/>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/wallpaper_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        card_view:cardUseCompatPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:id="@+id/width_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/width_wallpaper_size"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/height_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/width_edit"
+                android:hint="@string/height_wallpaper_size"
+
+                android:inputType="number" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/select_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="?colorAccent"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                card_view:cardCornerRadius="@dimen/card_view_radius"
+                card_view:cardElevation="@dimen/shadow_height"
+
+                card_view:cardUseCompatPadding="true">
+            <TextView
+
+
+
+                android:layout_gravity="center"
+                android:gravity="center"
+         android:padding="15dp"
+                android:text="选择壁纸"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

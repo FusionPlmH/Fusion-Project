@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"   xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="时间部件" />
+
+    <com.tweaks.leo.preference.MySwitchPreference android:title="锁屏时间部件切换" android:key="leo_tweaks_keyguard_aod_clock"  android:defaultValue="true" android:summaryOn="自定义时钟部件" android:summaryOff="Aod(息屏提醒)时钟部件" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="时间设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="时间显示隐藏" android:key="leo_tweaks_keyguard_clock_display"  android:defaultValue="true" android:summaryOn="已显示" android:summaryOff="已隐藏" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="秒" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="秒显示隐藏" android:key="leo_tweaks_keyguard_second_display"  android:defaultValue="true" android:summaryOn="已显示" android:summaryOff="已隐藏" />
+    </com.tweaks.leo.preference.MyPreferenceCategory>
+   . <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="中国时间细节设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="中国时间细节显示隐藏" android:key="leo_tweaks_keyguard_details_display"  android:dependency="leo_tweaks_keyguard_clock_display" android:defaultValue="true" android:summaryOn="已显示" android:summaryOff="已隐藏" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/clock_details_entries" android:title="时间细节风格" android:key="leo_tweaks_keyguard_clock_details_style"  android:dependency="leo_tweaks_keyguard_details_display" android:defaultValue="0" android:entryValues="@array/clock_details_values" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="日期设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="日期显示隐藏" android:key="leo_tweaks_keyguard_date_display"  android:defaultValue="true" android:summaryOn="已显示" android:summaryOff="已隐藏" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="@string/clock_date_style" android:key="leo_keyguard_date_format" android:dependency="leo_tweaks_keyguard_date_display" android:defaultValue="0" android:entryValues="@array/clock_date_format_entries_values" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="@string/clock_week" android:key="leo_tweaks_keyguard_date_week_disply" android:dependency="leo_tweaks_keyguard_date_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/clock_date_week_entries" android:title="@string/clock_week_style" android:key="leo_tweaks_keyguard_date_week_style" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/clock_date_week_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/date_style_entries" android:title="星期显示位置" android:key="leo_tweaks_keyguard_data_week_orientation" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/date_style_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="分隔符号" android:key="leo_tweaks_keyguard_date_week_symbol" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/symbol_style_values" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="农历设置设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="农历显示隐藏" android:key="leo_tweaks_keyguard_lunar_display"  android:defaultValue="true" android:summaryOn="已显示" android:summaryOff="已隐藏" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/aod_lunar_entries" android:title="农历风格" android:key="leo_tweaks_keyguard_lunar_style"  android:dependency="leo_tweaks_keyguard_lunar_display"  android:defaultValue="0" android:entryValues="@array/aod_lunar_values"   />
+    <com.tweaks.leo.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_keyguard_lunar_display"
+        android:dialogMessage="请输入任意文字或者Emoji表情"
+        android:dialogTitle="自定义农历文本"
+        android:hint="例如：不忘初心"
+        android:key="leo_tweaks_keyguard_date_lunar_string"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="自定义文本" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="允许追加星座显示" android:key="leo_tweaks_keyguard_constellation_display"  android:dependency="leo_tweaks_keyguard_lunar_display" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="星座显示位置" android:key="leo_tweaks_keyguard_constellation_location"  android:dependency="leo_tweaks_keyguard_constellation_display" android:defaultValue="false" android:summaryOn="农历左侧" android:summaryOff="农历右侧" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="分割符号风格"  android:key="leo_tweaks_keyguard_constellation_symbol_style" android:dependency="leo_tweaks_keyguard_constellation_display"  android:defaultValue="0" android:entryValues="@array/symbol_style_values"   />
+
+</com.tweaks.leo.preference.MyPreferenceCategory>
+<com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="大小设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="小时大小（横排）" android:key="leo_tweaks_keyguard_hour_clock_size" android:summary="默认大小:72" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="冒号大小（横排）" android:key="leo_tweaks_keyguard_colon_clock_size" android:summary="默认大小:72" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="分钟大小（横排）" android:key="leo_tweaks_keyguard_min_clock_size" android:summary="默认大小:72" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+        <com.tweaks.leo.preference.MySeekBarPreference android:title="秒大小（横排）" android:key="leo_tweaks_keyguard_second_size" android:summary="默认大小:72" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="小时大小（竖排）" android:key="leo_tweaks_keyguard_clock_hour_vertical_size" android:summary="默认大小:96" android:defaultValue="96" app:minValue="45" app:maxValue="130" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="分钟大小（竖排）" android:key="leo_tweaks_keyguard_clock_min_vertical_size" android:summary="默认大小:96" android:defaultValue="96" app:minValue="45" app:maxValue="130" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="中国时间细节大小" android:key="leo_tweaks_keyguard_datail_clock_size" android:summary="默认大小:14" android:defaultValue="14" app:minValue="10" app:maxValue="30" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="日期大小" android:key="leo_tweaks_keyguard_date_clock_size" android:summary="默认大小:14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="农历大小" android:key="leo_tweaks_keyguard_lunar_clock_size" android:summary="默认大小:14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    </com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="字体设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="小时字体" android:key="leo_tweaks_keyguard_hour_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="分钟字体" android:key="leo_tweaks_keyguard_min_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="秒字体" android:key="leo_tweaks_keyguard_second_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="中国时间细节字体" android:key="leo_tweaks_keyguard_detail_clock_font"   android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="日期字体" android:key="leo_tweaks_keyguard_date_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/font_style_entries" android:title="农历字体" android:key="leo_tweaks_keyguard_lunar_clock_font"   android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="颜色设置" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.tweaks.leo.preference.MySwitchPreference android:title="是否允许自定义颜色" android:key="leo_tweaks_keyguard_clock_color_custom"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="统一设置颜色" android:key="leo_tweaks_keyguard_all_clock_color_enabled"  android:dependency="leo_tweaks_keyguard_clock_color_custom" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="颜色统一设置" android:key="leo_tweaks_keyguard_all_clock_color"   android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="小时颜色" android:key="leo_tweaks_keyguard_hour_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled"   android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="分钟颜色" android:key="leo_tweaks_keyguard_min_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="冒号颜色" android:key="leo_tweaks_keyguard_colon_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+        <com.tweaks.leo.preference.ColorPickerPreference android:title="秒颜色" android:key="leo_tweaks_keyguard_second_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+        <com.tweaks.leo.preference.ColorPickerPreference android:title="中国时间细节颜色" android:key="leo_tweaks_keyguard_datail_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom"  android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="日期颜色" android:key="leo_tweaks_keyguard_date_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa" leo:defaultColor="#fffafafa" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="农历颜色" android:key="leo_tweaks_keyguard_lunar_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    
+</PreferenceScreen>

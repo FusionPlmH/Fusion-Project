@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="splashcolor">#ff00aeff</color>
+   <color name="sem_app_bar_bg_color">#fff2f2f2</color>
+   <color name="sem_app_bar_bg_color_dark">#ff080808</color>
+   <color name="colorPrimaryMain">@color/sem_app_bar_bg_color</color>
+   <color name="colorAccentMain">#ff0074d4</color>
+   <color name="colorPrimaryMainDark">@color/sem_app_bar_bg_color_dark</color>
+   <color name="dark_cardview_bg">#ff292929</color>
+   <color name="colorPrimaryMain_setting">#D81B60</color>
+   <color name="colorAccent_setting">@color/splashcolor</color>
+   <dimen name="button_size">35dip</dimen>
+<color name="colorPrimaryMain_ui">#20b2aa</color>
+</resources>

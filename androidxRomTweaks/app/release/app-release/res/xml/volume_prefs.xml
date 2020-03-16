@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/skip_tracks_category" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/enable_skip_tracks" android:key="MusicSwitch" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/double_tap_skip_tracks" android:key="MusicDoubleSwitch" android:dependency="MusicSwitch" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="2000" android:title="@string/time_skip_tracks" android:key="MusicSeek" android:dependency="MusicSwitch" android:defaultValue="500" android:min="350" salt:interval="50" salt:unitsLeft="" salt:unitsRight="ms" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="1000" android:title="@string/time_dc_skip_tracks" android:key="MusicDoubleSeek" android:dependency="MusicDoubleSwitch" android:defaultValue="500" android:min="100" salt:interval="50" salt:unitsRight="ms" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="MusicVibrationSwitch" android:dependency="MusicSwitch" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="MusicVibrationSeek" android:dependency="MusicVibrationSwitch" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+    <com.leo.salt.preference.SaltSettingCardWarningPreference android:dependency="MusicSwitch" salt:warningString="@string/info_skip_tracks" />
+</PreferenceScreen>

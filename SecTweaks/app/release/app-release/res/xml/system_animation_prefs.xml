@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:extras="SECURE_GLOBAL" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="导航栏高度设置" />
+    <com.leo.salt.preference.MySwitchPreference android:title="设置横屏导航栏高度" android:key="leo_tweaks_global_navbar_landscape_mod" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="横屏导航栏高度" android:key="leo_tweaks_global_navbar_landscape_height" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_global_navbar_landscape_mod" android:defaultValue="45" app:maxValue="75" app:minValue="20" app:unitsValue="sp" />
+    <com.leo.salt.preference.MySwitchPreference android:title="设置竖屏导航栏高度" android:key="leo_tweaks_global_navbar_portrait_mod" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="竖屏导航栏高度" android:key="leo_tweaks_global_navbar_portrait_height" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_global_navbar_portrait_mod" android:defaultValue="45" app:maxValue="75" app:minValue="20" app:unitsValue="sp" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/navigationbar_policy" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/full_screen_options" android:title="@string/policy_control" android:key="policy_control" android:defaultValue="immersive.full" android:entryValues="@array/full_screen_values" extras:isGlobal="true" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <PreferenceCategory android:title="@string/google_services" />
+    <com.leo.salt.preference.MyPreference android:title="@string/google_services_install_yes" android:key="leo_tweaks_google_services" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/system_animation" />
+    <com.leo.salt.preference.GlobalListPreference android:entries="@array/window_animation_scale_entries" android:title="@string/window_animation" android:key="window_animation_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.GlobalListPreference android:entries="@array/window_animation_scale_entries" android:title="@string/transition_animation" android:key="transition_animation_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.GlobalListPreference android:entries="@array/window_animation_scale_entries" android:title="@string/animator_duration" android:key="animator_duration_scale" android:defaultValue="1" android:entryValues="@array/window_animation_scale_values" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <PreferenceCategory android:title="@string/list_grid_other" />
+    <com.leo.salt.preference.MyPreference android:title="@string/tweaks_location" android:key="leo_tweaks_location" android:summary="@string/tweaks_location_summary" />
+    <com.leo.salt.preference.MyPreference android:title="@string/tweaks_wipe" android:key="leo_tweaks_wipe" android:summary="@string/tweaks_wipe_summary" />
+    <com.leo.salt.preference.MyPreference android:title="修复京东淘宝优酷等程序闪退" android:key="leo_apps" />
+</PreferenceScreen>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_root"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/start_contract"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="false"
+        card_view:cardBackgroundColor="?cardBackgroundColor"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            tools:ignore="WebViewLayout">
+            <WebView
+
+                android:id="@+id/HOMEwebView"
+                android:layout_width="match_parent"
+                android:layout_height="630dp" />
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            card_view:cardBackgroundColor="?colorAccent"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/contract_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/contract_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="继续"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rom_splash"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <ImageView android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/rom_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:id="@+id/rom_versions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+</FrameLayout>

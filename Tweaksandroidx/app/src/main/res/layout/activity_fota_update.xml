@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_container"/>
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nestedScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <com.salt.frame.saltview.ShapeTextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center"
+                android:text="@string/fota_system_info"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:radius="25dp"
+                app:openSelector="true"
+                app:strokeColor="@color/material_red_A300"
+                app:strokeWidth="1dp"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/compile_version"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/delta_updates"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/fota_size"
+                    android:visibility="gone"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:text="SecurityPatch"
+                    android:id="@+id/security_patch"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/online_update_log"
+                android:visibility="gone"
+                android:orientation="vertical"
+               >
+                <com.salt.frame.saltview.ShapeTextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:gravity="center"
+                    android:text="@string/fota_last_updated_record"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:radius="25dp"
+                    app:openSelector="true"
+                    app:strokeColor="@color/material_red_A300"
+                    app:strokeWidth="1dp"
+                    />
+                <TextView
+                    android:id="@+id/online_update_json"
+                    android:padding="15dp"
+                    android:textSize="18dp"
+                    android:text=""
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="65dp"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include layout="@layout/fota_update"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

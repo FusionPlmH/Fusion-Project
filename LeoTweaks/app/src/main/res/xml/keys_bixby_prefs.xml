@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="Bixby键动作" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="允许自定义Bixby键动作" android:key="leo_tweaks_hardware_bixby_start" android:defaultValue="false" android:summaryOn="自定义动作" android:summaryOff="系统默认" />
+        <com.tweaks.salt.preference.CardPreferenceBorder  />
+        <com.tweaks.salt.preference.MyPreferenceCategory android:title="短按Bixby" />
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="Bixby键短按动作" android:key="leo_tweaks_hardware_bixby_click"  android:dependency="leo_tweaks_hardware_bixby_start" android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.salt.preference.IntentDialogPreference android:title="短按Bixby键启动程序" android:key="leo_tweaks_hardware_bixby_click_app"  android:dependency="leo_tweaks_hardware_bixby_start" includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_bixby_entries" android:title="Bixby键短按动作(锁屏状态)" android:key="leo_tweaks_hardware_bixby_ls_click"  android:dependency="leo_tweaks_hardware_bixby_start" android:defaultValue="88" android:entryValues="@array/notification_bixby_values" />
+        <com.tweaks.salt.preference.CardPreferenceBorder  />
+        <com.tweaks.salt.preference.MyPreferenceCategory android:title="长按Bixby" />
+        <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="Bixby键长按动作" android:dependency="leo_tweaks_hardware_bixby_start" android:key="leo_tweaks_hardware_bixby_long"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.salt.preference.IntentDialogPreference android:title="长按Bixby键启动程序" android:key="leo_tweaks_hardware_bixby_long_app"  android:dependency="leo_tweaks_hardware_bixby_start" includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_bixby_entries" android:title="Bixby键长按动作(锁屏状态)" android:key="leo_tweaks_hardware_bixby_ls_long"  android:dependency="leo_tweaks_hardware_bixby_start" android:defaultValue="88" android:entryValues="@array/notification_bixby_values" />
+
+
+</PreferenceScreen>

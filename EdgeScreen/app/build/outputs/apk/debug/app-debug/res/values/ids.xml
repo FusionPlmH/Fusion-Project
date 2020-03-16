@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="edge_apps">false</item>
+    <item type="id" name="edge_autostarts">false</item>
+    <item type="id" name="edge_clear">false</item>
+    <item type="id" name="edge_donate">false</item>
+    <item type="id" name="edge_floating">false</item>
+    <item type="id" name="edge_img">false</item>
+    <item type="id" name="edge_leo">false</item>
+    <item type="id" name="edge_minipop">false</item>
+    <item type="id" name="edge_wifi">false</item>
+    <item type="id" name="main_text">false</item>
+    <item type="id" name="title">false</item>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:key="qs_carrier"/>
+    <org.salt.preference.SaltSwitchPreferenceCompat
+        android:title="@string/qs_carrier_string"
+        android:key="panel_carrier_custom"
+        salt:clickStyle="editTextDialog"
+        salt:BroadcastKey="@string/broadcast_panel_carrer"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="panel_carrier_custom_single_enabled"
+        android:title="@string/qs_carrier_dual"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_panel_carrer"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="QSpanelcarriersize"
+        android:title="@string/qs_carrier_size"
+        android:defaultValue="13"
+        android:min="5"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <org.salt.preference.SaltListPreference
+        android:key="carrier_symbol"
+        android:title="@string/qs_carrier_symbol"
+        android:defaultValue="0"
+        android:dependency="panel_carrier_custom_single_enabled"
+        salt:BroadcastKey="@string/broadcast_panel_carrer"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="panel_carrier_font_style"
+        android:title="@string/qs_carrier_font"
+        android:defaultValue="0"
+        salt:BroadcastKey="@string/broadcast_panel_carrer"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/qs_carrier_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xccfafafa"
+        android:summary="0xccfafafa"
+        salt:BroadcastKey="@string/broadcast_panel_carrer"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="panel_carrier_color"/>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt"
+    tools:ignore="ResAuto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/powermenu" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/powermenu_style" android:key="leo_tweaks_powermenu_style"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/powermenu_restart_enabled" android:key="leo_tweaks_powermenu_restart_enabled"  android:dependency="leo_tweaks_powermenu_style" android:defaultValue="false" android:summaryOn="启用后点击重新启用将弹出四键重启菜单" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/powermenu_title_custom" android:key="leo_tweaks_powermenu_title_custom"  android:dependency="leo_tweaks_powermenu_style" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyEditTextPreference
+
+        android:dependency="leo_tweaks_powermenu_title_custom"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_powermenu_title_string"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/powermenu_title_string" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/powermenu_stock" app:reverseDependency="leo_tweaks_powermenu_style">
+    <com.leo.salt.preference.MyPreference android:title="@string/powermenu_stock_bg" android:key="leo_tweaks_powermenu_stock_bg" android:summary="@string/powermenu_stock_bg2"/>
+    </com.leo.salt.preference.MyPreferenceCategory >
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/actionslabel_custom" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionslabel_custom_enable" android:key="leo_tweaks_power_actionslabel_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionslabel_whitecolor" android:key="leo_tweaks_power_actionslabel_whitecolor" android:dependency="leo_tweaks_power_actionslabel_custom_enable" app:reverseDependency="leo_tweaks_power_actionslabel_randomolor" android:summary="#252525"  leo:defaultColor="#252525" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionslabel_blackcolor" android:key="leo_tweaks_power_actionslabel_blackcolor" android:dependency="leo_tweaks_power_actionslabel_custom_enable" app:reverseDependency="leo_tweaks_power_actionslabel_randomolor" android:summary="#fafafa"  leo:defaultColor="#fafafa" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionslabel_randomolor" android:key="leo_tweaks_power_actionslabel_randomolor" android:dependency="leo_tweaks_power_actionslabel_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/actionslabel_size" android:key="leo_tweaks_power_actionslabel_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_power_actionslabel_custom_enable" android:defaultValue="15" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/actionslabel_font" android:key="leo_tweaks_power_actionslabel_font"   android:dependency="leo_tweaks_power_actionslabel_custom_enable" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/actionsstate_custom" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionsstate_custom_enable" android:key="leo_tweaks_power_actionsstate_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionsstate_whitecolor" android:key="leo_tweaks_power_actionsstate_whitecolor" android:dependency="leo_tweaks_power_actionsstate_custom_enable" app:reverseDependency="leo_tweaks_power_actionsstate_randomolor" android:summary="#757575"  leo:defaultColor="#757575" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionsstate_blackcolor" android:key="leo_tweaks_power_actionsstate_blackcolor" android:dependency="leo_tweaks_power_actionsstate_custom_enable" app:reverseDependency="leo_tweaks_power_actionsstate_randomolor" android:summary="#c3c3c3"  leo:defaultColor="#c3c3c3" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionsstate_randomolor" android:key="leo_tweaks_power_actionsstate_randomolor" android:dependency="leo_tweaks_power_actionsstate_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/actionsstate_size" android:key="leo_tweaks_power_actionsstate_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_power_actionsstate_custom_enable" android:defaultValue="13" app:minValue="5" app:maxValue="18" app:unitsValue="dip" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/actionsstate_font" android:key="leo_tweaks_power_actionsstate_font"   android:dependency="leo_tweaks_power_actionsstate_custom_enable" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/actionsdescription_custom" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionsdescription_custom_enable" android:key="leo_tweaks_power_actionsdescription_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionsdescription_whitecolor" android:key="leo_tweaks_power_actionsdescription_whitecolor" android:dependency="leo_tweaks_power_actionsdescription_custom_enable" app:reverseDependency="leo_tweaks_power_actionsdescription_randomolor" android:summary="#757575"  leo:defaultColor="#757575" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/actionsdescription_blackcolor" android:key="leo_tweaks_power_actionsdescription_blackcolor" android:dependency="leo_tweaks_power_actionsdescription_custom_enable" app:reverseDependency="leo_tweaks_power_actionsdescription_randomolor" android:summary="#c3c3c3"  leo:defaultColor="#c3c3c3" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/actionsdescription_randomolor" android:key="leo_tweaks_power_actionsdescription_randomolor" android:dependency="leo_tweaks_power_actionsdescription_custom_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/actionsdescription_size" android:key="leo_tweaks_power_actionsdescription_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_power_actionsdescription_custom_enable" android:defaultValue="13" app:minValue="5" app:maxValue="18" app:unitsValue="dip" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/actionsdescription_font" android:key="leo_tweaks_power_actionsdescription_font"   android:dependency="leo_tweaks_power_actionsdescription_custom_enable" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/powericon_numbe" />
+
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/powericon_number_portrait" android:key="leo_tweaks_powericon_number_portrait" android:summary="@string/seksbar_sumarry" android:defaultValue="2" app:minValue="1" app:maxValue="5" app:unitsValue="" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/powericon_number_landscape" android:key="leo_tweaks_powericon_number_landscape" android:summary="@string/seksbar_sumarry"  android:defaultValue="3" app:minValue="1" app:maxValue="5" app:unitsValue="" />
+
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_emergency" android:key="leo_tweaks_global_actions_emergency" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_restart" android:key="leo_tweaks_global_actions_restart" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_screenshot" android:key="leo_tweaks_global_actions_screenshot" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_quickboot" android:key="leo_tweaks_global_actions_quickboot" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_recovery" android:key="leo_tweaks_global_actions_recovery" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_download" android:key="leo_tweaks_global_actions_download" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_flashlight" android:key="leo_tweaks_global_actions_flashlight" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_outdoor" android:key="leo_tweaks_global_actions_outdoor" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_mipop" android:key="leo_tweaks_global_actions_mipop" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_screenrecord" android:key="leo_tweaks_global_actions_screenrecord" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_airplane" android:key="leo_tweaks_global_actions_airplane" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_wifi" android:key="leo_tweaks_global_actions_wifi" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/app_name" android:key="leo_tweaks_global_actions_tweaks" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_sound" android:key="leo_tweaks_global_actions_sound" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_floating" android:key="leo_tweaks_global_actions_floating" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/global_actions_data" android:key="leo_tweaks_global_actions_data" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="SystemUI" android:key="leo_tweaks_global_actions_SystemUI" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+</PreferenceScreen>

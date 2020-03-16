@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:id="@+id/app_bar"
+        app:elevation="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?colorPrimary" />/>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            >
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/app"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                android:tag="about_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="@dimen/card_view_radius"
+                card_view:cardElevation="@dimen/shadow_height"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor = "#ffff">
+                <TextView
+                    android:padding="15dp"
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="这是由中国FusionLeo团队所开发的内核,适用于三星系列手机\n内核:plmh(中国香港)\n底包:咸鱼\nROM:不咸的盐巴"
+
+                        android:textSize="20dp"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:tag="about_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="@dimen/card_view_radius"
+                card_view:cardElevation="@dimen/shadow_height"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor = "#ffff">
+                <TextView
+                    android:textSize="18dp"
+                    android:padding="15dp"
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="          你可以在这里下载对应你手机型号的FusionLeo内核.这样消耗你的流量,建议你在WLAN模式下使用.无论你当前使用的是什么ROM你都下可以在这里下载到FusionLeo内核并且自动安装到你设备中\n          当然对于某些ROM 我们做出了不兼容限制"
+                    />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation"
+        app:itemIconTint="@color/nav_items_selector"
+        app:itemTextColor="@color/nav_items_selector"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?MainwindowBG" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/thumbnailRadioButton" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/thumbnailImage" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/thumbnailRadioButton" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/thumbnailText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Medium Text" android:layout_centerVertical="true" android:layout_toEndOf="@id/thumbnailImage" />
+</RelativeLayout>

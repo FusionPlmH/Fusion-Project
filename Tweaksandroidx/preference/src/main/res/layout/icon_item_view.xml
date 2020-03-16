@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+
+
+    android:orientation="vertical" >
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dip"
+        >
+    <ImageView
+        android:id="@+id/thumbnailImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter" />
+    <TextView
+        android:id="@+id/thumbnailText"
+        android:text="3"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"/>
+    <RadioButton
+        android:id="@+id/thumbnailRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:clickable="false"
+        android:focusable="false" />
+</LinearLayout>
+</LinearLayout>

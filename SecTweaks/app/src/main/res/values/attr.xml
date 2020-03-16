@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="RamInfo">
+		<attr name="total" format="integer"/>
+		<attr name="free" format="integer"/>
+	</declare-styleable>
+	<attr name="defaultColor" format="string" />
+ <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <!-- RichText -->
+    <declare-styleable name="RichText">
+        <attr name="drawable_src" format="reference" />
+        <attr name="drawable_height" format="dimension" />
+        <attr name="drawable_width" format="dimension" />
+        <attr name="drawable_location">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+	  <!--设置主题-->
+	 <attr name="cardStyle" format="reference" />
+	<attr name="Dialogbackground" format="color" />
+	<attr name="cardtitle" format="color" />
+	<attr name="cardtitlebg" format="color" />
+	<attr name="TextStyle" format="color" />
+	   <attr name="Global_Divider" format="color" />
+	<attr name="appbarlayout" format="color" />
+	  <attr name="cardBackgroundColor" format="color" />
+	<attr name="cardBackgroundheadColor" format="color" />
+	<attr name="BottomNavigationBackground" format="color" />
+	<attr name="MainwindowBG" format="color" />
+	<attr name="navColorSelector" format="color|reference"/>
+	<!-- Dark variant of the primary branding color. By default, this is the color applied to
+   the status bar (via statusBarColor) and navigation bar (via navigationBarColor). -->
+	  <attr name="colorPrimaryDark" format="color" />
+	  <!-- The secondary branding color for the app. -->
+	  <attr name="colorSecondary" format="color" />
+	  <!-- Bright complement to the primary branding color. By default, this is the color applied
+           to framework controls (via colorControlActivated). -->
+	  <attr name="colorAccent" format="color" />
+	   <declare-styleable name="ThumbnailListPreference">
+		  <attr name="drawableArray" format="reference"/>
+		  <attr name="entryList" format="reference"/>
+		  <attr name="entryValuesList" format="reference"/>
+	  </declare-styleable>
+	  <declare-styleable name="MyMultiSelectPreference">
+		  <attr name="multiEntryList" format="reference"/>
+		  <attr name="multiValuesList" format="reference"/>
+	  </declare-styleable>
+
+	  <declare-styleable name="Preference">
+		  <attr name="packageNameToKill" format="string"/>
+		  <attr name="isSilent" format="boolean"/>
+		  <attr name="rebootDevice" format="boolean"/>
+		  <attr name="dependentValue" format="string"/>
+		  <attr name="reverseDependency" format="string"/>
+	  </declare-styleable>
+	  <declare-styleable name="MySeekBarPreference">
+		  <attr name="minValue" format="integer"/>
+		  <attr name="maxValue" format="integer" />
+		  <attr name="unitsValue" format="string"/>
+
+		  <attr name="showPopup" format= "boolean"/>
+	  </declare-styleable>
+
+	  <declare-styleable name="RunScriptPreference">
+		  <attr name="scriptFileName" format="string"/>
+		  <attr name="showConfirmDialog" format="boolean"/>
+		  <attr name="rebootOptions">
+			  <enum name="none" value="0"/>
+			  <enum name="optional" value="1"/>
+			  <enum name="imminent" value="2"/>
+		  </attr>
+	  </declare-styleable>
+	  <declare-styleable name="IntentDialogPreference">
+		  <attr name="intentSeparator" format="string"/>
+		  <attr name="showSearch" format="boolean"/>
+	  </declare-styleable>
+
+	  <declare-styleable name="MultipleChoicePreference">
+		  <attr name="multipleChoiceTitles" format="reference"/>
+		  <attr name="multipleChoiceKeys" format="reference"/>
+		  <attr name="multipleChoiceSummaries" format="reference"/>
+		  <attr name="multipleChoiceDefaults" format="reference"/>
+		  <attr name="showSelectAll" format="boolean"/>
+		  <attr name="choiceSelector">
+			  <enum name="checkbox_selector" value="0"/>
+			  <enum name="switch_selector" value="1"/>
+		  </attr>
+	  </declare-styleable>
+
+
+	  <attr name="topShadow" format="boolean" />
+	  <attr name="bottomShadow" format="boolean" />
+
+</resources>

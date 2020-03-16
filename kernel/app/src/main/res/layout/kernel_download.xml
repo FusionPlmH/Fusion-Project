@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:background="#ffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/colorAccentMain"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView android:layout_width="wrap_content" android:layout_height="54dp"
+                android:id="@+id/download_bar"
+                android:text="@string/download_name" android:textColor="#fff"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:elegantTextHeight="false" android:textSize="18sp"
+                android:layout_toRightOf="@+id/download_back"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/download_back"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:clickable="true"
+                android:onClick="performBack"
+                android:layout_alignBottom="@+id/download_bar"
+                android:src="@mipmap/ic_back" android:padding="10dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/webview_outlink"
+                android:layout_marginEnd="10dp"
+                android:clickable="true" android:onClick="onHelp"
+                android:layout_alignBottom="@+id/download_bar"
+                android:src="@drawable/ic_heip" android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp" android:padding="8dp" android:focusable="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/layout_header"
+        android:gravity="bottom"
+        android:background="@drawable/bg_snow" />
+    <include layout="@layout/download_view"      />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/Item_list"
+        android:layout_above="@+id/DownloadLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/model_name"
+            />
+        <com.leo.fusionleo.kernel.ui.view.OverScrollListView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layoutAnimation="@anim/listview_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:gravity="center"
+            android:id="@+id/listView"
+            android:listSelector="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/DownloadLayout"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/DownlpoadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                 android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/progress_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/progress_bar"
+                android:layout_centerInParent="true"
+
+                android:textColor="#e46c62"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/DownloadLayoutbutton"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <TextView
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:textColor="@drawable/buttoncolor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="0.3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/restart"
+                android:id="@+id/Restart"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="0.3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/Download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textColor="@drawable/buttoncolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_weight="0.3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pause"
+                android:clickable="true"
+                android:textColor="@drawable/buttoncolor"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:text="@string/pause" />
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_weight="0.3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resume"
+                android:clickable="true"
+                android:textColor="@drawable/buttoncolor"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:text="@string/resume" />
+            <TextView
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="0.3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cancel"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/Cancel"
+                android:clickable="true"
+                android:textColor="@drawable/buttoncolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

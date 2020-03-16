@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:key="com.sec.android.app.samsungapps" />
+    <Preference android:key="com.sec.android.app.sbrowser" />
+    <Preference android:key="com.android.printspooler" />
+    <Preference android:key="com.dsi.ant.service.socket" />
+    <Preference android:key="com.samsung.android.allshare.service.fileshare" />
+    <Preference android:key="com.samsung.android.game.gamehome" />
+    <Preference android:key="com.sec.android.app.shealth" />
+</PreferenceScreen>

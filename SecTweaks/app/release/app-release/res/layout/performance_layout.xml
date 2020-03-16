@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="70.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="fill_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="56.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="56.0dip" android:layout_weight="1.0">
+            <com.leo.salt.widget.ProgressBarView android:id="@id/raminfo" android:layout_width="fill_parent" android:layout_height="fill_parent" app:free="3323" app:total="8192" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/clear_ram" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="40.0dip" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RAM" />
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:layout_gravity="center" android:id="@id/raminfo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0MB / 0MB" />
+            </LinearLayout>
+        </FrameLayout>
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:stretchColumns="0,1,2,3" android:shrinkColumns="0,1,2" android:showDividers="beginning">
+            <TableRow android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:id="@id/system" android:background="#22888888" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" android:layout_span="2" />
+                <TextView android:textSize="15.0dip" android:id="@id/cache" android:background="#22888888" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" android:layout_span="2" />
+            </TableRow>
+            <TableRow android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:id="@id/sdfree" android:background="#22888888" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" android:layout_span="2" />
+                <TextView android:textSize="15.0dip" android:id="@id/datafree" android:background="#22888888" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" android:layout_span="2" />
+            </TableRow>
+            <TableRow android:id="@id/powermode_toggles" android:visibility="visible" android:layout_marginBottom="4.0dip">
+                <Button android:textSize="15.0dip" android:textColor="@android:color/white" android:id="@id/btn_powersave" android:background="@color/color_powersave" android:layout_marginLeft="4.0dip" android:text="省电" />
+                <Button android:textColor="@android:color/white" android:id="@id/btn_defaultmode" android:background="@color/color_balance" android:layout_marginLeft="4.0dip" android:text="均衡" />
+                <Button android:textColor="@android:color/white" android:id="@id/btn_gamemode" android:background="@color/color_perf" android:layout_marginLeft="4.0dip" android:text="性能" />
+                <Button android:textColor="@android:color/white" android:id="@id/btn_fastmode" android:background="@color/color_fast" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="极速" />
+            </TableRow>
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/temcontrol" android:background="@color/deep_orangePrimary" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" android:text="111" />
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">leo9.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="weather_state_99">无</string>
+    <string name="servicebox_alarm_next">下一个闹钟</string>
+    <string name="servicebox_alarm_no_alarm">未来 7 天没有闹钟</string>
+</resources>

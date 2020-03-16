@@ -1,0 +1,19 @@
+<resources>
+    <string name="broadcast_stausbar_icon">SALT_UPDATE_STATUSBARICON_SETTINGS</string>
+    <string name="broadcast_lock_carrer">SALT_UPDATE_LOCKCARRIER_SETTINGS</string>
+    <string name="broadcast_battery">SALT_UPDATE_BATTERY_SETTINGS</string>
+    <string name="broadcast_panel_carrer">@string/broadcast_panel</string>
+    <string name="broadcast_panel">SALT_UPDATE_PANEL_SETTINGS</string>
+    <string name="broadcast_qs_clock">SALT_UPDATE_QSDATECLOCK_SETTINGS</string>
+    <string name="broadcast_stausbar">SALT_UPDATE_STATUSBAR_SETTINGS</string>
+    <string name="broadcast_lock_lunar">SALT_UPDATE_LOCKLUNAR_SETTINGS</string>
+    <string name="broadcast_lock_alarm">SALT_UPDATE_LOCKALARM_SETTINGS</string>
+    <string name="broadcast_lock_weather">SALT_UPDATE_LOCKWEATHER_SETTINGS</string>
+    <string name="broadcast_stausbar_gesture">SALT_UPDATE_STATUSBAR_GESTURE_SETTINGS</string>
+    <string name="broadcast_minipop_gesture">SALT_UPDATE_MINIPOP_GESTURE_SETTINGS</string>
+    <string name="broadcast_folat_gesture">SALT_UPDATE_FLOAT_GESTURE_SETTINGS</string>
+    <string name="broadcast_nav_gesture">SALT_UPDATE_NAV_GESTURE_SETTINGS</string>
+    <string name="broadcast_lock_gesture">SALT_UPDATE_LOCK_GESTURE_SETTINGS</string>
+    <string name="broadcast_qs_bar_salt">SALT_UPDATE_QSBAR_SALT_SETTINGS</string>
+    <string name="broadcast_task_salt">SALT_UPDATE_TASKBAR_SETTINGS</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+    android:background="@drawable/card_rimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/ic_jp"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="0.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+            <TextView android:textSize="17.0sp" android:layout_alignParentLeft="true"
+                android:textColor="?android:textColorPrimary" android:id="@android:id/summary" android:paddingLeft="25.0dip"
+                android:fadingEdge="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  />
+            <androidx.appcompat.widget.SwitchCompat  android:layout_alignParentRight="true" android:layout_centerHorizontal="true"
+                android:layout_gravity="center" android:id="@+id/switchWidget" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="18.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

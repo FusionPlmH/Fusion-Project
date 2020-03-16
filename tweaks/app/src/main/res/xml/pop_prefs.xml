@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="屏幕助手" />
+      <com.tweaks.leo.preference.MyCheckBoxPreference android:title="启用屏幕助手" android:key="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="屏幕助手震动回馈" android:key="leo_tweaks_minip_vibrate" android:dependency="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="屏幕助手震动回馈等级" android:key="leo_tweaks_minip_vibration_level" android:dependency="leo_tweaks_minip_vibrate" android:summary="左右滑动调节震动等级" android:defaultValue="70" app:minValue="30" app:maxValue="100" app:unitsValue="" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="HOME键" android:dependency="leo_tweaks_minip_enable">
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="点击HOME键动作" android:key="leo_tweaks_minip_home_action"    android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="HOME键启动程序" android:key="leo_tweaks_minip_home_action_app"   includeSearch="true" setSeparatorString="\###" />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="手电键" android:dependency="leo_tweaks_minip_enable">
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="手电键动作" android:key="leo_tweaks_minip_flashlight_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="手电键启动程序" android:key="leo_tweaks_minip_flashlight_action_app"   includeSearch="true" setSeparatorString="\###" />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="任务键" android:dependency="leo_tweaks_minip_enable">
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="任务键动作" android:key="leo_tweaks_minip_task_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="任务键启动程序" android:key="leo_tweaks_minip_task_action_app"  includeSearch="true" setSeparatorString="\###" />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="返回键" android:dependency="leo_tweaks_minip_enable">
+
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="返回键动作" android:key="leo_tweaks_minip_back_action"   android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="返回键启动程序" android:key="leo_tweaks_minip_back_action_app"   includeSearch="true" setSeparatorString="\###" />
+    </com.tweaks.leo.preference.MyPreferenceCategory>
+</PreferenceScreen>

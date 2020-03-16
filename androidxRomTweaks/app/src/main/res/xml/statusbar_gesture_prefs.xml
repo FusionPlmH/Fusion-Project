@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="vibrator_enabled"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="vibrator_enabled"
+        android:key="vibrator_level"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="longPress_enabled"
+        android:title="@string/statusbar_longpress"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="longPress_enabled"
+        android:key="LongPress"
+        android:title="@string/statusbar_longpress_style"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="slide_enabled"
+        android:title="@string/statusbar_slide"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="slide_enabled"
+        android:key="LeftSlide"
+        android:title="@string/statusbar_left_slide"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="slide_enabled"
+        android:key="RightSlide"
+        android:title="@string/statusbar_right_slide"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+
+
+</PreferenceScreen>

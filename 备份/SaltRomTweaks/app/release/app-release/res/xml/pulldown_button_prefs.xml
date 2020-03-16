@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_button_leo" android:key="qsLeoEnabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/leo_button_entries" android:title="@string/qs_button_leo_click" android:key="qsLeoClick" android:dependency="qsLeoEnabled" android:defaultValue="0" android:entryValues="@array/leo_button_values" />
+    <Preference android:title="@string/qs_button_leo_cleanram_whitelist" android:key="KiilWhite" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_button_leo_collapsepanel" android:key="qsButtonCollapsePanel" android:dependency="qsLeoEnabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_button_setting" android:key="qsSettingEnabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/head_button_entries" android:title="@string/qs_button_setting_click" android:key="qsSettingClick" android:dependency="qsSettingEnabled" android:defaultValue="1" android:entryValues="@array/head_button_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_button_search" android:key="qsSearchEnabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/head_button_entries" android:title="@string/qs_button_search_click" android:key="qsSearchClick" android:dependency="qsSearchEnabled" android:defaultValue="0" android:entryValues="@array/head_button_values" />
+</PreferenceScreen>

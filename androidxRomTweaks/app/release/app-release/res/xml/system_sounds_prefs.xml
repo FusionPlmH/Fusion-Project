@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/usb_sounds" android:key="leo_tweaks_usb_sounds_control" android:summary="ChargingStarted.ogg" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/volume_sounds" android:key="leo_tweaks_volume_sounds_control" android:summary="TW_Volume_control.ogg" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/lowbattery_sounds" android:key="leo_tweaks_lowbattery_sounds_control" android:summary="LowBattery.ogg" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/lock_sounds" android:key="leo_tweaks_lock_sounds_control" android:summary="Lock.ogg" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/unlock_sounds" android:key="leo_tweaks_unlock_sounds_control" android:summary="Unlock.ogg" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/capture_screen_sounds" android:key="leo_tweaks_capture_screen_control" android:summary="Screen_Capture.ogg" android:defaultValue="true" />
+</PreferenceScreen>

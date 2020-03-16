@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GoodLock_entries" />
+    <style name="backup_items" />
+    <style name="battery_bar_entries" />
+    <style name="battery_bar_style_entries" />
+    <style name="battery_model_entries" />
+    <style name="bg_gradient_type_entries" />
+    <style name="bg_three_gradient_model_type_entries" />
+    <style name="bg_type_entries" />
+    <style name="clock_date_display_entries" />
+    <style name="clock_date_format_entries_values" />
+    <style name="clock_date_style_entries" />
+    <style name="clock_date_week_entries" />
+    <style name="clock_details_entries" />
+    <style name="data_usage_style_entries" />
+    <style name="date_style_entries" />
+    <style name="device_info_entries" />
+    <style name="device_orientation_entries" />
+    <style name="device_orientation_values" />
+    <style name="dpi_dialog_items" />
+    <style name="font_style_entries" />
+    <style name="location_service" />
+    <style name="logo_style_entries" />
+    <style name="network_icon_style" />
+    <style name="network_items" />
+    <style name="power_items" />
+    <style name="signal_style" />
+    <style name="status_bar_ampm_entries" />
+    <style name="statusbar_icon_hide_options" />
+    <style name="traffic_state_entries" />
+    <style name="votage_style_entries" />
+    <style name="wifi_style" />
+    <style name="window_animation_scale_entries" />
+    <style name="wipe_entries" />
+</resources>

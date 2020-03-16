@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_container" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/navigation" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.CardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="?cardBackgroundColor" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/warning" android:padding="14.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.leo.salt.tweaks.view.widget.ScrollListView android:layout_gravity="center_horizontal" android:id="@id/thumbnailListView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

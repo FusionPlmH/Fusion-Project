@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="动态隐藏状态栏"/>
+    <org.salt.preference.SaltSwitchPreferenceCompat
+        android:title="@string/hide_nav"
+        android:key="hide_statusbar"
+        salt:clickStyle="sbBlacklist"
+        android:defaultValue="false"
+        android:summaryOn="@string/on" android:summaryOff="@string/off"
+        />
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="信号图标"/>
+    <org.salt.preference.SaltInfoPreference salt:infoTitle="使用帮助"
+        salt:infoMessage="带★的功能需要在设置好点击更新方可生效\n【点击更新】"
+        salt:infoAction="ui"
+        salt:imageBoolean="false"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="SignalLocation"
+
+        android:title="@string/statusbar_signal_orientation"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="Signal5G"
+        android:title="@string/g5"
+        android:defaultValue="false"
+        salt:reverseDependency="statusbar_signal_enabled"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="Signal5GStyle"
+        salt:reverseDependency="statusbar_signal_enabled"
+        android:title="@string/icon_5g_syule"
+        android:defaultValue="false"
+        android:summaryOn="@string/icon_5g_syulee"
+        android:dependency="Signal5G"
+        android:summaryOff="@string/icon_5g_syulele" />
+
+
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_signal_wifi_enabled"
+        android:title="@string/statusbar_signal_wifi_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="SALT_UPDATE_STATUSBARICON_SETTINGS"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltIconListPreference
+        android:dependency="statusbar_signal_wifi_enabled"
+        android:title="@string/statusbar_signal_wifi_style"
+        salt:BroadcastKey="SALT_UPDATE_STATUSBARICON_SETTINGS"
+        android:key="statusbar_signal_wifi_style"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="1"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_signal_enabled"
+        android:title="@string/statusbar_signal_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="SALT_UPDATE_STATUSBARICON_SETTINGS"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltIconListPreference
+        android:dependency="statusbar_signal_enabled"
+        android:title="@string/statusbar_signal_style"
+        salt:BroadcastKey="SALT_UPDATE_STATUSBARICON_SETTINGS"
+        android:key="statusbar_signal_style"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="15"
+        />
+
+    <org.salt.preference.SaltMultiSelectPreference android:title="@string/statusbar_icon_hide"
+        android:key="icon_blacklist" android:defaultValue="rotate,headset"
+        salt:multiEntryList="@array/statusbar_icon_entries"
+        salt:multiValuesList="@array/statusbar_icon_values"
+        salt:modeSettings="2"
+        />
+
+</androidx.preference.PreferenceScreen>

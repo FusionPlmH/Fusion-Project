@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">WeatherService</string>
+    <string name="weather_state_00">Sunny</string>
+    <string name="weather_state_00_night">Clear</string>
+    <string name="weather_state_01">Cloudy</string>
+    <string name="weather_state_02">Overcast</string>
+    <string name="weather_state_03">Shower</string>
+    <string name="weather_state_04">Thundershower</string>
+    <string name="weather_state_05">Thundershower with hail</string>
+    <string name="weather_state_06">Sleet</string>
+    <string name="weather_state_07">Light rain</string>
+    <string name="weather_state_08">Moderate rain</string>
+    <string name="weather_state_09">Heavy rain</string>
+    <string name="weather_state_10">Storm</string>
+    <string name="weather_state_11">Heavy storm</string>
+    <string name="weather_state_12">Severe storm</string>
+    <string name="weather_state_13">Snow flurry</string>
+    <string name="weather_state_14">Light snow</string>
+    <string name="weather_state_15">Moderate snow</string>
+    <string name="weather_state_16">Heavy snow</string>
+    <string name="weather_state_17">Snowstorm</string>
+    <string name="weather_state_18">Foggy</string>
+    <string name="weather_state_19">Ice rain</string>
+    <string name="weather_state_20">Duststorm</string>
+    <string name="weather_state_21">Light to moderate rain</string>
+    <string name="weather_state_22">Moderate to heavy rain</string>
+    <string name="weather_state_23">Heavy rain to storm</string>
+    <string name="weather_state_24">Storm to heavy storm</string>
+    <string name="weather_state_25">Heavy to severe storm</string>
+    <string name="weather_state_26">Light to moderate snow</string>
+    <string name="weather_state_27">Moderate to heavy snow</string>
+    <string name="weather_state_28">Heavy snow to snowstorm</string>
+    <string name="weather_state_29">Dust</string>
+    <string name="weather_state_30">Sand</string>
+    <string name="weather_state_301">Rain</string>
+    <string name="weather_state_302">Snow</string>
+    <string name="weather_state_31">Sandstorm</string>
+    <string name="weather_state_32">Dense Foggy</string>
+    <string name="weather_state_33">Snow</string>
+    <string name="weather_state_49">Strong dense foggy</string>
+    <string name="weather_state_53">Haze</string>
+    <string name="weather_state_54">Moderate haze</string>
+    <string name="weather_state_55">Heavy haze</string>
+    <string name="weather_state_56">Severe haze</string>
+    <string name="weather_state_57">Heavy foggy</string>
+    <string name="weather_state_58">Extra-strong dense foggy</string>
+    <string name="weather_state_99">Unknown</string>
+    <string name="aqi_moderate">good </string>
+         <string name="aqi_dust_good"> excellent </string>
+         <string name="aqi_hazardous">Severe pollution </string>
+         <string name="aqi_unhealthy">moderate pollution</string>
+         <string name="aqi_unhealthy_for_sensitive_groups">light pollution</string>
+         <string name="aqi_very_unhealthy">severe pollution</string>
+         <string name="real_feel_temp">somatosensory temperature </string>
+
+	<array name="leo_reboot_name">
+        <item>@string/hitomi_power_menu_restart</item>
+        <item>@string/hitomi_power_menu_quick_reboot</item>
+        <item>@string/hitomi_power_menu_recovery</item>
+        <item>@string/hitomi_power_menu_download</item>
+    </array>
+    <string name="hitomi_power_menu_airplane">airplane mode</string>
+    <string name="hitomi_power_menu_download">download mode</string>
+    <string name="hitomi_power_menu_flashlight">flashlight</string>
+    <string name="hitomi_power_menu_floating">floating ball</string>
+    <string name="hitomi_power_menu_leo">Leo power menu</string>
+    <string name="hitomi_power_menu_mipop">Screen Assistant</string>
+    <string name="hitomi_power_menu_mobiledata">mobile data</string>
+    <string name="hitomi_power_menu_name">Hitomi power menu</string>
+    <string name="hitomi_power_menu_outdoors">outdoor mode</string>
+    <string name="hitomi_power_menu_quick_reboot">Quick restart</string>
+    <string name="hitomi_power_menu_recovery">recovery mode</string>
+    <string name="hitomi_power_menu_restart">restart</string>
+    <string name="hitomi_power_menu_screenrecord">screen recording</string>
+    <string name="hitomi_power_menu_screenshot">screenshot</string>
+    <string name="hitomi_power_menu_shutdown">Shutdown</string>
+    <string name="hitomi_power_menu_sound">sound mode</string>
+    <string name="hitomi_power_menu_wifi">wifi mode</string>
+    <string name="hitomi_power_menu_vibration">vibration mode</string>
+    <string name="hitomi_power_menu_silence">silent mode</string>
+    <string name="hitomi_power_menu_ui">restart UI</string>
+    <string name="leo_device_info_leodate">EEE, aHH:mm</string>
+    <string name="leo_device_info_date">MM-dd,EEE, aHH:mm</string>
+    <string name="leo_device_info_wifi_no">WIFI is not connected</string>
+    <string name="leo_device_info_wifi_signal">Signal:</string>
+    <string name="leo_device_info_alarm_no">Alarm not set</string>
+    <string name="leo_device_null">NO</string>
+</resources>

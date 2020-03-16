@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_networkspeed" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/traffic_state_entries" android:title="@string/network_traffic_state" android:key="leo_tweaks_statusbar_network_traffic_state" android:defaultValue="0" android:entryValues="@array/traffic_state_values" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="@string/network_traffic_position" android:key="leo_tweaks_statusbar_network_traffic_position" android:defaultValue="0" android:entryValues="@array/statusbar_view_position_values" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_auto" android:key="leo_tweaks_statusbar_network_traffic_auto" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_unit" android:key="leo_tweaks_statusbar_network_traffic_unit" android:defaultValue="false" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/network_traffic_frequency_entries" android:title="@string/network_traffic_interval" android:key="leo_tweaks_statusbar_network_traffic_interval" android:defaultValue="500" android:entryValues="@array/network_traffic_frequency_values" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/network_arrow" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_text" android:key="leo_tweaks_statusbar_network_traffic_text" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_arrow" android:key="leo_tweaks_statusbar_network_traffic_arrow" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_arrow_location" android:key="leo_tweaks_statusbar_network_traffic_arrow_location" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+    <com.leo.salt.preference.DrawableListPreference android:title="@string/network_traffic_icon" android:key="leo_tweaks_statusbar_network_traffic_icon" android:summary="@string/select_icon" android:dependency="leo_tweaks_statusbar_network_traffic_arrow" android:defaultValue="0" app:drawableArray="@array/network_icon_drawables" app:entryList="@array/network_icon_style" app:entryValuesList="@array/network_icon_values" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/text_set" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/single_off" android:key="leo_tweaks_statusbar_network_traffic_single" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/network_traffic_multi_size" android:key="leo_tweaks_statusbar_network_traffic_multi_size" android:summary="@string/seksbar_sumarry" android:defaultValue="10" app:maxValue="10" app:minValue="5" app:unitsValue="dip" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_statusbar_network_traffic_font_style" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/network_color" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_custom_color" android:key="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/network_traffic_all_color_enabled" android:key="leo_tweaks_statusbar_network_traffic_all_color_enabled" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/network_traffic_all_color" android:key="leo_tweaks_statusbar_network_traffic_all_color" android:summary="@string/default_colors" android:dependency="leo_tweaks_statusbar_network_traffic_all_color_enabled" leo:defaultColor="@color/status_bar_default_colors" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_statusbar_network_traffic_random_color" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/random_color_summary" app:reverseDependency="leo_tweaks_statusbar_network_traffic_all_color_enabled" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/network_traffic_color" android:key="leo_tweaks_statusbar_network_traffic_color" android:summary="@string/default_colors" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" leo:defaultColor="@color/status_bar_default_colors" app:reverseDependency="leo_tweaks_statusbar_network_traffic_random_color" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/network_traffic_icon_color" android:key="leo_tweaks_statusbar_network_traffic_icon_color" android:summary="@string/default_colors" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" leo:defaultColor="@color/status_bar_default_colors" app:reverseDependency="leo_tweaks_statusbar_network_traffic_random_color" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+</PreferenceScreen>

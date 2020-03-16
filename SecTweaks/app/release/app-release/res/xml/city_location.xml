@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="短信归属地" />
+    <com.leo.salt.preference.MySwitchPreference android:title="禁用短信归属地" android:key="leo_tweaks_mms_city_display" android:defaultValue="0" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="短信归属地文本大小" android:key="leo_tweaks_mms_city_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:maxValue="18" app:minValue="8" app:unitsValue=" dp" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="归属地字体设置" android:key="leo_tweaks_mms_city_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_pop" />
+    <com.leo.salt.preference.MyCheckBoxPreference android:title="@string/minip_enable" android:key="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_minip_vibrate" android:dependency="leo_tweaks_minip_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_minip_vibration_level" android:summary="@string/vibrator_level_summary" android:dependency="leo_tweaks_minip_vibrate" android:defaultValue="10" app:maxValue="100" app:minValue="5" app:unitsValue="" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/home_action" android:dependency="leo_tweaks_minip_enable">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/minip_home_action" android:key="leo_tweaks_minip_home_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/minip_home_action_app" android:key="leo_tweaks_minip_home_action_app" includeSearch="true" setSeparatorString="\###" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/flashlight_action" android:dependency="leo_tweaks_minip_enable">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/minip_flashlight_action" android:key="leo_tweaks_minip_flashlight_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/minip_flashlight_action_app" android:key="leo_tweaks_minip_flashlight_action_app" includeSearch="true" setSeparatorString="\###" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/task_action" android:dependency="leo_tweaks_minip_enable">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/minip_task_action" android:key="leo_tweaks_minip_task_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/minip_task_action_app" android:key="leo_tweaks_minip_task_action_app" includeSearch="true" setSeparatorString="\###" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/back_action" android:dependency="leo_tweaks_minip_enable">
+        <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/minip_back_action" android:key="leo_tweaks_minip_back_action" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+        <com.leo.salt.preference.IntentDialogPreference android:title="@string/minip_back_action_app" android:key="leo_tweaks_minip_back_action_app" includeSearch="true" setSeparatorString="\###" />
+    </com.leo.salt.preference.MyPreferenceCategory>
+</PreferenceScreen>

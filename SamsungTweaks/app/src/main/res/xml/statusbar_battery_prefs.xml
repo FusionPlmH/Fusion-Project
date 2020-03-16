@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/tabs_battery" android:selectable="false" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/battery_model_entries" android:title="@string/main_battery" android:key="main_battery" android:defaultValue="0" android:entryValues="@array/battery_model_values"  />
+    <com.fusionleo.salt.preference.CustomBatteryPreference android:title="@string/custombattery_preference" android:key="custombattery_preference" android:summary="@string/custombattery_preference_sumarry" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/battery_percentage" android:key="display_battery_percentage"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/disable_stock_battery_icon" android:key="leo_tweaks_disable_stock_battery_icon"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/battery_color" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/battery_allow_standby_charge" android:key="leo_tweaks_battery_allow_standby_charge"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_battery_random_color"  android:dependency="leo_tweaks_battery_allow_standby_charge" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/battery_standby_color" android:key="leo_tweaks_battery_standby_color"  app:reverseDependency="leo_tweaks_battery_random_color" android:dependency="leo_tweaks_battery_allow_standby_charge" android:summary="@string/transparency_color"   leo:defaultColor="#00000000" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/battery_text_standby_color" android:key="leo_tweaks_battery_text_standby_color"   app:reverseDependency="leo_tweaks_battery_random_color" android:dependency="leo_tweaks_battery_allow_standby_charge" android:summary="@string/white_color"   leo:defaultColor="#FFFFFFFF" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/battery_text_title" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/battery_text_size" android:key="leo_tweaks_battery_text_size"  android:summary="@string/seek_summary" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/battery_icon_size" android:key="leo_tweaks_battery_icon_size"  android:summary="@string/seek_summary" android:defaultValue="60" app:minValue="20" app:maxValue="85" app:unitsValue="sp" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_battery_text_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</PreferenceScreen>

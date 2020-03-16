@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<resources>
+    <string-array name="hidden_icons_values">
+        <item>rotate</item>
+        <item>ims_volte</item>
+        <item>ims_volte2</item>
+        <item>alarm_clock</item>
+        <item>mobile</item>
+        <item>clock</item>
+        <item>power_saver</item>
+        <item>airplane</item>
+        <item>headset</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>bluetooth</item>
+        <item>nfc_on</item>
+        <item>battery</item>
+        <item>cast</item>
+
+    </string-array>
+    <string-array name="hidden_icons_options">
+        <item>状态栏屏幕旋转图标</item>
+        <item>状态栏卡1HD图标</item>
+        <item>状态栏卡2HD图标</item>
+        <item>状态栏闹钟图标</item>
+        <item>状态栏移动信号</item>
+        <item>锁屏状态栏时间</item>
+        <item>状态栏省电模式图标</item>
+        <item>状态栏飞行模式</item>
+        <item>状态栏耳机</item>
+        <item>状态栏声音</item>
+        <item>状态栏WIFI图标</item>
+        <item>状态栏蓝牙图标</item>
+        <item>状态栏NFC图标</item>
+        <item>状态栏电池图标(仅官方电池有效)</item>
+        <item>状态栏投射图标</item>
+
+    </string-array>
+
+    <string-array name="backup_restore_items">
+        <item>Backup data</item>
+        <item>Restore data</item>
+    </string-array>
+</resources>

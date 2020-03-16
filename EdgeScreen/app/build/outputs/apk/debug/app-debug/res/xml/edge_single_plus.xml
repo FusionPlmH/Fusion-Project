@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider cocktailWidth="550" description="@string/description_edge_single_plus" label="@string/edge_single_plus_name" previewImage="@drawable/apps_edge_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

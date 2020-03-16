@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="15.0sp" android:textColor="@color/mq_form_et_textColor" android:gravity="center_vertical" android:id="@id/rb_evaluate_good" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" android:drawableRight="@drawable/mq_selector_radio_btn" android:drawablePadding="@dimen/mq_textSize_level1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

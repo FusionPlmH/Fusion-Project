@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/colorPrimaryMain</item>
+        <item name="android:listDivider">@color/colorPrimaryMain</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.Light.PopupMenu</item>
+
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryMain</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="@android:style/Widget.Material.Light.PopupMenu.Overflow" />
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+                     <!--进入一个Acitvity包括两部分，当前Activity退出动画，下个个Activity进入动画-->
+               <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+               <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+
+          </style>
+    <style name="DialogStyleLight" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+    <style name="DialogTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" >
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?colorAccent</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+</resources>

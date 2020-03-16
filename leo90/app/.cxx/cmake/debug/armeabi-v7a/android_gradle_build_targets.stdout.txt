@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\AndroidTools\code\leo90\app\.cxx\cmake\debug\armeabi-v7a'
+ninja: no work to do.

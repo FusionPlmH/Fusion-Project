@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="滑动手势" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="三指下滑手势震动回馈" android:key="leo_tweaks_three_finger_gesture_vibrator_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="震动回馈等级" android:key="leo_tweaks_three_finger_gesture_vibrator_level" android:dependency="leo_tweaks_three_finger_gesture_vibrator_enable" android:summary="左右滑动调节震动等级" android:defaultValue="70" app:minValue="30" app:maxValue="100" app:unitsValue="" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="三指下滑手势" android:key="leo_tweaks_three_finger_gesture" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="三指手势动作" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="三指下滑手势动作" android:key="leo_tweaks_three_finger_gesture_action"  android:defaultValue="112" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.salt.preference.IntentDialogPreference android:title="三指下滑手势启动程序" android:key="leo_tweaks_three_finger_gesture_app"  includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_title" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/bixby_custom" android:key="global_bixby_action_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_category_title" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/bixby_press" android:key="bixby_click" android:dependency="global_bixby_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/bixby_longpress" android:key="bixby_longpress" android:dependency="global_bixby_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/bixby_lock_category_title" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_keyguard_entries" android:title="@string/bixby_lock_press" android:key="keyguard_bixby_click" android:dependency="global_bixby_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_keyguard_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_keyguard_entries" android:title="@string/bixby_lock_longpress" android:key="keyguard_bixby_longpress" android:dependency="global_bixby_action_enable" android:defaultValue="0" android:entryValues="@array/global_action_keyguard_values" />
+</PreferenceScreen>

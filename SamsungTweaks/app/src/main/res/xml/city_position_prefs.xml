@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/locate_color" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/locate_color_enabled" android:key="leo_tweaks_locate_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/call_log_position_color" android:key="leo_tweaks_call_log_position_color" android:summary="@string/locate_color_default"  leo:defaultColor="\#ff979797" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/mms_position_color" android:key="leo_tweaks_mms_position_color" android:summary="@string/locate_color_default"  leo:defaultColor="\#ff979797" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/dialing_locate_color" android:key="leo_tweaks_dialing_locate_color" android:summary="@string/locate_color_default"  leo:defaultColor="\#ff979797" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/mms_city" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/mms_position" android:key="leo_tweaks_mms_position" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_position_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/mms_position_size" android:key="leo_tweaks_mms_position_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/mms_date" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_date_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/mms_date_size" android:key="leo_tweaks_mms_date_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/mms_date_color" android:key="leo_tweaks_mms_date_color" android:summary="@string/locate_color_default" leo:defaultColor="\#ff979797" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/mms_content" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_content_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/mms_content_size" android:key="leo_tweaks_mms_content_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/mms_content_color" android:key="leo_tweaks_mms_content_color" android:summary="@string/locate_color_default"  leo:defaultColor="\#ff979797" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/mms_avatar" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_mms_avatar_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/mms_avatar_size" android:key="leo_tweaks_mms_avatar_size" android:summary="@string/seksbar_sumarry" android:defaultValue="17" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/mms_avatar_color" android:key="leo_tweaks_mms_avatar_color" android:summary="@string/black_color"  leo:defaultColor="\#ff252525" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/call_log" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/call_log_position" android:key="leo_tweaks_call_log_position" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/dialing_locate_data" android:key="leo_tweaks_call_log_position_data_style" android:defaultValue="false" android:summaryOn="@string/locate_data_tencent" android:summaryOff="@string/locate_data_local" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_call_log_position_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/call_log_position_size" android:key="leo_tweaks_call_log_position_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="dip" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/dialing_locate" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/dialing_locate_enabled" android:key="leo_tweaks_dialing_locate_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/dialing_locate_data" android:key="leo_tweaks_dialing_locate_data" android:defaultValue="false" android:summaryOn="@string/locate_data_local" android:summaryOff="@string/locate_data_tencent" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_dialing_locate_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/dialing_locate_size" android:key="leo_tweaks_dialing_locate_size" android:summary="@string/seksbar_sumarry" android:defaultValue="12" app:maxValue="18" app:minValue="5" app:unitsValue="dip" />
+</PreferenceScreen>

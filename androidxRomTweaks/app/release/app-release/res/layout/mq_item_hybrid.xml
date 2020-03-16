@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="8.0dip" style="@style/MQWrapWrap.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meiqia.meiqiasdk.widget.MQImageView android:id="@id/iv_robot_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/mq_ic_holder_avatar" app:mq_iv_isCircle="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_robot_container" android:background="@drawable/mq_bg_msg_left" android:layout_width="240.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

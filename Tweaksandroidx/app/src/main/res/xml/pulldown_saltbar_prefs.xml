@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="下拉Leo模块设定"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:title="启用Leo模块"
+        android:key="SaltBarEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="右侧按钮设置" android:dependency="SaltBarEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:title="启动右侧按钮"
+        android:key="SaltBarEndEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:title="点击右侧按钮时关闭下拉"
+        android:key="SaltBarEndCollapsePanel"
+        android:defaultValue="true"
+        android:dependency="SaltBarEndEnabled"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:key="SaltBarEndAction"
+        android:title="右侧按钮点击事件"
+        android:defaultValue="0"
+        android:dependency="SaltBarEndEnabled"
+        android:entryValues="@array/qs_action_values"
+        android:entries="@array/qs_action_entries"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="左侧按钮设置"  android:dependency="SaltBarEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:title="启动左侧按钮"
+        android:key="SaltBarStartEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:title="点击左侧按钮时关闭下拉"
+        android:key="SaltBarStartCollapsePanel"
+        android:defaultValue="true"
+        android:dependency="SaltBarEndEnabled"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:key="SaltBarStartAction"
+        android:title="左侧按钮点击事件"
+        android:defaultValue="1"
+        android:dependency="SaltBarStartEnabled"
+        android:entryValues="@array/qs_action_values"
+        android:entries="@array/qs_action_entries"
+        />
+</org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="设备信息设置"  android:dependency="SaltBarEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:title="显示设备信息"
+        android:key="SaltBarInfoEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+        android:title="设备信息列表" android:key="SaltBarInfoStyle"
+        android:defaultValue="4"
+        android:dependency="SaltBarInfoEnabled"
+        android:entryValues="@array/deviceinfo_style_values"
+        android:entries="@array/deviceinfo_style_entries"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="SaltBarInfoSize"
+        android:title="设备信息字体大小"
+        android:defaultValue="14"
+        android:min="5"
+        android:max="18"
+        android:dependency="SaltBarInfoEnabled"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp" />
+    <org.salt.preference.SaltListPreference
+        android:key="SaltBarInfoFont"
+        android:title="设备信息字体"
+        android:defaultValue="0"
+        android:dependency="SaltBarInfoEnabled"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+</org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="颜色设置"  android:dependency="SaltBarEnabled">
+    <org.salt.preference.SaltSwitchPreference
+        android:title="自定义颜色"
+        android:key="SaltBarColorEnabled"
+        android:defaultValue="true"
+        salt:BroadcastKey="@string/broadcast_panel"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="自定义设备信息颜色"
+        salt:lightnessSlider="true"
+        android:dependency="SaltBarColorEnabled"
+        android:defaultValue="@color/qsbar_color"
+        android:summary="@color/qsbar_color"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="SaltBarInfoColor"/>
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="自定义右侧按钮颜色"
+        salt:lightnessSlider="true"
+        android:dependency="SaltBarColorEnabled"
+        android:defaultValue="@color/qsbar_color"
+        android:summary="@color/qsbar_color"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="SaltBarEndActionColor"/>
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="自定义左侧按钮颜色"
+        salt:lightnessSlider="true"
+        android:dependency="SaltBarColorEnabled"
+        android:defaultValue="@color/qsbar_color"
+        android:summary="@color/qsbar_color"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="SaltBarStartActionColor"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

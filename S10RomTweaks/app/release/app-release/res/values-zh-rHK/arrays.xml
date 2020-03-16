@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="China">
+        <item>北  京</item>
+        <item>天  津</item>
+        <item>河  北</item>
+        <item>山  西</item>
+        <item>內蒙古</item>
+        <item>遼  寧</item>
+        <item>吉  林</item>
+        <item>黑龍江</item>
+        <item>上  海</item>
+        <item>江  蘇</item>
+        <item>浙  江</item>
+        <item>安  徽</item>
+        <item>福  建</item>
+        <item>江  西</item>
+        <item>山  東</item>
+        <item>河  南</item>
+        <item>湖  北</item>
+        <item>湖  南</item>
+        <item>廣  東</item>
+        <item>廣  西</item>
+        <item>海  南</item>
+        <item>重  慶</item>
+        <item>四  川</item>
+        <item>貴  州</item>
+        <item>雲  南</item>
+        <item>西  藏</item>
+        <item>陝  西</item>
+        <item>甘  肅</item>
+        <item>青  海</item>
+        <item>寧  夏</item>
+        <item>新  疆</item>
+        <item>台  灣</item>
+        <item>香  港</item>
+        <item>澳  門</item>
+    </string-array>
+    <string-array name="am_pm_entries">
+        <item>禁用</item>
+        <item>小號AM/PM</item>
+        <item>正常AM/PM</item>
+    </string-array>
+    <string-array name="bg_gradient_type_entries">
+        <item>由上至下漸變</item>
+        <item>由下至上漸變</item>
+        <item>由左至右漸變</item>
+        <item>由右至左漸變</item>
+        <item>由右下角至往左上角漸變</item>
+        <item>由左下角至右上角漸變</item>
+        <item>由左上角至右下角漸變</item>
+        <item>由右上角至左下角漸變</item>
+    </string-array>
+    <string-array name="bg_three_gradient_model_type_entries">
+        <item>線性漸變</item>
+        <item>放射漸變</item>
+        <item>掃描漸變</item>
+    </string-array>
+    <string-array name="clockdate_click_options">
+        <item>時間日期設置</item>
+        <item>鬧鐘列表</item>
+        <item>設置鬧鐘</item>
+        <item>定時器</item>
+        <item>日曆</item>
+        <item>@string/global_action_apps</item>
+        <item>@string/global_action_shortcut</item>
+    </string-array>
+    <string-array name="data_usage_style_entries">
+        <item>左</item>
+        <item>中</item>
+        <item>右</item>
+    </string-array>
+    <string-array name="date_en_entries">
+        <item>默認</item>
+        <item>小寫字母</item>
+        <item>大寫字母</item>
+    </string-array>
+    <string-array name="date_entries">
+        <item>禁用</item>
+        <item>小號日期</item>
+        <item>正常日期</item>
+    </string-array>
+    <string-array name="date_location_entries">
+        <item>時間左側</item>
+        <item>時間右側</item>
+    </string-array>
+    <string-array name="date_show_summaries">
+        <item>顯示隱藏下拉日期</item>
+        <item>顯示隱藏下拉展開後的日期</item>
+    </string-array>
+    <string-array name="date_show_titles">
+        <item>日期顯示</item>
+        <item>展開日期顯示</item>
+    </string-array>
+    <string-array name="date_week_entries">
+        <item>系統默認</item>
+        <item>星期一</item>
+        <item>禮拜一</item>
+        <item>一</item>
+        <item>曜日記法星期格式</item>
+        <item>古巴比倫星期格式</item>
+    </string-array>
+    <string-array name="detail_entries">
+        <item>12時辰:辰時,卯時,酉時等</item>
+        <item>12時段:上午,下午,傍晚等</item>
+        <item>五更:一更,二更,三更等</item>
+        <item>四季:春夏秋冬</item>
+        <item>12星座</item>
+        <item>中國農曆</item>
+        <item>一年中的今天</item>
+        <item>自定義文本</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_entries">
+        <item>隱藏</item>
+        <item>顯示在通知欄底部</item>
+        <item>顯示在通知欄頂部</item>
+    </string-array>
+    <string-array name="deviceinfo_show_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="deviceinfo_style_entries">
+        <item>品牌型號信息</item>
+        <item>安卓版本</item>
+        <item>編譯編號</item>
+        <item>WLAN信息</item>
+        <item>溫度信息</item>
+        <item>存儲信息</item>
+        <item>下一個鬧鐘</item>
+        <item>CPU 型號</item>
+        <item>CPU 使用率</item>
+        <item>CPU Mhz</item>
+        <item>CPU 核心數與位數</item>
+        <item>GPU 型號</item>
+        <item>GPU 使用率</item>
+        <item>GPU Mhz</item>
+        <item>電池電量</item>
+        <item>電池電壓與電流</item>
+    </string-array>
+    <string-array name="edge_list_name">
+        <item>應用程序管理</item>
+        <item>本地WLAN密碼查看</item>
+        <item>@string/app_name</item>
+        <item>一鍵清理</item>
+        <item>一鍵鎖屏</item>
+        <item>支付寶掃一掃</item>
+        <item>微信掃一掃</item>
+        <item>FusionLeo內核</item>
+    </string-array>
+    <string-array name="font_style_entries">
+        <item>系統默認</item>
+        <item>sans-serif</item>
+        <item>sans-serif (斜體)</item>
+        <item>sans-serif (粗體)</item>
+        <item>sec-roboto-light</item>
+        <item>sec-roboto-light (斜體)</item>
+        <item>sec-roboto-light (粗體)</item>
+        <item>sec-roboto-light (粗斜體)</item>
+        <item>sans-serif-light</item>
+        <item>sans-serif-light (斜體)</item>
+        <item>sans-serif-thin</item>
+        <item>sans-serif-thin (斜體)</item>
+        <item>sans-serif-condensed</item>
+        <item>sans-serif-condensed (斜體)</item>
+        <item>sans-serif-condensed-light</item>
+        <item>sans-serif-condensed-light (斜體)</item>
+        <item>sans-serif-condensed (粗體)</item>
+        <item>sans-serif-condensed (粗斜體)</item>
+        <item>sans-serif-medium</item>
+        <item>sans-serif-medium (斜體)</item>
+        <item>sans-serif-black</item>
+        <item>sans-serif-black (斜體)</item>
+        <item>鐘齊吳嘉手寫字體</item>
+        <item>漢儀趙麗穎字體</item>
+        <item>羿創追愛字體</item>
+        <item>漢儀黑仔字體</item>
+        <item>迷你娃娃篆字體</item>
+        <item>Calista字體</item>
+        <item>立體行楷字體</item>
+        <item>牡丹字體</item>
+        <item>方正楷體</item>
+        <item>方正硬筆楷字體</item>
+        <item>漢語拼音字體</item>
+        <item>華康少女字體</item>
+        <item>Alibaba-PuHuiTi-Medium</item>
+    </string-array>
+    <string-array name="head_button_entries">
+        <item>搜索</item>
+        <item>設定</item>
+        <item>狀態欄設置</item>
+        <item>電源菜單</item>
+    </string-array>
+    <string-array name="home_effect_entries">
+        <item>桌面特效 ①</item>
+        <item>桌面特效 ②</item>
+        <item>桌面特效 ③</item>
+        <item>桌面特效 ④</item>
+        <item>桌面特效 ⑤</item>
+        <item>桌面特效 ⑥</item>
+        <item>桌面特效 ⑦</item>
+        <item>桌面特效 ⑧</item>
+        <item>桌面特效 ⑨</item>
+        <item>桌面特效 ⑩</item>
+        <item>桌面特效 ⑪</item>
+        <item>桌面特效 ⑫</item>
+        <item>桌面特效 ⑬</item>
+    </string-array>
+    <string-array name="leo_button_entries">
+        <item>@string/app_name</item>
+        <item>清除通知</item>
+        <item>清理內存</item>
+    </string-array>
+    <string-array name="lunar_setyle_options">
+        <item>默認</item>
+        <item>生肖農曆</item>
+        <item>干支生肖農曆</item>
+        <item>干支生肖24節氣陽曆節日</item>
+        <item>干支生肖24節氣農曆</item>
+        <item>干支生肖24節氣節日農曆</item>
+    </string-array>
+    <string-array name="lunar_sting_options">
+        <item>默認</item>
+        <item>古代時令:孟夏.仲夏.季夏</item>
+        <item>地支:寅月.卯月</item>
+        <item>甲或己年:丙寅月.丁卯月</item>
+        <item>乙或庚年:戊寅月.己卯月</item>
+        <item>戊或癸年:甲寅月.乙卯月</item>
+    </string-array>
+    <string-array name="lunar_style_summaries">
+        <item>啟用帶有符號的生肖</item>
+        <item>啟用帶有符號的節日</item>
+    </string-array>
+    <string-array name="lunar_style_titles">
+        <item>啟用生肖符號</item>
+        <item>啟用節日符號</item>
+    </string-array>
+    <string-array name="qs_detail_entries">
+        <item>12時辰:辰時,卯時,酉時等</item>
+        <item>12時段:上午,下午,傍晚等</item>
+        <item>五更:一更,二更,三更等</item>
+        <item>四季:春夏秋冬</item>
+        <item>12星座</item>
+    </string-array>
+    <string-array name="scaling_entries">
+        <item>縮小百分之20</item>
+        <item>縮小百分之30</item>
+        <item>縮小百分之40</item>
+        <item>縮小百分之50</item>
+        <item>縮小百分之60</item>
+        <item>縮小百分之70</item>
+    </string-array>
+    <string-array name="statusbar_clock_options">
+        <item>狀態欄左側</item>
+        <item>狀態欄居中</item>
+        <item>狀態欄右側</item>
+    </string-array>
+    <string-array name="statusbar_icon_entries">
+        <item>屏幕旋轉</item>
+        <item>HD1</item>
+        <item>HD2</item>
+        <item>電池圖標</item>
+        <item>藍牙</item>
+        <item>飛行模式</item>
+        <item>NFC</item>
+        <item>移動數據信號</item>
+        <item>節能程序</item>
+        <item>流量節省</item>
+        <item>聲音</item>
+        <item>WLAN</item>
+        <item>定位</item>
+        <item>鬧鐘</item>
+        <item>耳機</item>
+    </string-array>
+    <string-array name="statusbar_traffic_options">
+        <item>禁用</item>
+        <item>上傳速率</item>
+        <item>下載速率</item>
+        <item>上傳/下載速率</item>
+    </string-array>
+    <string-array name="statusbar_view_options">
+        <item>狀態欄左側</item>
+        <item>狀態欄右側</item>
+    </string-array>
+    <string-array name="temp_style_entries">
+        <item>電池/CPU</item>
+        <item>CPU</item>
+        <item>電池</item>
+    </string-array>
+    <string-array name="week_location_entries">
+        <item>日期右側</item>
+        <item>日期左側</item>
+    </string-array>
+    <string-array name="widget_entries">
+        <item>天氣</item>
+        <item>天氣與時鐘</item>
+        <item>天氣預報</item>
+        <item>計步</item>
+        <item>步數(白色)</item>
+        <item>步數(黑色)</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Disable Animation</item>
+        <item>Animation 0.2x</item>
+        <item>Animation 0.25x</item>
+        <item>Animation 0.3x</item>
+        <item>Animation 0.4x</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 0.6x</item>
+        <item>Animation 0.7x</item>
+        <item>Animation 0.8x</item>
+        <item>Animation 0.9x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 3x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </string-array>
+</resources>

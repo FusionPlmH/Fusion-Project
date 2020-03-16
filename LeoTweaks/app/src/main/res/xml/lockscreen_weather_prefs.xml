@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"   xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="锁屏天气" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="锁屏天气" android:key="leo_tweaks_keyguard_weather_disabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MyListPreference android:persistent="true" android:entries="@array/keyguard_weather_style_entries" android:dependency="leo_tweaks_keyguard_weather_disabled" android:title="天气风格" android:key="leo_tweaks_keyguard_weather_style" android:defaultValue="4" android:entryValues="@array/keyguard_weather_style_values" app:dependentValue="4"/>
+
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="天气颜色设置"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="允许自定义天气颜色" android:key="leo_tweaks_keyguard_weather_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" android:dependency="leo_tweaks_keyguard_weather_disabled"/>
+    <com.tweaks.salt.preference.MySwitchPreference android:title="统一设置天气颜色" android:key="leo_tweaks_keyguard_weather_all_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" android:dependency="leo_tweaks_keyguard_weather_disabled"/>
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="统一天气颜色" android:key="leo_tweaks_keyguard_weather_all_color"   android:dependency="leo_tweaks_keyguard_weather_all_color_enabled" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="天气位置颜色" android:key="leo_tweaks_keyguard_weather_location_color"   app:reverseDependency="leo_tweaks_keyguard_weather_all_color_enabled" android:dependency="leo_tweaks_keyguard_weather_color_enabled" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="当前温度颜色" android:key="leo_tweaks_keyguard_weather_current_temp_color"  app:reverseDependency="leo_tweaks_keyguard_weather_all_color_enabled"  android:dependency="leo_tweaks_keyguard_weather_color_enabled" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="高低温度颜色" android:key="leo_tweaks_keyguard_weather_temp_color" app:reverseDependency="leo_tweaks_keyguard_weather_all_color_enabled"  android:dependency="leo_tweaks_keyguard_weather_color_enabled" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="天气状态颜色" android:key="leo_tweaks_keyguard_weather_state_color"  app:reverseDependency="leo_tweaks_keyguard_weather_all_color_enabled"  android:dependency="leo_tweaks_keyguard_weather_color_enabled" android:summary="默认颜色:#fffafafa"  leo:defaultColor="#fffafafa" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="天气字体"/>
+
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="天气位置字体" android:key="leo_tweaks_keyguard_weather_location_font" android:dependency="leo_tweaks_keyguard_weather_disabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="天气当前温度字体" android:key="leo_tweaks_keyguard_weather_temperature_font" android:dependency="leo_tweaks_keyguard_weather_disabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="天气状态字体" android:key="leo_tweaks_keyguard_weather_state_font" android:dependency="leo_tweaks_keyguard_weather_disabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="天气高低温度字体" android:key="leo_tweaks_keyguard_weather_hl_font" android:dependency="leo_tweaks_keyguard_weather_disabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="天气字体"/>
+
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="天气位置文本大小" android:key="leo_tweaks_keyguard_weather_size" android:dependency="leo_tweaks_keyguard_weather_style" android:summary="默认：14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="天气当前温度文本大小" android:key="leo_tweaks_keyguard_weather_current_temp_size" android:dependency="leo_tweaks_keyguard_weather_style" android:summary="默认：14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="天气状态文本大小" android:key="leo_tweaks_keyguard_weather_state_size" android:dependency="leo_tweaks_keyguard_weather_style" android:summary="默认：14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="天气高低温度文本大小" android:key="leo_tweaks_keyguard_weather_temp_size" android:dependency="leo_tweaks_keyguard_weather_style" android:summary="默认：14" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+</PreferenceScreen>

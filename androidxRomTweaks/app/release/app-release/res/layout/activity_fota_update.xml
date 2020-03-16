@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/changelog_app_bar_height" app:statusBarScrim="@android:color/transparent">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="@android:color/transparent" app:expandedTitleGravity="center_horizontal" app:expandedTitleTextAppearance="@android:color/transparent" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:statusBarScrim="@android:color/transparent">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:navigationIcon="@drawable/ic_navigationicon" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_navigationicon" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <com.leo.salt.tweaks.view.widget.ShapeTextView android:textSize="20.0dip" android:textStyle="bold" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:text="@string/fota_system_info" app:bottomRightRadius="20.0dip" app:openSelector="true" app:strokeColor="@color/splashcolor" app:strokeWidth="1.0dip" app:topLeftRadius="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:id="@id/compile_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="?android:colorAccent" />
+                <TextView android:textSize="18.0dip" android:id="@id/delta_updates" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="?android:colorAccent" />
+                <TextView android:textSize="18.0dip" android:id="@id/fota_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="?android:colorAccent" />
+                <TextView android:textSize="18.0dip" android:id="@id/security_patch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="?android:colorAccent" android:text="SecurityPatch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/online_update_log" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.leo.salt.tweaks.view.widget.ShapeTextView android:textSize="20.0dip" android:textStyle="bold" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:text="@string/fota_last_updated_record" app:bottomRightRadius="20.0dip" app:openSelector="true" app:strokeColor="@color/splashcolor" app:strokeWidth="1.0dip" app:topLeftRadius="20.0dip" />
+                <TextView android:textSize="18.0dip" android:id="@id/online_update_json" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="?android:colorAccent" android:text="" />
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="65.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/fota_update" />
+</android.support.design.widget.CoordinatorLayout>

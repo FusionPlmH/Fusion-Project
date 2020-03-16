@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:extras="SECURE_GLOBAL"
+    xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="图标边距" />
+    <com.tweaks.leo.preference.MyPreferenceAlerts android:icon="@drawable/ic_reset"  android:title="*图标边距更新设置"  android:key="leo_tweaks_update_mods"  android:summary="设置完成后,点击更新设置,参数立即生效"/>
+    <com.tweaks.leo.preference.MySwitchPreference android:title="*状态栏图标边距" android:key="leo_tweaks_statusbar_icon_padding_enable"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="*设置状态栏图标边距" android:key="leo_tweaks_statusbar_icon_padding"  android:summary="左右滑动调节大小" android:defaultValue="10" app:minValue="6" app:maxValue="18" app:unitsValue="dp" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="信号图标位置" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="状态栏信号显示位置" android:key="leo_tweaks_statusbar_signal_location"  android:defaultValue="0" android:entryValues="@array/statusbar_view_position_values" />
+    <com.tweaks.leo.preference.MyPreferenceAlerts android:icon="@drawable/ic_reset"  android:title="*信号图标更新设置"  android:key="leo_tweaks_update_mods2"  android:summary="设置完成后,点击更新设置,参数立即生效"/>
+    <com.tweaks.leo.preference.MySwitchPreference android:title="*允许自定义信号图标" android:key="leo_tweaks_statusbar_signal_single_icon" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.DrawableListPreference android:title="*自定义信号图标" android:key="leo_tweaks_status_bar_sim_icon" android:dependency="leo_tweaks_statusbar_signal_single_icon" android:summary="选择一个喜欢的图标" android:defaultValue="0"  app:drawableArray="@array/signal_style_drawables" app:entryList="@array/signal_style" app:entryValuesList="@array/signal_style_values"  />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="*允许自定义通话卡图标" android:key="leo_tweakssim" android:dependency="leo_tweaks_statusbar_signal_single_icon" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.DrawableListPreference android:title="*自定义通话卡图标" android:key="leo_tweaks_status_bar_slot_sim_icon"  android:dependency="leo_tweakssim" android:summary="选择一个喜欢的图标" android:defaultValue="0"  app:drawableArray="@array/signal_style_drawables" app:entryList="@array/signal_style" app:entryValuesList="@array/signal_style_values"  />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="*允许自定义WIFI图标" android:key="leo_tweaks_status_bar_wifi_arrow" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.DrawableListPreference android:title="*Wifi图标自定义" android:key="leo_tweaks_status_bar_wifi_icon" android:summary="选择一个喜欢的图标" android:dependency="leo_tweaks_status_bar_wifi_arrow" android:defaultValue="0"  app:drawableArray="@array/wifi_style_drawables" app:entryList="@array/wifi_style" app:entryValuesList="@array/wifi_style_values"  />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="图标颜色" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用信号图标自定义颜色" android:key="leo_tweaks_status_bar_start_color_custom" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="统一设置信号图标颜色" android:key="leo_tweaks_status_bar_start_all_icon_color_set" android:dependency="leo_tweaks_status_bar_start_color_custom" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="全部信号图标颜色" android:key="leo_tweaks_status_bar_all_icon_color" android:dependency="leo_tweaks_status_bar_start_all_icon_color_set" android:summary="默认颜色:#ffffffff" leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_statusbar_signal_random_color" app:reverseDependency="leo_tweaks_status_bar_start_all_icon_color_set" android:dependency="leo_tweaks_status_bar_start_color_custom" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="wifi颜色" android:key="leo_tweaks_status_bar_wifi_color" android:dependency="leo_tweaks_status_bar_start_color_custom"  app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff" leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="wifi数据颜色" android:key="leo_tweaks_status_bar_wifi_arrows_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff"  leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="飞行模式颜色" android:key="leo_tweaks_status_bar_airplane_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff"  leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="信号颜色" android:key="leo_tweaks_status_bar_signal_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff"  leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="移动数据颜色" android:key="leo_tweaks_status_bar_mobilearrows_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff"  leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="3G/4G颜色" android:key="leo_tweaks_status_bar_mobiletype_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff" leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="漫游颜色" android:key="leo_tweaks_status_bar_roaming_color"  android:dependency="leo_tweaks_status_bar_start_color_custom" app:reverseDependency="leo_tweaks_statusbar_signal_random_color" android:summary="默认颜色:#ffffffff"  leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.ColorPickerPreference android:title="飞行模式图标颜色" android:key="leo_tweaks_statusbar_airplane_color" android:summary="默认颜色:#ffffffff" leo:defaultColor="\#ffffffff" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="其他图标" />
+    <com.tweaks.leo.preference.MyMultiSelectPreference android:title="状态栏图标隐藏" android:key="icon_blacklist" android:defaultValue="rotate" android:dialogTitle="选择需要隐藏的状态栏项目" app:multiEntryList="@array/hidden_icons_options" app:multiValuesList="@array/hidden_icons_values" extras:isSecure="true" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="*禁用手电筒图标" android:key="leo_tweaks_status_bar_flashlight_icon" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.android.systemui" />
+</PreferenceScreen>

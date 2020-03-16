@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="weather_enabled"
+        android:title="@string/keyguard_weather_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltListPreference
+       android:dependency="weather_enabled"
+        android:key="weather_style"
+        android:title="@string/keyguard_aweather_style"
+        android:defaultValue="0"
+        android:entryValues="@array/widget_values"
+        android:entries="@array/widget_entries"
+        />
+
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="weathersize"
+        android:dependency="weather_enabled"
+        android:summary="@string/seekbar_sumarry"
+        android:title="锁屏天气文本大小"
+        android:defaultValue="14"
+        android:min="5"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="weatherfont"
+        android:dependency="weather_enabled"
+        android:title="锁屏天气字体"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="weathersingleline"
+        android:dependency="weather_enabled"
+        android:title="强制天气显示为单行"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="WeatherColorEnabled"
+        android:title="自定义天气颜色"
+        android:dependency="weather_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="设置天气颜色"
+        salt:lightnessSlider="true"
+        android:dependency="WeatherColorEnabled"
+        android:defaultValue="@android:color/white"
+        android:summary="@android:color/white"
+        salt:density="12"
+        salt:alphaSlider="true"
+        salt:BroadcastKey="@string/broadcast_lock_weather"
+        android:key="keyguard_weather_text_color"/>
+</androidx.preference.PreferenceScreen>

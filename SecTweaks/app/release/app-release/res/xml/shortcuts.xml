@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/drawer_wifi" android:enabled="true" android:shortcutId="wifi" android:shortcutShortLabel="@string/gv_name_wifi" android:shortcutLongLabel="@string/gv_name_wifi">
+        <intent android:targetPackage="com.leo.salt" android:action="action1" android:targetClass="com.leo.salt.activity.WifiPasswordActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/nav_donate" android:enabled="true" android:shortcutId="donate_shortcut" android:shortcutShortLabel="@string/toolbar_navigation_donate" android:shortcutLongLabel="@string/toolbar_navigation_donate">
+        <intent android:targetPackage="com.leo.salt" android:action="action3" android:targetClass="com.leo.salt.donate.DonateActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_clear" android:enabled="true" android:shortcutId="clear" android:shortcutShortLabel="@string/accelerate" android:shortcutLongLabel="@string/accelerate">
+        <intent android:targetPackage="com.leo.salt" android:action="action4" android:targetClass="com.leo.salt.activity.CleanActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_lock_screen" android:enabled="true" android:shortcutId="lock" android:shortcutShortLabel="@string/lock" android:shortcutLongLabel="@string/lock">
+        <intent android:targetPackage="com.leo.salt" android:action="action5" android:targetClass="com.leo.salt.activity.LockScreenActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

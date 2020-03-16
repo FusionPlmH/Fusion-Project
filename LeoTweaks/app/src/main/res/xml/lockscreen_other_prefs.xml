@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="快速解锁" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="隐藏虹膜预览" android:key="leo_tweaks_lock_iris" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="数字密码随机布局" android:key="leo_tweaks_pin_code" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="快速智能解锁" android:key="leo_tweaks_goole_smart_quick_unlock" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="重启设备后生物解锁" android:key="leo_tweaks_biometric_unlock" android:defaultValue="false" android:summaryOn="设备重启后直接使用生物解锁无需输入密码或者图案" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="其他" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="锁屏旋转" android:key="leo_tweaks_keyguard_rotate" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="锁屏状态栏隐藏" android:key="leo_tweaks_statusbar_keyguard" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="锁屏禁止下拉" android:key="leo_tweaks_disabled_lock_qs" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="壁纸" />
+    <PreferenceScreen  android:title="多张图像" android:summary="设置多张壁纸轮播">
+        <intent android:targetPackage="com.samsung.android.keyguardwallpaperupdator" android:action="android.intent.action.MAIN" android:targetClass="com.samsung.android.keyguardwallpaperupdator.ui.KeyguardPhotoSlideMainActivity" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

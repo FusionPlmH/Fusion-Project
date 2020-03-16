@@ -1,0 +1,102 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="salt_power_menu_dialog_title">Customize the dialog title</string>
+   <string name="salt_power_menu_dialog_confirm">power menu confirmation dialog</string>
+   <string name="salt_power_menu_springback_effect">set the power menu rebound distance</string>
+   <string name="salt_power_menu_icon_text">power menu icon text</string>
+   <string name="salt_power_menu_icon_size">set the power menu nine square grid icon size</string>
+   <string name="salt_power_menu_text_size">set the power menu text size</string>
+   <string name="salt_power_menu_text_font">set the power menu text font</string>
+   <string name="salt_power_menu_text_color">set the power menu text color</string>
+   <string name="salt_power_menu_bg">Power menu background</string>
+   <string name="salt_power_menu_bg_home">Power menu uses desktop wallpaper as background</string>
+   <string name="salt_power_menu_bg_blur">custom fuzzy background</string>
+   <string name="salt_power_menu_bg_blur_style">set the power dish background ambiguity</string>
+
+
+   <string name="power_keys_name">power button action</string>
+   <string name="power_keys_custom">custom power button action</string>
+   <string name="power_keys">bright screen power button action</string>
+   <string name="power_keys_sj">power button double-click action</string>
+   <string name="power_keys_ca">power button long press action</string>
+   <string name="power_keys_lock">lock screen power button action</string>
+   <string name="power_keys_lock_sj">lock screen power button double-click action</string>
+   <string name="power_keys_lock_ca">lock screen power button long press action</string>
+
+   <string name="apps_category_drawer">sliding drawers</string>
+   <string name="apps_blur_shadow">Sliding Enable Gaussian Blur Background</string>
+   <string name="apps_drawer_carrier">Slide operator customization</string>
+   <string name="apps_drawer_card">Set the skid card background wallpaper</string>
+   <string name="apps_category_donate">donated version features</string>
+   <string name="apps_network_check">screen network check</string>
+   <string name="apps_checkupdates">Allow detection of ROM updates</string>
+   <string name="apps_shortcut">desktop shortcut</string>
+   <string name="apps_shortcut_summary">Select a shortcut to add to the desktop</string>
+
+   <string name="analogclock_enabled">drop-down simulation time display</string>
+   <string name="analogclock_dial_style">Dial selection</string>
+   <string name="analogclock_dial_color">dial color</string>
+   <string name="analogclock_hour_color">hour hand color</string>
+   <string name="analogclock_minute_color">minute hand color</string>
+   <string name="qs_button_leo">Leo clear button</string>
+   <string name="qs_button_leo_click">Leo clear button action</string>
+   <string name="qs_button_leo_cleanram_whitelist">memory cleanup whitelist settings</string>
+   <string name="qs_button_leo_collapsepanel">Click the Leo clear button to close the notification bar</string>
+   <string name="qs_button_setting">Set button</string>
+   <string name="qs_button_setting_click">Set button action</string>
+   <string name="qs_button_search">search button</string>
+   <string name="qs_button_search_click">Search button action</string>
+
+   <string name="qs_carrier_string">Customize the notification bar operator text</string>
+   <string name="qs_carrier_dual">@string/keyguard_alarm_dual</string>
+   <string name="qs_carrier_size">operator size</string>
+   <string name="qs_carrier_symbol">split symbol</string>
+   <string name="qs_carrier_font">operator font style</string>
+   <string name="qs_carrier_color">operator text color</string>
+
+   <string name="qs_clock_enabled">Enable pull-down time</string>
+   <string name="qs_clock_size">time size</string>
+   <string name="qs_clock_expand_size">Expand time size</string>
+   <string name="qs_clock_china_detail">China time details setting</string>
+   <string name="qs_clock_china_detail_enabled">Enable China time details</string>
+   <string name="qs_clock_china_detail_style">Chinese time detail style</string>
+   <string name="qs_clock_china_detail_symbol">Division symbol between Chinese time details and time</string>
+   <string name="qs_clock_china_detail_scale">Chinese time detail font scaling</string>
+   <string name="qs_clock_china_detail_ratio">Chinese time detail font scaling</string>
+   <string name="qs_clock_click">click action</string>
+   <string name="qs_clock_click_enabled">Enable time action</string>
+   <string name="qs_clock_click_style">Select time click action</string>
+   <string name="qs_clock_click_collapsepanel">turn off the notification bar when click action is enabled</string>
+
+   <string name="national_and_regional_restrictions">Regional language restrictions</string>
+   <string name="national_and_regional_restrictions_sumarry">Some features of this page are only applicable to the following regions: \n China 23 provinces, 5 autonomous regions, 4 municipalities, 2 special administrative regions</string>
+   <string name="national_and_regional_restrictions_sumarry2">Support Simplified Chinese and Traditional Chinese used in the above regions</string>
+   <string name="dialog_check">no longer displayed</string>
+
+   <string name="qs_datausage_enabled">traffic display location</string>
+   <string name="qs_datausage_location">traffic display location</string>
+   <string name="qs_datausage_size">traffic display text size</string>
+   <string name="qs_datausage_font">Flow display font</string>
+   <string name="qs_sim_check">Notification bar SIM card</string>
+
+   <string name="qs_date">date setting</string>
+   <string name="qs_date_enabled">Show drop-down date</string>
+   <string name="qs_date_style">date format</string>
+   <string name="qs_date_week_enabled">Show the week</string>
+   <string name="qs_date_week_style">week format</string>
+   <string name="qs_date_week_location">week display location</string>
+   <string name="qs_date_week_symbol">split symbol between week and date</string>
+   <string name="qs_date_lunar">Lunar Settings</string>
+   <string name="qs_date_lunar_enabled">Enable the lunar calendar</string>
+   <string name="qs_date_lunar_style">Chinese Lunar Calendar</string>
+   <string name="qs_date_lunar_month_style">Chinese Lunar Calendar Style</string>
+   <string name="qs_date_lunar_special">Lunar special symbol settings</string>
+   <string name="qs_date_lunar_symbol">split symbol between lunar calendar and date</string>
+   <string name="qs_date_text">font settings</string>
+   <string name="qs_date_font">date font</string>
+   <string name="qs_date_lunar_font">Lunar font</string>
+   <string name="qs_date_size">date size</string>
+   <string name="qs_date_expand_size">Expand date size</string>
+   <string name="qs_date_click">click action</string>
+   <string name="qs_date_click_enabled">Enable date action</string>
+
+</resources>

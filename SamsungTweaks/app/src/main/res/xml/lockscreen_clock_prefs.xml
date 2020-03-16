@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"   xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_aod_clock_tilte" />
+
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_aod_clock" android:key="leo_tweaks_keyguard_aod_clock"  android:defaultValue="true" android:summaryOn="@string/keyguard_aod_clock_yes" android:summaryOff="@string/keyguard_aod_clock_no" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_clock" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_clock_display" android:key="leo_tweaks_keyguard_clock_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_second" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_second_display" android:key="leo_tweaks_keyguard_second_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    </com.fusionleo.salt.preference.MyPreferenceCategory>
+   . <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_details" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_details_display" android:key="leo_tweaks_keyguard_details_display"  android:dependency="leo_tweaks_keyguard_clock_display" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/china_clock_details_entries" android:title="@string/keyguard_clock_details_style" android:key="leo_tweaks_keyguard_clock_details_style"  android:dependency="leo_tweaks_keyguard_details_display" android:defaultValue="0" android:entryValues="@array/china_clock_details_values" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_date" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_date_display" android:key="leo_tweaks_keyguard_date_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/clock_date_format_entries_values" android:title="@string/clock_date_style" android:key="leo_keyguard_date_format" android:dependency="leo_tweaks_keyguard_date_display" android:defaultValue="0" android:entryValues="@array/clock_date_format_entries_values" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/clock_week" android:key="leo_tweaks_keyguard_date_week_disply" android:dependency="leo_tweaks_keyguard_date_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/clock_date_week_entries" android:title="@string/clock_week_style" android:key="leo_tweaks_keyguard_date_week_style" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/clock_date_week_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/date_style_entries" android:title="@string/pulldown_date_week_orientation" android:key="leo_tweaks_keyguard_data_week_orientation" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/date_style_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="@string/pulldown_lunar_symbol" android:key="leo_tweaks_keyguard_date_week_symbol" android:dependency="leo_tweaks_keyguard_date_week_disply" android:defaultValue="0" android:entryValues="@array/symbol_style_values" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/pulldown_lunar" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_lunar_display" android:key="leo_tweaks_keyguard_lunar_display"  android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/aod_lunar_entries" android:title="@string/keyguard_lunar_style" android:key="leo_tweaks_keyguard_lunar_style"  android:dependency="leo_tweaks_keyguard_lunar_display"  android:defaultValue="0" android:entryValues="@array/aod_lunar_values"   />
+    <com.fusionleo.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_keyguard_lunar_display"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_keyguard_date_lunar_string"
+        android:persistent="true"
+        android:defaultValue="不忘初心"
+        android:title="@string/keyguard_date_lunar_string" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_constellation_display" android:key="leo_tweaks_keyguard_constellation_display"  android:dependency="leo_tweaks_keyguard_lunar_display" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_constellation_location" android:key="leo_tweaks_keyguard_constellation_location"  android:dependency="leo_tweaks_keyguard_constellation_display" android:defaultValue="false" android:summaryOn="@string/constellation_location_yes" android:summaryOff="@string/constellation_location_no" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/symbol_style_entries" android:title="@string/pulldown_lunar_symbol"  android:key="leo_tweaks_keyguard_constellation_symbol_style" android:dependency="leo_tweaks_keyguard_constellation_display"  android:defaultValue="0" android:entryValues="@array/symbol_style_values"   />
+
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+<com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_clock_size_tilte" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_hour_clock_size" android:key="leo_tweaks_keyguard_hour_clock_size" android:summary="@string/keyguard_clock_size" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_colon_clock_size" android:key="leo_tweaks_keyguard_colon_clock_size" android:summary="@string/keyguard_clock_size" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_min_clock_size" android:key="leo_tweaks_keyguard_min_clock_size" android:summary="@string/keyguard_clock_size" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+        <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_second_size" android:key="leo_tweaks_keyguard_second_size" android:summary="@string/keyguard_clock_size" android:defaultValue="72" app:minValue="30" app:maxValue="90" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_clock_hour_vertical_size" android:key="leo_tweaks_keyguard_clock_hour_vertical_size" android:summary="@string/keyguard_clock_size1" android:defaultValue="96" app:minValue="45" app:maxValue="130" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_clock_min_vertical_size" android:key="leo_tweaks_keyguard_clock_min_vertical_size" android:summary="@string/keyguard_clock_size1" android:defaultValue="96" app:minValue="45" app:maxValue="130" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_datail_clock_size" android:key="leo_tweaks_keyguard_datail_clock_size" android:summary="@string/keyguard_clock_size2" android:defaultValue="14" app:minValue="10" app:maxValue="30" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_date_clock_size" android:key="leo_tweaks_keyguard_date_clock_size" android:summary="@string/keyguard_clock_size2" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/keyguard_lunar_clock_size" android:key="leo_tweaks_keyguard_lunar_clock_size" android:summary="@string/keyguard_clock_size2" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue=" dip" />
+    </com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/font_style" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_hour_clock_font" android:key="leo_tweaks_keyguard_hour_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_min_clock_font" android:key="leo_tweaks_keyguard_min_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_second_font" android:key="leo_tweaks_keyguard_second_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_detail_clock_font" android:key="leo_tweaks_keyguard_detail_clock_font"   android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_date_clock_font" android:key="leo_tweaks_keyguard_date_clock_font"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/keyguard_lunar_clock_font" android:key="leo_tweaks_keyguard_lunar_clock_font"   android:defaultValue="0" android:entryValues="@array/font_style_values" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/color_set" android:dependency="leo_tweaks_keyguard_aod_clock">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_clock_color_custom" android:key="leo_tweaks_keyguard_clock_color_custom"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/keyguard_all_clock_color_enabled" android:key="leo_tweaks_keyguard_all_clock_color_enabled"  android:dependency="leo_tweaks_keyguard_clock_color_custom" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_all_clock_color" android:key="leo_tweaks_keyguard_all_clock_color"   android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_hour_clock_color" android:key="leo_tweaks_keyguard_hour_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled"   android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_min_clock_color" android:key="leo_tweaks_keyguard_min_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_colon_clock_color" android:key="leo_tweaks_keyguard_colon_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+        <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_second_color" android:key="leo_tweaks_keyguard_second_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+        <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_datail_clock_color" android:key="leo_tweaks_keyguard_datail_clock_color" app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom"  android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_date_clock_color" android:key="leo_tweaks_keyguard_date_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2" leo:defaultColor="#fffafafa" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/keyguard_lunar_clock_color" android:key="leo_tweaks_keyguard_lunar_clock_color"  app:reverseDependency="leo_tweaks_keyguard_all_clock_color_enabled" android:dependency="leo_tweaks_keyguard_clock_color_custom" android:summary="@string/white_color2"  leo:defaultColor="#fffafafa" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+
+</PreferenceScreen>

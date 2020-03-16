@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/action_ota"
+    android:orderInCategory="100"
+    android:title="设置"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_ota"/>
+    <item
+        android:id="@+id/action_layout_style"
+        android:icon="@drawable/ic_layout_sytle"
+        android:title="Ui风格"
+        app:showAsAction="ifRoom" />
+</menu>

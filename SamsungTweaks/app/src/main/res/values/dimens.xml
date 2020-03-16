@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="card_view_radius">20.0dip</dimen>
+    <dimen name="shadow_height">0.0dip</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="widget_pref">20dip</dimen>
+	  <dimen name="button_size">30dp</dimen>
+    <dimen name="grid_title_size">18dp</dimen>
+</resources>

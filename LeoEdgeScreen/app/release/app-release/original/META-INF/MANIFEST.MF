@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.4.1
+
+Name: AndroidManifest.xml
+SHA-256-Digest: uvXPhNnkIg1QStN+r+x4czH6zgV8cHIq7jZMJ6R7sMQ=
+
+Name: classes.dex
+SHA-256-Digest: HqKyQieS7THBs2DHxuyEyYLmV2wcIo3FGh7zQvnB0LI=
+
+Name: res/drawable-v24/apps_edge_bg.webp
+SHA-256-Digest: kg/9Q2d/MU9blX1isvb+jYTrOqlQpoTqV+n9MYNMmvI=
+
+Name: res/drawable-v24/ic_apps.xml
+SHA-256-Digest: ll+rTK0KX8hylE2UxGXjdn0/7SlfDR6G+vnsObBiplM=
+
+Name: res/drawable-v24/ic_lock_screen.xml
+SHA-256-Digest: CPWCzQnA8ufoXP8kcHaeBc/zN5MLCwbyH+BlO9l0D3s=
+
+Name: res/drawable-xxhdpi-v4/ic_clear.png
+SHA-256-Digest: mDNBqLo1O8TwB0PYI6Swanb1kUfPHVMNpuAXNKNlxRw=
+
+Name: res/drawable-xxhdpi-v4/ic_donate.xml
+SHA-256-Digest: 4xxx+ceJfNu5lapT/0XNgcR3fh88h3D2Da2Ae/EKRa8=
+
+Name: res/drawable-xxhdpi-v4/ic_leo.png
+SHA-256-Digest: H56+vp9hOE1Cdvz+VEL5yBSW+JcbwM8zU8kT12dI9Jc=
+
+Name: res/drawable-xxxhdpi-v4/ic_fusion.xml
+SHA-256-Digest: QTEaMaNwV0mM4MBnB2Gu2o7aCaiNZsr30Qna/qY8DCA=
+
+Name: res/drawable-xxxhdpi-v4/ic_wifi.xml
+SHA-256-Digest: G3Iud08DehYPYf10Dd1EaT7L4hcJg44MIo7FGdKaSxM=
+
+Name: res/drawable-xxxhdpi-v4/scan_alipay.xml
+SHA-256-Digest: LibhG9jZkp+H3vhCZ6QoBiUG0ZxAA9+EAMbS/aqHo20=
+
+Name: res/drawable-xxxhdpi-v4/scan_weixin.xml
+SHA-256-Digest: /XwiFuf+U9hVK03KrhfnjxpRzl/XXL27xQhiD+czCQY=
+
+Name: res/layout/cocktail_salt_panel.xml
+SHA-256-Digest: 1nkQZkp84wU9u+g/XDztLjkh+BGEJ3Afj0qp9IXTIOE=
+
+Name: res/xml/edge_single_plus.xml
+SHA-256-Digest: CmsHNNOdL2E7RcE1UNJXF8uWc5Ezot6mPE+yha5N8Rk=
+
+Name: resources.arsc
+SHA-256-Digest: 5kyStGo/CXTxrqLT8AW5/MIiwB37QDgHWL5TVt1mi38=
+

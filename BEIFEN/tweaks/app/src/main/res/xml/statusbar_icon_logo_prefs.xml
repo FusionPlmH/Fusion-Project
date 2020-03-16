@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.leo">
+        <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏Logo" />
+
+
+        <com.tweaks.leo.preference.MySwitchPreference android:title="状态栏Logo标识" android:key="leo_tweaks_status_bar_logo"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+
+        <com.tweaks.leo.preference.DrawableListPreference android:title="状态栏Logo标识类型" android:key="leo_tweaks_status_bar_logo_style" android:summary="选择一个喜欢的LOGO标识" android:dependency="leo_tweaks_status_bar_logo" android:defaultValue="0"  app:drawableArray="@array/logo_style_drawables" app:entryList="@array/logo_style_entries" app:entryValuesList="@array/logo_style_values" />
+
+        <com.tweaks.leo.preference.CardPreferenceBorder  />
+        <com.tweaks.leo.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="状态栏Logo标识显示位置" android:key="leo_tweaks_statusbar_logo_position" android:dependency="leo_tweaks_status_bar_logo" android:defaultValue="1" android:entryValues="@array/statusbar_view_position_values" />
+        <com.tweaks.leo.preference.MySeekBarPreference android:title="状态栏Logo大小" android:key="leo_tweaks_statusbar_logo_size"  android:summary="左右滑动调节大小" android:defaultValue="8" app:minValue="2" app:maxValue="10" app:unitsValue="sp" />
+        <com.tweaks.leo.preference.MySwitchPreference android:title="允许自定义Logo颜色" android:key="leo_tweaks_statusbar_logo_color_enabled" android:dependency="leo_tweaks_status_bar_logo"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+        <com.tweaks.leo.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_statusbar_logo_random_color" android:dependency="leo_tweaks_statusbar_logo_color_enabled"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+        <com.tweaks.leo.preference.ColorPickerPreference android:title="状态栏Logo标识颜色" android:key="leo_tweaks_status_bar_logo_color" app:reverseDependency="leo_tweaks_statusbar_logo_random_color" android:dependency="leo_tweaks_statusbar_logo_color_enabled" android:summary="@string/default_colors" leo:defaultColor="@color/status_bar_default_colors" />
+
+  
+</PreferenceScreen>

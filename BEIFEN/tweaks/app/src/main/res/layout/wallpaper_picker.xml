@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/wallpaper_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingBottom="20.0dip"
+                android:src="@null" />
+
+            <EditText
+                android:id="@+id/width_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="壁纸宽度"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/height_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/width_edit"
+                android:hint="壁纸高度"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/select_wallpaper"
+                style="@style/MyButton"
+
+                android:layout_below="@+id/height_edit"
+                android:layout_gravity="center"
+                android:minWidth="296dp"
+                android:text="选择壁纸"
+                android:textSize="18dp" />.
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

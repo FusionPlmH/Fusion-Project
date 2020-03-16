@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/launcher_uptap" android:key="leo_tweaks_launcher_slidegesture_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/vibrator_title" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_launcher_slidegesture_vibrator" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_launcher_slidegesture_vibrator_level" android:dependency="leo_tweaks_launcher_slidegesture_vibrator" android:summary="@string/vibrator_level_summary" android:defaultValue="70" app:minValue="30" app:maxValue="100" app:unitsValue="" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/launcher_uptap_tilte" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/launcher_uptap_action" android:key="leo_tweaks_launcher_slidegesture_up_action"  android:defaultValue="108" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/launcher_uptap_app" android:key="leo_tweaks_launcher_slidegesture_up_string"  includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/launcher_downtap_tilte" />
+    <com.leo.salt.preference.MyPreferenceAlerts android:key="LaunchDisplay"  android:summary="@string/leo_tweaks_launcher_downtap" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/launcher_downtap_action" android:key="leo_tweaks_launcher_slidegesture_down_action"  android:defaultValue="108" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/launcher_downtap_app" android:key="leo_tweaks_launcher_slidegesture_down_string"  includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="桌面双击" />
+    <com.leo.salt.preference.MySwitchPreference android:title="启用桌面双击动作" android:key="leo_tweaks_launcher_double_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="选择桌面双击动作" android:key="leo_tweaks_launcher_double" android:dependency="leo_tweaks_launcher_double_enabled"  android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="桌面双击启动应用程序" android:key="leo_tweaks_launcher_double_string"  android:dependency="leo_tweaks_launcher_double_enabled" includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

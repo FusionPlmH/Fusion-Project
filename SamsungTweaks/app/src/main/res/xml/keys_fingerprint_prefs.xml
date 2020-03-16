@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/keys_action_toggle_tilte" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/fingerprint_gesture_quick" android:key="fingerprint_gesture_quick" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/hardware_fingerprint_down" />
+        <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/hardware_fingerprint_down_action" android:key="leo_tweaks_hardware_fingerprint_down_action"  android:dependency="fingerprint_gesture_quick"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/hardware_fingerprint_down_action_app" android:key="leo_tweaks_hardware_fingerprint_down_action_app"  android:dependency="fingerprint_gesture_quick" includeSearch="true" setSeparatorString="\###" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+        <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/hardware_fingerprint_up" />
+        <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="@string/hardware_fingerprint_up_action" android:key="leo_tweaks_hardware_fingerprint_up_action"  android:dependency="fingerprint_gesture_quick" android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/hardware_fingerprint_up_action_app" android:key="leo_tweaks_hardware_fingerprint_up_action_app"  android:dependency="fingerprint_gesture_quick" includeSearch="true" setSeparatorString="\###" />
+
+</PreferenceScreen>

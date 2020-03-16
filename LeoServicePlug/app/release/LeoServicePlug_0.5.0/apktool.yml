@@ -1,0 +1,25 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: LeoServicePlug_0.5.0.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- webp
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '22'
+  targetSdkVersion: '22'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1_0303
+versionInfo:
+  versionCode: '1'
+  versionName: LeoService V0.5.0

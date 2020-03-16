@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="RamInfo">
+		<attr name="total" format="integer"/>
+		<attr name="free" format="integer"/>
+	</declare-styleable>
+	<attr name="colorCollapsing" format="color" />
+	<attr name="BottomNavigationBackground" format="color" />
+	<attr name="navColorSelector" format="color|reference"/>
+	<attr name="stringColor" format="color|reference"/>
+	<attr name="MainwindowBG" format="color" />
+    <attr name="stringNightMode" format="string"/>
+    <attr name="iconNightMode" format="reference"/>
+	<declare-styleable name="CardPreference">
+		<attr name="topView" format="boolean"/>
+		<attr name="bottomView" format="boolean"/>
+	</declare-styleable>
+</resources>

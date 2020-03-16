@@ -1,0 +1,21 @@
+<resources>
+    <string name="hitomi_power_menu_shutdown">電源をOFF</string>
+    <string name="hitomi_power_menu_restart">再起動</string>
+    <string name="hitomi_power_menu_download">ブートローダーへ再起動</string>
+    <string name="hitomi_power_menu_recovery">リカバリーへ再起動</string>
+    <string name="hitomi_power_menu_outdoors">アウトドアモード</string>
+    <string name="hitomi_power_menu_flashlight">懐中電灯</string>
+    <string name="hitomi_power_menu_screenrecord">画面を録画</string>
+    <string name="hitomi_power_menu_screenshot">画面をキャプチャ</string>
+    <string name="hitomi_power_menu_sound">サウンド</string>
+    <string name="hitomi_power_menu_mobiledata">モバイルデータ</string>
+    <string name="hitomi_power_menu_floating">アシスタントメニュー</string>
+    <string name="hitomi_power_menu_mipop">画面アシスタント</string>
+    <string name="hitomi_power_menu_airplane">機内モード</string>
+    <string name="hitomi_power_menu_quick_reboot">クイック再起動</string>
+    <string name="hitomi_power_menu_name">ひとみ電源メニュー</string>
+    <string name="hitomi_power_menu_leo">リオ電源メニュー</string>
+    <string name="hitomi_power_menu_wifi">Wifi スイッチ</string>
+    <string name="hitomi_power_menu_vibration">振動モード</string>
+    <string name="hitomi_power_menu_silence">サイレントモード</string>
+</resources>

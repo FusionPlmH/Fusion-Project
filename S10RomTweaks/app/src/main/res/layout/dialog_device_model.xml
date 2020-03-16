@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_addin_device_warn"
+        android:textColor="@color/material_red_A700"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+
+    <TextView
+        android:layout_marginStart="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ro.product.model="
+        android:textColorHint="?colorAccent"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_addin_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+    <TextView
+        android:layout_marginStart="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ro.build.product="
+        android:textColorHint="?colorAccent"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_addin_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+    <TextView
+        android:layout_marginStart="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ro.product.name="
+        android:textColorHint="?colorAccent"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_addin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+    <TextView
+        android:layout_marginStart="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ro.product.device="
+        android:textColorHint="?colorAccent"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_addin_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+    <TextView
+        android:layout_marginStart="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ro.build.flavor="
+        android:textColorHint="?colorAccent"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_addin_manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apks_space"/>
+    <android.support.v7.widget.CardView
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="?colorAccent"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="@dimen/shadow_height"
+        card_view:cardUseCompatPadding="false"
+        >
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dialog_choose_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="0.3"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:text="@string/ro_product_model_preset_value"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="0.3"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/dialog_default_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:text="@string/ro_product_model_last_value"
+            android:textSize="18dp" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

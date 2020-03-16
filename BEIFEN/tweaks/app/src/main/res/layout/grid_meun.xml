@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sv_index"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?Global_Divider"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="状态栏"
+                    android:layout_margin="15dp"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/select_wallpaper"
+                    style="@style/MyListButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:text="主题模式" />.
+            </RelativeLayout>
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_statusbar"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+     >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="通知栏"
+                        android:id="@+id/notificationbar_bar"
+                        android:textColor="?colorAccent"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"/>
+
+
+
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_pulldown"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+         >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="最近任务"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"
+                   />
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_task"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="锁定屏幕"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_keyguard"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+         >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="电源菜单"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_power"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="通信‖桌面"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_launcher"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="按键手势"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_keys"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="系统微调"
+                    android:textColor="?colorAccent"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"/>
+                <com.tweaks.leo.ui.LineGridView
+                    android:id="@+id/grid_system"
+                    android:layoutAnimation="@anim/grid_layout_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:numColumns="4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

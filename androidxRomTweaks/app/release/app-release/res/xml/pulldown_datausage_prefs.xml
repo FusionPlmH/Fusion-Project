@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_datausage_enabled" android:key="qs_datausage_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingListPreference android:entries="@array/data_usage_style_entries" android:title="@string/qs_datausage_location" android:key="qs_datausage_orientation" android:defaultValue="0" android:entryValues="@array/data_usage_style_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="18" android:title="@string/qs_datausage_size" android:key="leo_salt_qs_datausage_size" android:defaultValue="13" android:min="5" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/qs_datausage_font" android:key="qs_datausage_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/qs_sim_check" android:key="qs_datausage_multisim_enabled" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+</PreferenceScreen>

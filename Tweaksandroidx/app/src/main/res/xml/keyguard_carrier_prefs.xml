@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <org.salt.preference.SaltSettingCategoryPreference android:key="keyguard_carrier"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="keyguard_carrier_enabled"
+        android:title="@string/keyguard_carrier"
+        android:defaultValue="true"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="keyguard_carrier_enabled"
+        android:key="keyguard_carrier_custom_single_enabled"
+        android:title="@string/keyguard_alarm_dual"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSwitchPreferenceCompat
+        android:dependency="keyguard_carrier_enabled"
+        android:title="@string/keyguard_alarm_str_custom"
+        android:key="keyguard_carrier_custom"
+        salt:clickStyle="editTextDialog"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="keyguard_carrier_enabled"
+        android:key="keyguardcarriersize"
+        android:title="@string/keyguard_alarm_size"
+        android:defaultValue="14"
+        android:min="8"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <org.salt.preference.SaltListPreference
+        android:dependency="keyguard_carrier_enabled"
+        android:key="keyguard_carrier_symbol"
+        android:title="@string/keyguard_alarm_symbol"
+        android:defaultValue="0"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:entryValues="@array/symbol_style_values"
+        android:entries="@array/symbol_style_entries"
+        />
+
+    <org.salt.preference.SaltListPreference
+        android:dependency="keyguard_carrier_enabled"
+        android:key="keyguard_carrier_font_style"
+        android:title="@string/keyguard_alarm_font"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="keyguard_carrier_enabled"
+        android:key="keyguard_carrier_color_enabled"
+        android:title="@string/statusbar_carrier_color_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltColorPickerPreference
+        android:dependency="keyguard_carrier_color_enabled"
+        android:title="@string/statusbar_carrier_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        android:summary="0xC3FFFFFF"
+        salt:density="12"
+        salt:BroadcastKey="SALT_UPDATE_LOCKCARRIER_SETTINGS"
+        salt:alphaSlider="true"
+        android:key="keyguard_carrier_color"/>
+
+</androidx.preference.PreferenceScreen>

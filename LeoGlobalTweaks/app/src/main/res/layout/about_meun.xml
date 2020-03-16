@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:id="@+id/sv_index"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="?MainwindowBG"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" >
+        <android.support.v7.widget.CardView
+            android:id="@+id/about_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:onClick="onClick"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor">
+            <ImageView android:scaleType="centerCrop" android:id="@+id/about_head" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView  android:scaleType="centerCrop"
+                android:id="@+id/about_leo_logo"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:backgroundTint="@color/splashcolor2"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/system_title"
+                    android:paddingStart="16dp"
+                    android:textSize="@dimen/grid_title_size"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginBottom="15dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grid_mode"
+                    android:orientation="vertical">
+                    <com.leo.global.view.widget.LineGridView
+                        android:id="@+id/grid_about"
+                        android:layoutAnimation="@anim/grid_layout_animation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:verticalSpacing="10dp"
+                        android:numColumns="4"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor = "?attr/cardBackgroundColor"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/about_android"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+                    <ImageView
+
+                        android:gravity="start|center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/android" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="16dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="16dp">
+                        <TextView
+                            android:id="@+id/about_android_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:ellipsize="marquee"
+                            android:text="安卓信息"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/about_android_text"
+                            android:layout_alignStart="@id/about_android_text"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:maxLines="10"
+                            android:ellipsize="end"
+                            android:text="查看LeoROM版本、安卓版本、基带版本、内核版本等更多"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#AE9B9B9B" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/about_device"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:gravity="start|center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_about_display" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="16dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="16dp">
+                        <TextView
+                            android:id="@+id/about_device_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:ellipsize="marquee"
+                            android:text="手机信息"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/about_device_text"
+                            android:layout_alignStart="@id/about_device_text"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:maxLines="10"
+                            android:ellipsize="end"
+                            android:text="查看手机品牌型号、运营商、品牌、等更多信息"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#AE9B9B9B" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/about_hardware"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:gravity="start|center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_about_cpu" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="16dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="16dp">
+                        <TextView
+                            android:id="@+id/about_hardware_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:ellipsize="marquee"
+                            android:text="硬件信息"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/about_hardware_text"
+                            android:layout_alignStart="@id/about_hardware_text"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:maxLines="10"
+                            android:ellipsize="end"
+                            android:text="查看CPU、电池、分区存储、GPU 等信息"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#AE9B9B9B" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/about_app"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:gravity="start|center"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/app_view"
+                    android:layout_gravity="center"
+                    android:icon="@mipmap/ic_launcher"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp">
+                        <TextView
+                            android:id="@+id/about_app_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/app_name"
+                            android:textAppearance="?android:attr/textAppearanceListItem" />
+                        <TextView
+                            android:id="@+id/about_app_sumarry_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/about_app_text_view"
+                            android:layout_alignStart="@id/about_app_text_view"
+                            android:ellipsize="end"
+                            android:maxLines="10"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

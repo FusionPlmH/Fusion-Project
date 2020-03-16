@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/hardware_nav_keys"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="global_hwkeys_action_enable"
+        android:title="@string/keys_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback" android:dependency="global_hwkeys_action_enable"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:dependency="global_hwkeys_action_enable"
+        android:key="global_hwkeys_action_enable_vibrator_enable"
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="global_hwkeys_action_enable_vibrator_enable"
+        android:key="leo_salt_global_hwkeys_action_enable_vibrator_level"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/task_keys"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="global_hwkeys_action_enable"
+        android:key="recent_longpress_action"
+        android:title="@string/hardware_longpress_task"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/back_keys"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="global_hwkeys_action_enable"
+        android:key="back_longpress_action"
+        android:title="@string/hardware_longpress_back"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/home_keys"/>
+    <org.salt.preference.SaltListPreference
+        android:dependency="global_hwkeys_action_enable"
+        android:key="home_longpress_action"
+        android:title="@string/hardware_longpress_home"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+</androidx.preference.PreferenceScreen>

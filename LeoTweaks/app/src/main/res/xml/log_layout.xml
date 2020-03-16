@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="leo_tweaks_log_share_type"
+        android:title="@string/log_it_share_type_title"
+        android:entries="@array/log_it_share_type_entries"
+        android:entryValues="@array/log_it_share_type_values"
+        android:defaultValue="0" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory
+        android:title="日志项目" />
+    <CheckBoxPreference
+        android:key="leo_tweaks_logcat"
+        android:title="@string/logcat_title"
+        android:defaultValue="false"
+        android:summary="如果出现软件FC此日志必须抓取" />
+
+    <CheckBoxPreference
+        android:key="leo_tweaks_kmseg"
+        android:title="@string/kmesg_title"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="leo_tweaks_dmesg"
+        android:title="@string/dmesg_title"
+        android:defaultValue="false" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory
+        android:title="抓取分享" />
+
+    <com.tweaks.salt.preference.MyPreference
+        android:key="leo_tweaks_log_it"
+        android:title="@string/log_it_title"
+        android:summary="@string/log_it_summary" />
+    <com.tweaks.salt.preference.MyPreference
+        android:key="leo_tweaks_log_clean"
+        android:title="清理"
+        android:summary="删除上次抓取日志的文件" />
+</PreferenceScreen>

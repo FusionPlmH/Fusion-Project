@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+
+ >
+<TextView
+    android:paddingTop="10dp"
+    android:textSize="25dp"
+    android:paddingLeft="25dp"
+
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/grid_about_title"/>
+    <com.leo.service.plug.OverScrollGridView
+        android:scrollbars="none"
+        android:paddingTop="20dp"
+        android:id="@+id/grid_about"
+        android:layoutAnimation="@anim/grid_layout_animation"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="50dp"
+        android:numColumns="1"
+
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_weight="0.3"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sound_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            />
+
+        <ImageView
+            android:id="@+id/vibration_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/silence_selector"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="right"
+          />
+
+    </LinearLayout>
+
+</LinearLayout>

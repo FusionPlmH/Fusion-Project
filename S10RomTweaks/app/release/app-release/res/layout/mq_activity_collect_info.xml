@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/mq_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/content_sv" android:background="@color/mq_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mq_title_height">
+        <RelativeLayout android:id="@id/body_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/container_ll" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/title_rl" android:background="@drawable/mq_bg_title" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/back_rl" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" style="@style/MQWrapMatch">
+            <ImageView android:id="@id/back_iv" android:layout_marginRight="@dimen/mq_size_level1" android:src="@drawable/mq_ic_back" android:layout_centerVertical="true" style="@style/MQWrapMatch" />
+            <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@color/mq_activity_title_textColor" android:id="@id/back_tv" android:text="@string/mq_back" android:layout_toRightOf="@id/back_iv" android:layout_centerVertical="true" style="@style/MQWrapWrap" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@color/mq_activity_title_textColor" android:gravity="center" android:id="@id/title_tv" android:maxWidth="175.0dip" android:text="@string/mq_title_service_support" android:singleLine="true" android:drawablePadding="@dimen/mq_size_level1" android:layout_centerHorizontal="true" style="@style/MQWrapMatch" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/mq_activity_title_textColor" android:id="@id/submit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/mq_title_submit_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/mq_rotate_progress_bar" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+</RelativeLayout>

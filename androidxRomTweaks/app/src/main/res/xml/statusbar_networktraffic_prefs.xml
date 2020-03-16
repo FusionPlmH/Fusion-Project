@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_traffic_state" />
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:title="@string/statusbar_traffic_show_state" android:key="statusbar_traffic_state"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_traffic_values"
+        android:entries="@array/statusbar_traffic_options"
+        />
+
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:title="@string/statusbar_traffic_orientation" android:key="statusbar_traffic_orientation"
+        android:defaultValue="0"
+        android:entryValues="@array/statusbar_view_values"
+        android:entries="@array/statusbar_view_options"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_autohide_enabled"
+        android:title="@string/statusbar_traffic_autohide_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="statusbar_traffic_autohide_enabled"
+        android:key="threshold"
+        android:title="@string/statusbar_traffic_autohide_threshold"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="10"
+        salt:interval="1"
+        salt:unitsLeft=""
+        android:summary="@string/seekbar_sumarry"
+        salt:unitsRight=" KB/s"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_uint_style"
+        android:title="@string/statusbar_traffic_uint_style"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    .  <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_traffic_icon" />
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_icon_enabled"
+        android:title="@string/statusbar_traffic_icon_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="statusbar_traffic_icon_enabled"
+        android:key="statusbar_traffic_icon_orientation"
+        android:title="@string/statusbar_traffic_icon_orientation"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingIconListPreference
+        android:dependency="statusbar_traffic_icon_enabled"
+        android:title="@string/statusbar_traffic_icon_style"
+        android:key="statusbar_traffic_icon_style"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="0"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_traffic_padding" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="start_padding"
+        android:title="@string/statusbar_traffic_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="end_padding"
+        android:title="@string/statusbar_traffic_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="icon_padding"
+        android:title="@string/statusbar_traffic_icon_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    .  <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_traffic_text" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_text_enabled"
+        android:title="@string/statusbar_traffic_text_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:key="traffic_size"
+        android:title="@string/statusbar_traffic_size"
+        android:defaultValue="9"
+        android:min="5"
+        android:max="11"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        android:summary="@string/seekbar_text_sumarry"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:key="statusbar_traffic_font_style"
+        android:title="@string/statusbar_traffic_font_style"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_single_enabled"
+        android:title="@string/statusbar_traffic_single_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/statusbar_traffic_color_gategory" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_color_enabled"
+        android:title="@string/statusbar_traffic_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="statusbar_traffic_color_enabled"
+        android:title="@string/statusbar_traffic_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_traffic_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="statusbar_traffic_color_enabled"
+        android:title="@string/statusbar_traffic_icon_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        salt:reverseDependency="statusbar_traffic_extends_color"
+        android:key="statusbar_traffic_icon_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_dark_color_enabled"
+        android:title="@string/statusbar_traffic_dark_color_enabled"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="statusbar_traffic_dark_color_enabled"
+        android:title="@string/statusbar_traffic_dark_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99000000"
+        salt:density="12"
+        salt:alphaSlider="true"
+
+        android:key="statusbar_traffic_dark_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="statusbar_traffic_dark_color_enabled"
+        android:title="@string/statusbar_traffic_icon_dark_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0x99000000"
+        salt:density="12"
+        salt:alphaSlider="true"
+        salt:reverseDependency="statusbar_traffic_extends_color"
+        android:key="statusbar_traffic_icon_dark_color"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="statusbar_traffic_extends_color"
+        android:title="@string/statusbar_traffic_extends_color"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+</PreferenceScreen>

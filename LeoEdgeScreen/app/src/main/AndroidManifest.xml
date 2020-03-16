@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leo.edge.screen">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <application>
+        <meta-data android:name="com.samsung.android.cocktail.mode"
+            android:value="edge_single_plus"/>
+
+        <receiver android:name=".CocktailSaltProvider" >
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_single_plus" />
+        </receiver>
+    </application>
+</manifest>

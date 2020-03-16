@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/mq_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_rl" android:background="@drawable/mq_bg_title" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/back_rl" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" style="@style/MQWrapMatch">
+            <ImageView android:id="@id/back_iv" android:layout_marginRight="@dimen/mq_size_level1" android:src="@drawable/mq_ic_back" android:layout_centerVertical="true" style="@style/MQWrapMatch" />
+            <TextView android:textSize="@dimen/mq_title_left_right_textSize" android:textColor="@color/mq_activity_title_textColor" android:id="@id/back_tv" android:text="@string/mq_back" android:layout_toRightOf="@id/back_iv" android:layout_centerVertical="true" style="@style/MQWrapWrap" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@color/mq_activity_title_textColor" android:gravity="center" android:id="@id/title_tv" android:maxWidth="175.0dip" android:text="@string/mq_title_webview_rich_text" android:singleLine="true" android:drawablePadding="@dimen/mq_size_level1" android:layout_centerHorizontal="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_rl" />
+    <RelativeLayout android:id="@id/ll_robot_evaluate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/mq_textSize_level2" android:textColor="@color/mq_colorPrimary" android:gravity="center" android:id="@id/tv_robot_useless" android:background="@color/mq_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mq_useless" android:layout_weight="1.0" />
+            <View android:background="@color/mq_btn_slit_line_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/mq_textSize_level2" android:textColor="@color/mq_colorPrimary" android:gravity="center" android:id="@id/tv_robot_useful" android:background="@color/mq_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mq_useful" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/mq_textSize_level2" android:textColor="@color/mq_gray" android:gravity="center" android:id="@id/tv_robot_already_feedback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mq_already_feedback" />
+        </LinearLayout>
+        <View android:background="@color/mq_btn_slit_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

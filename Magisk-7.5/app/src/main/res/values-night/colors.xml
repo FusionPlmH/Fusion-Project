@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary">#FFC107</color>
+    <color name="colorSecondaryDark">#AD8305</color>
+
+    <color name="colorText">@color/colorAccentMain</color>
+    <color name="colorTextInactive">@color/colorAccentMain</color>
+    <color name="colorTextInverse">@color/colorAccentMain</color>
+
+    <color name="colorTextTinted">@color/colorAccentMain</color>
+    <color name="colorCardStrokeInverse">@color/colorAccentMain</color>
+
+</resources>

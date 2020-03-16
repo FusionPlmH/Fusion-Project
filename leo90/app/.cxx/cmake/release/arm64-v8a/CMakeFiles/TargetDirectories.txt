@@ -1,0 +1,5 @@
+D:/AndroidTools/code/leo90/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/AndroidTools/code/leo90/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/salt6.6.dir
+D:/AndroidTools/code/leo90/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/Amber9.4.520.dir
+D:/AndroidTools/code/leo90/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/sec_9.0.dir
+D:/AndroidTools/code/leo90/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir

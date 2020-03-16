@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="自定义动作" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="允许自定义电源键动作" android:key="leo_tweaks_power_action_toggle" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+	<com.tweaks.leo.preference.MyPreferenceCategory android:title="电源键(非锁屏)" android:dependency="leo_tweaks_power_action_toggle">
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="长按电源键动作" android:key="leo_tweaks_hardware_power_button_long_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="长按电源键启动程序" android:key="leo_tweaks_hardware_power_button_long_action_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_fingerprint_entries" android:title="双击电源键动作" android:key="leo_tweaks_hardware_power_double_action"  android:defaultValue="0" android:entryValues="@array/notification_fingerprint_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="双击电源键启动程序" android:key="leo_tweaks_hardware_power_double_action_app"  includeSearch="true" setSeparatorString="\###" />
+        <com.tweaks.leo.preference.MyPreferenceAlerts android:summary="@string/leo_tweaks_hardware_power_double_action_app" android:key="USEFUL_FEATURE_MAIN_SETTINGS"/>
+        <com.tweaks.leo.preference.CardPreferenceBorder  />
+</com.tweaks.leo.preference.MyPreferenceCategory>
+        <com.tweaks.leo.preference.MyPreferenceCategory android:title="电源键(锁屏状态)" android:dependency="leo_tweaks_power_action_toggle">
+        <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_ls_entries" android:title="长按电源键动作(锁屏状态)" android:key="leo_tweaks_hardware_power_ls_long_action"  android:defaultValue="125" android:entryValues="@array/notification_ls_values" />
+        <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_qb_entries" android:title="双击电源键动作(锁屏状态)" android:key="leo_tweaks_hardware_power_double_ls_action"  android:defaultValue="88" android:entryValues="@array/notification_qb_values" />
+    </com.tweaks.leo.preference.MyPreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/log_log" />
+    <CheckBoxPreference android:title="@string/logcat_title" android:key="leo_tweaks_logcat" android:summary="@string/log_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/kmesg_title" android:key="leo_tweaks_kmseg" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/dmesg_title" android:key="leo_tweaks_dmesg" android:defaultValue="false" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/log_it_title" />
+    <com.leo.salt.preference.MyPreference android:title="@string/log_it_title" android:key="leo_tweaks_log_it" android:summary="@string/log_it_summary" />
+    <com.leo.salt.preference.MyPreference android:title="@string/log_clean" android:key="leo_tweaks_log_clean" android:summary="@string/log_clean_summary" />
+    <PreferenceScreen android:enabled="false">
+        <ListPreference android:entries="@array/log_it_share_type_entries" android:title="@string/log_it_share_type_title" android:key="leo_tweaks_log_share_type" android:defaultValue="0" android:entryValues="@array/log_it_share_type_values" />
+        <com.leo.salt.preference.CardPreferenceBorder />
+    </PreferenceScreen>
+</PreferenceScreen>

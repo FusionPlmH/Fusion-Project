@@ -1,0 +1,21 @@
+<resources>
+    <string name="hitomi_power_menu_airplane">Modo Avión</string>
+    <string name="hitomi_power_menu_download">Modo Download</string>
+    <string name="hitomi_power_menu_flashlight">Linterna</string>
+    <string name="hitomi_power_menu_floating">Bola Flotante</string>
+    <string name="hitomi_power_menu_leo">Leo Power Menu</string>
+    <string name="hitomi_power_menu_mipop">Asistente de Pantalla</string>
+    <string name="hitomi_power_menu_mobiledata">Datos Móviles</string>
+    <string name="hitomi_power_menu_name">Hitomi Menú Power</string>
+    <string name="hitomi_power_menu_outdoors">Modo al Aire libre</string>
+    <string name="hitomi_power_menu_quick_reboot">Reinicio Rápido</string>
+    <string name="hitomi_power_menu_recovery">Modo Recovery</string>
+    <string name="hitomi_power_menu_restart">Reiniciar</string>
+    <string name="hitomi_power_menu_screenrecord">Grabación de Pantalla</string>
+    <string name="hitomi_power_menu_screenshot">Captura de Pantalla</string>
+    <string name="hitomi_power_menu_shutdown">Apagar</string>
+    <string name="hitomi_power_menu_sound">Modo Sonido</string>
+    <string name="hitomi_power_menu_wifi">Modo Wifi</string>
+    <string name="hitomi_power_menu_vibration">Modo Vibración</string>
+    <string name="hitomi_power_menu_silence">Modo Silencioso</string>
+</resources>

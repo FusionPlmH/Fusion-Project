@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/list_grid_item_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="16.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="18.0dip">
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="15.0dip" android:id="@id/list_grid_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:colorAccent" android:text="wewewq" />
+            <TextView android:textAppearance="?android:textAppearanceListItemSecondary" android:textSize="14.0dip" android:textColor="?android:textColorSecondary" android:ellipsize="marquee" android:id="@id/list_grid_item_summary" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5555" android:singleLine="true" android:layout_below="@id/assist_item_name" android:fadeScrollbars="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ae9b9b9b" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="42.0dip" />
+</LinearLayout>

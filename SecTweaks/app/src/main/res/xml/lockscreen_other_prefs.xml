@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/quick_unlock" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/fingerprint_unlock" android:key="leo_tweaks_fingerprint_unlock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/biometric_unlock" android:key="leo_tweaks_biometric_unlock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_other" />
+
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/keyguard_statusbar_enabled" android:key="leo_tweaks_statusbar_keyguard" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/keyguard_wallpaper" />
+    <PreferenceScreen  android:title="@string/keyguard_wallpaper_viewpager" android:summary="@string/keyguard_wallpaper_viewpager_sumarry">
+        <intent android:targetPackage="com.samsung.android.keyguardwallpaperupdator" android:action="android.intent.action.MAIN" android:targetClass="com.samsung.android.keyguardwallpaperupdator.ui.KeyguardPhotoSlideMainActivity" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

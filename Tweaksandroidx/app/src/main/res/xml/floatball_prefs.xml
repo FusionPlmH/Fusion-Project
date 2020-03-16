@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/floatball_name"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BallDisplay"
+        android:title="@string/floatball_start"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+
+        />
+    <org.salt.preference.SaltInfoPreference salt:infoTitle="使用帮助"
+        salt:infoMessage="悬浮球支持:点击 ↑上滑↓下滑←左滑→右滑 下滑3ms则隐藏悬浮球(需开启此功能) 长按悬浮球可移动悬浮球位置"
+
+        salt:imageBoolean="false"
+        android:key="Ballarning"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference  android:dependency="BallDisplay" android:title="悬浮球细节">
+
+
+    <org.salt.preference.SaltIconListPreference
+        android:title="@string/floatball_icon_style"
+        android:key="qs_floatball_style"
+        salt:drawableIconColor="?transparency"
+        android:defaultValue="0"
+
+        />
+
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="Ballsize"
+        android:title="@string/floatball_size"
+        android:defaultValue="10"
+        android:min="5"
+        android:max="15"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BallConceal"
+
+        android:title="@string/floatball_hide"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/vibrator_feedback"  android:key="BallibratoDisplay" android:dependency="BallDisplay">
+    <org.salt.preference.SaltSwitchPreference
+        android:title="@string/vibrator"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        android:key="BallVibrator"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:dependency="BallVibrator"
+        android:key="BallLevel"
+        android:title="@string/vibratorlevel"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="45"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight="@string/vibratorlevel_title"
+        />
+    </org.salt.preference.SaltSettingCategoryPreference>
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/floatball_action"  android:key="Ballactionlay"  android:dependency="BallDisplay">
+    <org.salt.preference.SaltListPreference
+
+        android:key="floclick"
+        android:title="@string/floatball_click"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="BallUP"
+        android:title="@string/floatball_up"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+        <org.salt.preference.SaltListPreference
+            android:key="BallDown"
+            android:title="@string/floatball_down"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+        <org.salt.preference.SaltListPreference
+            android:key="BallLeft"
+            android:title="@string/floatball_left"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+        <org.salt.preference.SaltListPreference
+            android:key="BallRight"
+            android:title="@string/floatball_right"
+            android:defaultValue="0"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries"
+            />
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="GoodLock_entries">
+        <item>Edge Lighting</item>
+        <item>Multitask Menu</item>
+        <item>OneHand Mode</item>
+    </string-array>
+
+    <string-array name="log_it_share_type_values">
+              <item>0</item>
+        </string-array>
+		
+        <string-array name="log_it_share_type_entries">
+            <item>zip</item>
+       </string-array>
+
+    <string-array name="network_items">     
+        <item>Network Menu</item> 
+        <item>@string/show_dsp_sumarry</item>
+          
+    </string-array>
+
+
+    <string-array name="dpi_dialog_items">
+        <item>480 dpi</item>
+        <item>450 dpi</item>
+        <item>420 dpi</item>
+        <item>390 dpi</item>
+        <item>360 dpi</item>
+        <item>330 dpi</item>
+        <item>customize</item>
+    </string-array>
+    <string-array name="dpi_dialog_values">
+        <item>480</item>
+        <item>450</item>
+        <item>420</item>
+        <item>390</item>
+        <item>360</item>
+        <item>330</item>
+        <item>Custom DPI</item>
+    </string-array>
+
+    <string-array name="bg_type_entries">
+        <item>customize Colour</item>
+        <item>Backgroup Wallpaper</item>
+    </string-array>
+    <string-array name="bg_type_values">
+        <item>0</item>
+        <item>666</item>
+    </string-array>
+</resources>
+
+

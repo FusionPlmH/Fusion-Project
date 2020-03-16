@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="window_animation_scale_entries">
+        <item>禁用动画</item>
+        <item>动画 0.2x</item>
+        <item>动画 0.25x</item>
+        <item>动画 0.3x</item>
+        <item>动画 0.4x</item>
+        <item>动画 0.5x</item>
+        <item>动画 0.6x</item>
+        <item>动画 0.7x</item>
+        <item>动画 0.8x</item>
+        <item>动画 0.9x</item>
+        <item>动画 1x</item>
+        <item>动画 1.5x</item>
+        <item>动画 2x</item>
+        <item>动画 3x</item>
+        <item>动画 5x</item>
+        <item>动画 10x</item>
+    </string-array>
+  <string-array name="backup_items">
+        <item>备份数据</item>
+        <item>恢复数据</item>
+    </string-array>
+    <string-array name="wipe_entries">
+        <item>清理 Data</item>
+        <item>清理 Cache</item>
+        <item>清理 Dalvik</item>
+        <item>清理 System setup and Data</item>
+    </string-array>
+    <string-array name="network_items">     
+        <item>隐藏网络菜单</item> 
+        <item>@string/show_dsp_sumarry</item>
+        <item>三星隐藏网络菜单</item>   
+    </string-array>
+    <string-array name="statusbar_icon_hide_options">
+        <item>屏幕旋转</item>
+        <item>HD1</item>
+        <item>HD2</item>
+        <item>闹钟</item>
+        <item>移动数据</item>
+        <item>省电模式</item>
+        <item>飞行模式</item>
+        <item>耳机</item>
+        <item>声音/震动</item>
+        <item>WIFI</item>
+        <item>蓝牙</item>
+        <item>NFC</item>
+        <item>电池(仅限官方)</item>
+        <item>投射</item>
+    </string-array>
+
+    <string-array name="device_info_entries">
+        <item>设备信号</item>
+        <item>安卓版本</item>
+        <item>ROM编译版本号</item>
+        <item>无线网络</item>
+        <item>下一个闹钟</item>
+        <item>温度</item>
+        <item>存储</item>
+        <item>电池状态</item>
+        <item>CPU使用率</item>
+        <item>CPU型号</item>
+        <item>CPU频率</item>
+        <item>电池容量</item>
+        <item>电压电流</item>
+    </string-array>
+    <string-array name="device_orientation_entries">
+        <item>居中</item>
+         <item>右对齐</item>
+        <item>左对齐</item>
+    </string-array>
+    <string-array name="device_orientation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="location_service">
+        <item>高德定位</item>
+        <item>百度定位(默认)</item>
+    </string-array>
+    <string-array name="clock_date_format_entries_values">
+        <item>EEE</item>
+        <item>MMMd日</item>
+        <item>MMMdd日</item>
+        <item>MM月dd日</item>
+        <item>yy年-MM月-dd日</item>
+        <item>yyyy年-MM月-dd日</item>
+        <item>yy年MM月dd日</item>
+        <item>yy年MMMd日</item>
+        <item>yy/MM/dd</item>
+        <item>yyy/MM/dd</item>
+        <item>MMMdd</item>
+        <item>M/d</item>
+        <item>yyyy年,MMMd日</item>
+        <item>MM/dd</item>
+        <item>yy年MMM</item>
+        <item>自定义</item>
+    </string-array>
+     <string-array name="date_style_entries">
+        <item>日期右侧</item>
+        <item>日期左侧</item>
+    </string-array>
+
+
+    <string-array name="dpi_dialog_items">
+        <item>480 dpi</item>
+        <item>450 dpi</item>
+        <item>420 dpi</item>
+        <item>390 dpi</item>
+        <item>360 dpi</item>
+        <item>330 dpi</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="battery_bar_entries">
+        <item>隐藏</item>
+        <item>状态栏顶部</item>
+        <item>锁屏顶部</item>
+
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>正常</item>
+        <item>居中</item>
+    </string-array>
+
+    <string-array name="battery_model_entries">
+        <item>系统默认</item>
+        <item>Leo电池组</item>
+    </string-array>
+
+    <string-array name="bg_gradient_type_entries">
+        <item>由上至下渐变</item>
+        <item>由下至上渐变</item>
+        <item>由左至右渐变</item>
+        <item>由右至左渐变</item>
+        <item>由右下角至往左上角渐变</item>
+        <item>由左下角至右上角渐变</item>
+        <item>由左上角至右下角渐变</item>
+        <item>由右上角至左下角渐变</item>
+    </string-array>
+
+ <string-array name="bg_three_gradient_model_type_entries">
+        <item>线性渐变</item>
+        <item>放射渐变</item>
+        <item>扫描渐变</item>
+    </string-array>
+
+    <string-array name="bg_type_entries">
+        <item>自定义颜色</item>
+        <item>背景壁纸</item>
+    </string-array>
+    <string-array name="clock_date_display_entries">
+        <item>隐藏</item>
+        <item>小号</item>
+        <item>正常</item>
+    </string-array>
+
+    <string-array name="clock_date_style_entries">
+        <item>正常</item>
+        <item>英文日期为小写字母</item>
+        <item>英文日期为大写字母</item>
+    </string-array>
+
+   <string-array name="clock_date_week_entries">
+        <item>周一</item>
+        <item>星期一</item>
+        <item>一</item>
+        <item>日语星期</item>
+    </string-array>
+
+     <string-array name="clock_details_entries">
+        <item>12时辰</item>
+        <item>12时段</item>
+        <item>星座</item>
+        <item>农历</item>
+        <item>季节</item>
+    </string-array>
+    <string-array name="logo_style_entries">
+        <item>Leo ROM</item>
+        <item>阿里巴巴</item>
+        <item>苹果</item>
+        <item>百度</item>
+        <item>中国移动</item>
+        <item>谷歌</item>
+        <item>IOS</item>
+        <item>Linux</item>
+        <item>腾讯QQ</item>
+        <item>中国电信</item>
+        <item>中国联通</item>
+        <item>微软</item>
+        <item>Ubuntu</item>
+        <item>中国电信2</item>
+    </string-array>
+    <string-array name="font_style_entries">
+        <item>系统默认</item>
+        <item>字体1</item>
+        <item>字体2</item>
+        <item>字体3</item>
+        <item>字体4</item>
+        <item>字体5</item>
+        <item>字体6</item>
+        <item>字体7</item>
+        <item>字体8</item>
+        <item>字体9</item>
+        <item>字体10</item>
+        <item>字体11</item>
+        <item>字体12</item>
+        <item>字体14</item>
+        <item>字体15</item>
+        <item>字体16</item>
+        <item>字体17</item>
+        <item>字体18</item>
+        <item>字体19</item>
+        <item>字体20</item>
+        <item>字体21</item>
+        <item>字体22</item>
+        <item>字体23</item>
+        <item>字体24</item>
+        <item>字体25(支持简体中文)</item>
+        <item>字体26(支持简体中文)</item>
+        <item>字体27(支持简体中文)</item>
+        <item>字体28(支持简体中文)</item>
+        <item>字体29(支持简体中文)</item>
+        <item>字体30(支持简体中文)</item>
+        <item>字体31(支持简体中文)</item>
+        <item>字体32(支持简体中文)</item>
+        <item>字体33(支持简体中文)</item>
+        <item>字体34(支持简体中文)</item>
+        <item>字体35(支持简体中文)</item>
+        <item>字体36 Hitomi定制</item>
+    </string-array>
+    <string-array name="votage_style_entries">
+        <item>电压</item>
+        <item>电流</item>
+        <item>电压+电流</item>
+    </string-array>
+   <string-array name="signal_style">
+        <item>默认</item>
+        <item>信号图标1</item>
+        <item>信号图标2</item>
+        <item>信号图标3</item>
+        <item>信号图标4</item>
+        <item>信号图标5</item>
+        <item>信号图标6</item>
+        <item>信号图标7</item>
+        <item>信号图标8</item>
+        <item>信号图标9</item>
+        <item>信号图标10</item>
+        <item>信号图标11</item>
+        <item>信号图标12</item>
+        <item>信号图标13</item>
+        <item>信号图标14</item>
+        <item>信号图标15</item>
+        <item>信号图标16</item>
+        <item>信号图标17</item>
+        <item>信号图标18</item>
+    </string-array>
+    <string-array name="status_bar_ampm_entries">
+        <item>禁用</item>
+        <item>小</item>
+        <item>正常</item>
+    </string-array>
+
+    <string-array name="traffic_state_entries">
+        <item>隐藏网速指示器</item>
+        <item>显示上传网速</item>
+        <item>显示下载网速</item>
+        <item>显示上传与下载</item>
+    </string-array>
+
+    <string-array name="wifi_style">
+        <item>默认</item>
+        <item>WIFI图标1</item>
+        <item>WIFI图标2</item>
+        <item>WIFI图标3</item>
+        <item>WIFI图标4</item>
+        <item>WIFI图标5</item>
+        <item>WIFI图标6</item>
+        <item>WIFI图标7</item>
+        <item>WIFI图标8</item>
+        <item>WIFI图标9</item>
+        <item>WIFI图标10</item>
+        <item>WIFI图标11</item>
+        <item>WIFI图标12</item>
+        <item>WIFI图标13</item>
+        <item>WIFI图标14</item>
+        <item>WIFI图标15</item>
+    </string-array>
+ <string-array name="data_usage_style_entries">
+        <item>左边</item>
+        <item>居中</item>
+        <item>默认</item>
+    </string-array>
+  <string-array name="power_items">
+        <item>关闭电源</item>
+        <item>重新启动</item>
+        <item>快速重启</item>
+        <item>卡刷模式</item>
+        <item>线刷模式</item>
+        <item>重启UI</item>
+    </string-array>
+ <string-array name="network_icon_style">
+        <item>默认网速图标</item>
+        <item>网速图标1</item>
+        <item>网速图标2</item>
+        <item>网速图标3</item>
+        <item>网速图标4</item>
+        <item>网速图标5</item>
+        <item>网速图标6</item>
+        <item>网速图标7</item>
+    </string-array>
+    <string-array name="GoodLock_entries">
+        <item>侧屏闪光</item>
+        <item>多任务切换</item>
+        <item>单手操作</item>
+    </string-array>
+</resources>
+
+

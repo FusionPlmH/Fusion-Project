@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/help_card"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="?colorAccent"
+        card_view:cardCornerRadius="@dimen/card_view_radius"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/help_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:text="帮助"
+                    android:textSize="20dp"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_info" />
+            </RelativeLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/help_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF"
+                android:textSize="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/info_imgs"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/fingerprint_title" />
+    <com.leo.salt.preference.SaltSettingSystemSwitchPreference android:title="@string/fingerprint_custom" android:key="fingerprint_gesture_quick" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/fingerprint_gesture" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/fingerprint_upglide" android:key="fingerprint_up_action" android:dependency="fingerprint_gesture_quick" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/global_action_entries" android:title="@string/fingerprint_glide" android:key="fingerprint_down_action" android:dependency="fingerprint_gesture_quick" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+</PreferenceScreen>

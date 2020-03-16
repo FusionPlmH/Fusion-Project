@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+  <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppBarLight"
+      android:id="@+id/app_bar"
+      app:layout_scrollFlags="scroll"
+      android:fitsSystemWindows="true"
+      android:layout_width="fill_parent"
+      android:layout_height="200.0dip"
+      app:elevation="0dp"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:contentScrim="?colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:statusBarScrim="@android:color/transparent"
+        app:expandedTitleGravity="center"
+        app:titleEnabled="true">
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="fill_parent"
+          android:layout_height="?actionBarSize"
+          android:minHeight="?actionBarSize"
+          app:layout_collapseMode="pin"
+          app:contentInsetStartWithNavigation="0dp"
+         />
+      <LinearLayout
+          android:id="@+id/CollapsingToolbarLayoutText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:animateLayoutChanges="true"
+          android:layout_gravity="bottom"
+          android:gravity="center_vertical"
+          android:layout_marginLeft="20dp"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:id="@+id/CollapsingToolbarLayoutSubText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="www"
+            android:textSize="20dp"
+            android:textColor="?navColorSelector" />
+      </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/nestedScrollView"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/navigation"
+      android:fillViewport="true"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.salt.frame.saltview.SaltListView
+        android:id="@+id/file_selector_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.salt.frame.saltview.SaltListView>
+  </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

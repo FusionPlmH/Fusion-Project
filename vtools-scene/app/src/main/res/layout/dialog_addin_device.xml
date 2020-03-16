@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="26dp"
+    android:paddingTop="10dp"
+    android:paddingRight="26dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/dialog_addin_device_warn"
+        android:textColor="?colorAccent"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/dialog_addin_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ro_product_model"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/dialog_addin_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ro_product_brand"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/dialog_addin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ro_product_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/dialog_addin_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ro_product_device"
+        android:inputType="text" />
+    <!--<EditText
+        android:id="@+id/dialog_addin_product"
+        android:hint="ro.build.product="
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />-->
+    <EditText
+        android:id="@+id/dialog_addin_manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ro_product_manufacturer"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_chooser"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_bg"
+            android:text="选择模板"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/dialog_addin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_bg"
+            android:text="还原"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

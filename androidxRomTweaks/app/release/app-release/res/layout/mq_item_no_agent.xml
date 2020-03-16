@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:padding="@dimen/mq_size_level3" style="@style/MQMatchWrap.Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_event_gray" android:text="@string/mq_no_agent_leave_msg_tip" style="@style/MQWrapWrap" />
+    <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_colorPrimary" android:id="@id/tv_no_agent_leave_msg" android:paddingLeft="@dimen/mq_size_level1" android:paddingRight="@dimen/mq_size_level1" android:clickable="true" android:text="@string/mq_leave_msg" style="@style/MQWrapWrap" />
+</LinearLayout>

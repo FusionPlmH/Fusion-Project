@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="官方全局返回手势设置" />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BackEnabledBackGesture"
+        android:title="自定义全局返回手势动作"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="BackGesture"
+        android:dependency="BackEnabledBackGesture"
+        android:title="选择右侧手势动作"
+        android:defaultValue="200"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltListPreference
+        android:key="BackGestureLeft"
+        android:dependency="BackEnabledBackGesture"
+        android:title="选择左侧手势动作"
+        android:defaultValue="202"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BackHideFeedback"
+        android:dependency="BackEnabledBackGesture"
+        android:title="禁用返回手势震动回馈"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="官方全局返回手势箭头设置" android:dependency="BackEnabledBackGesture" >
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BackHideArrows"
+        android:title="隐藏返回手势箭头"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        salt:reverseDependency="BackEnabledArrowsColor"
+        />
+
+    <org.salt.preference.SaltSwitchPreference
+        android:key="BackEnabledArrowsColor"
+        android:title="自定义返回箭头颜色"
+        android:defaultValue="false"
+        salt:reverseDependency="BackHideArrows"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="设置返回箭头颜色"
+        salt:lightnessSlider="true"
+        android:dependency="BackEnabledArrowsColor"
+        salt:reverseDependency="BackHideArrows"
+        android:defaultValue="@color/gray"
+        android:summary="@color/gray"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="BackArrowsColor"/>
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

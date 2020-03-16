@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="状态栏LOGO"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_logo_enabled"
+        android:title="@string/statusbar_logo_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltIconListPreference
+        android:title="@string/statusbar_logo_style"
+        android:key="statusbar_logo_style"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        salt:drawableIconColor="?colorAccent"
+        android:defaultValue="0"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_logo_auto"
+        android:title="自动识别运营商LOGO"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="LOGO位置"/>
+    <org.salt.preference.SaltListPreference
+        android:title="@string/statusbar_logo_orientation" android:key="statusbar_logo_orientation"
+        android:defaultValue="0"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:entryValues="@array/statusbar_view_values"
+        android:entries="@array/statusbar_view_options" />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="logo_size"
+        android:title="@string/statusbar_logo_size"
+        android:defaultValue="8"
+        android:min="5"
+        android:max="9"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="start_padding"
+        android:title="@string/statusbar_logo_start_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="end_padding"
+        android:title="@string/statusbar_logo_end_padding"
+        android:defaultValue="1"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft="@string/padding_title"
+        salt:unitsRight=" dp"
+        android:summary="@string/seekbar_padding_sumarry"
+        />
+    <org.salt.preference.SaltSettingCategoryPreference android:title="LOGO颜色"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:key="statusbar_logo_color_enabled"
+        android:title="@string/statusbar_logo_color_enabled"
+        android:defaultValue="false"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/statusbar_logo_color"
+        salt:lightnessSlider="true"
+        salt:BroadcastKey="@string/broadcast_stausbar"
+        android:defaultValue="0xC3FFFFFF"
+        android:summary="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="statusbar_logo_color"/>
+
+</androidx.preference.PreferenceScreen>

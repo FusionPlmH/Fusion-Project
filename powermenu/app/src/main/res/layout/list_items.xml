@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/menu_item"
+  android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" >
+   <!-- 菜单项的图标 -->
+   <ImageView
+       android:id="@+id/menu_img"
+      android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+    
+       />
+   
+  <!-- 菜单项的文字 -->
+   <TextView
+
+      android:id="@+id/menu_name"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="15dp"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       />
+    </LinearLayout>
+ </LinearLayout>

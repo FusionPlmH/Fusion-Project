@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/thumbnailImage" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" android:contentDescription="@null" />
+        <TextView android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/thumbnailText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <RadioButton android:layout_gravity="center" android:id="@id/thumbnailRadioButton" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

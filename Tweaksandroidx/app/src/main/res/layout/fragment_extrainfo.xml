@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"  android:layout_height="wrap_content" android:orientation="vertical"  xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical" android:padding="@dimen/grid_top" >
+
+
+                        <TextView android:id="@+id/make_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:text="生产信息"
+                            />
+
+                        <TextView android:id="@+id/make_info"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:layout_marginBottom="@dimen/view_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/cpu_title"
+                            android:layout_alignStart="@id/cpu_title"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+
+
+        </LinearLayout>
+        <View android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="@dimen/grid_top"  />
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="@dimen/grid_top" android:orientation="vertical">
+
+                        <TextView android:id="@+id/cpu_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:text=""
+                            />
+
+                        <TextView android:id="@+id/cpu_info"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:layout_marginBottom="@dimen/view_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/cpu_title"
+                            android:layout_alignStart="@id/cpu_title"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                </LinearLayout>
+
+        </LinearLayout>
+        <View android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="@dimen/grid_top"  />
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="@dimen/grid_top" android:orientation="vertical">
+
+                        <TextView android:id="@+id/storage_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:text=""
+                            />
+                        <TextView android:id="@+id/storage_info"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:layout_marginBottom="@dimen/view_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/storage_title"
+                            android:layout_alignStart="@id/storage_title"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                </LinearLayout>
+
+        </LinearLayout>
+        <View android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="@dimen/grid_top"  />
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="@dimen/grid_top" android:orientation="vertical">
+
+                        <TextView android:id="@+id/screen_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:text=""
+                            />
+                        <TextView android:id="@+id/screen_info"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:layout_marginBottom="@dimen/view_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/storage_title"
+                            android:layout_alignStart="@id/storage_title"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                </LinearLayout>
+
+        </LinearLayout>
+        <View android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="@dimen/grid_top"  />
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="@dimen/grid_top" android:orientation="vertical">
+
+                        <TextView android:id="@+id/battery_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceListItem"
+                            android:text=""
+                            />
+                        <TextView android:id="@+id/battery_info"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:layout_marginBottom="@dimen/view_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/storage_title"
+                            android:layout_alignStart="@id/storage_title"
+                            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                </LinearLayout>
+
+        </LinearLayout>
+        <View android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="@dimen/grid_top"  />
+        <LinearLayout style="@style/saltlinearLayoutCompat_vertical" android:id="@+id/link_conut">
+                <TextView
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginBottom="@dimen/view_margin"
+                    android:padding="@dimen/grid_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/link_count"/>
+        </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ParticleView">
+		<attr name="pv_host_text" format="string"></attr>
+		<attr name="pv_host_text_size" format="dimension"></attr>
+		<attr name="pv_particle_text" format="string"></attr>
+		<attr name="pv_particle_text_size" format="dimension"></attr>
+		<attr name="pv_text_color" format="color"></attr>
+		<attr name="pv_background_color" format="color"></attr>
+		<attr name="pv_text_anim_time" format="integer"></attr>
+		<attr name="pv_spread_anim_time" format="integer"></attr>
+		<attr name="pv_host_text_anim_time" format="integer"></attr>
+	</declare-styleable>
+	<declare-styleable name="RamInfo">
+		<attr name="total" format="integer"/>
+		<attr name="free" format="integer"/>
+	</declare-styleable>
+	<attr name="Global_Divider" format="color" />
+	<attr name="colorCollapsing" format="color" />
+	<attr name="BottomNavigationBackground" format="color" />
+	<attr name="navColorSelector" format="color|reference"/>
+	<attr name="stringColor" format="color|reference"/>
+	<attr name="cardPrefe" format="color|reference"/>
+	<attr name="transparency" format="color" />
+	<attr name="MainwindowBG" format="color" />
+   <attr name="stringNightMode" format="string"/>
+   <attr name="iconNightMode" format="reference"/>
+	<declare-styleable name="LeoPreference">
+		<!-- preference -->
+		<attr name="isSilent" format="integer"/>
+		<attr name="reverseDependency" format="string"/>
+	</declare-styleable>
+	<declare-styleable name="BannerLayoutStyle">
+		<attr name="selectedIndicatorColor" format="color|reference" />
+		<attr name="unSelectedIndicatorColor" format="color|reference" />
+		<attr name="indicatorShape" format="enum">
+			<enum name="rect" value="0" />
+			<enum name="oval" value="1" />
+		</attr>
+
+		<attr name="defaultImage" format="integer|reference"/>
+		<attr name="selectedIndicatorHeight" format="dimension|reference" />
+		<attr name="selectedIndicatorWidth" format="dimension|reference" />
+
+		<attr name="unSelectedIndicatorHeight" format="dimension|reference" />
+		<attr name="unSelectedIndicatorWidth" format="dimension|reference" />
+
+		<attr name="indicatorPosition" format="enum">
+			<enum name="centerBottom" value="0" />
+			<enum name="rightBottom" value="1" />
+			<enum name="leftBottom" value="2" />
+			<enum name="centerTop" value="3" />
+			<enum name="rightTop" value="4" />
+			<enum name="leftTop" value="5" />
+		</attr>
+
+		<attr name="indicatorSpace" format="dimension|reference" />
+		<attr name="indicatorMargin" format="dimension|reference" />
+		<attr name="autoPlayDuration" format="integer|reference" />
+		<attr name="scrollDuration" format="integer|reference" />
+		<attr name="isAutoPlay" format="boolean|reference"/>
+	</declare-styleable>
+	<declare-styleable name="FloatingToolbar">
+		<attr name="floatingToastOnLongClick" format="boolean"/>
+		<attr name="floatingHandleFabClick" format="boolean"/>
+		<attr name="floatingAutoHide" format="boolean"/>
+		<attr name="floatingMenu" format="reference"/>
+		<attr name="floatingItemBackground" format="reference"/>
+		<attr name="floatingCustomView" format="reference"/>
+	</declare-styleable>
+
+	<dimen name="floatingtoolbar_start_elevation">6dp</dimen>
+	<dimen name="floatingtoolbar_translationz">2dp</dimen>
+
+</resources>

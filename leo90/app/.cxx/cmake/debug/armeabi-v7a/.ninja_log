@@ -1,0 +1,11 @@
+# ninja log v5
+0	349	593807757	CMakeFiles/salt6.6.dir/src/main/cpp/salt6.6.cpp.o	63c961444ff04117
+3	357	593807757	CMakeFiles/Amber9.4.520.dir/src/main/cpp/Amber9.4.520.cpp.o	ff1f252e850615d1
+2	370	593807757	CMakeFiles/sec_9.0.dir/src/main/cpp/sec_9.0.cpp.o	f42ccf2b1e1b8164
+349	430	593807757	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsalt6.6.so	66b08ecae7b2355f
+358	437	593807757	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libAmber9.4.520.so	b38621bd6b8815b
+370	450	593807757	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsec_9.0.so	cd12f2e0211aba3
+1	331	593820545	CMakeFiles/salt6.6.dir/src/main/cpp/salt6.6.cpp.o	63c961444ff04117
+331	413	593820546	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsalt6.6.so	66b08ecae7b2355f
+1	371	593915028	CMakeFiles/Amber9.4.520.dir/src/main/cpp/Amber9.4.520.cpp.o	ff1f252e850615d1
+371	491	593915028	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libAmber9.4.520.so	b38621bd6b8815b

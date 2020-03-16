@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="permissionNames">
+        <item>@string/permission_storage</item>
+        <item>@string/permission_phone</item>
+    </array>
+    <string-array name="device_templates">
+        <item>Samsung&#160;S10\nSM-G9730</item>
+        <item>Samsung&#160;S10+\nSM-G9750</item>
+        <item>Samsung&#160;S9+\nSM-G9650</item>
+        <item>Samsung&#160;S10+\nSM-G975F</item>
+        <item>Samsung&#160;S10\nSM-G973F</item>
+        <item>Samsung&#160;S9\nSM-G9600</item>
+        <item>Samsung&#160;S10&#160;5G\nSM-G977N</item>
+        <item>Samsung&#160;S10&#160;5G\nSM-G977B</item>
+        <item>Samsung&#160;Note10+&#160;5G\nSM-N9760</item>
+        <item>Samsung&#160;Note10\nSM-N9700</item>
+    </string-array>
+    <string-array name="device_templates_data">
+        <item>SM-G9730@beyond1qltechn@beyond1qltezc@beyond1q@beyond1qltezc-user</item>
+        <item>SM-G9750@beyond2qltechn@beyond2qltezc@beyond2q@beyond2qltezc-user</item>
+        <item>SM-G9650@star2qltechn@star2qltezc@star2qltechn@star2qltezc-user</item>
+        <item>SM-G975F@beyond2lte@beyond2ltexx@beyond2@beyond2ltexx-user</item>
+        <item>SM-G973F@beyond1lte@beyond1ltexx@beyond1@beyond1ltexx-user</item>
+        <item>SM-G9600@star1qltechn@star1qltezc@beyondx@star1qltezc-user</item>
+        <item>SM-G977N@beyondx@beyondxks@beyondx@beyondxks-user</item>
+        <item>SM-G977B@beyondx@beyondxxx@beyondx@beyondxxx-user</item>
+        <item>SM-N9760@d2q@d2qzc@d2q@d2qzc-user</item>
+        <item>SM-N9700@d1q@d1qzc@d1q@d1qzc-user</item>
+    </string-array>
+
+
+</resources>

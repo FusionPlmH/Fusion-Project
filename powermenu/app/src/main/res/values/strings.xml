@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">SamsungPowerManager</string>
+    <array name="leo_reboot_name">
+        <item>@string/hitomi_power_menu_restart</item>
+        <item>@string/hitomi_power_menu_quick_reboot</item>
+        <item>@string/hitomi_power_menu_recovery</item>
+        <item>@string/hitomi_power_menu_download</item>
+    </array>
+    <string name="hitomi_power_menu_airplane">airplane mode</string>
+    <string name="hitomi_power_menu_download">download mode</string>
+    <string name="hitomi_power_menu_flashlight">flashlight</string>
+    <string name="hitomi_power_menu_floating">floating ball</string>
+    <string name="hitomi_power_menu_leo">Leo power menu</string>
+    <string name="hitomi_power_menu_mipop">Screen Assistant</string>
+    <string name="hitomi_power_menu_mobiledata">mobile data</string>
+    <string name="hitomi_power_menu_name">Hitomi power menu</string>
+    <string name="hitomi_power_menu_outdoors">outdoor mode</string>
+    <string name="hitomi_power_menu_quick_reboot">Quick restart</string>
+    <string name="hitomi_power_menu_recovery">recovery mode</string>
+    <string name="hitomi_power_menu_restart">restart</string>
+    <string name="hitomi_power_menu_screenrecord">screen recording</string>
+    <string name="hitomi_power_menu_screenshot">screenshot</string>
+    <string name="hitomi_power_menu_shutdown">Shutdown</string>
+    <string name="hitomi_power_menu_sound">sound mode</string>
+    <string name="hitomi_power_menu_wifi">wifi mode</string>
+    <string name="hitomi_power_menu_vibration">vibration mode</string>
+    <string name="hitomi_power_menu_silence">silent mode</string>
+</resources>

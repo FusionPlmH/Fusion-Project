@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <style name="LeoTheme_White" parent="LeoTweaksTheme">
+        <item name="colorPrimary">@color/leoPrimary</item>
+        <item name="colorPrimaryDark">@color/leoPrimary</item>
+        <item name="colorAccent">@color/leoAccent</item>
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">@android:color/black</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+    </style>
+    <style name="LeoTheme_Default" parent="LeoTweaksTheme">
+
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/defaultPrimary</item>
+        <item name="colorPrimaryDark">@color/defaultPrimary</item>
+        <item name="colorAccent">@color/redAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Red" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/redPrimary</item>
+        <item name="colorPrimaryDark">@color/redPrimary</item>
+        <item name="colorAccent">@color/redAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Pink" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/pinkPrimary</item>
+        <item name="colorPrimaryDark">@color/pinkPrimary</item>
+        <item name="colorAccent">@color/pinkAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Purple" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/purplePrimary</item>
+        <item name="colorPrimaryDark">@color/purplePrimary</item>
+        <item name="colorAccent">@color/purpleAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Blue" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/bluePrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimary</item>
+        <item name="colorAccent">@color/blueAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Green" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/greenPrimary</item>
+        <item name="colorPrimaryDark">@color/greenPrimary</item>
+        <item name="colorAccent">@color/greenAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_0range" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/orangePrimary</item>
+        <item name="colorPrimaryDark">@color/orangePrimary</item>
+        <item name="colorAccent">@color/orangeAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_Grey" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/greyPrimary</item>
+        <item name="colorPrimaryDark">@color/greyPrimary</item>
+        <item name="colorAccent">@color/greyAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_BlueGrey" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/blue_greyPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_greyPrimary</item>
+        <item name="colorAccent">@color/blue_greyAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+
+    <style name="LeoTheme_Teal" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/tealPrimary</item>
+        <item name="colorPrimaryDark">@color/tealPrimary</item>
+        <item name="colorAccent">@color/tealAccent</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_DeepPurple" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/deep_purplePrimary</item>
+        <item name="colorPrimaryDark">@color/deep_purplePrimary</item>
+        <item name="colorAccent">@color/deep_purpleAccent</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_Lime" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/limePrimary</item>
+        <item name="colorPrimaryDark">@color/limePrimary</item>
+        <item name="colorAccent">@color/limeAccent</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+
+    <style name="LeoTheme_Indigo" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/indigoPrimary</item>
+        <item name="colorPrimaryDark">@color/indigoPrimary</item>
+        <item name="colorAccent">@color/indigoAccent</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_Cyan" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/cyanPrimary</item>
+        <item name="colorPrimaryDark">@color/cyanPrimary</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_DeepOrange" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/deep_orangePrimary</item>
+        <item name="colorPrimaryDark">@color/deep_orangePrimary</item>
+        <item name="colorAccent">@color/deep_orangeAccent</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="LeoTheme_LightDark" parent="LeoTweaksTheme">
+        <item name="appbarlayout">@style/AppBarLight</item>
+        <item name="Global_Divider">@color/light_divider_bg</item>
+        <item name="cardBackgroundColor">@color/light_cardview_bg</item>
+        <item name="colorPrimary">@color/dark_cardview_bg</item>
+        <item name="colorPrimaryDark">@color/dark_cardview_bg</item>
+        <item name="colorAccent">@color/light_blue</item>
+        <item name="navColorSelector">@color/nav_items_selector</item>
+        <item name="TextStyle">#FF252525</item>
+    </style>
+    <style name="MyButton">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">?TextStyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/roundbtn_tran</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_margin">20.0dip</item>
+    </style>
+    <style name="MyListButton">
+    <item name="android:textSize">15dip</item>
+    <item name="android:textColor">?TextStyle</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:background">@drawable/roundbtn_tran</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">28.0dp</item>
+    <item name="android:layout_marginBottom">15.0dp</item>
+</style>
+    <style name="MyColorButton">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">?TextStyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/roundbtn_tran</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28.0dp</item>
+    </style>
+    <style name="OtaButton">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">?TextStyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/roundbtn_tran</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">28.0dp</item>
+    </style>
+</resources>

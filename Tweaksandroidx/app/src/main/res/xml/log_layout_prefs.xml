@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="@string/log_log" >
+    <org.salt.preference.SaltCheckBoxPreference
+        android:key="leo_tweaks_logcat"
+        android:title="@string/logcat_title"
+        android:defaultValue="false"
+        android:summary="@string/log_summary" />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:key="leo_tweaks_kmseg"
+        android:title="@string/kmesg_title"
+
+        android:defaultValue="false" />
+    <org.salt.preference.SaltCheckBoxPreference
+        android:key="leo_tweaks_dmesg"
+        android:title="@string/dmesg_title"
+        android:defaultValue="false" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference
+        android:title="@string/log_it_title" />
+    <Preference
+        android:key="leo_tweaks_log_it"
+        android:title="@string/log_it_title"
+        android:summary="@string/log_it_summary" />
+    <Preference
+        android:key="leo_tweaks_log_clean"
+        android:title="@string/log_clean"
+        android:summary="@string/log_clean_summary" />
+
+</androidx.preference.PreferenceScreen>
+

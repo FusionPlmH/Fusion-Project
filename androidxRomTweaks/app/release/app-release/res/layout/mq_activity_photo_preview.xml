@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mq_photo_activity_bg" style="@style/MQMatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager android:id="@id/content_hvp" style="@style/MQMatchMatch" />
+    <RelativeLayout android:id="@id/title_rl" android:background="@color/mq_photo_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/mq_title_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/back_iv" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" android:src="@drawable/mq_ic_back_white" style="@style/MQWrapMatch" />
+        <TextView android:textSize="@dimen/mq_titlebar_textSize" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/title_tv" android:layout_toRightOf="@id/back_iv" style="@style/MQWrapMatch" />
+        <ImageView android:id="@id/download_iv" android:paddingLeft="@dimen/mq_size_level3" android:paddingRight="@dimen/mq_size_level3" android:src="@drawable/mq_ic_download" android:layout_alignParentRight="true" style="@style/MQWrapMatch" />
+    </RelativeLayout>
+</RelativeLayout>

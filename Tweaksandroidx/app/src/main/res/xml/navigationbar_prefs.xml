@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <org.salt.preference.SaltSettingCategoryPreference android:title="导航栏双击动作" android:key="navaction">
+        <org.salt.preference.SaltSwitchPreference
+            android:title="启用双击导航栏"
+            android:key="navActionenabled"
+            android:defaultValue="false"
+            salt:BroadcastKey="@string/broadcast_nav_gesture"
+            android:summaryOn="@string/on" android:summaryOff="@string/off"
+            />
+        <org.salt.preference.SaltListPreference
+            android:dependency="navActionenabled"
+            android:key="navActionSTYLE"
+            android:title="双击导航栏空白位置动作"
+            android:defaultValue="0"
+            salt:BroadcastKey="@string/broadcast_nav_gesture"
+            android:entryValues="@array/global_action_values"
+            android:entries="@array/global_action_entries" />
+        <org.salt.preference.SaltSwitchPreference
+            android:dependency="navActionenabled"
+            android:title="@string/vibrator"
+            android:key="navActionvibratornaenabled"
+            android:defaultValue="false"
+            salt:BroadcastKey="@string/broadcast_nav_gesture"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+        <org.salt.preference.SaltSeekBarPreference
+            android:title="@string/vibratorlevel"
+            android:key="vibratornavlevel"
+            salt:BroadcastKey="@string/broadcast_nav_gesture"
+            android:dependency="navActionvibratornaenabled"
+            android:defaultValue="15"
+            android:min="1"
+            android:max="45"
+            salt:interval="1"
+            salt:unitsLeft=" "
+            salt:unitsRight="@string/vibratorlevel_title" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/nav_height" android:key="nav_height">
+        <org.salt.preference.SaltSwitchPreference
+            android:title="@string/nav_landscape_enable"
+            android:key="nav_landscape_enable"
+            android:defaultValue="false"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+        <org.salt.preference.SaltSeekBarPreference
+            android:title="@string/nav_landscape_enable_style"
+            android:key="leo_salt_nav_landscape_enable_style"
+            android:dependency="nav_landscape_enable"
+            android:summary="@string/seekbar_sumarry"
+            android:defaultValue="45"
+            android:min="0"
+            android:max="75"
+            salt:interval="1"
+            salt:unitsLeft=""
+            salt:unitsRight=" dp" />
+        <org.salt.preference.SaltSwitchPreference
+            android:title="@string/nav_portrait_enable"
+            android:key="nav_portrait_enable"
+            android:defaultValue="false"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+        <org.salt.preference.SaltSeekBarPreference
+            android:title="@string/nav_portrait_enable_style"
+            android:key="leo_salt_nav_portrait_enable_style"
+            android:dependency="nav_portrait_enable"
+            android:summary="@string/seekbar_sumarry"
+            android:defaultValue="45"
+            android:min="0"
+            android:max="75"
+            salt:unitsLeft=""
+            salt:unitsRight=" dp"/>
+
+    </org.salt.preference.SaltSettingCategoryPreference>
+    <org.salt.preference.SaltSettingCategoryPreference android:title="@string/launcher_setting" android:key="launcher_setting">
+        <org.salt.preference.SaltSwitchPreference
+            android:key="icon_text"
+            android:title="@string/launcher_icon_text"
+            android:defaultValue="false"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off" />
+
+        <org.salt.preference.SaltListPreference
+            android:key="launcher_effect_style"
+            android:title="@string/launcher_effect"
+            android:defaultValue="0"
+            android:entryValues="@array/home_effect_values"
+            android:entries="@array/home_effect_entries" />
+    </org.salt.preference.SaltSettingCategoryPreference>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,639 @@
+<resources>
+
+    <string name="backup_file_exists">覆盖文件？</string>
+    <string name="backup_file_repea">已经存在，是否覆盖已有文件?</string>
+    <string name="flash_hint">是否将</string>
+    <string name="flash_zip">刷入手机中,请确保你需刷入的文件都正确,并且适合你的手机型号</string>
+    <string name="flash_efs">刷入EFS分区,如果刷入错误的efs镜像将导致你的基带信号串号丢失甚至不开机!</string>
+    <string name="flash_rec">刷入Recovery分区,应用无法验证该文件是否有效,你需要自己确保该recovery镜像适合本设备使用!</string>
+    <string name="flash_boot">刷入Boot分区,请先确认Boot镜像适用于你的手机型号,刷入无效的Boot镜像可能导致你的设备无法启动,如果你没有办法恢复只能选择重新刷机!</string>
+    <string name="flash_confirm">确认刷入?</string>
+    <string name="backup_action_title_boot">导出Boot</string>
+    <string name="backup_action_title">备份当前的</string>
+    <string name="restore_action_title_boot">刷入Boot</string>
+    <string name="restore_action_desc_boot">选择刷入boot.img</string>
+    <string name="backup_space_small">存储空间不足，请至少预留100M可用空间！</string>
+    <string name="backup_action_title_rec">导出Recovery</string>
+    <string name="backup_action_sumarry">为img,复制到</string>
+    <string name="restore_action_title_rec">刷入Recovery</string>
+    <string name="restore_action_desc_rec">选择刷入recovery.img</string>
+    <string name="backup_action_title_efs">导出EFS</string>
+    <string name="restore_action_title_efs">刷入EFS</string>
+    <string name="restore_action_desc_efs">选择刷入EFS.img</string>
+    <string name="thermal_default_summary">温控禁用可让手机性能更稳定,但发热将显著增加</string>
+
+    <string name="restore_action_title_zip">Zip 卡刷</string>
+    <string name="restore_action_desc_zip">选择*zip文件进行刷机</string>
+    <string name="thermal_default">温控文件修改</string>
+    <string name="power_change_default">已切换为均衡模式，适合日常使用，速度与耗电平衡！</string>
+    <string name="power_change_game">已切换为游戏（性能）模式，但受温度影响并不一定会更快，你可以考虑删除温控！</string>
+    <string name="power_change_powersave">已切换为省电模式，适合长时间媒体播放或阅读，综合使用时并不效率也不会省电太多！</string>
+    <string name="power_chagne_fast">已切换为极速模式，这会大幅增加发热，如果不删除温控性能并不稳定！</string>
+    <string name="apps_hide_record">应用程序隐藏记录</string>
+    <string name="apps_recover">正在恢复应用，稍等...</string>
+    <string name="apps_loading">正在加载，请稍等...</string>
+       <string name="apps_search_box">搜索 应用名或包名(PackageName)</string>
+    <string name="use_apps">安装程序</string>
+    <string name="system_apps">系统程序</string>
+    <string name="backups_apps">备份</string>
+    <string name="help_apps">@string/toolbar_navigation_help</string>
+    <string name="btn_skip">忽略</string>
+    <string name="btn_refresh">重试</string>
+    <string name="error_su_timeout">等待超时，请确保你的Root管理器正在后台运行，并重试！</string>
+    <string name="app_selected_none">一个应用也没有选中！</string>
+    <string name="execute_success">执行成功</string>
+    <string name="execute_fail">执行失败</string>
+    <string name="execute_wait">正在执行，请稍等…</string>
+    <string name="applist_help">✔ 已备份\n✘ 备份的版本比安装的版本更高\n★ 已安装的版本比备份的版本旧\n☆ 已备份数据未备份APK\n\n目前所提供的应用数据备份功能，需要系统集成busybox、toybox，使用tar+gz压缩数据（如果系统支持，将使用pigz提高压缩速度），仅备份 “/data/data/应用包名” 下的数据，且不保证兼容系统和应用。\n\n“禁用+隐藏”非常适合精简ROM，但是应用一旦被设为隐藏你将无法通过其它应用管理工具来恢复或启动（除非双清或在LeoTweaks-辅助工具-应用程序管理中手动解除隐藏）,LeoTweaks会自动保存隐藏记录，你可以通过下面的按钮来解除隐藏。\n如果你双清，则隐藏记录也会丢失，则无法再恢复！！</string>
+    <string-array name="full_screen_options">
+        <item>默认</item>
+        <item>全部隐藏</item>
+        <item>隐藏状态栏</item>
+        <item>隐藏导航栏</item>
+    </string-array>
+    <string-array name="full_screen_values">
+        <item>immersive.full</item>
+        <item>immersive.full=apps</item>
+        <item>immersive.status=*</item>
+        <item>immersive.navigation=*</item>
+    </string-array>
+    <string-array name="google_services_options">
+        <item>解冻谷歌服务</item>
+        <item>冻结谷歌服务</item>
+    </string-array>
+    <string-array name="google_services_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="GoodLock_entries">
+        <item>侧屏闪光</item>
+        <item>多任务切换</item>
+        <item>单手操作</item>
+    </string-array>
+    <string-array name="qq_items">
+        <item>LeoRom 1群</item>
+        <item>LeoRom 2群</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>关闭动画</item>
+        <item>动画 0.2x</item>
+        <item>动画 0.25x</item>
+        <item>动画 0.3x</item>
+        <item>动画 0.4x</item>
+        <item>动画 0.5x</item>
+        <item>动画 0.6x</item>
+        <item>动画 0.7x</item>
+        <item>动画 0.8x</item>
+        <item>动画 0.9x</item>
+        <item>动画 1x</item>
+        <item>动画 1.5x</item>
+        <item>动画 2x</item>
+        <item>动画 3x</item>
+        <item>动画 5x</item>
+        <item>动画 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.2</item>
+        <item>.25</item>
+        <item>.3</item>
+        <item>.4</item>
+        <item>.5</item>
+        <item>.6</item>
+        <item>.7</item>
+        <item>.8</item>
+        <item>.9</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="wipe_entries">
+        <item>清理Data</item>
+        <item>清理Cache</item>
+        <item>清理Dalvik</item>
+        <item>清理系统设置数据</item>
+
+    </string-array>
+    <string name="app_name">LeoTweaks</string>
+    <string name="list_grid_goodlock">GoodLock</string>
+    <string name="list_grid_pop">屏幕助手</string>
+    <string name="toolbar_navigation_update">更新日志</string>
+    <string name="toolbar_navigation_help">使用帮助</string>
+    <string name="toolbar_navigation_share">分享</string>
+    <string name="color_chooser">选择主题</string>
+    <string name="update">Leo ROM 更新</string>
+    <string name="gv_name_wifi">wifi密码</string>
+    <string name="gv_name_autostart">自启动管理</string>
+    <string name="grid_hardware">按键动作</string>
+    <string name="list_grid_system">系统微调</string>
+    <string name="list_grid_sina">新浪微博</string>
+    <string name="list_grid_code">特别致谢</string>
+    <string name="list_grid_service">在线客服</string>
+    <string name="list_grid_qq">加入QQ群</string>
+    <string name="list_grid_mail">E-mail</string>
+    <string name="warning">警告！！</string>
+    <string name="share_message">我正在使用 Leo ROM！推荐给你 ！http://www.leorom.cc/</string>
+    <string name="share_chooser_title">分享 Leo ROM</string>
+    <string name="custom_battery_dialog_title">选择自定义电池组</string>
+    <string name="custom_battery_authorpt">原作者:</string>
+    <string name="custom_battery_compilerpt">封装者:</string>
+    <string name="wallpaper_view">输入壁纸宽度与高度以获得最完美的壁纸效果！</string>
+    <string name="wallpaper_select">点击壁纸然后选择应用壁纸</string>
+    <string name="no_wallpaper_size">你没有设置壁纸大小,将以壁纸默认大小应用</string>
+
+
+    <string name="grid_gesture">屏幕手势</string>
+    <string name="grid_screenwake">屏幕唤醒</string>
+    <string name="grid_weather">锁屏天气</string>
+
+    <string name="select_wallpaper">壁纸选择
+		   </string>
+
+    <string name="progress_dialog_tite">正在执行操作</string><![CDATA[
+     
+    ]]>
+    <string name="autostarts_all_btn_title">以启用项目</string>
+    <string name="autostarts_allow_progress_msg">正在允许...</string>
+    <string name="autostarts_allowed">已被禁止</string>
+    <string name="autostarts_empty_msg">没有安装任何自启程序</string>
+    <string name="autostarts_optimize_btn_title">所有项目</string>
+    <string name="autostarts_optimize_empty_msg">没有优化任何启动项目</string>
+    <string name="autostarts_prohibit_progress_msg">正在禁止...</string>
+    <string name="autostarts_prohibited">已被允许</string>
+    <string name="reboot_required_dialog_title">重新启动</string>
+    <string name="reboot_required_dialog_message">当前功能需要重新启动设备方可生效!</string>
+    <string name="select_all_label">全部</string>
+    <string name="select_all">全部选择</string>
+    <string name="deselect_all">全部取消</string>
+    <string name="confirm_script_dialog_message">"你确定要运行 %1$s?"</string>
+    <string name="run_script_confirm_dialog_title">必须确认</string>
+    <string name="run_script_confirm_dialog_positive_button">是的！运行</string>
+    <string name="find_app">搜索</string>
+    <string name="multiple_choice_preference_button_done">完成</string>
+    <string name="imminent_reboot_warning">你的设备将在脚本运行完成后重新启动！</string>
+    <string name="app_reboot_required_dialog_message">将重新启动《 %1$s 》以便于应用更改的内容生效</string>
+    <!-- 取色. -->
+    <string name="dialog_color_picker">颜色选择器</string>
+    <string name="dialog_color_character">16进制颜色</string>
+    <string name="dialog_color_character_c">输入字符</string>
+    <!-- 备份恢复. -->
+
+
+    <!-- DPI  -->
+    <string name="back_to_preset">预设值</string>
+    <string name="reboot_device">重启设备</string>
+    <string name="illegal_value_title">输入的DPI值不符合系统要求!</string>
+    <string name="text_illegal_value">你的设备不能被设置DPI为 %1$s\n\n请返回并设置值 360 - 480.\n\n谢谢!</string>
+    <string name="back_button_custom">返回自定义DPI</string>
+    <string name="show_current_dpi">系统DPI设置\n\n当前DPI为 %1$s</string>
+    <string name="select_dpi">选择DPI:</string>
+    <string name="custom_dpi_input">请输入值 360 - 480</string>
+    <string name="text_hint">输入dpi值</string>
+    <string name="dpi_toast">建议你!重启设备获得最佳效果,你也可以忽略此建议.</string>
+    <string name="no_activity">程序链接不存在或者未安装!</string>
+
+    <!-- 悬浮球. -->
+
+    <string name="on">启用</string>
+    <string name="off">禁用</string>
+    <!-- SlimSizer  -->
+
+    <!-- //###### -->
+    <string name="list_grid_clock">时间日期</string>
+    <string name="list_grid_icon">状态栏图标</string>
+    <string name="list_grid_label">@string/list_grid_carrier</string>
+    <string name="list_grid_networkspeed">状态栏网速</string>
+    <string name="list_grid_temperature">状态栏温度</string>
+    <string name="list_grid_action">状态栏动作</string>
+    <string name="list_grid_battery">电量图标</string>
+    <string name="list_grid_background">背景</string>
+    <string name="list_grid_button">按钮</string>
+    <string name="list_grid_notification">通知项目</string>
+    <string name="list_grid_other">其他</string>
+    <string name="list_grid_carrier">运营商标签</string>
+    <string name="list_grid_more">更多</string>
+
+
+    <string name="activity_componetname">Leo ROM提示你：</string>
+
+    <string name="activity_componetname_test">这是一个测试通知</string>
+    <!-- 状态栏时间日期. -->
+    <string name="status_bar_date_string_edittext_title">"自定义日期格式"</string>
+    <string name="status_bar_date_string_edittext_summary">输入字符(也可是任意文字或者Emoji表情)</string>
+
+
+    <string name="date_format">MMMd日</string>
+
+    <string name="listview_off">默认</string>
+    <string name="listview_wave_left">波浪（左）</string>
+    <string name="listview_wave_right">波浪（右）</string>
+    <string name="listview_alpha">透明</string>
+    <string name="listview_scale">比例</string>
+    <string name="listview_stack_top">堆栈（顶部）</string>
+    <string name="listview_stack_bottom">堆叠 （底部）</string>
+    <string name="listview_unfold">展开</string>
+    <string name="listview_fold">折叠</string>
+    <string name="listview_translate_left">翻转 (左)</string>
+    <string name="listview_translate_right">翻转（右）</string>
+    <string name="grid_status_weather">状态栏天气</string>
+      <string name="accelerate">一键加速</string>
+      <string name="lock">一键锁屏</string>
+    <string name="grid_task_apps">设备信息</string>
+    <string name="grid_task_brightness">亮度控制</string>
+    <string name="listview_accelerate_interpolator">加速</string>
+    <string name="listview_decelerate_interpolator">减速</string>
+    <string name="listview_accelerate_decelerate_interpolator">加速和减速</string>
+    <string name="listview_anticipate_interpolator">预期</string>
+    <string name="listview_overshoot_interpolator">越过</string>
+    <string name="listview_anticipate_overshoot_interpolator">预留和越界</string>
+    <string name="listview_bounce_interpolator">反弹</string>
+    <string name="battery_bar_color_title">颜色</string>
+    <string name="battery_bar_charging_color_title">充电时颜色</string>
+    <string name="battery_bar_battery_low_color_title">低电量颜色</string>
+    <string name="battery_bar_style_title">对齐方式</string>
+    <string name="battery_bar_thickness_title">厚度</string>
+    <string name="battery_bar_animate_title">充电动画</string>
+    <string name="leo_tweaks_launcher_downtap">"桌面下滑动作在开启（&#8594;主屏幕设置中&#8594;快速打开通知面板&#8592; ）无效,在启用桌面下滑动作需要先关闭&#8594;点击可直接打开(主屏幕设置)"
+</string>
+    <string name="leo_tweaks_hardware_power_double_action_app">"启用双击电源键动作,需要打开&#8594;设定&#8594;高级功能&#8594;快速启动相机 &#8594;点击可直接打开(高级功能)"
+</string>
+
+    <string name="battery_bar_use_charging_color_title">自定义充电时颜色</string>
+    <string name="battery_bar_blend_color_title">混合颜色</string>
+    <string name="battery_bar_blend_color_summary">根据电量百分比混合满/空颜色</string>
+    <string name="battery_bar_blend_color_reverse_title">反转颜色方向</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">满 &#8594; 空: 红色 &#8592; 绿色 &#8592; 蓝色 &#8592; 红色</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">满 &#8594; 空: 红色 &#8594; 绿色 &#8594; 蓝色 &#8594; 红色</string>
+
+    <string name="is_using_summary">" 版"</string>
+    <string name="android_info">Android信息</string>
+    <string name="android_info_custom">定制版本</string>
+    <string name="android_info_bottombag">底包版本</string>
+    <string name="android_info_romname">Rom名称</string>
+    <string name="android_info_androidname">Android版本</string>
+    <string name="android_info_sdk">SDK版本</string>
+    <string name="android_info_kernel">内核版本</string>
+    <string name="android_info_baseband">基带版本</string>
+    <string name="china_mobile">中国移动</string>
+    <string name="china_unicom">中国联通</string>
+    <string name="china_telecom">中国电信</string>
+    <string name="china_mobile_hk">中国移动香港</string>
+    <string name="china_ctm">中国澳门电讯</string>
+    <string name="china_tietong_ctt">中国联通</string>
+    <string name="unit_run_time">设备已运行</string>
+    <string name="unit_run_hour"> &#160;小时 &#160;</string>
+    <string name="unit_run_minute"> &#160;分钟</string>
+    <string name="grid_statusbar_change">‖通知项目‖背景</string>
+
+    <string name="statusbar_clock">状态栏时间设置</string>
+    <string name="statusbar_clock_off">隐藏状态栏时间</string>
+    <string name="statusbar_clock_location">状态栏时间位置</string>
+    <string name="statusbar_clock_12">时间制式</string>
+    <string name="clock_details">时间细节设置</string>
+    <string name="statusbar_clock_details_off">显示中国时间细节</string>
+    <string name="statusbar_clock_seconds">时间追加显示秒</string>
+    <string name="statusbar_clock_ampm">AM/PM设置(中国地区不支持)</string>
+    <string name="details_style">时间显示细节样式</string>
+    <string name="lunar_style">农历风格</string>
+    <string name="statusbar_clock_date">日期设置</string>
+    <string name="statusbar_clock_date_off">显示日期</string>
+    <string name="clock_date_style">日期格式</string>
+    <string name="statusbar_clock_date_location">日期显示位置</string>
+    <string name="statusbar_clock_date_en">英语日期大小写</string>
+    <string name="clock_week_set">星期设置</string>
+    <string name="clock_week">星期显示</string>
+    <string name="clock_week_style">星期风格</string>
+    <string name="text_set">文本设置</string>
+    <string name="single_off">单行文本显示</string>
+    <string name="statusbar_clock_single_size">单行文本大小</string>
+    <string name="statusbar_clock_multi_size">双行文本大小</string>
+    <string name="font_style">字体风格</string>
+    <string name="color_set">颜色设置</string>
+    <string name="statusbar_clock_color">时间颜色</string>
+    <string name="show_dsp">ping测试</string>
+    <string name="show_dsp_sumarry">ping 网络连通率</string>
+    <string name="ip_dsp">输入ip地址</string>
+    <string name="ip_lastfive">最近的5条ip</string>
+    <string name="dst_dsp">目的地址:</string>
+    <string name="ping_dsp">测试</string>
+    <string name="cancel_dsp">结束</string>
+    <string name="start_ping">开始测试…</string>
+    <string name="stop_last_ping">开始新测试</string>
+    <string name="stop_ping">停止测试</string>
+    <string name="exit_ping">退出测试</string>
+    <string name="fail_ping">测试失败</string>
+    <string name="cannot_reach">目标不可达</string>
+    <string name="finish_ping">测试结束</string>
+    <string name="time_out">测试超时</string>
+    <string name="stroke_start">启用背景虚线描边设置</string>
+    <string name="stroke_sumarry">边缘虚线描边设置</string>
+    <string name="stroke_color">边缘虚线颜色设置</string>
+    <string name="stroke_thickness">边缘虚线厚度</string>
+    <string name="stroke_width">边缘虚线描边宽度</string>
+    <string name="stroke_gap">边缘虚线描边空隙</string>
+    <string name="stroke_corners">边缘圆角半径</string>
+    <string name="seksbar_sumarry">左右滑动调节</string>
+    <string name="background_settings">背景风格(默认.颜色.壁纸)</string>
+    <string name="start_background_settings">启用自定义背景</string>
+    <string name="custom_background_style">自定义背景风格</string>
+    <string name="custom_general_background_color_set">普通背景颜色设置</string>
+    <string name="custom_general_background_color">设置单一背景颜色</string>
+    <string name="custom_gradient_background_color_set">渐变颜色设置</string>
+    <string name="custom_gradient_background_color_model">渐变模式</string>
+    <string name="custom_gradient_background_color_style">渐变颜色风格</string>
+    <string name="custom_gradient_background_color_radius">渐变颜色半径</string>
+    <string name="custom_gradient_background_color_a">渐变颜色(壹)</string>
+    <string name="custom_gradient_background_color_b">渐变颜色(贰)</string>
+    <string name="start_custom_gradient_background_color_c">启用6种颜色渐变方案</string>
+    <string name="custom_gradient_background_color_c">渐变颜色(叁)</string>
+    <string name="custom_gradient_background_color_d">渐变颜色(肆)</string>
+    <string name="custom_gradient_background_color_e">渐变颜色(伍)</string>
+    <string name="custom_gradient_background_color_f">渐变颜色(陆)</string>
+    <string name="custom_wallpaper_background">背景壁纸设置</string>
+    <string name="start_custom_wallpaper_background_color">启用背景壁纸颜色蒙层</string>
+    <string name="settings_custom_wallpaper_background_color">设置背景壁纸叠加颜色蒙层</string>
+    <string name="start_custom_wallpaper_background_alpha">启用背景壁纸透明度设置</string>
+
+    <string name="settings_custom_wallpaper_background_alpha">设置背景壁纸透明度</string>
+    <string name="wallpaper_background_blur_alpha">允许高斯模糊壁纸应用透明度设置效果</string>
+    <string name="list_grid_ram">RAM 信息</string>
+
+    <string name="wallpaper_background_blur_alpha_color">允许高斯模糊壁纸颜色叠加设置效果</string>
+    <string name="custom_wallpaper_background_blur">背景壁纸高斯模糊效果</string>
+    <string name="enabled_wallpaper_background_blur">启用壁纸高斯模糊</string>
+    <string name="enabled_gradient_color">启用渐变颜色</string>
+    <string name="reset">重置</string>
+    <string name="reset_color">将已设置的自定义颜色恢复为预设值</string>
+    <string name="seek_bar_max">最大</string>
+    <string name="seek_bar_min">最小</string>
+    <string name="seek_bar_present">当前</string>
+    <string name="blur_wallpaper">高斯模糊壁纸</string>
+    <string name="congratulation_wallpaper">恭喜!壁纸已成功应用设置</string>
+    <string name="application_wallpaper">应用壁纸</string>
+    <string name="application_wallpaper_sumarry">点击『确定』应用壁纸</string>
+    <string name="toolbar_navigation_donate">打赏我们</string>
+    <string name="straight_reboot">立刻重新启动</string>
+    <string name="reset_success">成功将颜色恢复为默认值！</string>
+    <string name="default_colors">默认值:#AEFFFFFF</string>
+    <string name="toolbar_navigation_power">电源菜单</string>
+    <string name="list_grid_call_location">归属地设置</string>
+    <string name="list_grid_call_background">系统背景</string>
+    <string name="list_grid_launcher">桌面设置</string>
+    <string name="list_grid_launcher_background">模糊壁纸</string>
+    <string name="root_progress_dialog_title">正在获取ROOT权限！</string>
+    <string name="root_progress_dialog_message">请稍后…</string>
+    <string name="no_su_dialog_title">无法获取ROOT权限</string>
+    <string name="no_su_dialog_message">抱歉，没有获取到ROOT权限，很多功能将无法使用！</string>
+
+    <string name="no_su_dialog_dismiss_button_text">确定</string>
+    <string-array name="network_items">
+                
+        <item>网络设置</item>
+                
+        <item>@string/show_dsp_sumarry</item>
+            
+    </string-array>
+
+    <string name="launcher_enabled_update">启动器图标可见性已更新。更改可能需要一些时间才能生效</string>
+    <string name="list_grid_navigationbar">@string/tab_navigationbar</string>
+    <string name="tab_navigationbar">导航栏</string>
+    <string name="gv_name_power">电源菜单</string>
+    <string name="tabs_battery">电量图标</string>
+    <string name="tabs_battery_bar">电量条</string>
+    <string name="tabs_icon">状态栏图标</string>
+    <string name="tabs_icon_logo">Logo标识</string>
+    <string name="tabs_home">桌面</string>
+    <string name="tabs_home_weather">桌面天气</string>
+    <string name="tabs_gesture_fingerprint">指纹键</string>
+    <string name="tabs_gesture_bixby">Bixby</string>
+    <string name="tabs_gesture_home">三大金刚</string>
+    <string name="tabs_gesture_power">电源键</string>
+    <string name="assist_grid_wifi">本地WIFI密码</string>
+    <string name="assist_grid_dpi">屏幕密度</string>
+    <string name="assist_grid_autostart">自启动管理</string>
+    <string name="assist_grid_apps">应用程序管理</string>
+    <string name="assist_grid_network">网络模式</string>
+    <string name="assist_grid_developer">开发者模式</string>
+    <string name="assist_grid_agps">AGPS</string>
+    <string name="assist_grid_jellybean">糖果 小游戏</string>
+    <string name="assist_grid_marshmallow">Marshmallow 小游戏</string>
+    <string name="assist_grid_wifi_sumarry">随时查看分享已连接的WIFI密码</string>
+    <string name="assist_grid_dpi_sumarry">屏幕dpi设置</string>
+    <string name="assist_grid_autostart_sumarry">开机启用程序程序管理</string>
+    <string name="assist_grid_apps_sumarry">精简系统臃肿程序,程序数据清理,程序冻结</string>
+    <string name="assist_grid_network_sumarry">网络模式</string>
+    <string name="assist_grid_developer_sumarry">快速打开开发者服务</string>
+    <string name="assist_grid_agps_sumarry">设置A-GPS网络</string>
+    <string name="assist_grid_jellybean_sumarry">JellyBean 时期的小玩意</string>
+    <string name="assist_grid_marshmallow_sumarry">Marshmallow 小游戏</string>
+    <string name="leo_tools_set">工具设置</string>
+
+    <string name="assist_grid_log">日志获取</string>
+    <string name="assist_grid_log_sumarry">抓取ROM错误日志并分享给作者</string>
+
+    <string name="assist_grid_img">镜像文件管理</string>
+    <string name="assist_grid_img_sumarry">备份,还原img镜像</string>
+
+    <string name="assist_grid_property">性能模式</string>
+    <string name="assist_grid_property_sumarry">设备性能设置,缓存清理,温控设置</string>
+
+
+    <string-array name="log_it_share_type_values" translatable="false">
+        <item>0</item>
+    </string-array>
+    <string name="logcat_title">Log 日志</string>
+    <string name="kmesg_title">kernel 日志</string>
+    <string name="dmesg_title">boot 日志</string>
+    <string name="log_it_title">抓取日志</string>
+    <string name="log_it_dialog_title">分享</string>
+    <string name="logcat_warning">把日志分享给作者!</string>
+    <string name="share_title">马上分享</string>
+    <string name="log_it_summary">对于抓取日志你需要有足够的耐心</string>
+    <string name="log_it_logs_in_progress">正在抓取日志&#8230;</string>
+    <string name="log_it_share_type_title">分享方式</string>
+    <string name="log_it_share_type_zip">ZIP压缩文件</string>
+    <string-array name="log_it_share_type_entries" translatable="false">
+        <item>@string/log_it_share_type_zip</item>
+    </string-array>
+    <item name="pager_image1" type="id" />
+    <item name="pager_image2" type="id" />
+    <item name="pager_image3" type="id" />
+    <item name="pager_image4" type="id" />
+    <item name="pager_image5" type="id" />
+    <item name="pager_image6" type="id" />
+    <item name="pager_image7" type="id" />
+    <item name="pager_image8" type="id" />
+    <string-array name="hidden_icons_values">
+        <item>rotate</item>
+        <item>ims_volte</item>
+        <item>ims_volte2</item>
+        <item>alarm_clock</item>
+        <item>mobile</item>
+        <item>clock</item>
+        <item>power_saver</item>
+        <item>airplane</item>
+        <item>headset</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>bluetooth</item>
+        <item>nfc_on</item>
+        <item>battery</item>
+        <item>cast</item>
+
+    </string-array>
+    <string-array name="hidden_icons_options">
+        <item>状态栏屏幕旋转图标</item>
+        <item>状态栏卡1HD图标</item>
+        <item>状态栏卡2HD图标</item>
+        <item>状态栏闹钟图标</item>
+        <item>状态栏移动信号</item>
+        <item>锁屏状态栏时间</item>
+        <item>状态栏省电模式图标</item>
+        <item>状态栏飞行模式</item>
+        <item>状态栏耳机</item>
+        <item>状态栏声音</item>
+        <item>状态栏WIFI图标</item>
+        <item>状态栏蓝牙图标</item>
+        <item>状态栏NFC图标</item>
+        <item>状态栏电池图标(仅官方电池有效)</item>
+        <item>状态栏投射图标</item>
+
+    </string-array>
+    <string-array name="power_menu_values">
+        <item>power</item>
+        <item>datamode</item>
+        <item>airplane</item>
+        <item>restart</item>
+        <item>users</item>
+        <item>assist</item>
+        <item>settings</item>
+        <item>emergencymode</item>
+        <item>screenshot</item>
+        <item>recovery</item>
+        <item>download</item>
+        <item>screenrecord</item>
+        <item>quickreboot</item>
+        <item>flashlight</item>
+        <item>leoPersonalize</item>
+        <item>mipop</item>
+        <item>sound</item>
+        <item>wifi</item>
+    </string-array>
+    <string-array name="power_menu_options">
+        <item>关机</item>
+        <item>移动数据</item>
+        <item>飞行模式</item>
+        <item>重新启动</item>
+        <item>多用户模式</item>
+        <item>助理菜单</item>
+        <item>三星设定</item>
+        <item>紧急模式</item>
+        <item>屏幕截图</item>
+        <item>卡刷模式</item>
+        <item>线刷模式</item>
+        <item>屏幕录像</item>
+        <item>快速重启</item>
+        <item>手电筒</item>
+        <item>个性化设置</item>
+        <item>屏幕助手</item>
+        <item>声音模式</item>
+        <item>WIFI模式</item>
+    </string-array>
+    <string-array name="power_menu_order_entries">
+        <item>默认顺序</item>
+        <item>相反顺序</item>
+        <item>随机顺序</item>
+    </string-array>
+    <string-array name="power_menu_order_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="leo_tweaks_a">" 捐赠"</string>
+    <string name="leo_tweaks_b">" 普通"</string>
+    <string name="list_grid_clock_summary">时间日期个性化配置</string>
+    <string name="list_grid_icon_summary">图标位置，颜色，显示，字体与隐藏等</string>
+    <string name="list_grid_label_summary">运营商个性化配置</string>
+    <string name="list_grid_networkspeed_summary">网络速度调整配置</string>
+    <string name="list_grid_temperature_summary">温度，颜色，大小显示与隐藏等</string>
+    <string name="grid_status_weather_summary">天气个性化调整</string>
+    <string name="list_grid_battery_summary">电量图标风格，电量条等</string>
+    <string name="list_grid_background_summary">背景颜色，壁纸等配置</string>
+
+    <string name="list_grid_ram_summary">剩余内存显示清理等个性化配置</string>
+
+    <string name="list_grid_system_summary">应用分身，动画，SIM卡提示等</string>
+    <string name="list_grid_goodlock_summary">三星提供的个性化配置工具</string>
+    <string name="list_grid_pop_summary">可替代导航栏操作的个性化工具</string>
+    <string name="list_grid_call_background_summary">系统程序背景配置</string>
+
+    <string name="gv_name_power_summary">电源菜单项目,文本颜色,大小等个性化配置</string>
+
+
+    <string name="list_grid_button_summary">下拉按钮个性化设置</string>
+    <string name="list_grid_notification_summary">通知项目文本颜色背景颜色等</string>
+    <string name="list_grid_carrier_summary">下拉运营商个性化</string>
+    <string name="list_grid_other_summary">下拉背景模糊,流量模块,双卡模块等个性化</string>
+    <string name="grid_task_apps_summary">下拉设备信息个性化配置</string>
+    <string name="grid_task_brightness_summary">下拉亮度调节模块个性化配置</string>
+
+    <string name="grid_weather_summary">锁屏天气个性化设置</string>
+    <string name="list_grid_carrier_keyguard_summary">锁屏运营商配置</string>
+    <string name="list_grid_more_keyguard_summary">解锁方式等调整</string>
+
+
+    <string name="list_grid_action_summary">状态栏左右点击滑动手势动作</string>
+    <string name="grid_hardware_summary">三大金刚,Bixby,电源键,指纹键等动作</string>
+    <string name="grid_screenwake_summary">屏幕唤醒方式</string>
+    <string name="grid_gesture_summary">屏幕手势</string>
+
+    <string name="list_grid_call_location_summary">归属地个性化调整</string>
+    <string name="list_grid_launcher_summary">桌面手势,特效等个性化配置</string>
+    <string name="list_grid_launcher_background_summary">桌面高斯模糊壁纸设置</string>
+    <string name="list_grid_navigationbar_summary">导航栏个性化配置</string>
+    <string name="ui_title">状态栏</string>
+    <string name="pulldown_title">通知栏</string>
+
+    <string name="app_manage_store">在应用商店中查看</string>
+    <string name="app_manage_packagename_copy">复制包名『PackageName』</string>
+    <string name="app_manage_info">应用信息</string>
+    <string name="app_manage_eisabled_apk">禁用与隐藏</string>
+    <string name="app_manage_unfreeze_apk">解冻</string>
+    <string name="app_manage_freeze_apk">冻结</string>
+    <string name="app_manage_clear_cache">清除缓存</string>
+    <string name="app_manage_clear_data">清空数据</string>
+    <string name="app_manage_uninstall_apk_data">卸载『保留数据』</string>
+    <string name="app_manage_uninstall_apk">完整卸载</string>
+    <string name="app_manage_backup_apk">只备份apk</string>
+    <string name="app_manage_backup_apk_data">备份『apk与data』</string>
+
+    <string name="app_manage_restore_delete">删除备份</string>
+    <string name="app_manage_restore_apk">还原应用『仅安装』</string>
+    <string name="app_manage_restore_apk_data">还原『应用和数据』</string>
+    <string name="app_manage_restore_data">还原『数据』</string>
+    <string name="copy_ok">已复制:</string>
+    <string name="sorry">抱歉</string>
+    <string name="no_store">没有发现官方内置应用市场,是否跳转到可用的市场下载?</string>
+    <string name="party_store">第三方商店</string>
+
+    <string name="question_install_busybox">安装Busybox吗？</string>
+    <string name="question_install_busybox_desc">你的手机似乎没有安装busybox，是否要立即安装？</string>
+
+    <string name="restore_complete_toast">Restore complete</string>
+    <string name="backup_complete_toast">Backup completed successfully. The backup file can be found at\n%1$s</string>
+    <string name="backup_file_prefix_date_format" translatable="false">dd-MM-yy_HH:mm</string>
+    <string name="backup_file_suffix" translatable="false">_Backup</string>
+    <string name="backup_restore_dialog_title">Backup/Restore Rom Control system data</string>
+    <string name="choose_backup_dialog_title">Please choose backup to restore</string>
+    <string name="no_backup_dialog_title">No backup found on this device</string>
+    <string name="no_backup_dialog_message">Would you like to create new backup now?</string>
+    <string name="restore_confirm_dialog_title">Please confirm restore</string>
+    <string name="restore_confirm_message">You have chosen to restore data from previous Rom Control preferences.\n\n<b>Please note! This operation will change your device settings based on the settings stored in this file.\n\n<font fgcolor="red">DO NOT PROCEED unless absolutely sure!!!</font></b>\n\nRom Control will close to allow data restoration and reopen again upon its completion. Depending on the amount of your settings this may take some time.\n\nPlease click \"CONFIRM\" to proceed or \"CANCEL\" to quit.</string>
+    <string-array name="backup_restore_items">
+        <item>Backup data</item>
+        <item>Restore data</item>
+    </string-array>
+</resources>

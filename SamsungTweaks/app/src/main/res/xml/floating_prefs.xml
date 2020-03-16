@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_floating" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/ball_display" android:key="leo_tweaks_ball_display" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/ball_disable" android:key="leo_tweaks_ball_disable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/vibrator_title"   android:dependency="leo_tweaks_ball_display">
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_ball_vibrate" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_ball_vibrate_style" android:dependency="leo_tweaks_ball_vibrate_style" android:summary="@string/vibrator_level_summary" android:defaultValue="10" app:minValue="5" app:maxValue="50" app:unitsValue="" />
+        <com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/ball_click" android:dependency="leo_tweaks_ball_display" android:key="leo_tweaks_ball_click">
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/ball_click_style" android:key="leo_tweaks_ball_click_style"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/ball_click_string" android:key="leo_tweaks_ball_click_string"  includeSearch="true" setSeparatorString="\###" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    </com.fusionleo.salt.preference.MyPreferenceCategory>
+<com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/ball_up" android:dependency="leo_tweaks_ball_display" android:key="leo_tweaks_ball_up">
+<com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/ball_up_style" android:key="leo_tweaks_ball_up_style"  android:defaultValue="107" android:entryValues="@array/notification_shortcut_values" />
+<com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/ball_up_string" android:key="leo_tweaks_ball_up_string"  includeSearch="true" setSeparatorString="\###" />
+<com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+<com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/ball_down" android:dependency="leo_tweaks_ball_display" android:key="leo_tweaks_ball_down">
+<com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/ball_down_style" android:key="leo_tweaks_ball_down_style"  android:defaultValue="107" android:entryValues="@array/notification_shortcut_values" />
+<com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/ball_down_string" android:key="leo_tweaks_ball_down_string"  includeSearch="true" setSeparatorString="\###" />
+<com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+<com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/ball_left" android:dependency="leo_tweaks_ball_display"  android:key="leo_tweaks_ball_left">
+<com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/ball_left_style" android:key="leo_tweaks_ball_left_style"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+<com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/ball_left_string" android:key="leo_tweaks_ball_left_string"  includeSearch="true" setSeparatorString="\###" />
+<com.fusionleo.salt.preference.CardPreferenceBorder  />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+<com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/ball_right" android:dependency="leo_tweaks_ball_display" android:key="leo_tweaks_ball_right">
+<com.fusionleo.salt.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="@string/ball_right_style" android:key="leo_tweaks_ball_right_style"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+<com.fusionleo.salt.preference.IntentDialogPreference android:title="@string/ball_right_string" android:key="leo_tweaks_ball_right_string"  includeSearch="true" setSeparatorString="\###" />
+</com.fusionleo.salt.preference.MyPreferenceCategory>
+    </PreferenceScreen>

@@ -1,0 +1,9 @@
+Executable : D:\AndroidTools\SD\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\AndroidTools\code\leo90\app\.cxx\cmake\debug\arm64-v8a
+Amber9.4.520
+salt6.6
+sec_9.0
+jvmArgs : 
+

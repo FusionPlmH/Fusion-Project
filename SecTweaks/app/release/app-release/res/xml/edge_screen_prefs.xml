@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/edge_single_plus_name" />
+    <com.leo.salt.preference.MyPreferenceAlerts android:icon="@drawable/ic_reset" android:title="@string/edge_edge_update" android:key="leo_tweaks_update_mods_edge" android:summary="@string/edge_edge_update_mods" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/assist_grid_apps" android:key="leo_tweaks_edge_apps" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/assist_grid_wifi" android:key="leo_tweaks_edge_wifi" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/assist_grid_autostart" android:key="leo_tweaks_edge_autostarts" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/list_grid_floating" android:key="leo_tweaks_edge_floating" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/list_grid_pop" android:key="leo_tweaks_edge_mipop" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/assist_grid_img" android:key="leo_tweaks_edge_img" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/app_name" android:key="leo_tweaks_edge_leo" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/accelerate" android:key="leo_tweaks_edge_clear" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/lock" android:key="leo_tweaks_edge_lock" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/edge_edge_text_color" android:key="leo_tweaks_edge_text_color" android:summary="\#ffffffff" leo:defaultColor="\#ffffffff" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/edge_edge_text_size" android:key="leo_tweaks_edge_text_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:maxValue="22" app:minValue="5" app:unitsValue="dip" />
+</PreferenceScreen>

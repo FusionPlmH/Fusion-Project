@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="26.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/dialog_app_details_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="30.0dip" android:max="100" android:indeterminate="false" style="@android:style/Widget.DeviceDefault.Light.ProgressBar" />
+    <TextView android:textSize="16.0dip" android:id="@id/dialog_app_details_pkgname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/execute_wait" android:textAlignment="center" />
+</LinearLayout>

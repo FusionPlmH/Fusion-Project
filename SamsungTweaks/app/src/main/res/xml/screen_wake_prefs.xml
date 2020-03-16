@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/wake_screen" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/volume_wake_screen" android:key="leo_tweaks_volume_wake_screen" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.CardPreferenceBorder  />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/wake_usb" android:key="leo_tweaks_wake_usb" android:defaultValue="true" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+</PreferenceScreen>

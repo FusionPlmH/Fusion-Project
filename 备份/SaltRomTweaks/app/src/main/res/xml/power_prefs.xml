@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys_name"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="global_power_action_enable"
+        android:title="@string/power_keys_custom"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys"/>
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_power_action_enable"
+        android:key="power_double_action"
+        android:title="@string/power_keys_sj"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_power_action_enable"
+        android:key="power_longpress_action"
+        android:title="@string/power_keys_ca"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_values"
+        android:entries="@array/global_action_entries"
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/power_keys_lock"/>
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_power_action_enable"
+        android:key="keyguard_power_double_action"
+        android:title="@string/power_keys_lock_sj"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_keyguard_values"
+        android:entries="@array/global_action_keyguard_entries"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="global_power_action_enable"
+        android:key="keyguard_power_longpress_action"
+        android:title="@string/power_keys_lock_ca"
+        android:defaultValue="0"
+        android:entryValues="@array/global_action_keyguard_values"
+        android:entries="@array/global_action_keyguard_entries"
+        />
+</PreferenceScreen>

@@ -1,0 +1,146 @@
+<resources>
+    <string-array name="edge_list_style_keys">
+        <item>edge_apps</item>
+        <item>edge_wifi</item>
+        <item>edge_leo</item>
+        <item>edge_clear</item>
+        <item>edge_lock</item>
+        <item>edge_pay</item>
+    </string-array>
+    <string-array name="edge_list_defaults_keys">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="edge_list__summaries">
+        <item>显示程序管理</item>
+        <item>显示本地WLAN密码查看</item>
+        <item>显示Leo设定</item>
+        <item>显示一键清理</item>
+        <item>显示一键锁屏</item>
+        <item>显示快捷支付</item>
+    </string-array>
+    <string-array name="edge_list_name">
+        <item>应用程序管理</item>
+        <item>本地WLAN密码查看</item>
+        <item>@string/app_name</item>
+        <item>一键清理</item>
+        <item>一键锁屏</item>
+        <item>快捷支付</item>
+    </string-array>
+    <string-array name="statusbar_s10clock_options">
+        <item>状态栏左侧</item>
+        <item>状态栏右侧</item>
+    </string-array>
+    <string-array name="statusbar_s10clock_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="statusbar_clock_options">
+        <item>状态栏左侧</item>
+        <item>状态栏居中</item>
+        <item>状态栏右侧</item>
+
+    </string-array>
+    <string-array name="statusbar_clock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="grid_user_items">
+        <item>系统升级</item>
+        <item>@string/settings</item>
+        <item>更新日志</item>
+    </string-array>
+
+    <string-array name="carousel_animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="carousel_animation_entries">
+        <item>轮播动画 0</item>
+        <item>轮播动画 1</item>
+        <item>轮播动画 2</item>
+        <item>轮播动画 3</item>
+        <item>轮播动画 4</item>
+        <item>轮播动画 5</item>
+        <item>轮播动画 6</item>
+        <item>轮播动画 7</item>
+        <item>轮播动画 8</item>
+        <item>轮播动画 9</item>
+        <item>轮播动画 10</item>
+        <item>轮播动画 11</item>
+        <item>轮播动画 12</item>
+        <item>轮播动画 13</item>
+        <item>轮播动画 14</item>
+        <item>轮播动画 15</item>
+    </string-array>
+    <string-array name="boot_animation">
+        <item>QMG动画文件</item>
+        <item>ZIP动画卡刷包</item>
+        <item>备份当前动画文件</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Disable Animation</item>
+        <item>Animation 0.2x</item>
+        <item>Animation 0.25x</item>
+        <item>Animation 0.3x</item>
+        <item>Animation 0.4x</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 0.6x</item>
+        <item>Animation 0.7x</item>
+        <item>Animation 0.8x</item>
+        <item>Animation 0.9x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 3x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.2</item>
+        <item>.25</item>
+        <item>.3</item>
+        <item>.4</item>
+        <item>.5</item>
+        <item>.6</item>
+        <item>.7</item>
+        <item>.8</item>
+        <item>.9</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="PowerMenuSimplify">
+        <item>关机</item>
+        <item>重新启动</item>
+        <item>快速重启</item>
+        <item>线刷模式</item>
+        <item>卡刷模式</item>
+        <item>移动数据</item>
+        <item>飞行模式</item>
+        <item>手电筒</item>
+    </string-array>
+</resources>

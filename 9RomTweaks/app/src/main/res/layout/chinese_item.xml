@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"	>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:id="@+id/grid_mode"
+		>
+		
+		<TextView  android:id="@+id/chinese_item"
+           android:gravity="center_horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="sec-roboto-light"
+			android:textAppearance="@style/TextAppearance.AppCompat"
+		android:tint="?android:attr/colorAccent"
+		/>
+	</LinearLayout>
+
+
+</LinearLayout>

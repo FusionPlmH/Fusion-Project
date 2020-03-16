@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/salt_power_menu"/>
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="global_power_globala_ctionsStyle"
+        android:title="@string/salt_power_menu_enable"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingListPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="global_power_globala_ctionsStyle_style"
+        android:title="@string/salt_power_menu_style"
+        android:defaultValue="0"
+        android:entryValues="@array/power_menu_style_values"
+        android:entries="@array/power_menu_style_entries"
+        />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="leo_salt_power_menu_item_number"
+        android:title="@string/salt_power_menu_column"
+        android:defaultValue="3"
+        android:min="1"
+        android:max="5"
+        salt:interval="1"
+        salt:unitsLeft=""
+        salt:unitsRight="@string/column"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="power_menu_hidestatusbar"
+        android:title="@string/salt_power_menu_status_bar"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+
+
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:title="@string/salt_power_menu_dialog_title"
+        android:key="power_menu_dialog_title"
+        salt:clickValues="1"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="power_menu_affirm"
+        android:title="@string/salt_power_menu_dialog_confirm"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="leo_salt_power_menu_scroll_number"
+        android:title="@string/salt_power_menu_springback_effect"
+        android:defaultValue="300"
+        android:min="150"
+        android:max="500"
+        salt:interval="1"
+        salt:unitsLeft=" "
+        salt:unitsRight=" "
+        />
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/salt_power_menu_icon_text" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="leo_salt_power_menu_icon_size"
+        android:title="@string/salt_power_menu_icon_size"
+        android:defaultValue="130"
+        android:min="80"
+        android:max="200"
+        salt:interval="1"
+        salt:unitsLeft="Size "
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="leo_salt_power_menu_text_size"
+        android:title="@string/salt_power_menu_text_size"
+        android:defaultValue="15"
+        android:min="8"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:key="power_menu_textfont"
+        android:title="@string/salt_power_menu_text_font"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="global_power_globala_ctionsStyle"
+        android:title="@string/salt_power_menu_text_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xFFFFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="power_menu_textcolor"/>
+    <com.leo.salt.preference.SaltSettingCardPreference/>
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/salt_power_menu_bg"/>
+
+
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference
+        salt:reverseDependency="power_menu"
+        android:title="@string/salt_power_menu_bg_blur"
+        android:key="power_menu_bg"
+        salt:clickValues="0"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+android:dependency="power_menu_bg"
+        android:key="leo_salt_power_menu_blur"
+        android:title="@string/salt_power_menu_bg_blur_style"
+        android:defaultValue="15"
+        android:min="1"
+        android:max="25"
+        salt:interval="1"
+        salt:unitsLeft=""
+        salt:unitsRight=" °"
+        />
+
+
+</PreferenceScreen>

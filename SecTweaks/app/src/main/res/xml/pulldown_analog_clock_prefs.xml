@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.leo.salt">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/list_grid_analog_clock" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/analogclock_enable" android:key="leo_tweaks_pulldown_analogclock_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/analogclock_dial" />
+    <com.leo.salt.preference.DrawableListPreference android:title="@string/analogclock_dial_style" android:key="leo_tweaks_pulldown_analogclock_dial_style" android:summary="@string/select_icon"  android:defaultValue="0"  app:drawableArray="@array/analogclock_style_drawables" app:entryList="@array/analogclock_style_entries" app:entryValuesList="@array/analogclock_style_values" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/analogclock_dial_size" android:key="leo_tweaks_pulldown_analogclock_dial_size" android:summary="@string/seksbar_sumarry"  android:defaultValue="6" app:minValue="0" app:maxValue="9" app:unitsValue="" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/analogclock_color" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/analogclock_color_enable" android:key="leo_tweaks_pulldown_analogclock_color_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/analogclock_dial_color" android:key="leo_tweaks_pulldown_analogclock_dial_color"  android:summary="@string/white_color"  android:dependency="leo_tweaks_pulldown_analogclock_color_enable" leo:defaultColor="\#FFFFFFFF" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/analogclock_hour_color" android:key="leo_tweaks_pulldown_analogclock_hour_color"  android:summary="@string/white_color"  android:dependency="leo_tweaks_pulldown_analogclock_color_enable" leo:defaultColor="\#FFFFFFFF" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/analogclock_minut_color" android:key="leo_tweaks_pulldown_analogclock_minut_color"  android:summary="@string/white_color"  android:dependency="leo_tweaks_pulldown_analogclock_color_enable" leo:defaultColor="\#FFFFFFFF" />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/analogclock_second_color" android:key="leo_tweaks_pulldown_analogclock_second_color"  android:summary="@string/white_color"   android:dependency="leo_tweaks_pulldown_analogclock_color_enable" leo:defaultColor="\#FFFFFFFF" />
+
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/analogclock_data" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/analogclock_data_enable" android:key="leo_tweaks_pulldown_analogclock_data_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.leo.salt.preference.ColorPickerPreference android:title="@string/analogclock_data_color" android:key="leo_tweaks_pulldown_analogclock_data_color"  android:summary="@string/white_color"  android:dependency="leo_tweaks_pulldown_analogclock_data_enable" leo:defaultColor="\#FFFFFFFF" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/analogclock_data_size" android:key="leo_tweaks_pulldown_analogclock_data_size" android:summary="@string/seksbar_sumarry"  android:dependency="leo_tweaks_pulldown_analogclock_data_enable" android:defaultValue="15" app:minValue="10" app:maxValue="30" app:unitsValue="" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_pulldown_analogclock_data_font"  android:dependency="leo_tweaks_pulldown_analogclock_data_enable"  android:defaultValue="0" android:entryValues="@array/font_style_values" />
+
+</PreferenceScreen>

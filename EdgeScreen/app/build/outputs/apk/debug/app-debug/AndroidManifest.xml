@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.leoedge.amber" platformBuildVersionCode="1" platformBuildVersionName="1.0">
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <application android:allowBackup="true" android:debuggable="true" android:label="@string/app_name" android:testOnly="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.leoedge.amber.EdgeConfigure">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leoedge.amber.immersive_mode.ImmersiveModeActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.cocktail.subwindow.enable" android:value="true"/>
+        </activity>
+        <receiver android:name="com.leoedge.amber.singleplus.CocktailSinglePlusProvider">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.cocktail.provider" android:resource="@xml/edge_single_plus"/>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="震动回馈" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="状态栏手势动作震动回馈" android:key="leo_tweaks_status_bar_gestures_vibrator_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"/>
+    <com.tweaks.leo.preference.MySeekBarPreference android:title="震动回馈等级" android:key="leo_tweaks_status_bar_gestures_vibrator_level" android:dependency="leo_tweaks_status_bar_gestures_vibrator_enable" android:summary="左右滑动调节震动等级" android:defaultValue="20" app:minValue="5" app:maxValue="50" app:unitsValue="" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏左上角动作" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用左上角动作" android:key="leo_tweaks_status_bar_left_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="单击动作" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义单击动作" android:key="leo_tweaks_status_bar_left_click_action"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义单击任意启用程序" android:key="leo_tweaks_status_bar_left_click_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="长按动作" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义长按动作" android:key="leo_tweaks_status_bar_left_longclick_action"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义长按启动程序" android:key="leo_tweaks_status_bar_left_longclick_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏右上角动作" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用右上角动作" android:key="leo_tweaks_status_bar_right_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="单击动作" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义右上角单击动作" android:key="leo_tweaks_status_bar_right_click_action"  android:defaultValue="102" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义单击任意启用程序" android:key="leo_tweaks_status_bar_right_click_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="长按动作" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义右上角长按动作" android:key="leo_tweaks_status_bar_right_longclick_action"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义长按启动程序" android:key="leo_tweaks_status_bar_right_longclick_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="双击状态栏任意位置动作" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用双击状态栏动作" android:key="leo_tweaks_status_bar_doubletap_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="双击动作" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义双击状态栏动作" android:key="leo_tweaks_status_bar_doubletap_action"  android:defaultValue="100" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义双击状态栏启动程序" android:key="leo_tweaks_status_bar_doubletap_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏右滑动手势" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用右滑动手势" android:key="leo_tweaks_status_bar_right_gestures_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="滑动手势" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义右滑动手势动作" android:key="leo_tweaks_status_bar_right_gestures_action"  android:defaultValue="110" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义滑动手势启动程序" android:key="leo_tweaks_status_bar_right_gestures_app"  includeSearch="true" setSeparatorString="\###" />
+    <com.tweaks.leo.preference.CardPreferenceBorder  />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="状态栏左滑动手势" />
+    <com.tweaks.leo.preference.MySwitchPreference android:title="启用左滑动手势" android:key="leo_tweaks_status_bar_left_gestures_enable" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.tweaks.leo.preference.MyPreferenceCategory android:title="滑动手势" />
+    <com.tweaks.leo.preference.MyListPreference android:entries="@array/notification_shortcut_entries" android:title="自定义左滑动手势动作" android:key="leo_tweaks_status_bar_left_gestures_action"  android:defaultValue="103" android:entryValues="@array/notification_shortcut_values" />
+    <com.tweaks.leo.preference.IntentDialogPreference android:title="自定义滑动手势启动程序" android:key="leo_tweaks_status_bar_left_gestures_app"  includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leoos"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/splash_background"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="?attr/colorPrimary"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+        android:progressDrawable="@drawable/thumb_gradient" />
+
+
+        <TextView
+            android:id="@+id/root_access_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="检查ROOT"
+            android:textColor="?colorAccent"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/busybox_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="@string/checkbusybox"
+            android:textColor="?colorAccent"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/app_versions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="版本"
+            android:textColor="?colorAccent"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

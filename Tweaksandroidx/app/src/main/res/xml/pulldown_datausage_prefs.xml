@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+
+
+    <org.salt.preference.SaltSwitchPreference
+        android:title="@string/qs_datausage_enabled"
+        android:key="DataUsgeEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <org.salt.preference.SaltListPreference
+        android:title="@string/qs_datausage_location" android:key="DataUsgeLocation"
+        android:defaultValue="0"
+        android:dependency="DataUsgeEnabled"
+        android:entryValues="@array/data_usage_style_values"
+        android:entries="@array/data_usage_style_entries"
+        />
+    <org.salt.preference.SaltSeekBarPreference
+        android:key="DataUsgeSize"
+        android:title="@string/qs_datausage_size"
+        android:defaultValue="13"
+        android:min="5"
+        android:dependency="DataUsgeEnabled"
+        android:max="18"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp" />
+    <org.salt.preference.SaltListPreference
+        android:key="DataUsgeFont"
+        android:title="@string/qs_datausage_font"
+        android:defaultValue="0"
+        android:dependency="DataUsgeEnabled"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <org.salt.preference.SaltSwitchPreference
+        android:title="@string/qs_datausage_color_e"
+        android:key="DataUsgeColorEnabled"
+        android:dependency="DataUsgeEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <org.salt.preference.SaltColorPickerPreference
+        android:title="@string/qs_datausage_color"
+        salt:lightnessSlider="true"
+        android:dependency="DataUsgeColorEnabled"
+        android:defaultValue="@color/qsbar_color"
+        android:summary="@color/qsbar_color"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="DataUsgeColor"/>
+    <org.salt.preference.SaltSwitchPreference
+        android:title="@string/qs_sim_check"
+        android:key="MultiSimEnabled"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+</androidx.preference.PreferenceScreen>

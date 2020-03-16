@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:extras="SECURE_GLOBAL"
+   >
+
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_icon_custom" />
+    <com.leo.salt.preference.MyPreferenceAlerts android:icon="@drawable/ic_reset"  android:title="@string/update_mods2"  android:key="leo_tweaks_update_mods"  android:summary="@string/restart_prompt"/>
+
+    <com.leo.salt.preference.MyListPreference android:entries="@array/statusbar_custom_signal_entries" android:title="@string/statusbar_signal_single_icon" android:key="leo_tweaks_statusbar_signal_single_icon" android:defaultValue="1" android:entryValues="@array/statusbar_custom_signal_values" />
+    <com.leo.salt.preference.DrawableListPreference android:title="@string/status_bar_sim_icon" android:key="leo_tweaks_status_bar_sim_icon" android:dependency="leo_tweaks_statusbar_signal_single_icon" android:summary="@string/select_icon" android:defaultValue="0"  app:drawableArray="@array/signal_style_drawables" app:entryList="@array/signal_style" app:entryValuesList="@array/signal_style_values"  />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/status_bar_wifi_arrow" android:key="leo_tweaks_status_bar_wifi_arrow" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.DrawableListPreference android:title="@string/status_bar_wifi_icon" android:key="leo_tweaks_status_bar_wifi_icon" android:summary="@string/select_icon" android:dependency="leo_tweaks_status_bar_wifi_arrow" android:defaultValue="0"  app:drawableArray="@array/wifi_style_drawables" app:entryList="@array/wifi_style" app:entryValuesList="@array/wifi_style_values"  />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_other_icon" />
+    <com.leo.salt.preference.MyMultiSelectPreference android:title="@string/icon_blacklist" android:key="icon_blacklist" android:defaultValue="rotate" android:dialogTitle="@string/icon_blacklist_sumarry" app:multiEntryList="@array/statusbar_icon_hide_options" app:multiValuesList="@array/statusbar_icon_hide_values" extras:isSecure="true" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/status_bar_flashlight_icon" android:key="leo_tweaks_status_bar_flashlight_icon" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" app:packageNameToKill="com.android.systemui" />
+</PreferenceScreen>

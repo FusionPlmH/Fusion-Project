@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   >
+<include layout="@layout/toolbar_container"/>
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/navigation"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+                card_view:cardCornerRadius="@dimen/card_view_radius"
+                card_view:cardElevation="@dimen/shadow_height">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:visibility="gone"
+                            android:id="@+id/donate_icon"
+                            android:scaleType="centerCrop"
+                            android:layout_width="150dp"
+                            android:layout_height="180dp"
+
+                            />
+                    <TextView
+                        android:id="@+id/donate_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="180.0dip"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="?attr/cardBackgroundColor"
+                card_view:cardCornerRadius="@dimen/card_view_radius"
+                card_view:cardElevation="@dimen/shadow_height"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/donate_listtitle"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/wei_zhi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/bt_alipay_free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="#AE9B9B9B" />
+
+                        <TextView
+                            android:id="@+id/bt_weixin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="#AE9B9B9B" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bt_paypal"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="?colorAccent"
+            card_view:cardCornerRadius="@dimen/card_view_radius"
+            card_view:cardElevation="@dimen/shadow_height"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/view_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qq_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableTop="@drawable/ic_qq"
+                        android:drawableTint="#d3eaf0"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="QQ咨询"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/qq_2"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableTop="@drawable/ic_qq"
+                        android:drawableTint="#d3eaf0"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="QQ咨询"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/qq_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableTop="@drawable/ic_qq"
+                        android:drawableTint="#d3eaf0"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="QQ咨询"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/view_telegram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qq_telegram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableStart="@drawable/ic_telegram"
+                        android:drawableTint="#d3eaf0"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Telegram"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

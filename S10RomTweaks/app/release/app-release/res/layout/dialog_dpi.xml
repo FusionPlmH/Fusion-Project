@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="3.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/dialog_dpi" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DPI" />
+        <EditText android:id="@id/dialog_addin_dpi_dpiinput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="min:96" android:maxLength="3" android:layout_below="@id/dialog_dpi" android:inputType="number" android:layout_alignStart="@id/dialog_dpi" />
+        <TextView android:id="@id/dialog_display" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分辨率" android:layout_below="@id/dialog_addin_dpi_dpiinput" android:layout_alignStart="@id/dialog_addin_dpi_dpiinput" />
+        <GridLayout android:id="@id/dialog_Edit_dpi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dialog_display" android:layout_alignStart="@id/dialog_display">
+            <EditText android:id="@id/dialog_addin_dpi_height" android:layout_width="60.0dip" android:hint="min:480" android:maxLength="4" android:inputType="number" android:layout_row="0" />
+            <TextView android:text="×" />
+            <EditText android:id="@id/dialog_addin_dpi_width" android:layout_width="60.0dip" android:hint="min:320" android:maxLength="4" android:inputType="number" android:layout_row="0" />
+        </GridLayout>
+        <CheckBox android:id="@id/dialog_addin_dpi_quickchange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="快速修改" android:layout_below="@id/dialog_Edit_dpi" android:layout_alignStart="@id/dialog_Edit_dpi" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+        <TextView android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="预设" android:layout_below="@id/dialog_addin_dpi_quickchange" android:layout_alignStart="@id/dialog_addin_dpi_quickchange" />
+    </RelativeLayout>
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" card_view:cardBackgroundColor="?colorAccent" card_view:cardCornerRadius="@dimen/card_view_radius" card_view:cardElevation="@dimen/shadow_height" card_view:cardUseCompatPadding="false">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialog_dpi_720" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HD+" android:layout_alignParentStart="true" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/dialog_dpi_1080" android:background="?android:selectableItemBackgroundBorderless" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FHD+" android:layout_centerHorizontal="true" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/dialog_dpi_2k" android:background="?android:selectableItemBackgroundBorderless" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WQHD+" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

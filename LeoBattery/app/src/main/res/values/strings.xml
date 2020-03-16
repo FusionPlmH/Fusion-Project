@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Digital Health and Parental Control</string>
+    <string name="app_name_sumarry">Application timing, focus mode,parental control</string>
+    <color name="menu_icon_color">#ff7fbc69</color>
+    <style name="ThemeLeo" parent="@android:style/Theme.NoDisplay"/>
+
+</resources>

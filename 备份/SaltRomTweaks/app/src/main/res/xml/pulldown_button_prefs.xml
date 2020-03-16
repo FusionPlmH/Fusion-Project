@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsLeoEnabled"
+        android:title="@string/qs_button_leo"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsLeoEnabled"
+        android:key="qsLeoClick"
+        android:title="@string/qs_button_leo_click"
+        android:defaultValue="0"
+        android:entryValues="@array/leo_button_values"
+        android:entries="@array/leo_button_entries"
+        />
+    <Preference android:title="@string/qs_button_leo_cleanram_whitelist" android:key="KiilWhite" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="qsLeoEnabled"
+        android:key="qsButtonCollapsePanel"
+        android:title="@string/qs_button_leo_collapsepanel"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsSettingEnabled"
+        android:title="@string/qs_button_setting"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsSettingEnabled"
+        android:key="qsSettingClick"
+        android:title="@string/qs_button_setting_click"
+        android:defaultValue="1"
+        android:entryValues="@array/head_button_values"
+        android:entries="@array/head_button_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="qsSearchEnabled"
+        android:title="@string/qs_button_search"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off"
+        />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference
+        android:dependency="qsSearchEnabled"
+        android:key="qsSearchClick"
+        android:title="@string/qs_button_search_click"
+        android:defaultValue="0"
+        android:entryValues="@array/head_button_values"
+        android:entries="@array/head_button_entries"
+        />
+
+</PreferenceScreen>

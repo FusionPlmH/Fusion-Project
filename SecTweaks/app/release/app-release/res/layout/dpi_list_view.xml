@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" android:id="@id/SelectDPIText" android:paddingLeft="25.0dip" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_dpi" android:layout_alignParentTop="true" android:layout_alignStart="@id/DPIlistView" />
+    <ListView android:id="@id/DPIlistView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/SelectDPIText" android:layout_alignParentStart="true" />
+</RelativeLayout>

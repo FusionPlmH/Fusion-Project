@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context="com.tweaks.salt.kt.ActivityFileSelector"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:theme="@style/AppBarLight">
+        >
+        <android.support.v7.widget.Toolbar
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?Dialogbackground" />
+    </android.support.design.widget.AppBarLayout>
+    <com.tweaks.salt.kt.OverScrollListView
+        android:paddingTop="56dp"
+        android:id="@+id/file_selector_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.tweaks.salt.kt.OverScrollListView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/keys_action_toggle_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/hardware_bixby_start" android:key="leo_tweaks_hardware_bixby_start" android:defaultValue="false" android:summaryOn="自定义动作" android:summaryOff="系统默认" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/bixby_click" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_bixby_click" android:key="leo_tweaks_hardware_bixby_click" android:dependency="leo_tweaks_hardware_bixby_start" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_bixby_click_app" android:key="leo_tweaks_hardware_bixby_click_app" android:dependency="leo_tweaks_hardware_bixby_start" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/bixby_long" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/hardware_bixby_long" android:key="leo_tweaks_hardware_bixby_long" android:dependency="leo_tweaks_hardware_bixby_start" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/hardware_bixby_long_app" android:key="leo_tweaks_hardware_bixby_long_app" android:dependency="leo_tweaks_hardware_bixby_start" includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

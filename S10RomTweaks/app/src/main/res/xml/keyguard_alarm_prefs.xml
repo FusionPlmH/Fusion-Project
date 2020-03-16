@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:key="alarm_enabled"
+        android:title="@string/keyguard_alarm"
+        android:defaultValue="false"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="alarm_enabled"
+        android:key="alarm_icon_enabled"
+        android:title="@string/keyguard_alarm_icon"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="alarm_enabled"
+        android:key="alarm_text_enabled"
+        android:title="@string/keyguard_alarm_text_info"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+
+    <com.leo.salt.preference.SaltSettingSeekBarPreference
+        android:dependency="alarm_enabled"
+        android:key="alarm_size"
+        android:summary="@string/seekbar_sumarry"
+        android:title="@string/keyguard_alarm_text_size"
+        android:defaultValue="14"
+        android:min="8"
+        android:max="20"
+        salt:interval="1"
+        salt:unitsLeft="@string/text_size_title"
+        salt:unitsRight=" dp"
+        />
+    <com.leo.salt.preference.SaltSettingFontPreference
+        android:dependency="alarm_enabled"
+        android:key="keyguard_alarm_text_font_style"
+        android:title="@string/keyguard_alarm_text_font"
+        android:defaultValue="0"
+        android:entryValues="@array/font_style_values"
+        android:entries="@array/font_style_entries"
+        />
+    <com.leo.salt.preference.SaltSettingSwitchPreference
+        android:dependency="alarm_enabled"
+        android:key="alarm_color_enabled"
+        android:title="@string/keyguard_alarm_color_custom"
+        android:defaultValue="true"
+        android:summaryOn="@string/on"
+        android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="alarm_color_enabled"
+        android:title="@string/keyguard_alarm_text_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+
+        android:key="keyguard_alarm_text_color"/>
+    <com.leo.salt.preference.SaltSettingColorPickerPreference
+        android:dependency="alarm_color_enabled"
+        android:title="@string/keyguard_alarm_icon_color"
+        salt:lightnessSlider="true"
+        android:defaultValue="0xC3FFFFFF"
+        salt:density="12"
+        salt:alphaSlider="true"
+        android:key="keyguard_alarm_icon_color"/>
+</PreferenceScreen>

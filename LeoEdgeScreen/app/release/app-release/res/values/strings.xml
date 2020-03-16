@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeoEdgeScreen</string>
+    <string name="description_edge_single_plus">Leo side screen personalization</string>
+    <string name="edge_single_plus_name">Leo Edge Screen</string>
+    <string name="global_action_kill_progress">一键清理</string>
+    <string name="global_action_lock">一键锁屏</string>
+</resources>

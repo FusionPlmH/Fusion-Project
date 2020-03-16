@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"     xmlns:leo="http://schemas.android.com/apk/res/com.tweaks.salt">
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="当前网络速度" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/traffic_state_entries" android:title="网速显示状态" android:key="leo_tweaks_statusbar_network_traffic_state" android:defaultValue="0" android:entryValues="@array/traffic_state_values" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="网速显示位置" android:key="leo_tweaks_statusbar_network_traffic_position" android:defaultValue="1" android:entryValues="@array/statusbar_view_position_values" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="无网络流量自动隐藏网速" android:key="leo_tweaks_statusbar_network_traffic_auto" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/network_traffic_unit_entries" android:title="网速单位" android:key="leo_tweaks_statusbar_network_traffic_unit" android:entryValues="@array/network_traffic_unit_values" android:defaultValue="0" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/network_traffic_frequency_entries" android:title="网速刷新时间间隔" android:key="leo_tweaks_statusbar_network_traffic_interval" android:entryValues="@array/network_traffic_frequency_values" android:defaultValue="500" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="网速箭头" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="上传/下载标签" android:key="leo_tweaks_statusbar_network_traffic_text" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on"  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="隐藏网速箭头" android:key="leo_tweaks_statusbar_network_traffic_arrow" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on"  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="箭头位置" android:key="leo_tweaks_statusbar_network_traffic_arrow_location" android:defaultValue="false" android:summaryOn="左侧" android:summaryOff="右侧"  />
+    <com.tweaks.salt.preference.DrawableListPreference android:title="箭头图标自定义" android:key="leo_tweaks_statusbar_network_traffic_icon" android:summary="选择一个喜欢的图标" android:dependency="leo_tweaks_statusbar_network_traffic_arrow" android:defaultValue="0"  app:drawableArray="@array/network_icon_drawables" app:entryList="@array/network_icon_style" app:entryValuesList="@array/network_icon_values"  />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="网速文本" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="单行显示" android:key="leo_tweaks_statusbar_network_traffic_single" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.tweaks.salt.preference.MySeekBarPreference android:title="文本大小" android:key="leo_tweaks_statusbar_network_traffic_multi_size"  android:summary="左右滑动调节大小" android:defaultValue="10" app:minValue="5" app:maxValue="10" app:unitsValue="dip" />
+    <com.tweaks.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_statusbar_network_traffic_font_style" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+    <com.tweaks.salt.preference.MyPreferenceCategory android:title="网速颜色" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="允许自定义网速文本颜色" android:key="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="统一设置网速颜色" android:key="leo_tweaks_statusbar_network_traffic_all_color_enabled" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="统一网速颜色" android:key="leo_tweaks_statusbar_network_traffic_all_color" android:dependency="leo_tweaks_statusbar_network_traffic_all_color_enabled" android:summary="@string/default_colors" leo:defaultColor="@color/status_bar_default_colors" />
+    <com.tweaks.salt.preference.MySwitchPreference android:title="随机颜色" android:key="leo_tweaks_statusbar_network_traffic_random_color" app:reverseDependency="leo_tweaks_statusbar_network_traffic_all_color_enabled" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="随机生成一种颜色" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="网速文本颜色" android:key="leo_tweaks_statusbar_network_traffic_color" app:reverseDependency="leo_tweaks_statusbar_network_traffic_random_color" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:summary="@string/default_colors" leo:defaultColor="@color/status_bar_default_colors" />
+    <com.tweaks.salt.preference.ColorPickerPreference android:title="网速图标颜色" android:key="leo_tweaks_statusbar_network_traffic_icon_color" app:reverseDependency="leo_tweaks_statusbar_network_traffic_random_color" android:dependency="leo_tweaks_statusbar_network_traffic_custom_color" android:summary="@string/default_colors" leo:defaultColor="@color/status_bar_default_colors" />
+    <com.tweaks.salt.preference.CardPreferenceBorder  />
+</PreferenceScreen>

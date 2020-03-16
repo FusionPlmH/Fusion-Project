@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <com.tweaks.leo.preference.MyPreferenceCategory android:title="主题" />
+   <com.tweaks.leo.preference.MyPreference
+            android:key="leo_tweaks_app_theme"
+            android:title="主题设置"/>
+   <com.tweaks.leo.preference.CardPreferenceBorder  />
+   <com.tweaks.leo.preference.MyPreferenceCategory android:title="天气设置" />
+   <com.tweaks.leo.preference.MySwitchPreference android:title="切换天气为自定义文本" android:key="leo_tweaks_switch_weather" android:defaultValue="false" android:summaryOn="自定义文本" android:summaryOff="天气" />
+   <com.tweaks.leo.preference.MyEditTextPreference
+       android:dependency="leo_tweaks_switch_weather"
+       android:dialogMessage="请输入任意文字或者Emoji表情"
+       android:dialogTitle="自定义副标题文本"
+       android:hint="例如：不忘初心,方能始终"
+       android:key="leo_tweaks_weather_label"
+       android:persistent="true"
+       android:defaultValue="不忘初心,方能始终"
+       android:title="自定义副标题文本" />
+   <com.tweaks.leo.preference.CardPreferenceBorder  />
+   <com.tweaks.leo.preference.MyPreferenceCategory android:title="快捷方式" />
+   <com.tweaks.leo.preference.MyPreference
+       android:key="leo_tweaks_app_clear"
+       android:title="在桌面创建“一键加速”快捷方式"/>
+   <com.tweaks.leo.preference.MySwitchPreference android:title="LeoTweaks桌面图标" android:key="leo_tweaks_app_launcher_enabled"  android:summaryOn="在桌面显示 LeoTweaks设置" android:summaryOff="隐藏桌面LeoTweaks设置" android:persistent="false"/>
+   <com.tweaks.leo.preference.MySwitchPreference android:title="未捐赠提示" android:key="leo_tweaks_switch_donate" android:defaultValue="false" android:summaryOn="下次启动Leo设置将不再显示提示" android:summaryOff="显示捐赠提示" />
+</PreferenceScreen>

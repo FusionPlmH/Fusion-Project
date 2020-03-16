@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+  <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/status_bar_weather" />
+  <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/status_bar_weather_enabled" android:key="leo_tweaks_status_bar_weather" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/text_set" />
+  <com.fusionleo.salt.preference.MyListPreference android:entries="@array/statusbar_view_position_entries" android:title="@string/status_bar_weather_orientation" android:key="leo_tweaks_status_bar_weather_orientation" android:dependency="leo_tweaks_status_bar_weather" android:defaultValue="1" android:entryValues="@array/statusbar_view_position_values" />
+  <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/single_off" android:key="leo_tweaks_status_bar_weather_single" android:defaultValue="false" android:dependency="leo_tweaks_status_bar_weather" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+  <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/single_size" android:key="leo_tweaks_status_bar_weather_single_size" android:dependency="leo_tweaks_status_bar_weather_single" android:summary="@string/seksbar_sumarry" android:defaultValue="14" app:minValue="10" app:maxValue="20" app:unitsValue="sp" />
+  <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/multi_size" android:key="leo_tweaks_status_bar_weather_multi_size" app:reverseDependency="leo_tweaks_status_bar_weather_single" android:summary="@string/seksbar_sumarry" android:defaultValue="9" app:minValue="5" app:maxValue="10" app:unitsValue="sp" />
+
+  <com.fusionleo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_status_bar_weather_font" android:dependency="leo_tweaks_status_bar_weather" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+  <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/status_bar_weather_color_enabled" android:key="leo_tweaks_status_bar_weather_color_enabled" android:dependency="leo_tweaks_status_bar_weather"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/off" />
+  <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/random_color" android:key="leo_tweaks_status_bar_weather_random_color" android:dependency="leo_tweaks_status_bar_weather_color_enabled"   android:defaultValue="false" android:summaryOn="@string/on"  android:summaryOff="@string/random_color_summary" />
+  <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/status_bar_weather_color" android:key="leo_tweaks_status_bar_weather_color" app:reverseDependency="leo_tweaks_status_bar_weather_random_color" android:summary="@string/white_color" android:dependency="leo_tweaks_status_bar_weather" leo:defaultColor="#ffffffff" />
+</PreferenceScreen>

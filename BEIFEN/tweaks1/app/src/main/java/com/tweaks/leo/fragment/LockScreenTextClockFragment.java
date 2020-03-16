@@ -1,0 +1,138 @@
+package com.tweaks.leo.fragment;
+
+
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+
+import com.tweaks.leo.R;
+import com.tweaks.leo.activity.SubActivity;
+import com.tweaks.leo.base.BasePreferenceFragment;
+import com.tweaks.leo.preference.MyListPreference;
+
+
+import android.preference.Preference;
+import android.preference.PreferenceFragment;
+import android.preference.PreferenceScreen;
+import android.provider.Settings;
+import android.text.format.DateFormat;
+
+import java.util.Date;
+
+import static com.tweaks.leo.widget.DialogUtil.BatteryTips;
+import static com.tweaks.leo.widget.DialogUtil.CustomEdit;
+
+
+public class LockScreenTextClockFragment extends BasePreferenceFragment implements Preference.OnPreferenceChangeListener {
+    private static final String DATE_FORMAT = "leo_keyguard_date_format";
+    private static final String STATUS_BAR_CLOCK_DATE_FORMAT = "leo_tweaks_keyguard_date_format";
+    private MyListPreference mDateFormat;
+    private ContentResolver mResolver;
+    @Override
+    public void onCreate(Bundle savedInstanceState ) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.lockscreen_clock_prefs);
+
+        mResolver = getActivity().getContentResolver();
+        mDateFormat = (MyListPreference) findPreference(DATE_FORMAT);
+        parseDateFormats();
+        String dateFormat = Settings.System.getString(mResolver,
+                STATUS_BAR_CLOCK_DATE_FORMAT);
+        if (dateFormat == null) {
+            dateFormat = "MMMd日";
+        }
+        mDateFormat.setValue(dateFormat);
+        mDateFormat.setSummary( mDateFormat.getEntry());
+        mDateFormat.setOnPreferenceChangeListener(this);
+        BatteryTips(getActivity(),DB_MAIN_BATTERY,BatterName,Batteryurl);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+       // hpf.onResumeFragment();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+      //  hpf.onPauseFragment();
+    }
+
+
+    public String BatterName="锁屏时间";
+    public String Batteryurl="file:///android_asset/Clock.html";
+    public static final String DB_MAIN_BATTERY = "leo_clock_help";
+
+    @Override
+    public void ResetColor() {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_all_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_hour_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_min_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_colon_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_datail_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_date_clock_color", Color.parseColor("#fffafafa"));
+        Settings.System.putInt(getActivity().getContentResolver(),
+                "leo_tweaks_keyguard_lunar_clock_color", Color.parseColor("#fffafafa"));
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+
+        if (preference == mDateFormat) {
+            int index = mDateFormat.findIndexOfValue((String) newValue);
+            if (index == 15) {
+                //CustomEdit();
+                String tite= mContext.getResources().getString( R.string.status_bar_date_string_edittext_title);
+                String sum= mContext.getResources().getString( R.string.status_bar_date_string_edittext_summary);
+                CustomEdit(mContext,STATUS_BAR_CLOCK_DATE_FORMAT,tite,sum,"MMMd日,EEE");
+            }else {
+                if ((String) newValue != null) {
+                    Settings.System.putString(getActivity().getContentResolver(), STATUS_BAR_CLOCK_DATE_FORMAT, (String) newValue);
+                    mDateFormat.setSummary(mDateFormat.getEntries()[index]);
+                }
+            }
+            //   parseDateFormats();
+            return true;
+        }
+        return false;
+    }
+    private void parseDateFormats() {
+        // Parse and repopulate mStatusBarDateFormat's entries based on current date.
+        String[] dateEntries = getResources().getStringArray(
+                R.array.clock_date_format_entries_values);
+        CharSequence parsedDateEntries[];
+        parsedDateEntries = new String[dateEntries.length];
+        Date now = new Date();
+
+        int lastEntry = dateEntries.length - 1;
+        int dateStyle = Settings.System.getInt(mResolver,
+                STATUS_BAR_CLOCK_DATE_FORMAT, 2);
+        for (int i = 0; i < dateEntries.length; i++) {
+            if (i == lastEntry) {
+                parsedDateEntries[i] = dateEntries[i];
+            } else {
+                String newDate;
+                CharSequence dateString = DateFormat.format(dateEntries[i], now);
+                if (dateStyle == 1) {
+                    newDate = dateString.toString().toLowerCase();
+                } else if (dateStyle == 2) {
+                    newDate = dateString.toString().toUpperCase();
+                } else {
+                    newDate = dateString.toString();
+                }
+
+                parsedDateEntries[i] = newDate;
+            }
+        }
+        mDateFormat.setEntries(parsedDateEntries);
+    }
+}

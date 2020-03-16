@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/qsclock" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_custom_enabled" android:key="leo_tweaks_qsclock_custom_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/qsclock_size" android:key="leo_tweaks_qsclock_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_qsclock_custom_enabled" android:defaultValue="19" app:maxValue="30" app:minValue="5" app:reverseDependency="leo_tweaks_qsclock_visibility" app:unitsValue="dip" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/qsclock_font" android:key="leo_tweaks_qsclock_font" android:dependency="leo_tweaks_qsclock_custom_enabled" android:defaultValue="0" android:entryValues="@array/font_style_values" app:reverseDependency="leo_tweaks_qsclock_visibility" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_visibility" android:key="leo_tweaks_qsclock_visibility" android:dependency="leo_tweaks_qsclock_custom_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/qsclock_big" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_big_custom_enabled" android:key="leo_tweaks_qsclock_big_custom_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/qsclock_big_size" android:key="leo_tweaks_qsclock_big_size" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_qsclock_big_custom_enabled" android:defaultValue="44" app:maxValue="88" app:minValue="30" app:reverseDependency="leo_tweaks_qsclock_big_visibility" app:unitsValue="SP" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/qsclock_big_font" android:key="leo_tweaks_qsclock_big_font" android:dependency="leo_tweaks_qsclock_big_custom_enabled" android:defaultValue="0" android:entryValues="@array/font_style_values" app:reverseDependency="leo_tweaks_qsclock_big_visibility" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_big_visibility" android:key="leo_tweaks_qsclock_big_visibility" android:dependency="leo_tweaks_qsclock_big_custom_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.CardPreferenceBorder />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/qsclock_vibrate" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/vibrator" android:key="leo_tweaks_qsclock_vibrate" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/vibrator_level" android:key="leo_tweaks_qsclock_vibrate_level" android:summary="@string/vibrator_level_summary" android:dependency="leo_tweaks_qsclock_vibrate" android:defaultValue="20" app:maxValue="50" app:minValue="5" app:unitsValue="" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/qsclock_click" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_click_enabled" android:key="leo_tweaks_qsclock_click_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/qsclock_click_action" android:key="leo_tweaks_qsclock_click_action" android:dependency="leo_tweaks_qsclock_click_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/qsclock_click_string" android:key="leo_tweaks_qsclock_click_string" android:dependency="leo_tweaks_qsclock_click_enabled" includeSearch="true" setSeparatorString="\###" />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/qsclock_long" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/qsclock_long_enabled" android:key="leo_tweaks_qsclock_long_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/global_action_entries" android:title="@string/qsclock_long_action" android:key="leo_tweaks_qsclock_long_action" android:dependency="leo_tweaks_qsclock_long_enabled" android:defaultValue="0" android:entryValues="@array/global_action_values" />
+    <com.leo.salt.preference.IntentDialogPreference android:title="@string/qsclock_long_string" android:key="leo_tweaks_qsclock_long_string" android:dependency="leo_tweaks_qsclock_long_enabled" includeSearch="true" setSeparatorString="\###" />
+</PreferenceScreen>

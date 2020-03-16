@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tweaks.salt.kt.FragmentApplistions">
+
+    <TabHost
+        android:id="@+id/blacklist_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/apps_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33dddddd"
+                android:hint="@string/apps_search_box"
+                android:inputType="textFilter"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33dddddd" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/tab_apps_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_apps_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/ic_check" />
+
+                    <com.tweaks.salt.kt.OverScrollListView
+                        android:id="@+id/apps_userlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/tab_apps_system"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_apps_system"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/ic_check" />
+
+                    <com.tweaks.salt.kt.OverScrollListView
+                        android:id="@+id/apps_systemlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/tab_apps_backuped"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_apps_backuped"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:src="@drawable/ic_check" />
+
+                    <com.tweaks.salt.kt.OverScrollListView
+                        android:id="@+id/apps_backupedlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

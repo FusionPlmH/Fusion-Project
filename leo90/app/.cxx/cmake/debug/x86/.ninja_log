@@ -1,0 +1,9 @@
+# ninja log v5
+1	515	593895307	CMakeFiles/salt6.6.dir/src/main/cpp/salt6.6.cpp.o	bc8a6d4e52b67d43
+4	519	593895307	CMakeFiles/Amber9.4.520.dir/src/main/cpp/Amber9.4.520.cpp.o	1b466db2ee035ebb
+3	530	593895307	CMakeFiles/sec_9.0.dir/src/main/cpp/sec_9.0.cpp.o	549c480b5d56dc51
+520	622	593895307	../../../../build/intermediates/cmake/debug/obj/x86/libAmber9.4.520.so	f581a252c9f8eb76
+516	622	593895307	../../../../build/intermediates/cmake/debug/obj/x86/libsalt6.6.so	c9fd5865c920560a
+531	622	593895307	../../../../build/intermediates/cmake/debug/obj/x86/libsec_9.0.so	a1fa70488f995334
+2	498	594029781	CMakeFiles/Amber9.4.520.dir/src/main/cpp/Amber9.4.520.cpp.o	1b466db2ee035ebb
+498	611	594029781	../../../../build/intermediates/cmake/debug/obj/x86/libAmber9.4.520.so	f581a252c9f8eb76

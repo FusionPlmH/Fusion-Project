@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto" xmlns:saltSecure="Secure">
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference android:title="@string/statusbar_logo_enabled" android:key="statusbar_logo_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" salt:clickValues="3" />
+    <com.leo.salt.preference.SaltSettingChooseSwitchPreference android:title="@string/statusbar_carrier_enabled" android:key="statusbar_carrier_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" salt:clickValues="5" />
+    <com.leo.salt.preference.SaltSettingCardButtonPreference salt:buttonString="@string/reboot_ui_info" salt:packageNameToKill="com.android.systemui" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_signal_orientation" android:key="statusbar_signal_orientation" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_signal_wifi_enabled" android:key="statusbar_signal_wifi_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingIconListPreference android:title="@string/statusbar_signal_wifi_style" android:key="statusbar_signal_wifi_style" android:dependency="statusbar_signal_wifi_enabled" android:defaultValue="1" salt:drawableIconColor="?colorAccent" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_signal_enabled" android:key="statusbar_signal_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingIconListPreference android:title="@string/statusbar_signal_style" android:key="statusbar_signal_style" android:dependency="statusbar_signal_enabled" android:defaultValue="15" salt:drawableIconColor="?colorAccent" />
+    <com.leo.salt.preference.SaltSettingMultiSelectPreference android:title="@string/statusbar_icon_hide" android:key="icon_blacklist" android:defaultValue="rotate,headset" salt:multiEntryList="@array/statusbar_icon_entries" salt:multiValuesList="@array/statusbar_icon_values" saltSecure:isSecure="true" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_icon_padding_enabled" android:key="statusbar_icon_padding_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="18" android:title="@string/statusbar_icon_padding" android:key="leo_salt_statusbar_icon_padding" android:summary="@string/seekbar_padding_sumarry" android:dependency="statusbar_icon_padding_enabled" android:defaultValue="10" android:min="8" salt:interval="1" salt:unitsLeft="@string/padding_title" salt:unitsRight=" dp" />
+</PreferenceScreen>

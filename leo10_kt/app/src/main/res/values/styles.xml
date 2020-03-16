@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <declare-styleable name="CarrierText">
+        <attr name="allCaps" format="boolean" />
+        <attr name="showMissingSim" format="boolean" />
+        <attr name="showAirplaneMode" format="boolean" />
+    </declare-styleable>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <declare-styleable name="Clock">
+        <attr name="amPmStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="showDark" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LeoAnalogClock">
+        <attr name="leo_dial" format="reference" />
+        <attr name="leo_hour" format="reference" />
+        <attr name="leo_minute" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DateView">
+        <attr name="datePattern" format="string" />
+    </declare-styleable>
+</resources>

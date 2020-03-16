@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_bar" />
+    <Preference android:key="bar" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_percent" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/batt_percent_show" android:key="Percentenabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="20" android:title="@string/batt_percent_size" android:key="PercentSize" android:summary="@string/seekbar_sumarry" android:dependency="Percentenabled" android:defaultValue="15" android:min="8" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/batt_percent_font" android:key="statusbar_battery_text_font" android:dependency="Percentenabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_icon" />
+    <com.leo.salt.preference.SaltSettingDefaultListPreference android:entries="@array/battery_style_entries" android:title="@string/statusbar_battery" android:key="batteryStyle" android:defaultValue="0" android:entryValues="@array/battery_style_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="120" android:title="@string/statusbar_battery_icon_size" android:key="size" android:defaultValue="60" android:min="40" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="5" android:title="@string/statusbar_battery_start_padding" android:key="start_padding" android:summary="@string/seekbar_padding_sumarry" android:defaultValue="1" android:min="1" salt:interval="1" salt:unitsLeft="@string/padding_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="5" android:title="@string/statusbar_battery_end_padding" android:key="end_padding" android:summary="@string/seekbar_padding_sumarry" android:defaultValue="1" android:min="1" salt:interval="1" salt:unitsLeft="@string/padding_title" salt:unitsRight=" dp" />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/batt_color" android:key="batt_color">
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_battery_color_enabled" android:key="statusbar_battery_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/statusbar_battery_color" android:key="statusbar_battery_color" android:dependency="statusbar_battery_color_enabled" android:defaultValue="0xC3FFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/statusbar_battery_dark_color_enabled" android:key="statusbar_battery_dark_color_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/statusbar_battery_dark_color" android:key="statusbar_battery_dark_color" android:dependency="statusbar_battery_dark_color_enabled" android:defaultValue="0x99000000" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

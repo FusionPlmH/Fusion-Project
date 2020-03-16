@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <com.leo.salt.preference.MyPreferenceCategory android:title= "@string/pulldown_blur_title"/>
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/pulldown_blur" android:key="leo_tweaks_pulldown_blur" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off"  />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/pulldown_blur_style" android:key="leo_tweaks_pulldown_blur_style" android:dependency="leo_tweaks_pulldown_blur" android:summary="@string/seksbar_sumarry"  android:defaultValue="10" app:minValue="5" app:maxValue="30" app:unitsValue="" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/data_usage_tilte" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/data_usage_text" android:key="leo_tweaks_data_usage_text_enabled" android:defaultValue="false" android:summaryOff="@string/on" android:summaryOn="@string/off" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/data_usage_text_size" android:key="leo_tweaks_data_usage_text_size" android:summary="@string/seksbar_sumarry" app:reverseDependency="leo_tweaks_data_usage_text_enabled" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue="px" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_data_usage_text_font" app:reverseDependency="leo_tweaks_data_usage_text_enabled" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/data_usage_style_entries" android:title="@string/data_usage_text_gravity" android:key="leo_tweaks_data_usage_text_gravity" app:reverseDependency="leo_tweaks_data_usage_text_enabled" android:defaultValue="0" android:entryValues="@array/data_usage_style_values" />
+    <com.leo.salt.preference.CardPreferenceBorder  />
+    <com.leo.salt.preference.MyPreferenceCategory android:title="@string/notice_button_text" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/clear_all_button_custom_enabled" android:key="leo_tweaks_noti_clear_all_button_custom_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_notice_clear_all_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_noti_clear_all_button_custom_enabled"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_noti_clear_all_button_custom_string"
+        android:persistent="true"
+        android:defaultValue="@string/EditText_hint"
+        android:title="@string/clear_all_button_custom_string" />
+    <com.leo.salt.preference.MySwitchPreference android:title="@string/setting_button_custom_enablede" android:key="leo_tweaks_noti_setting_button_custom_enablede" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.MyListPreference android:entries="@array/font_style_entries" android:title="@string/font_style" android:key="leo_tweaks_notice_noti_setting_button_text_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.leo.salt.preference.MyEditTextPreference
+        android:dependency="leo_tweaks_noti_setting_button_custom_enablede"
+        android:dialogMessage="@string/custom_text_essage"
+        android:dialogTitle="@string/custom_text_title"
+        android:hint="@string/custom_text_hint"
+        android:key="leo_tweaks_noti_setting_button_custom_string"
+        android:persistent="true"
+        android:defaultValue="@string/EditText_hint"
+        android:title="@string/setting_button_custom_enablede" />
+    <com.leo.salt.preference.MySeekBarPreference android:title="@string/notice_noti_clear_button_text_size" android:key="leo_tweaks_notice_noti_clear_button_text_size" android:summary="@string/seksbar_sumarry" android:defaultValue="13" app:minValue="10" app:maxValue="20" app:unitsValue=" %" />
+</PreferenceScreen>

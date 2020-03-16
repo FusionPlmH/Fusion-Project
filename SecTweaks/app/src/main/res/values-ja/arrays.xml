@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="window_animation_scale_entries">
+                 <item>アニメーションを無効にする</item>
+                 <item>アニメーション0.2倍</item>
+                 <item>アニメーション0.25倍</item>
+                 <item>アニメーション0.3倍</item>
+                 <item>アニメーション0.4倍</item>
+                 <item>アニメーション0.5倍</item>
+                 <item>アニメーション0.6倍</item>
+                 <item>アニメーション0.7倍</item>
+                 <item>アニメーション0.8倍</item>
+                 <item>アニメーション0.9倍</item>
+                 <item> 1xアニメーション</item>
+                 <item>アニメーション1.5倍</item>
+                 <item>アニメーション2倍</item>
+                 <item>アニメーション3倍</item>
+                 <item>アニメーション5倍</item>
+                 <item>アニメーション10倍</item>
+             </string-array>
+    <string-array name="backup_items">
+          <item>バックアップデータ</item>
+         <item>データを復元</item>
+    </string-array>
+    <string-array name="wipe_entries">
+                 <item>クリーンアップデータ</item>
+                 <item>キャッシュをクリーンアップ</item>
+                 <item> Dalvikをクリーンアップ</item>
+                 <item>システム設定とデータのクリーンアップ</item>
+             </string-array>
+         <string-array name="network_items">
+             <item>ネットワークメニューを非表示にする</item>
+             <item> @string/show_dsp_sumarry </item>
+             <item>サムスンの隠しネットワークメニュー</item>
+         </string-array>
+
+
+    <string-array name="device_info_entries">
+                 <item>デバイス信号</item>
+                 <item> Androidのバージョン</item>
+                 <item> ROMコンパイルのバージョン番号</item>
+                 <item>無線ネットワーク</item>
+                 <item>次の目覚まし時計</item>
+                 <item>気温</item>
+                 <item>ストレージ</item>
+                 <item>電池残量</item>
+                 <item> CPU使用率</item>
+                 <item> CPUモデル</item>
+                 <item> CPU周波数</item>
+                 <item>バッテリー容量</item>
+                 <item>電圧と電流</item>
+             </string-array>
+    <string-array name="device_orientation_entries">
+                 <item>中央揃え</item>
+                  <item>正しい配置</item>
+                 <item>左揃え</item>
+             </string-array>
+      
+
+         <string-array name="location_service">
+             <item>高德定位</item>
+             <item>バイドゥの配置（デフォルト）</item>
+         </string-array>
+    <string-array name="clock_date_format_entries_values">
+        <item>EEE</item>
+        <item>MMMd日</item>
+        <item>MMMdd日</item>
+        <item>MM月dd日</item>
+        <item>yy年-MM月-dd日</item>
+        <item>yyyy年-MM月-dd日</item>
+        <item>yy年MM月dd日</item>
+        <item>yy年MMMd日</item>
+        <item>yy/MM/dd</item>
+        <item>yyy/MM/dd</item>
+        <item>MMMdd</item>
+        <item>M/d</item>
+        <item>yyyy年,MMMd日</item>
+        <item>MM/dd</item>
+        <item>yy年MMM</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="date_style_entries">
+                 <item>右への日付</item>
+                 <item>残り日</item>
+             </string-array>
+
+
+    <string-array name="dpi_dialog_items">
+        <item>480 dpi</item>
+        <item>450 dpi</item>
+        <item>420 dpi</item>
+        <item>390 dpi</item>
+        <item>360 dpi</item>
+        <item>330 dpi</item>
+        <item>習慣</item>
+    </string-array>
+
+    <string-array name="battery_bar_entries">
+                <item>非表示</item>
+                ステータスバー上部の<item> </item>
+                <item>スクリーントップをロック</item>
+
+            </string-array>
+        <string-array name="battery_bar_style_entries">
+            <item>通常</item>
+            <item>中央揃え</item>
+        </string-array>
+
+        <string-array name="battery_model_entries">
+            <item>システムデフォルト</item>
+            <item>レオ電池パック</item>
+        </string-array>
+    <string-array name="statusbar_icon_hide_options">
+                 <item>画面の回転</item>
+                 <item> HD1 </item>
+                 <item> HD2 </item>
+                 <item>アラーム</item>
+                 <item>モバイルデータ</item>
+                 <item>省電力モード</item>
+                 <item>フライトモード</item>
+                 <item>ヘッドフォン</item>
+                 <item>音/振動</item>
+                 <item> WIFI </item>
+                 <item> Bluetooth </item>
+                 <item> NFC </item>
+                 <item>バッテリー（公式のみ）</item>
+                 <item>投影</item>
+             </string-array>
+        <string-array name="bg_gradient_type_entries">
+            <item>上から下へのグラデーション</item>
+            <item>下から上へのグラデーション</item>
+            <item>左から右へのグラデーション</item>
+            <item>は右から左へのグラデーションです</item>
+            <item>が右下隅から左上隅に変更されています</item>
+            <item>が左下隅から右上隅に変更されています</item>
+            <item>は左上から右下への勾配です</item>
+            <item>が右上隅から左下隅に変更されています</item>
+        </string-array>
+     <string-array name="bg_three_gradient_model_type_entries">
+            <item>線形グラデーション</item>
+            <item>放射勾配</item>
+            <item>スキャングラデーション</item>
+        </string-array>
+        <string-array name="bg_type_entries">
+            <item>カスタムカラー</item>
+            <item>背景の壁紙</item>
+        </string-array>
+        <string-array name="clock_date_display_entries">
+            <item>非表示</item>
+            <item>小さい</item>
+            <item>通常</item>
+        </string-array>
+
+        <string-array name="clock_date_style_entries">
+            <item>通常</item>
+            <item>英語の日付は小文字です</item>
+            <item>英語の日付は大文字です</item>
+        </string-array>
+
+    <string-array name="clock_date_week_entries">
+                <item>月曜日</item>
+                <item>月曜日</item>
+                <item> 1人</item>
+                <item>日本語の週</item>
+            </string-array>
+
+         <string-array name="clock_details_entries">
+            <item> 12時間</item>
+            <item> 12期間</item>
+            <item>星座</item>
+            <item>月面</item>
+            <item>季節</item>
+        </string-array>
+    <string-array name="logo_style_entries">
+            <item>レオROM </item>
+            <item>アリババ</item>
+            <item>アップル</item>
+            <item>バイドゥ</item>
+            <item>チャイナモバイル</item>
+            <item> Google </item>
+            <item> IOS </item>
+            <item> Linux </item>
+            <item> Tencent QQ </item>
+            <item>中国電信</item>
+            <item>チャイナユニコム</item>
+            <item>マイクロソフト</item>
+            <item> Ubuntu </item>
+            <item>チャイナテレコム2 </item>
+        </string-array>
+        <string-array name="font_style_entries">
+            <item>システムデフォルト</item>
+            <item>フォント1 </item>
+            <item>フォント2 </item>
+            <item>フォント3 </item>
+            <item>フォント4 </item>
+            <item>フォント5 </item>
+            <item>フォント6 </item>
+            <item>フォント7 </item>
+            <item>フォント8 </item>
+            <item>フォント9 </item>
+            <item>フォント10 </item>
+            <item>フォント11 </item>
+            <item>フォント12 </item>
+            <item>フォント14 </item>
+            <item>フォント15 </item>
+            <item>フォント16 </item>
+            <item>フォント17 </item>
+            <item>フォント18 </item>
+            <item>フォント19 </item>
+            <item>フォント20 </item>
+            <item>フォント21 </item>
+            <item>フォント22 </item>
+            <item>フォント23 </item>
+            <item>フォント24 </item>
+            <item>フォント25（簡体字中国語をサポート）</item>
+            <item>フォント26（簡体字中国語のサポート）</item>
+            <item>フォント27（簡体字中国語のサポート）</item>
+            <item>フォント28（簡体字中国語のサポート）</item>
+            <item>フォント29（簡体字中国語のサポート）</item>
+            <item>フォント30（簡体字中国語のサポート）</item>
+            <item>フォント31（簡体字中国語のサポート）</item>
+            <item>フォント32（簡体字中国語のサポート）</item>
+            <item>フォント33（簡体字中国語のサポート）</item>
+            <item>フォント34（簡体字中国語のサポート）</item>
+            <item>フォント35（簡体字中国語のサポート）</item>
+            <item>フォント36 Hitomiカスタム</item>
+        </string-array>
+
+
+    <string-array name="votage_style_entries">
+                <item>電圧</item>
+                <item>電流</item>
+                <item>電圧+電流</item>
+            </string-array>
+
+
+       <string-array name="signal_style">
+            <item>デフォルト</item>
+            <item>シグナルアイコン1 </item>
+            <item>シグナルアイコン2 </item>
+            <item>シグナルアイコン3 </item>
+            <item>シグナルアイコン4 </item>
+            <item>シグナルアイコン5 </item>
+            <item>シグナルアイコン6 </item>
+            <item>シグナルアイコン7 </item>
+            <item>シグナルアイコン8 </item>
+            <item>シグナルアイコン9 </item>
+            <item>シグナルアイコン10 </item>
+            <item>シグナルアイコン11 </item>
+            <item>シグナルアイコン12 </item>
+            <item>シグナルアイコン13 </item>
+            <item>シグナルアイコン14 </item>
+            <item>シグナルアイコン15 </item>
+            <item>シグナルアイコン16 </item>
+            <item>シグナルアイコン17 </item>
+            <item>シグナルアイコン18 </item>
+        </string-array>
+        <string-array name="status_bar_ampm_entries">
+            <item>無効</item>
+            <item>小さい</item>
+            <item>通常</item>
+        </string-array>
+
+        <string-array name="traffic_state_entries">
+            <item>速度表示を非表示にする</item>
+            <item>はアップロード速度を示します</item>
+            <item>はダウンロード速度を示します</item>
+            <item>はアップロードとダウンロードを示します</item>
+        </string-array>
+
+        <string-array name="wifi_style">
+            <item>デフォルト</item>
+            <item> WIFIアイコン1 </item>
+            <item> WIFIアイコン2 </item>
+            <item> WIFIアイコン3 </item>
+            <item> WIFIアイコン4 </item>
+            <item> WIFIアイコン5 </item>
+            <item> WIFIアイコン6 </item>
+            <item> WIFIアイコン7 </item>
+            <item> WIFIアイコン8 </item>
+            <item> WIFIアイコン9 </item>
+            <item> WIFIアイコン10 </item>
+            <item> WIFIアイコン11 </item>
+            <item> WIFIアイコン12 </item>
+            <item> WIFIアイコン13 </item>
+            <item>無線LANアイコン14 </item>
+            <item> WIFIアイコン15 </item>
+        </string-array>
+     <string-array name="data_usage_style_entries">
+            <item>左</item>
+            <item>中央揃え</item>
+            <item>デフォルト</item>
+        </string-array>
+      <string-array name="power_items">
+            <item>電源を切る</item>
+            <item>再起動</item>
+            <item>クイック再起動</item>
+            <item>カードブラシモード</item>
+            <item>ラインブラシモード</item>
+            <item> UIを再起動</item>
+        </string-array>
+     <string-array name="network_icon_style">
+            <item>デフォルトのスピードアイコン</item>
+            <item>スピードアイコン1 </item>
+            <item>スピードアイコン2 </item>
+            <item>スピードアイコン3 </item>
+            <item>スピードアイコン4 </item>
+            <item>スピードアイコン5 </item>
+            <item>スピードアイコン6 </item>
+            <item>スピードアイコン7 </item>
+        </string-array>
+
+
+    <string-array name="GoodLock_entries">
+                <item>サイドスクリーンフラッシュ</item>
+                <item>マルチタスクスイッチ</item>
+                <item>片手操作</item>
+            </string-array>
+        
+
+</resources>
+
+

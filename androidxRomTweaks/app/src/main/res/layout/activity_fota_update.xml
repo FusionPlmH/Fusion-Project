@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/changelog_app_bar_height"
+        android:fitsSystemWindows="true"
+        app:statusBarScrim="@android:color/transparent">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/transparent"
+            app:expandedTitleGravity="center_horizontal"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_navigationicon"
+                android:navigationIcon="@drawable/ic_navigationicon"
+                app:layout_collapseMode="pin"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:id="@+id/nestedScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <com.leo.salt.tweaks.view.widget.ShapeTextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center"
+                android:text="@string/fota_system_info"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:bottomRightRadius="20dp"
+                app:openSelector="true"
+                app:strokeColor="@color/splashcolor"
+                app:strokeWidth="1dp"
+                app:topLeftRadius="20dp"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/compile_version"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/delta_updates"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/fota_size"
+                    android:visibility="gone"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:text="SecurityPatch"
+                    android:id="@+id/security_patch"
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/online_update_log"
+                android:visibility="gone"
+                android:orientation="vertical"
+               >
+                <com.leo.salt.tweaks.view.widget.ShapeTextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:gravity="center"
+                    android:text="@string/fota_last_updated_record"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:bottomRightRadius="20dp"
+                    app:openSelector="true"
+                    app:strokeColor="@color/splashcolor"
+                    app:strokeWidth="1dp"
+                    app:topLeftRadius="20dp" />
+                <TextView
+                    android:id="@+id/online_update_json"
+                    android:padding="15dp"
+                    android:textSize="18dp"
+                    android:text=""
+                    android:tint="?android:attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="65dp"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <include layout="@layout/fota_update"/>
+</android.support.design.widget.CoordinatorLayout>

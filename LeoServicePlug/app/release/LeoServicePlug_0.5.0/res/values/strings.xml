@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_all">full screen mode</string>
+    <string name="action_fall">suspension ball</string>
+    <string name="action_leo">LeoTweaks</string>
+    <string name="action_lock">one-click lock screen</string>
+    <string name="action_outdoors">outdoor mode</string>
+    <string name="action_pop">Screen Assistant</string>
+    <string name="action_ram">One-click cleanup</string>
+    <string name="action_reboot">restart menu</string>
+    <string name="action_reminder">Press and hold the power button and the volume down button for 7 seconds to restart the phone.</string>
+    <string name="app_name">LeoServicePlug</string>
+</resources>

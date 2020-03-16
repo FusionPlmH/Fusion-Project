@@ -1,0 +1,221 @@
+<resources >
+    <style name="Light.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+	
+
+	    <style name="Light.Wallpaper" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+        <item name="android:dialogTheme">@style/DialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+
+    </style>
+    <style name="Theme.Dialog.Dark" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">95.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+   <style name="AppTheme.Main.Dark" parent="Theme.AppCompat">
+       <item name="colorPrimary">@color/colorPrimaryMainDark</item>
+       <item name="colorPrimaryDark">@color/colorPrimaryMainDark</item>
+       <item name="android:listDivider">@color/colorPrimaryMainDark</item>
+       <item name="android:colorBackground">@color/colorPrimaryMainDark</item>
+       <item name="Global_Divider">@color/colorPrimaryMainDark</item>
+       <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+       <item name="android:statusBarColor">@android:color/transparent</item>
+       <item name="transparency">@android:color/transparent</item>
+       <item name="windowActionBar">false</item>
+       <item name="windowNoTitle">true</item>
+
+       <item name="colorCollapsing">@color/colorPrimaryMainDark</item>
+       <item name="colorAccent">@color/colorAccentMainDark</item>
+       <item name="navColorSelector">@color/nav_items_selector_black</item>
+       <item name="android:dialogTheme">@style/DialogStyleDark</item>
+       <item name="android:alertDialogTheme">@style/DialogStyleDark</item>
+       <item name="android:navigationBarColor">@color/colorPrimaryMainDark</item>
+       <item name="BottomNavigationBackground">@color/colorPrimaryMainDark</item>
+       <item name="cardBackgroundColor">@color/dark_cardview_bg</item>
+       <item name="MainwindowBG">@color/colorPrimaryMainDark</item>
+       <item name="stringColor">#fff</item>
+       <item name="stringNightMode">夜间模式</item>
+       <item name="iconNightMode">@drawable/ic_nightmode</item>
+       <item name="android:textAllCaps">false</item>
+       <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+       <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.PopupMenu</item>
+       <item name="android:windowLightStatusBar">false</item>
+       <item name="android:windowTranslucentStatus">false</item>
+       <item name="changelog_color_bg">?android:attr/colorBackground</item>
+       <item name="changelog_color_header_back">?colorAccent</item>
+       <item name="changelog_color_commit_message">?android:attr/textColorPrimary</item>
+       <item name="changelog_color_commit_bg">@color/colorPrimaryMainDark</item>
+
+    </style>
+   <style name="AppTheme.Main" parent="Theme.AppCompat.Light.DarkActionBar">
+       <item name="android:windowLightStatusBar">true</item>
+       <item name="android:statusBarColor">@android:color/transparent</item>
+       <item name="android:colorBackground">@color/colorPrimaryMain</item>
+       <item name="android:listDivider">@color/colorPrimaryMain</item>
+       <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+       <item name="android:popupMenuStyle">@android:style/Widget.DeviceDefault.Light.PopupMenu</item>
+       <item name="transparency">@android:color/transparent</item>
+       <item name="stringNightMode">日间模式</item>
+       <item name="iconNightMode">@drawable/ic_day_mode</item>
+       <item name="Global_Divider">@color/colorPrimaryMain</item>
+       <item name="colorCollapsing">@color/colorPrimaryMain</item>
+       <item name="colorPrimary">@color/colorPrimaryMain</item>
+       <item name="colorPrimaryDark">@color/colorPrimaryMain</item>
+       <item name="colorAccent">@color/colorAccentMain</item>
+       <item name="windowActionBar">false</item>
+       <item name="windowNoTitle">true</item>
+       <item name="android:dialogTheme">@style/DialogStyleLight</item>
+       <item name="navColorSelector">@color/nav_items_selector</item>
+       <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+       <item name="BottomNavigationBackground">@color/colorPrimaryMain</item>
+       <item name="cardBackgroundColor">#fff</item>
+       <item name="MainwindowBG">@color/colorPrimaryMain</item>
+       <item name="stringColor">#000</item>
+
+       <item name="android:textAllCaps">false</item>
+
+       <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+       <item name="changelog_color_bg">?android:attr/colorBackground</item>
+       <item name="changelog_color_header_back">?colorAccent</item>
+       <item name="changelog_color_commit_message">?android:attr/textColorPrimary</item>
+       <item name="changelog_color_commit_bg">#eeeeee</item>
+ </style>
+   <style name="AppTheme.Main.UI" parent="AppTheme.Main.Setting">
+       <item name="Global_Divider">@color/colorPrimaryMain</item>
+       <item name="colorPrimary">@color/colorAccentMain</item>
+       <item name="colorPrimaryDark">@color/colorAccentMain</item>
+       <item name="colorAccent">@color/colorPrimaryMain_ui</item>
+       <item name="android:colorBackground">@color/colorAccentMain</item>
+       <item name="android:listDivider">@color/colorAccentMain</item>
+       <item name="android:navigationBarColor">@color/colorAccentMain</item>
+
+ </style>
+   <style name="Widget.DeviceDefault.CompoundButton.Switch" parent="@android:style/Theme.DeviceDefault.Light"/>
+
+   <style name="AppTheme.Main.Setting" parent="Theme.AppCompat.Light.DarkActionBar">
+       <item name="android:windowLightStatusBar">false</item>
+       <item name="windowActionBar">false</item>
+       <item name="windowNoTitle">true</item>
+       <item name="colorPrimary">@color/colorPrimaryMain</item>
+       <item name="colorPrimaryDark">@color/colorPrimaryMain</item>
+       <item name="colorAccent">@color/colorAccentMain</item>
+       <item name="android:colorBackground">@color/colorPrimaryMain</item>
+       <item name="android:listDivider">@color/colorPrimaryMain</item>
+       <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+       <item name="android:dialogTheme">@style/DialogStyleLight</item>
+       <item name="navColorSelector">@color/nav_items_selector</item>
+       <item name="android:alertDialogTheme">@style/DialogStyleLight</item>
+       <item name="BottomNavigationBackground">@color/colorPrimaryMain</item>
+       <item name="cardBackgroundColor">#fff</item>
+       <item name="MainwindowBG">@color/colorPrimaryMain</item>
+       <item name="stringColor">#fff</item>
+       <item name="android:textAllCaps">false</item>
+       <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+ </style>
+
+   <style name="DialogStyleLight" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+       <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:windowIsFloating">true</item>
+       <item name="android:windowMinWidthMajor">95.0%</item>
+       <item name="android:windowMinWidthMinor">100.0%</item>
+       <item name="windowActionBar">false</item>
+       <item name="android:windowFrame">@null</item>
+       <item name="android:windowSoftInputMode">adjustPan</item>
+       <item name="windowActionModeOverlay">true</item>
+       <item name="android:windowNoTitle">false</item>
+       <item name="android:backgroundDimEnabled">true</item>
+       <item name="android:textAppearanceButton">@style/dialog_button</item>
+ </style>
+
+   <style name="DialogTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+       <item name="android:textSize">20.0sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">?colorAccent</item>
+       <item name="android:fontFamily">sec-roboto-light</item>
+       <item name="android:maxLines">1</item>
+       <item name="android:scrollHorizontally">true</item>
+ </style>
+   <style name="DialogStyleDark" parent="@android:style/Theme.DeviceDefault.Dialog">
+       <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:windowIsFloating">true</item>
+       <item name="android:windowMinWidthMajor">95.0%</item>
+       <item name="android:windowMinWidthMinor">100.0%</item>
+       <item name="android:textAppearanceButton">@style/dialog_button</item>
+       <item name="windowActionBar">false</item>
+       <item name="android:windowFrame">@null</item>
+       <item name="android:windowSoftInputMode">adjustPan</item>
+       <item name="windowActionModeOverlay">true</item>
+       <item name="android:windowNoTitle">false</item>
+       <item name="android:backgroundDimEnabled">true</item>
+ </style>
+
+   <style name="AppBarLight" parent="ThemeOverlay.AppCompat.ActionBar" />
+   <style name="AppBarDark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<style name="AppTheme.PopupOverlay" parent="@android:style/Widget.Material.Light.PopupMenu.Overflow" />
+   <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+                 <!--进入一个Acitvity包括两部分，当前Activity退出动画，下个个Activity进入动画-->
+           <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+           <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+   <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>
+   <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+
+     </style>
+   <style name="TabLayoutStyle" >
+       <item name="android:textAllCaps">false</item>
+       <item name="android:textSize">16sp</item>
+       <item name="android:textStyle">bold</item>
+ </style>
+   <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:windowIsFloating">true</item>
+       <item name="android:windowMinWidthMajor">95.0%</item>
+       <item name="android:windowMinWidthMinor">100.0%</item>
+       <item name="colorPrimary">@color/colorPrimaryMain</item>
+       <item name="android:windowFrame">@null</item>
+       <item name="android:windowSoftInputMode">adjustPan</item>
+       <item name="android:windowActionModeOverlay">true</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:backgroundDimEnabled">true</item>
+ </style>
+    <style name="LaunchTheme" parent="AppTheme.Main">
+          <item name="android:windowNoTitle">true</item>
+          <item name="android:windowBackground">@drawable/layer_splash</item>
+          <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="ApksTitleStyle">
+        <item name="android:textSize">16.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="dialog_button" parent="android:TextAppearance.DeviceDefault.Widget.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:textColor">?colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

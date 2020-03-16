@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <CheckBox
+        android:id="@+id/select_state"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/ItemIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:maxWidth="45dp"
+        android:maxHeight="45dp"
+        android:minWidth="45dp"
+        android:minHeight="45dp" />
+
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="7dp">
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            style="@style/textTitle" />
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            style="@style/textSmall" />
+        <TextView
+            android:id="@+id/ItemPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textSmall" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ItemEnabledStateText"
+            android:maxWidth="40dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textColor="?colorAccent"
+            android:textSize="14dp"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawerLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/app_bar_main" />
+    <android.support.design.widget.NavigationView android:layout_gravity="left" android:id="@id/navigationView" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="fill_parent" app:headerLayout="@layout/nav_header_main" app:menu="@menu/activity_main_drawer">
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="?cardBackgroundColor" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="6.0dip">
+            <TextView android:textColor="?TextStyle" android:id="@id/tools_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/leotoos" android:drawableTop="@drawable/ic_tools_settings" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+            <TextView android:textColor="?TextStyle" android:gravity="center" android:id="@id/current_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/weather" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="?TextStyle" android:gravity="right" android:id="@id/tools_ota" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_ota" android:drawableTop="@drawable/ic_ota" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

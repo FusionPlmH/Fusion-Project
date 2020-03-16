@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="color" name="dark" id="0x7f010000" />
+    <public type="color" name="ic_launcher_background" id="0x7f010001" />
+    <public type="color" name="light" id="0x7f010002" />
+    <public type="drawable" name="ic_logo" id="0x7f020001" />
+    <public type="drawable" name="ic_magisk" id="0x7f020002" />
+    <public type="drawable" name="ic_magisk_padded" id="0x7f020003" />
+    <public type="drawable" name="ic_launcher" id="0x7f020000" />
+    <public type="drawable" name="ic_splash_activity" id="0x7f020004" />
+    <public type="string" name="dling" id="0x7f030000" />
+    <public type="string" name="no_internet_msg" id="0x7f030001" />
+    <public type="string" name="upgrade_msg" id="0x7f030002" />
+    <public type="style" name="SplashTheme" id="0x7f040000" />
+    <public type="style" name="SplashThemeBase" id="0x7f040001" />
+    <public type="style" name="SplashThemeBase.V19" id="0x7f040002" />
+    <public type="xml" name="file_paths" id="0x7f050000" />
+</resources>

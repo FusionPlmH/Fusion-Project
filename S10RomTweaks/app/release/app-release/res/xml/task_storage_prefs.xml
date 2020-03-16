@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:salt="http://schemas.android.com/apk/res-auto">
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/storage_title" />
+    <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/task_info_enabled" android:key="task_info_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.leo.salt.preference.SaltSettingListPreference android:entries="@array/task_info_style_entries" android:title="@string/task_info_style" android:key="task_info_style" android:dependency="task_info_enabled" android:defaultValue="0" android:entryValues="@array/task_info_style_values" />
+    <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="15000" android:title="@string/task_info_refresh" android:key="leo_salt_task_info_refresh" android:summary="1S=1000MS" android:dependency="task_info_enabled" android:defaultValue="1500" android:min="1000" salt:interval="1" salt:unitsLeft="@string/refresh_title" salt:unitsRight=" MS" />
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/click_action" android:dependency="task_info_enabled">
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/task_info_click_enabled" android:key="task_info_click_enabled" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/vibrator" android:key="task_info_vibrator_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="45" android:title="@string/vibratorlevel" android:key="leo_salt_task_info_vibrator_level" android:dependency="task_info_vibrator_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft=" " salt:unitsRight="@string/vibratorlevel_title" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/text_color" android:dependency="task_info_enabled">
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/task_info_title_enabled" android:key="task_info_title_enabled" android:defaultValue="false" android:summaryOn="@string/off" android:summaryOff="@string/on" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_title_color" android:key="task_info_title_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" salt:reverseDependency="task_info_title_enabled" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_total_color" android:key="task_info_total_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_available_color" android:key="task_info_available_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_used_color" android:key="task_info_used_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_symbol_color" android:key="task_info_symbol_color" android:defaultValue="0xFFFFFFFF" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <ListPreference android:entries="@array/symbol_style_entries" android:title="@string/task_info_symbol_style" android:key="leo_salt_task_info_symbol_style" android:defaultValue="0" android:entryValues="@array/symbol_style_values" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/text_size" android:dependency="task_info_enabled">
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="20" android:title="@string/task_info_size" android:key="leo_salt_task_info_size" android:summary="@string/task_info_size_sumarry" android:defaultValue="15" android:min="5" salt:interval="1" salt:unitsLeft="@string/text_size_title" salt:unitsRight=" dp" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/text_font" android:dependency="task_info_enabled">
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/task_info_title_font" android:key="task_info_title_font" android:defaultValue="0" android:entryValues="@array/font_style_values" salt:reverseDependency="task_info_title_enabled" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/task_info_total_font" android:key="task_info_total_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/task_info_available_font" android:key="task_info_available_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+        <com.leo.salt.preference.SaltSettingFontPreference android:entries="@array/font_style_entries" android:title="@string/task_info_used_font" android:key="task_info_used_font" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+    <com.leo.salt.preference.SaltSettingCardPreference />
+    <com.leo.salt.preference.SaltSettingCategoryPreference android:title="@string/storage_bgtitle" android:dependency="task_info_enabled">
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/task_info_bg_enabled" android:key="task_info_bg_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/task_info_bg_color" android:key="task_info_bg_color" android:dependency="task_info_bg_enabled" android:defaultValue="0xFF0074D4" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="65" android:title="@string/dashed_radius_title" android:key="leo_salt_task_info_bg_dashed_radius" android:defaultValue="20" android:min="1" salt:interval="1" salt:unitsLeft="@string/radius_title" salt:unitsRight=" R" />
+        <com.leo.salt.preference.SaltSettingSwitchPreference android:title="@string/dashed_title" android:key="task_info_bg_dashed_enabled" android:dependency="task_info_bg_enabled" android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+        <com.leo.salt.preference.SaltSettingColorPickerPreference android:title="@string/dashed_color_title" android:key="task_info_bg_dashed_color" android:dependency="task_info_bg_dashed_enabled" android:defaultValue="0x6033B5E5" salt:alphaSlider="true" salt:density="12" salt:lightnessSlider="true" />
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="25" android:title="@string/dashed_thickness_title" android:key="leo_salt_task_info_bg_dashed_thickness" android:dependency="task_info_bg_dashed_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft="@string/thickness_title" salt:unitsRight=" dp" />
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="25" android:title="@string/dashed_width_title" android:key="leo_salt_task_info_bg_dashed_width" android:dependency="task_info_bg_dashed_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft="@string/width_title" salt:unitsRight=" dp" />
+        <com.leo.salt.preference.SaltSettingSeekBarPreference android:max="25" android:title="@string/dashed_gop_title" android:key="leo_salt_task_info_bg_dashed_gop" android:dependency="task_info_bg_dashed_enabled" android:defaultValue="15" android:min="1" salt:interval="1" salt:unitsLeft="@string/gop_title" salt:unitsRight=" dp" />
+    </com.leo.salt.preference.SaltSettingCategoryPreference>
+</PreferenceScreen>

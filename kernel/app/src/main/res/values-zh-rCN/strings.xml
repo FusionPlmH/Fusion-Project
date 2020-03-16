@@ -1,0 +1,24 @@
+<resources >
+    <string name="app_name">FusionLeo内核</string>
+    <string name="cannot_get_su">操作失败，因为缺少超级用户访问权限</string>
+    <string name="ok">我知道了</string>
+    <string name="data_loading">加载数据</string>
+    <string name="sorry">抱歉!!!</string>
+    <string name="devices_no">"好像我们还没有支持你的设备!,如果是我们型号判断错误还请与我们联系\n查看具体支持型号:https://www.leorom.cc/index.php/kernel.html"</string>
+    <string name="download_no">你的设备暂时没有可用更新!</string>
+    <string name="model_name">支持列表</string>
+    <string name="network_error_name">使用网络连接</string>
+    <string name="network_error">未连接到网络!\n\n数据加载以及内核下载需要使用网络连接</string>
+    <string name="install_kernel">安装内核到设备,稍后将重新启动</string>
+    <string name="reminder">如果遇到网络波动导致下载停止;解决方案如下\n1.点击暂停按钮-再点击继续按钮实现断点续传\n2.若上诉方案依然无法解决建议你使用移动数据下载\n3.下载时间无需使用爬墙</string>
+    <string name="download">下载</string>
+    <string name="pause">暂停</string>
+    <string name="resume">继续</string>
+    <string name="cancel">取消下载</string>
+    <string name="restart">重新开始</string>
+    <string name="download_name">内核下载</string>
+    <string name="log">更新日志</string>
+    <string name="more">查看更多</string>
+    <string name="app_info">这是由FusionLeo团队开发的内核管理器,集成内核下载安装一步完成,更多功能将陆续开发出来 !\n同时兼容三星同机型的绝大部分ROM</string>
+    <string name="rom_info">当前不是LeoROM推荐你升级到LeoROM以获得更好的兼容性</string>
+</resources>

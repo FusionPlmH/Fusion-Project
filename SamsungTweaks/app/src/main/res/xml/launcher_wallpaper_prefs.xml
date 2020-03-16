@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:leo="http://schemas.android.com/apk/res/com.fusionleo.salt">
+    <com.fusionleo.salt.preference.MyPreferenceCategory android:title="@string/blur_wallpaper" />
+>
+    <com.fusionleo.salt.preference.MyListPreference android:entries="@array/launcher_bg_style_entries" android:title="@string/custom_background_style" android:key="leo_tweaks_launcher_blur_style"  android:defaultValue="0" android:entryValues="@array/launcher_bg_style_values" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/custom_wallpaper_background_blur" android:key="leo_tweaks_launcher_blur_wallpaper_degree" android:summary="@string/seksbar_sumarry"  android:defaultValue="12" app:minValue="5" app:maxValue="25" app:unitsValue="@string/spf" />
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/start_custom_wallpaper_background_color" android:key="leo_tweaks_launcher_blur_wallpaper_color_enabled"  android:defaultValue="false" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.ColorPickerPreference android:title="@string/settings_custom_wallpaper_background_color" android:key="leo_tweaks_launcher_blur_wallpaper_color" android:summary="@string/white_color" android:dependency="leo_tweaks_launcher_blur_wallpaper_color_enabled" leo:defaultColor="\#FFFFFFFF" alphaSlider="true"/>
+    <com.fusionleo.salt.preference.MySwitchPreference android:title="@string/start_custom_wallpaper_background_alpha" android:key="leo_tweaks_launcher_blur_wallpaper_alpha_enabled" android:defaultValue="0" android:summaryOn="@string/on" android:summaryOff="@string/off" />
+    <com.fusionleo.salt.preference.MySeekBarPreference android:title="@string/settings_custom_wallpaper_background_alpha" android:key="leo_tweaks_launcher_blur_wallpaper_alpha" android:summary="@string/seksbar_sumarry" android:dependency="leo_tweaks_launcher_blur_wallpaper_alpha_enabled" android:defaultValue="120" app:minValue="1" app:maxValue="255" app:unitsValue=" %" />
+</PreferenceScreen>

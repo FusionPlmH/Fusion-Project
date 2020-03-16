@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="bg_content" />
+    <item type="id" name="grid_about" />
+    <item type="id" name="grid_about_title" />
+    <item type="id" name="grid_item_icon" />
+    <item type="id" name="grid_item_name" />
+    <item type="id" name="grid_mode" />
+    <item type="id" name="list_power" />
+    <item type="id" name="menu_img" />
+    <item type="id" name="menu_item" />
+    <item type="id" name="menu_name" />
+    <item type="id" name="reminder" />
+    <item type="id" name="silence_selector" />
+    <item type="id" name="sound_selector" />
+    <item type="id" name="vibration_selector" />
+</resources>

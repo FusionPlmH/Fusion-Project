@@ -1,0 +1,45 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	tools:context="com.leo.salt.activity.WifiPasswordActivity">
+
+	<include layout="@layout/toolbar_container"/>
+
+
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="?MainwindowBG"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal"
+
+		android:textSize="18dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/wifi_quantity"/>
+
+<ListView
+	android:id="@+id/lv"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	/>
+</LinearLayout>
+	</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

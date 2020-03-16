@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:id="@id/rom_raw_versions_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前版本" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:id="@id/rom_raw_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布日期" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:id="@id/ota_versions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ota版本" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:id="@id/ota_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ota日期" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:textColor="@color/purpleAccent" android:id="@id/ota_stop_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推送截止时间" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0dip" android:textColor="@color/tealPrimary" android:id="@id/ota_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开始推送" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="15.0dip" android:id="@id/change_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新日志" />
+</LinearLayout>
